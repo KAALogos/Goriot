@@ -1,0 +1,40 @@
+.sitenav{display:flex;flex-wrap:wrap;gap:4px 22px;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;font-weight:600}
+.sitenav a{text-decoration:none;padding:4px 0}.sitenav a:hover{text-decoration:underline}
+.qchip{display:inline-flex;align-items:center;gap:5px;border:1px solid #e0cda6;background:#fbf3e1;color:#6a4a14;border-radius:15px;padding:4px 10px;font-size:12px;line-height:1.3;font-weight:600;white-space:nowrap}
+.qchip:hover,.qchip[aria-expanded=true]{border-color:#b78848;background:#f6e6c3}
+.qchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.relchips{margin:-4px 0 10px}
+.qbar{padding:11px 16px;display:flex;gap:7px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+tr.qrow td,tr.qrow:nth-child(even) td{width:auto;text-align:left;color:var(--ink);background:#fdf8ec;font-weight:400;padding:14px 16px 16px}
+.quote{margin:0;padding-left:14px;border-left:3px solid #c89a4e;font:17px/1.55 var(--serif)}
+.quote p{margin:0 0 4px}.quote p:last-child{margin:0}
+.qfoot{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:10px;font-size:12px;color:var(--muted)}
+.read{border:0;background:none;padding:4px 0;color:var(--accent);font-size:13px;font-weight:650;text-decoration:underline;text-underline-offset:3px;text-align:left}
+#topics .area{--group:#8a6220}
+.card{padding:18px;border-top:1px solid var(--line)}summary+.card{border-top:0}
+.card h3{font:normal 20px/1.25 var(--serif)}.card>p{margin:4px 0 12px;color:var(--muted);font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags button{border:1px solid var(--line);background:#fff;border-radius:15px;padding:5px 10px;font-size:12px;color:var(--accent);text-align:left}
+.tags button:hover{border-color:var(--accent)}
+.card,.qrow td{scroll-margin-top:16px}
+tr.flash td{box-shadow:inset 0 2px #c89a4e,inset 0 -2px #c89a4e}
+#reader{position:fixed;inset:0 0 0 auto;margin:0;width:min(640px,100vw);max-width:none;height:100vh;height:100dvh;max-height:none;border:0;border-left:1px solid var(--line);padding:0;background:var(--paper);color:var(--ink);box-shadow:-12px 0 40px #0003}
+#reader[open]{display:flex;flex-direction:column}
+#reader::backdrop{background:#282a2b80}
+.rhead{display:flex;gap:12px;align-items:flex-start;padding:16px 24px 12px;border-bottom:1px solid var(--line);background:#fff}
+.rhead>div{flex:1;min-width:0}.rhead h2{font-size:22px;margin:3px 0 0}
+.rclose{width:44px;height:44px;flex:none;border:1px solid var(--line);border-radius:6px;background:#fff;font-size:22px;line-height:1;color:var(--ink)}
+.rbody{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:20px 32px 40px;font:18px/1.65 var(--serif)}
+.rbody p{margin:0;text-indent:1.4em;hyphens:auto}.rbody p.cont{text-indent:0}
+.rbody p.v{text-indent:0;margin-left:2.4em}.rbody p.sig{text-indent:0;text-align:right}
+.rbody mark{background:#f4dda4;color:inherit;padding:2px 0;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.rbody mark.other{background:none;border-bottom:2px dotted #b78848;padding:0}
+.rpage{font:600 12px system-ui,sans-serif;color:var(--muted);text-align:center;margin-bottom:14px}
+.rfoot{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;padding:10px 24px;border-top:1px solid var(--line);background:#fff}
+.rfoot .btn{min-height:40px}.rfoot .btn:disabled{opacity:.45;cursor:default}
+.rjump{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.rjump input{width:62px;min-height:40px;padding:6px;border:1px solid var(--line);border-radius:6px;text-align:center}
+.rqnav{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--muted);margin-top:8px;flex-wrap:wrap}
+.rqnav button{border:1px solid var(--line);background:#fff;border-radius:6px;min-height:36px;padding:4px 11px;font-size:12px;font-weight:600;color:var(--ink)}
+@media(max-width:650px){.numbers{flex-wrap:wrap}.sitenav{gap:2px 18px}.sitenav a{padding:9px 0}.qchip{padding:8px 11px;white-space:normal}.tags button{padding:9px 12px}.read{padding:10px 0}.card{padding:15px 12px}.rhead{padding:10px 14px}.rhead h2{font-size:19px}.rbody{padding:16px 18px 32px}.rfoot{padding:8px 14px;padding-bottom:max(8px,env(safe-area-inset-bottom))}.rfoot .btn,.rqnav button,.rjump input{min-height:44px}.search,.rjump input{font-size:16px}}
+@media print{#atlas,#reader,.sitenav,.qchips,.qrow,.qbar{display:none!important}}

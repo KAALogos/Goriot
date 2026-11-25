@@ -1,0 +1,609 @@
+{
+  "source": "ojciec-goriot.pdf",
+  "atlas_pages": 10,
+  "source_pages": 129,
+  "total_pages": 139,
+  "total_citations": 40,
+  "citations": [
+    {
+      "id": "G01",
+      "question": 1,
+      "title": "Pani Vauquer prowadzi pensjonat",
+      "description": "Właścicielka Domu Vauquer i położenie pensjonatu.",
+      "book_page": 2,
+      "integrated_pdf_page": 12,
+      "rect": [
+        72.0,
+        243.89112854003906,
+        415.7296447753906,
+        290.1172180175781
+      ],
+      "quote": "Pani Vauquer, z domu de Conflans, jest to kobieta w podeszłym wieku, posiadająca od lat czterdziestu mieszczańską gospodę, położoną przy ulicy Neuve-Sainte-Geneviève, między dzielnicą łacińską a przedmieściem Saint-Marceau."
+    },
+    {
+      "id": "G02",
+      "question": 2,
+      "title": "Rastignac studiuje prawo",
+      "description": "Student odkłada naukę, by poznać paryską elitę.",
+      "book_page": 39,
+      "integrated_pdf_page": 49,
+      "rect": [
+        72.0,
+        599.700927734375,
+        415.7502136230469,
+        645.9270629882812
+      ],
+      "quote": "Postanowił zbierać notatki z drugiego i trzeciego kursu, a potem, w ostatniej chwili, wyuczyć się prawa gruntownie. Tymczasem przez piętnaście swobodnych miesięcy mógł pływać po oceanie Paryża, bawić się w miłość lub zajmować się połowem bogactwa."
+    },
+    {
+      "id": "G03",
+      "question": 3,
+      "title": "Anastazja i Delfina",
+      "description": "Córki Goriota wychodzą za hrabiego de Restaud i bankiera Nucingena.",
+      "book_page": 41,
+      "integrated_pdf_page": 51,
+      "rect": [
+        72.0,
+        360.59808349609375,
+        415.75018310546875,
+        418.7791442871094
+      ],
+      "quote": "Piękna Anastazja zwabiła ku sobie hrabiego de Restaud i porzuciwszy dom ojcowski, dała się unieść skłonnościom arystokratycznym, które ją popchnęły w wysokie sfery społeczne. Delfina lubiła pieniądze, poślubiła więc bankiera Nucingena, który pochodził z niemieckiej rodziny i nosił tytuł barona św. Państwa Rzymskiego."
+    },
+    {
+      "id": "G04",
+      "question": 4,
+      "title": "Pani de Beauséant — protekcja",
+      "description": "Kuzynka otwiera Eugeniuszowi drogę do towarzystwa.",
+      "book_page": 15,
+      "integrated_pdf_page": 25,
+      "rect": [
+        72.0,
+        276.9111328125,
+        415.7502136230469,
+        347.0482177734375
+      ],
+      "quote": "Poważna jejmość potrzęsła konary drzewa genealogicznego i zawyrokowała, że wicehrabina de Beauséant będzie najprzystępniejszą z całego grona bogatych krewnych, którzy bywają zwykle nieużyci. Napisała więc do tejmłodejosoby list w stylu staroświeckim i wręczyła go Eugeniuszowi, dodając, że w razie powodzenia wicehrabina pomoże mu odnaleźć innych krewnych."
+    },
+    {
+      "id": "G05",
+      "question": 4,
+      "title": "Pani de Beauséant — zasady salonu",
+      "description": "Sukces towarzyski jest warunkiem zdobywania wpływów.",
+      "book_page": 37,
+      "integrated_pdf_page": 47,
+      "rect": [
+        72.0,
+        85.62911987304688,
+        415.7398376464844,
+        143.8102264404297
+      ],
+      "quote": "Zdobędziesz pan sobie powodzenie, a w Paryżu powodzenie wszystko znaczy, to klucz potęgi. Jeżeli kobiety osądzą, żeś pan wykształcony i utalentowany, to i mężczyźni podzielą ich zdanie, a od pana zależeć będzie, żeby się to przekonanie utrzymało. Potem możesz pan żądać wszystkiego, każda droga dla niego otwarta."
+    },
+    {
+      "id": "G06",
+      "question": 5,
+      "title": "Prawdziwa tożsamość Vautrina",
+      "description": "Vautrin przyznaje, że jest zbiegłym galernikiem Jakubem Collinem.",
+      "book_page": 90,
+      "integrated_pdf_page": 100,
+      "rect": [
+        72.0,
+        444.28399658203125,
+        415.7294616699219,
+        466.60009765625
+      ],
+      "quote": "— Przyznaję, że jestem Jakub Collin, zwany Trompe-la-Mort, którego skazano na dwadzieścia lat więzienia."
+    },
+    {
+      "id": "G07",
+      "question": 6,
+      "title": "Pani Couture opiekuje się Wiktoryną",
+      "description": "Krewna zmarłej matki przejmuje opiekę nad odrzuconą dziewczyną.",
+      "book_page": 7,
+      "integrated_pdf_page": 17,
+      "rect": [
+        72.0,
+        336.6871032714844,
+        415.73992919921875,
+        370.9591979980469
+      ],
+      "quote": "Matka Wiktoryny umarła z rozpaczy u dalekiejswej krewnej pani Couture, która odtąd z macierzyńską troskliwością zaopiekowała się sierotą."
+    },
+    {
+      "id": "G08",
+      "question": 7,
+      "title": "Zgniatanie sreber Goriota",
+      "description": "Rastignac obserwuje, jak Goriot zgniata srebrne naczynia.",
+      "book_page": 16,
+      "integrated_pdf_page": 26,
+      "rect": [
+        72.0,
+        539.9248657226562,
+        415.73992919921875,
+        586.1519775390625
+      ],
+      "quote": "Ojciec Goriot przytwierdził do listwy przewróconego stołu półmisek srebrny wyzłacany i takąż wazę, następnie wziął sznur i okręciwszy nim oba naczynia wspaniale rzeźbione, zaczął je ściskać z nadzwyczajną siłą, jak gdyby chciał zrobić z nich jednolitą bryłę metalu."
+    },
+    {
+      "id": "G09",
+      "question": 7,
+      "title": "Sprzedaż zgniecionych sreber",
+      "description": "Zgnieciona zastawa zostaje sprzedana złotnikowi.",
+      "book_page": 19,
+      "integrated_pdf_page": 29,
+      "rect": [
+        72.0,
+        178.08212280273438,
+        415.7430725097656,
+        224.3082275390625
+      ],
+      "quote": "Sprzedał mu jakiś sprzęt stołowy ze srebra wyzłacanego, ale tak nielitościwie zmiażdżony, że trudno uwierzyć, aby tego mógł dokonać człowiek nie fachowy."
+    },
+    {
+      "id": "G10",
+      "question": 8,
+      "title": "Nazwisko Goriot podczas wizyty",
+      "description": "Wspomnienie ojca Anastazji wprowadza hrabiego w gniew.",
+      "book_page": 28,
+      "integrated_pdf_page": 38,
+      "rect": [
+        72.0,
+        611.6559448242188,
+        415.7431335449219,
+        669.8380737304688
+      ],
+      "quote": "Słysząc to nazwisko poprzedzone wyrazem ojciec, hrabia przestał rozgrzebywać węgle na kominku i rzucił szczypce w ogień z taką gwałtownością, jak gdyby poparzył sobie palce. — Można było nazwać go panem Goriot — zawołał powstając."
+    },
+    {
+      "id": "G11",
+      "question": 8,
+      "title": "Reakcja salonu de Restaud",
+      "description": "Wzmianka o Goriocie zmienia stosunek gospodarzy do studenta.",
+      "book_page": 29,
+      "integrated_pdf_page": 39,
+      "rect": [
+        71.99998474121094,
+        169.31512451171875,
+        415.739990234375,
+        215.54122924804688
+      ],
+      "quote": "Nazwisko ojca Goriot było znów niby skinieniem różdżki czarnoksięskiej, tylko skutek był wręcz przeciwny temu, jaki sprawiły słowa: krewny pani de Beauséant."
+    },
+    {
+      "id": "G12",
+      "question": 9,
+      "title": "Wiktoryna jako przyszła dziedziczka",
+      "description": "Vautrin namawia Eugeniusza, by zainteresował się Wiktoryną.",
+      "book_page": 50,
+      "integrated_pdf_page": 60,
+      "rect": [
+        86.94400024414062,
+        516.0149536132812,
+        364.3936462402344,
+        586.1519775390625
+      ],
+      "quote": "— Panna Wiktoryna? — Ona sama! — Jakim sposobem? — Ona cię kocha, mój panie, twoja mała baronowa de Rastignac! — Ależ ona nie ma złamanego szeląga — odparł Eugeniusz zdumiony."
+    },
+    {
+      "id": "G13",
+      "question": 9,
+      "title": "Plan śmierci brata Wiktoryny",
+      "description": "Franchessini ma otworzyć dziewczynie drogę do spadku.",
+      "book_page": 82,
+      "integrated_pdf_page": 92,
+      "rect": [
+        72.0,
+        145.40512084960938,
+        415.72955322265625,
+        191.63124084472656
+      ],
+      "quote": "Chrapniemy sobie troszeczkę, a tymczasem hrabia Franchessini otworzy nam końcem szpady spadek po Michale Taillefer. Wiktoryna odziedziczy wszystko po bracie i będzie miała piętnaście tysiączków dochodu."
+    },
+    {
+      "id": "G14",
+      "question": 9,
+      "title": "Pojedynek Michała Taillefera",
+      "description": "Potwierdzenie wykonania planu Vautrina.",
+      "book_page": 88,
+      "integrated_pdf_page": 98,
+      "rect": [
+        72.0,
+        480.1489562988281,
+        415.7398376464844,
+        539.8330078125
+      ],
+      "quote": "— Młody Taillefer pojedynkował się z niejakim hrabią Franchessinim ze starejgwardii, który wpakował mu w czoło dwa cale żelaza. Wskutek tego Wiktoryna jest jedną z najbogatszych partii w Paryżu. Ha! Gdyby to można było przewidzieć!"
+    },
+    {
+      "id": "G15",
+      "question": 10,
+      "title": "Pomoc medyczna Bianchona",
+      "description": "Bianchon bada chorego, leczy go i sprowadza lekarza.",
+      "book_page": 111,
+      "integrated_pdf_page": 121,
+      "rect": [
+        72.0,
+        121.49412536621094,
+        415.7431335449219,
+        203.5862274169922
+      ],
+      "quote": "Przyłożyłem mu synapizmy, szczęściem odczuwa je, to znak, że działają. — Czy można go przenieść? — Niepodobna. Trzeba go pozostawić w spokoju i strzec od wszelkiego wzruszenia fizycznego lub moralnego. — Kochany Bianchon, my obajbędziemy go pielęgnowali. — Jużem ja wezwał naczelnego lekarza z mego szpitala."
+    },
+    {
+      "id": "G16",
+      "question": 10,
+      "title": "Nocne czuwanie przy Goriocie",
+      "description": "Bianchon i Rastignac doglądają starego na zmianę.",
+      "book_page": 112,
+      "integrated_pdf_page": 122,
+      "rect": [
+        72.0,
+        241.04612731933594,
+        415.7431945800781,
+        287.2722473144531
+      ],
+      "quote": "Następnie obaj przepędzili noc przy chorym, doglądając go po kolei, przy czym jeden czytał książki medyczne, a drugi pisał listy do sióstr i do matki."
+    },
+    {
+      "id": "G17",
+      "question": 11,
+      "title": "Dawna zamożność Goriota",
+      "description": "Droga garderoba i brylanty świadczą o jego dostatku.",
+      "book_page": 9,
+      "integrated_pdf_page": 19,
+      "rect": [
+        72.0,
+        324.73211669921875,
+        415.7502136230469,
+        382.9141845703125
+      ],
+      "quote": "Pani Vauquer podziwiała osiemnaście koszul z płótna holenderskiego, których cienkość tym bardziej wpadała w oko, że fabrykant makaronu wpinał do żabotu dwie duże szpilki brylantowe, połączone z sobą złotym łańcuszkiem."
+    },
+    {
+      "id": "G18",
+      "question": 11,
+      "title": "Przeprowadzka na drugie piętro",
+      "description": "Obniżenie wydatków i zmiana traktowania przez gospodynię.",
+      "book_page": 12,
+      "integrated_pdf_page": 22,
+      "rect": [
+        72.0,
+        109.53912353515625,
+        415.7502746582031,
+        167.7212371826172
+      ],
+      "quote": "Ku końcowi drugiego roku, Goriot usprawiedliwił, niestety, plotki krążące o nim, gdyż zapragnął przeprowadzić się na drugie piętro i zmniejszyć komorne do dziewięciuset franków. Musiał się tak dalece ograniczyć, że przez całą zimę nie opalał swego mieszkania. Wdowa Vauquer zażądała pieniędzy z góry i zaczęła odtąd nazywać swego lokatora ojcem Goriot."
+    },
+    {
+      "id": "G19",
+      "question": 11,
+      "title": "Przeprowadzka na trzecie piętro",
+      "description": "Dalsze ograniczanie wydatków i coraz skromniejsze życie.",
+      "book_page": 13,
+      "integrated_pdf_page": 23,
+      "rect": [
+        72.0,
+        264.95611572265625,
+        415.7432556152344,
+        311.1832580566406
+      ],
+      "quote": "Ku końcowi trzeciego roku, ojciec Goriot ograniczył jeszcze swoje wydatki, przeprowadzając się na trzecie piętro i zmniejszając komorne do czterdziestu pięciu franków na miesiąc. Zaczął się obchodzić bez tabaki, odprawił fryzjera i odtąd się nie pudrował."
+    },
+    {
+      "id": "G20",
+      "question": 12,
+      "title": "Długi Maksyma obciążają Anastazję",
+      "description": "Anastazja płaci weksle kochanka.",
+      "book_page": 104,
+      "integrated_pdf_page": 114,
+      "rect": [
+        72.0,
+        396.4630432128906,
+        415.75018310546875,
+        442.69012451171875
+      ],
+      "quote": "Przypominasz sobie ten weksel Maksyma? Niestety! Nie był to już pierwszy, jużem ja przedtem niejeden zapłaciła. W początku stycznia, pan de Trailles wydawał mi się jakoś bardzo zmartwiony."
+    },
+    {
+      "id": "G21",
+      "question": 12,
+      "title": "Anastazja sprzedaje brylanty",
+      "description": "Sprzedaż kosztowności nie wystarcza na spłatę długów.",
+      "book_page": 105,
+      "integrated_pdf_page": 115,
+      "rect": [
+        72.0,
+        647.52197265625,
+        415.73992919921875,
+        693.7481079101562
+      ],
+      "quote": "— Sprzedaż brylantów nie przyniosła mi stu tysięcy franków. Maksyma wciąż ścigają. Pozostaje zapłacić tylko dwanaście tysięcy, a on przyrzekł, że się ustatkuje, że już nadal grać nie będzie. Ja mam tylko tę miłość jego na świecie, a zapłaciłam za nią tak drogo, że umrę, jeżeli utracić ją będę musiała."
+    },
+    {
+      "id": "G22",
+      "question": 12,
+      "title": "Ograniczenia finansowe Delfiny",
+      "description": "Nucingen dysponuje posagiem żony i przyznaje jej małą kwotę.",
+      "book_page": 66,
+      "integrated_pdf_page": 76,
+      "rect": [
+        72.0,
+        217.13612365722656,
+        415.7501525878906,
+        263.36224365234375
+      ],
+      "quote": "Zapłacił wprawdzie, bo miał cały mój posag, ale odtąd przeznaczył mi na osobiste wydatki pensyjkę, którą przyjęłam dla świętego spokoju. Późniejchciałam odpowiedzieć miłości własnej pewnego człowieka, którego i pan znasz także."
+    },
+    {
+      "id": "G23",
+      "question": 12,
+      "title": "Posag Delfiny w interesach Nucingena",
+      "description": "Środki żony są zaangażowane w przedsięwzięcia bankiera.",
+      "book_page": 102,
+      "integrated_pdf_page": 112,
+      "rect": [
+        72.0,
+        97.58412170410156,
+        415.7503356933594,
+        143.8102264404297
+      ],
+      "quote": "Kapitały jego i moje włożone są w przedsięwzięcia zaledwie rozpoczęte, na które trzeba było wyłożyć z góry wielkie sumy."
+    },
+    {
+      "id": "G24",
+      "question": 13,
+      "title": "Środek usypiający w śmietance",
+      "description": "Michonneau wlewa płyn do kubka Vautrina ze śmietanką.",
+      "book_page": 86,
+      "integrated_pdf_page": 96,
+      "rect": [
+        72.0,
+        121.49412536621094,
+        415.7295227050781,
+        179.6762237548828
+      ],
+      "quote": "Panna Michonneau zeszła najpierwsza i skorzystała z nieobecności Sylwii i służącego, żeby wlać płyn z flakonu do srebrnego kubka Vautrina. Kubek ten, napełniony śmietanką, wstawiano zawsze do wanienki z gorącą wodą, razem ze wszystkimi garnuszkami, w których grzała się śmietanka do kawy."
+    },
+    {
+      "id": "G25",
+      "question": 13,
+      "title": "Ujawnienie piętna galernika",
+      "description": "Michonneau uderza Vautrina w ramię, odsłaniając litery.",
+      "book_page": 87,
+      "integrated_pdf_page": 97,
+      "rect": [
+        72.0,
+        625.1129150390625,
+        415.73284912109375,
+        671.3400268554688
+      ],
+      "quote": "Poiret przewrócił chorego, a panna Michonneau uderzyła go silnie po ramieniu i wnet dwie złowrogie białe litery wystąpiły na tle czerwonym."
+    },
+    {
+      "id": "G26",
+      "question": 14,
+      "title": "Prośba do sióstr i ciotki",
+      "description": "Rastignac prosi o oszczędności i proponuje sprzedaż koronek.",
+      "book_page": 39,
+      "integrated_pdf_page": 49,
+      "rect": [
+        72.0,
+        145.40512084960938,
+        415.7432556152344,
+        215.54122924804688
+      ],
+      "quote": "Gdyby nie było innego sposobu dostania pieniędzy, to powiedz ciotce, niech sprzeda swe koronki, a ja przyślę jej później jeszcze piękniejsze” itd. Napisał do obydwóch sióstr prosząc, by mu ofiarowały zaoszczędzone pieniądze."
+    },
+    {
+      "id": "G27",
+      "question": 14,
+      "title": "Wyrzeczenia matki",
+      "description": "Matka poświęca cenne rzeczy, by wesprzeć syna.",
+      "book_page": 42,
+      "integrated_pdf_page": 52,
+      "rect": [
+        72.0,
+        444.28399658203125,
+        415.7328186035156,
+        478.5550842285156
+      ],
+      "quote": "— A twoja matka czyż nie poświęciła również swych klejnotów! mówił sam do siebie. Ciotka twa płakała pewnie sprzedając jedną ze swych relikwii. Jakimże prawem śmiałbyś przeklinać Anastazję?"
+    },
+    {
+      "id": "G28",
+      "question": 15,
+      "title": "Vautrin o karierze prawnika",
+      "description": "W uczciwej karierze bez protekcji widzi drogę do nędzy.",
+      "book_page": 47,
+      "integrated_pdf_page": 57,
+      "rect": [
+        72.0,
+        707.2970581054688,
+        415.7398986816406,
+        743.0711059570312
+      ],
+      "quote": "Zabraknie panu protekcji, to zgnijesz w pierwszym lepszym trybunale na prowincji."
+    },
+    {
+      "id": "G29",
+      "question": 15,
+      "title": "Vautrin o awansie i protekcji",
+      "description": "Awans zawodowy wymaga koneksji lub podłości politycznej.",
+      "book_page": 48,
+      "integrated_pdf_page": 58,
+      "rect": [
+        72.0,
+        85.62911987304688,
+        415.7399597167969,
+        131.855224609375
+      ],
+      "quote": "Przy protekcji, zostaniesz pan prokuratorem królewskim, będziesz pobierał tysiąc talarów pensji i zaślubisz córkę jakiego mera."
+    },
+    {
+      "id": "G30",
+      "question": 15,
+      "title": "Małżeństwo jako transakcja",
+      "description": "Vautrin wycenia swój udział w zdobyciu posagu.",
+      "book_page": 49,
+      "integrated_pdf_page": 59,
+      "rect": [
+        72.0,
+        659.4769897460938,
+        415.7399597167969,
+        693.7481079101562
+      ],
+      "quote": "Jednym słowem, czy dasz mi pan dwieście tysięcy franków za to, że ci nastręczę milion posagu? Dwadzieścia od sta za nastręczenie, cóż czy to za drogo? Trzeba będzie, żebyś pan zasłużył na miłość swej żoneczki."
+    },
+    {
+      "id": "G31",
+      "question": 16,
+      "title": "Wahania moralne Rastignaca",
+      "description": "Student odrzuca zbrodniczą drogę do fortuny i bada sumienie.",
+      "book_page": 88,
+      "integrated_pdf_page": 98,
+      "rect": [
+        72.0,
+        684.8889770507812,
+        415.7431640625,
+        731.1151123046875
+      ],
+      "quote": "Student prawa robił rachunek swego sumienia. Badał siebie, zgłębiał, wahał się, aż po skończeniu tego surowego i ścisłego przeglądu, uczciwość jego wyszła wypróbowana, jak sztaba żelazna, która się już pod żadnym ciosem nie zegnie."
+    },
+    {
+      "id": "G32",
+      "question": 16,
+      "title": "Związek Rastignaca z Delfiną",
+      "description": "Delfina zapewnia studentowi dostęp do wielkiego świata.",
+      "book_page": 69,
+      "integrated_pdf_page": 79,
+      "rect": [
+        72.00003051757812,
+        587.7459106445312,
+        415.7605895996094,
+        633.9720458984375
+      ],
+      "quote": "Obiadował prawie zawsze z panią de Nucingen, a później wszędzie jej towarzyszył. Powracał do siebie o trzeciejlub czwartejpo północy, wstawał o południu, ubierał się, po czym jechał znów z Delfiną, jeżeli pogoda sprzyjała."
+    },
+    {
+      "id": "G33",
+      "question": 16,
+      "title": "Kontynuacja kariery po pogrzebie",
+      "description": "Student wraca do życia salonowego po śmierci Goriota.",
+      "book_page": 128,
+      "integrated_pdf_page": 138,
+      "rect": [
+        86.94400024414062,
+        409.9200439453125,
+        413.308349609375,
+        420.2811584472656
+      ],
+      "quote": "Rzuciwszy światu takie wyzwanie, Rastignac poszedł na obiad do pani de Nucingen."
+    },
+    {
+      "id": "G34",
+      "question": 17,
+      "title": "Drwiny z podupadłego Goriota",
+      "description": "Mieszkańcy pensjonatu traktują zubożałego starca lekceważąco.",
+      "book_page": 13,
+      "integrated_pdf_page": 23,
+      "rect": [
+        72.0,
+        553.3818969726562,
+        415.75030517578125,
+        599.6089477539062
+      ],
+      "quote": "Młodzi studenci medycyny nadaremnie drażnili go przez czas długi, wreszcie zauważywszy osunięcie się jego dolnejwargi i wymierzywszy kąt twarzy, zawyrokowali, że wpadł już w kretynizm."
+    },
+    {
+      "id": "G35",
+      "question": 17,
+      "title": "Utrata szacunku u pani Vauquer",
+      "description": "Po zmniejszeniu opłat gospodyni zaczyna używać poufałego określenia.",
+      "book_page": 12,
+      "integrated_pdf_page": 22,
+      "rect": [
+        72.0,
+        145.40512084960938,
+        415.7502746582031,
+        179.6762237548828
+      ],
+      "quote": "Wdowa Vauquer zażądała pieniędzy z góry i zaczęła odtąd nazywać swego lokatora ojcem Goriot. Niezmiernie trudno było zbadać przyczynę takiego upadku, bo już i pseudohrabina powiedziała, że Goriot był ponury i milczący."
+    },
+    {
+      "id": "G36",
+      "question": 17,
+      "title": "Nazwisko kupca wywołuje dystans",
+      "description": "Nazwisko Goriota przeszkadza w salonie hrabiostwa de Restaud.",
+      "book_page": 28,
+      "integrated_pdf_page": 38,
+      "rect": [
+        72.0,
+        623.6109619140625,
+        415.7431335449219,
+        657.883056640625
+      ],
+      "quote": "Słysząc to nazwisko poprzedzone wyrazem ojciec, hrabia przestał rozgrzebywać węgle na kominku i rzucił szczypce w ogień z taką gwałtownością, jak gdyby poparzył sobie palce."
+    },
+    {
+      "id": "G37",
+      "question": 18,
+      "title": "Studenci wobec śmierci Goriota",
+      "description": "Rastignac i Bianchon organizują skromną ostatnią posługę.",
+      "book_page": 126,
+      "integrated_pdf_page": 136,
+      "rect": [
+        72.0,
+        623.6109619140625,
+        415.7399597167969,
+        681.7930908203125
+      ],
+      "quote": "Skończywszy jeść, Eugeniusz i Bianchon nie mogli znieść panującej wrzawy; brzęk widelców i łyżek, rozmowa przeplatana śmiechem, wesołość biesiadujących, wszystko to przejmowało zgrozą naszych studentów. Wstali obaj od stołu i poszli po księdza, który miał czuwać i modlić się w nocy przy umarłym. Musieli stosować ostatnią posługę, którą mieli oddać staremu, do niewielkiego zapasu pieniędzy."
+    },
+    {
+      "id": "G38",
+      "question": 18,
+      "title": "Koszty pogrzebu i trumna",
+      "description": "Bianchon pomaga zdobyć niedrogą trumnę.",
+      "book_page": 127,
+      "integrated_pdf_page": 137,
+      "rect": [
+        72.0,
+        121.49412536621094,
+        415.75018310546875,
+        179.6762237548828
+      ],
+      "quote": "Student medycyny postanowił w końcu, że sam złoży nieboszczyka do trumny żebraczej, którą kupił w swym szpitalu za tanie pieniądze. — Wypłatajtym łotrom figla — mówił do Eugeniusza."
+    },
+    {
+      "id": "G39",
+      "question": 18,
+      "title": "Puste powozy córek",
+      "description": "Córki nie przychodzą, na pogrzeb przybywają tylko ich puste powozy.",
+      "book_page": 128,
+      "integrated_pdf_page": 138,
+      "rect": [
+        72.0,
+        145.40512084960938,
+        415.7398986816406,
+        203.5862274169922
+      ],
+      "quote": "W chwili jednak, gdy trumna stanęła na karawanie, dwa próżne powozy przyłączyły się do orszaku pogrzebowego i odprowadziły go aż do Père-Lachaise. Na jednym powozie był herb hrabiego de Restaud, na drugim — barona de Nucingen."
+    },
+    {
+      "id": "G40",
+      "question": 18,
+      "title": "Wyzwanie rzucone Paryżowi",
+      "description": "Rastignac wypowiada wyzwanie i idzie do pani de Nucingen.",
+      "book_page": 128,
+      "integrated_pdf_page": 138,
+      "rect": [
+        72.0,
+        386.01007080078125,
+        413.308349609375,
+        420.2811584472656
+      ],
+      "quote": "— Teraz my się spróbujemy! Rzuciwszy światu takie wyzwanie, Rastignac poszedł na obiad do pani de Nucingen."
+    }
+  ]
+}

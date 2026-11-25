@@ -1,0 +1,67 @@
+# przykład: cytaty | numer obszaru | początek nazwy obyczaju (jednoznaczny w obszarze)
+# relacja:  cytaty | a-b          obszar: cytaty | numer
+G01 | 8 | Mieszkanie w pensjonatach
+G02 | 14 | Odkładanie nauki
+G03 | 5 | Zawieranie małżeństw dla awansu
+G03 | 5 | Zawieranie małżeństw dla majątku
+G03 | 5 | Łączenie kapitału
+G03 | 5-15
+G04 | 1 | Wprowadzanie młodych ludzi
+G04 | 1 | Posługiwanie się listami polecającymi
+G04 | 1-20
+G05 | 14 | Korzystanie z protekcji
+G05 | 6 | Traktowanie związku z wpływową kobietą
+G05 | 14-15
+G06 | 21 | Posługiwanie się pseudonimami
+G07 | 7 | Przyjmowanie osieroconych
+G08 G09 | 12 | Sprzedawanie i przetapianie sreber
+G10 G11 G36 | 15
+G12 G14 | 5 | Uzależnianie atrakcyjności
+G13 G14 | 16 | Pojedynkowanie się na broń białą
+G15 | 18 | Stosowanie synapizmów
+G15 | 18 | Wzywanie lekarza do domu
+G15 G16 | 18 | Pielęgnowanie ciężko chorych
+G15 | 14 | Studiowanie medycyny
+G15 | 18-14
+G16 | 18 | Nocne czuwanie przy chorym
+G17 | 4 | Noszenie brylantowych szpilek
+G17 | 4 | Noszenie żabotów
+G18 G19 | 8 | Różnicowanie standardu mieszkań
+G18 G19 | 8-12
+G18 G35 | 15 | Okazywanie szacunku zależnie
+G19 | 12 | Pobieranie miesięcznych opłat
+G19 | 4 | Pudrowanie męskich włosów
+G19 | 4 | Zażywanie tabaki
+G19 | 4 | Korzystanie z usług osobistego fryzjera
+G20 G21 | 6 | Finansowanie wydatków i spłacanie długów
+G20 | 12 | Podpisywanie weksli
+G20 G21 | 6-12
+G21 | 13 | Zaciąganie długów hazardowych
+G21 | 13 | Ratowanie graczy
+G21 | 12 | Sprzedawanie klejnotów
+G21 | 6-13
+G22 | 5 | Wyznaczanie żonie określonej sumy
+G22 | 5 | Kontrolowanie wydatków żony
+G22 G23 | 5-12
+G23 | 12 | Inwestowanie pieniędzy żony
+G24 | 21
+G25 | 21 | Piętnowanie skazańców
+G26 | 7 | Gromadzenie oszczędności
+G26 G27 | 7 | Składanie ofiar materialnych
+G26 | 20 | Prowadzenie regularnej korespondencji
+G26 | 7-14
+G28 G29 | 14 | Wieloletnie pokonywanie
+G29 | 14 | Ocenianie kariery
+G28 G29 | 12-14
+G30 | 12 | Wynagradzanie pośredników
+G32 | 6
+G37 | 19 | Nocne czuwanie duchownego
+G37 | 17 | Odmawianie modlitw przy zwłokach
+G37 | 17-19
+G37 G38 | 12-19
+G38 | 19 | Wykorzystywanie tańszych trumien
+G39 | 19 | Wysyłanie powozów herbowych
+G39 | 11 | Umieszczanie herbów rodowych
+G39 | 15 | Posługiwanie się herbami rodowymi
+G39 | 7-19
+G39 | 11-15
