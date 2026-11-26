@@ -51,3 +51,10 @@
 @keyframes ipulse{0%,100%{box-shadow:0 0 0 0 #d9c7a166}50%{box-shadow:0 0 0 8px #d9c7a100}}
 html.intro-on{overflow:hidden}
 @media(max-width:650px){.plref{position:relative;right:auto;bottom:auto;align-self:flex-end;margin:0 8px 8px}.intro .icredit{max-width:none;left:10px;text-align:center}}
+
+/* plansze działów */
+.secintro{cursor:default}
+.secintro .ihalf{transition:transform 2.3s cubic-bezier(.65,0,.3,1)}
+.secintro .ititle{transition:opacity .9s}
+.secintro.go .ititle{opacity:0}
+.secintro .ititle strong{font-size:clamp(34px,5vw,64px)}

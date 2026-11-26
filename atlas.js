@@ -204,8 +204,8 @@
   let token = 0;
   async function render(focusMark) {
     const my = ++token, E = ED[ed], other = ed === 'boy' ? 'bort' : 'boy';
-    $('reyebrow').textContent = cur && byId.has(cur.id) ? `${E.name} · Zagadnienie ${pad(byId.get(cur.id).t)} · ${C.topics[byId.get(cur.id).t - 1]}` : `${E.name} · ${E.full}`;
-    $('rtitle').textContent = cur ? cur.title : 'Tekst powieści';
+    $('reyebrow').textContent = cur && byId.has(cur.id) ? `${E.name} · Zagadnienie ${pad(byId.get(cur.id).t)} · ${C.topics[byId.get(cur.id).t - 1]}` : E.full.charAt(0).toUpperCase() + E.full.slice(1);
+    $('rtitle').textContent = cur ? cur.title : '„Ojciec Goriot”';
     $('rqnav').hidden = !cur || !byId.has(cur.id);
     if (cur && byId.has(cur.id)) $('rqpos').textContent = `Cytat ${Q.indexOf(byId.get(cur.id)) + 1} z ${Q.length}`;
     const sw = $('rswitch');

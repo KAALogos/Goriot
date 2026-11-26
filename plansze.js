@@ -62,28 +62,36 @@
   document.querySelectorAll('#tabs .tab').forEach(t => { NAMES[t.dataset.k] = t.textContent; });
   function band(panel) {
     const k = panel.id.replace('panel-', ''), m = K.modules[k];
-    if (!m || panel.querySelector(':scope > .plansza')) return;
-    const ep = EP.get(m[0]), it = IMG.get(m[1]) || IMG.get((ep.img || []).find(x => IMG.has(x)));
-    if (!ep || !it) return;
-    const b = mk('div', 'plansza');
-    const bg = mk('div', 'plbg'); bg.style.backgroundImage = `url("${it.img.bg.src}")`; bg.style.backgroundPosition = m[2] || '50% 50%';
-    const txt = mk('div', 'pltext');
-    txt.append(mk('strong', 'plname', NAMES[k] || ''));
-    const wl = mk('div', 'plwing l'), wr = mk('div', 'plwing r');
-    const ref = mk('a', 'plref', 'ilustracja ↓'); ref.href = '#przypis-' + k;
-    ref.setAttribute('aria-label', 'Przypis: źródło i licencja ilustracji');
-    ref.addEventListener('click', e => { e.preventDefault(); document.getElementById('przypis-' + k).scrollIntoView({ block: 'center' }); });
-    b.append(bg, txt, ref, wl, wr);
-    panel.prepend(b);
+    if (!m || panel.querySelector(':scope > .plnote')) return;
+    const ep = EP.get(m[0]), it = IMG.get(m[1]) || (ep && IMG.get((ep.img || []).find(x => IMG.has(x))));
+    if (!it) return;
     const note = credit(it, 'plnote'); note.id = 'przypis-' + k;
-    note.prepend(document.createTextNode('Ilustracja w nagłówku: '));
+    note.prepend(document.createTextNode('Ilustracja planszy: '));
     panel.append(note);
   }
+  /* plansza działu: ta sama rozsuwana tapeta co na wejściu, otwiera się sama */
   function play(panel) {
-    const b = panel.querySelector(':scope > .plansza');
-    if (!b || reduce) return;
-    b.classList.remove('go', 'done'); void b.offsetWidth; b.classList.add('go');
-    clearTimeout(b._t); b._t = setTimeout(() => b.classList.add('done'), 1600);
+    const k = panel.id.replace('panel-', ''), m = K.modules[k];
+    if (!m || reduce || document.documentElement.classList.contains('intro-on')) return;
+    const ep = EP.get(m[0]), it = IMG.get(m[1]) || (ep && IMG.get((ep.img || []).find(x => IMG.has(x))));
+    if (!it) return;
+    document.querySelectorAll('.secintro').forEach(x => x.remove());
+    const ov = mk('div', 'intro secintro'); ov.setAttribute('aria-hidden', 'true');
+    for (const side of ['l', 'r']) {
+      const half = mk('div', 'ihalf ' + side), inner = mk('div', 'iimg');
+      inner.style.backgroundImage = `url("${it.img.bg.src}")`; inner.style.backgroundPosition = m[2] || '50% 50%';
+      half.append(inner); ov.append(half);
+    }
+    const t = mk('div', 'ititle');
+    t.append(mk('span', 'ieyebrow', 'Ojciec Goriot'), mk('strong', '', NAMES[k] || ''));
+    ov.append(t);
+    document.body.append(ov);
+    const open = () => { if (ov.classList.contains('go')) return; ov.classList.add('go'); setTimeout(() => ov.remove(), 2600); };
+    ov.addEventListener('click', open);
+    const im = new Image(); im.src = it.img.bg.src;
+    const go = () => setTimeout(open, 900);
+    (im.decode ? im.decode() : Promise.resolve()).then(go, go);
+    setTimeout(open, 3500);
   }
   const panels = document.getElementById('panels');
   const seen = new WeakSet();
@@ -94,7 +102,7 @@
       if (p.hidden) seen.delete(p);
     }
   };
-  new MutationObserver(scan).observe(panels, { childList: true, subtree: false, attributes: true, attributeFilter: ['hidden'] });
+  new MutationObserver(scan).observe(panels, { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden'] });
   scan();
 
 })();

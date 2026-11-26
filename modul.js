@@ -86,7 +86,7 @@
       }
       col.append(ol); tl.append(col);
     }
-    return [section('Kontekst historycznoliteracki', 'Restauracja, powstanie powieści, „Komedia ludzka” i powracające postacie.', tl), section('Interpretacje', null, theses('kontekst'))];
+    return [section('Epoka i powieść', 'Paryż za Restauracji, okoliczności powstania powieści, „Komedia ludzka”.', tl), section('W skrócie', null, theses('kontekst'))];
   };
   function pension() {
     const P = O.pension, wrap = el('div', 'pens'), house = el('div', 'house'), side = el('aside', 'pdetail');
@@ -255,9 +255,9 @@
     show(...first);
     const longs = el('div', 'sclinks');
     for (const id of ['F01', 'F02', 'F03']) { const sc = (window.SCENY || []).find(x => x.id === id); if (sc) longs.append(btn('sclink', sc.title + ' →', () => openScene(id))); }
-    const s1 = section('Pensjonat pani Vauquer', 'Dom na początku akcji, w 1819 roku. Kliknij pokój.', wrap);
+    const s1 = section('Pensjonat pani Vauquer', 'Dom w 1819 roku. Kliknij pokój, żeby zobaczyć, kto w nim mieszka.', wrap);
     return [s1,
-      section('Zmiany miejsc w toku powieści', null, moves),
+      section('Kto się przeprowadza', null, moves),
       section('Przeczytaj w całości', null, longs)];
   }
 
@@ -348,13 +348,14 @@
   }
   M.paryz = () => [
     ...pension(),
-    section('Anatomia Paryża', 'Pensjonat, salony, finansjera, prowincja i pionowy układ przestrzeni jako wskaźnik pozycji.', theses('paryz')),
-    section('Obyczaje związane z przestrzenią', 'Przykłady z katalogu obyczajów.', areaButtons([8, 1, 11, 12, 15]))
+    section('Paryż w powieści', 'Adres mówi, kim jesteś: od Dzielnicy Łacińskiej po przedmieście Saint-Germain.', theses('paryz')),
+    section('Dom, ulica, salon', null, areaButtons([8, 1, 11, 12, 15]))
   ];
   let focusChar = () => { };
   M.bohaterowie = () => {
     const grid = el('div', 'pcards'), relWrap = el('div'), filt = el('div', 'filterbar'), list = el('div', 'rels');
     let rtype = '', rchar = '';
+    const TL = { pokrewieństwo: 'rodzina', ekonomia: 'pieniądze', mentoring: 'opieka i rady', erotyka: 'miłość', prestiż: 'pozycja', przymus: 'szantaż' };
     const ROOMNAME = {}; O.pension.floors.forEach(f => f.rooms.forEach(r => { ROOMNAME[r.id] = [r.name, f.name]; }));
     const AX = new Map(O.axes.map(a => [a.id, a]));
     for (const c of O.cards) {
@@ -375,7 +376,7 @@
       grid.append(card);
     }
     const types = ['', 'pokrewieństwo', 'ekonomia', 'mentoring', 'erotyka', 'prestiż', 'przymus'];
-    const fb = types.map(t => { const b = btn('filter', t || 'wszystkie', () => { rtype = t; draw(); }); b.dataset.t = t; return b; });
+    const fb = types.map(t => { const b = btn('filter', TL[t] || 'wszystkie', () => { rtype = t; draw(); }); b.dataset.t = t; return b; });
     filt.append(...fb);
     const who = el('p', 'count');
     function draw() {
@@ -385,7 +386,7 @@
       if (rchar) who.append(btn('linkish', 'pokaż wszystkie', () => { rchar = ''; draw(); }));
       list.replaceChildren(...rs.map(r => {
         const a = el('article', 'rel'), h = el('div', 'rhead2');
-        h.append(el('strong', '', CH.get(r.from).name), el('span', 'arrow', '→'), el('strong', '', CH.get(r.to).name), el('span', 'typ', r.type));
+        h.append(el('strong', '', CH.get(r.from).name), el('span', 'arrow', '→'), el('strong', '', CH.get(r.to).name), el('span', 'typ', TL[r.type] || r.type));
         a.append(h, el('p', '', r.label));
         const x = refList(r.refs); x && a.append(x);
         if (r.rows && r.rows.length) { const t = el('div', 'tags'); r.rows.forEach(([ar, row]) => t.append(btn('', `${pad(ar)} · ${D.areas.find(z => z.id === ar).rows[row][0]}`, () => Gx.goRow(ar, row, null)))); a.append(t); }
@@ -411,9 +412,9 @@
       for (const s of x.steps) { const li = el('li'); li.append(el('span', '', s.text)); const r = refList([s.ref]); r && li.append(r); ol.append(li); }
       a.append(ol); ax.append(a);
     }
-    return [section('Mechanizmy', 'Osiem mechanizmów, które łączą obyczaje z fabułą.', mg), section('Trzy osie i model uczciwego działania', 'Kolejne etapy z odsyłaczami do tekstu.', ax), section('Interpretacje', null, theses('mechanizmy'))];
+    return [section('Jak działa ten świat', 'Posag, dług, protekcja i inne siły, które popychają fabułę.', mg), section('Losy czterech bohaterów', null, ax), section('W skrócie', null, theses('mechanizmy'))];
   };
-  M.poetyka = () => [section('Poetyka', 'Kompozycja, czas, narrator, portret i realizm.', theses('poetyka'))];
+  M.poetyka = () => [section('Sztuka powieści', 'Jak Balzac opowiada: narrator, czas, portret, opis.', theses('poetyka'))];
   M.sceny = () => {
     const w = el('div', 'scenes');
     for (const s of O.scenes) {
@@ -437,7 +438,7 @@
       const r = refList(c.refs); r && a.append(r);
       w.append(a);
     }
-    return [section('Konteksty literackie', 'Utwory, które warto zestawić z „Ojcem Goriot”.', w)];
+    return [section('Porównania', 'Utwory, które warto zestawić z „Ojcem Goriot”.', w)];
   };
   M.czytanie = () => {
     const z = O.czz, art = el('article', 'czz'), s = SRC.get(z.source);
@@ -508,7 +509,7 @@
       ['fragmenty', 'Sceny do omawiania', 'Czternaście pełnych scen w obu przekładach, z pytaniami do rozmowy.', '01_laval_6761', '30% 78%', null, 'big'],
       ['paryz', 'Pensjonat pani Vauquer', 'Przekrój domu: kto mieszka na którym piętrze i za ile.', null, null, null, 'big house'],
       ['bohaterowie', 'Bohaterowie', 'Portrety z powieści i sieć wzajemnych zależności.', '06_wismar_04', '45% 86%', null, ''],
-      ['czytaj', 'Powieść', 'Pełny tekst w przekładach Bortnowskiej i Boya-Żeleńskiego.', '05_wismar_03', '42% 88%', () => Gx.openPage(Gx.ED[Gx.mode() === 'boy' ? 'boy' : 'bort'].first, Gx.mode() === 'boy' ? 'boy' : 'bort'), ''],
+      ['powiesc', 'Powieść', 'Pełny tekst w przekładach Bortnowskiej i Boya-Żeleńskiego.', '05_wismar_03', '42% 88%', null, ''],
       ['atlas', 'Obyczaje', 'Salon, posag, pojedynek, pogrzeb: obyczaje Paryża 1819 roku z przykładami z tekstu.', '03_wismar_01', '40% 82%', null, ''],
       ['mechanizmy', 'Pieniądz i awans', 'Posag, dług i protekcja: reguły, według których działa świat powieści.', '04_wismar_02', '62% 88%', null, ''],
       ['kontekst', 'Epoka', 'Restauracja Burbonów i „Komedia ludzka”.', null, null, null, 'small'],
@@ -619,7 +620,31 @@
       li.append(b); sceneList.append(li);
     });
     Gx.onMode(() => { if (sceneCur) renderScene(sceneCur); });
-    return [section('Sceny do omawiania', 'Pełne sceny w kolejności fabuły, w przekładzie Bortnowskiej lub Boya-Żeleńskiego. Do każdej krótkie wprowadzenie i pytania do rozmowy.', sceneList, sceneView)];
+    return [section('Sceny do omawiania', 'Czternaście pełnych scen w kolejności fabuły. Do każdej wprowadzenie, pytania i zadania z kluczem.', sceneList, sceneView)];
+  };
+
+  /* ---------- powieść: wejście do czytania ---------- */
+  M.powiesc = () => {
+    const w = el('div', 'powwrap');
+    const start = el('div', 'powstart');
+    for (const ed of ['bort', 'boy']) {
+      const E = Gx.ED[ed], b = el('button', 'powbtn'); b.type = 'button';
+      b.append(el('strong', '', ed === 'bort' ? 'Amelia Bortnowska' : 'Tadeusz Boy-Żeleński'), el('span', '', ed === 'bort' ? 'przekład z 1881 roku' : 'przekład z 1938 roku'), el('em', '', 'Czytaj od początku →'));
+      b.onclick = () => Gx.openPage(E.first, ed);
+      start.append(b);
+    }
+    const toc = el('ol', 'powtoc');
+    SC.forEach((sc, i) => {
+      const li = el('li');
+      const ed = Gx.mode() === 'boy' ? 'boy' : 'bort';
+      const a = btn('powlink', '', () => Gx.openPage(sc[ed].pages[0], ed));
+      a.append(el('span', 'powp', 's. ' + sc[ed].pages[0]), el('span', 'powt', sc.title));
+      const more = btn('powscene', 'scena z pytaniami', () => openScene(sc.id));
+      li.append(a, more); toc.append(li);
+    });
+    Gx.onMode(() => { if (current === 'powiesc') { const p = $('panel-powiesc'); if (p) { built.delete('powiesc'); p.remove(); tab('powiesc'); } } });
+    w.append(start);
+    return [section('Powieść', 'Pełny tekst w dwóch przekładach. Wybierz przekład albo zacznij od jednej ze scen.', w), section('Najważniejsze sceny', 'Numer strony według wybranego przekładu.', toc)];
   };
   M.zrodla = () => {
     const ul = el('ul', 'biblio');
@@ -633,7 +658,7 @@
   };
 
   /* ---------- zakładki ---------- */
-  const NAMES = { start: 'Start', fragmenty: 'Sceny do omawiania', paryz: 'Pensjonat i Paryż', bohaterowie: 'Bohaterowie', atlas: 'Obyczaje', mechanizmy: 'Pieniądz i awans', kontekst: 'Epoka', poetyka: 'Sztuka powieści', konteksty: 'Porównania', zrodla: 'Źródła' };
+  const NAMES = { start: 'Start', fragmenty: 'Sceny do omawiania', powiesc: 'Powieść', paryz: 'Pensjonat i Paryż', bohaterowie: 'Bohaterowie', atlas: 'Obyczaje', mechanizmy: 'Pieniądz i awans', kontekst: 'Epoka', poetyka: 'Sztuka powieści', konteksty: 'Porównania', zrodla: 'Źródła' };
   const bar = $('tabs'), panels = $('panels'), built = new Set(['atlas']);
   const tabs = Object.entries(NAMES).map(([k, v]) => {
     const b = el('button', 'tab', v); b.type = 'button'; b.id = 'tab-' + k; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'panel-' + k); b.dataset.k = k;

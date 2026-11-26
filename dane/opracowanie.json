@@ -2573,7 +2573,7 @@
  "axes": [
   {
    "id": "goriot",
-   "title": "Degradacja Goriota",
+   "title": "Upadek Goriota",
    "steps": [
     {
      "ref": "P15",
@@ -2649,7 +2649,7 @@
   },
   {
    "id": "vautrin",
-   "title": "Demaskacja Vautrina",
+   "title": "Zdemaskowanie Vautrina",
    "steps": [
     {
      "ref": "P03",
@@ -2679,7 +2679,7 @@
   },
   {
    "id": "bianchon",
-   "title": "Model uczciwego działania: Bianchon",
+   "title": "Bianchon: uczciwa droga",
    "steps": [
     {
      "ref": "P05",
@@ -2896,7 +2896,7 @@
    "id": "T14",
    "mod": "paryz",
    "typ": "interpretacja",
-   "text": "Pionowy układ pensjonatu jest mapą ekonomiczną: wspinanie się po schodach oznacza spadanie w hierarchii.",
+   "text": "W pensjonacie im wyżej, tym biedniej: przeprowadzka piętro wyżej oznacza spadek w hierarchii.",
    "refs": [
     "G18",
     "G19",
@@ -3028,7 +3028,7 @@
    "id": "T22",
    "mod": "bohaterowie",
    "typ": "interpretacja",
-   "text": "Vautrin reprezentuje bunt przeciw porządkowi społecznemu; Poiret i panna Michonneau — szkodliwą przeciętność.",
+   "text": "Vautrin buntuje się przeciw porządkowi społecznemu; Poiret i panna Michonneau to szkodliwa przeciętność.",
    "source": {
     "id": "S-VINC",
     "loc": "s. 3"
@@ -3258,7 +3258,7 @@
    "id": "T35",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Balzac nigdy prawie nie portretował osób z rzeczywistości; tworzył figury syntetyczne.",
+   "text": "Balzac prawie nigdy nie portretował prawdziwych osób; swoje postacie składał z wielu obserwacji.",
    "source": {
     "id": "S-BOY-BALZAK",
     "quote": "Mimo że nigdy prawie nie portretował z rzeczywistości, ale zawsze tworzył figury swoje syntetycznie"
@@ -3703,7 +3703,7 @@
   },
   {
    "id": "vautrin",
-   "short": "Zbiegły galernik, który najostrzej rozpoznaje mechanizmy świata i proponuje Rastignacowi zbrodniczą drogę na skróty.",
+   "short": "Zbiegły galernik, który najlepiej rozumie, jak działa paryski świat, i podsuwa Rastignacowi zbrodniczą drogę na skróty.",
    "text": "P32",
    "room": "vautrin",
    "arc": "vautrin",
