@@ -1,0 +1,109 @@
+{
+ "intro": {
+  "lead": "W salonie pani Vauquer wisi tapeta ze scenami z „Przygód Telemaka” Fénelona; między oknami — uczta Kalipso. Poniżej fotografie zachowanych egzemplarzy panoramy Dufoura na ten temat.",
+  "refs": [
+   "P37",
+   "P46"
+  ],
+  "hypothesis_title": "Hipoteza, nie identyfikacja",
+  "points": [
+   "Balzac nie podaje producenta ani tytułu tapety.",
+   "Manufaktura Josepha Dufoura wydała panoramę „Paysage de Télémaque dans l’île de Calypso” w 1818 roku, rok przed początkiem akcji (Musée de Laval).",
+   "Według narratora malowidło wisi w salonie od czterdziestu lat, czyli mniej więcej od 1779 roku; dosłowna chronologia nie zgadza się więc z panoramą Dufoura.",
+   "Na żadnej z pokazanych fotografii nie zidentyfikowano sceny uczty Kalipso.",
+   "Fotografie pokazują fragmenty i wnętrza; żadna nie jest pełnym, płaskim skanem panoramy."
+  ],
+  "rights": "Wszystkie fotografie pochodzą z Wikimedia Commons. Oryginały (mastery) przechowywane są bez zmian poza stroną; na stronie znajdują się wersje zmniejszone. Pełne dane w pliku img/telemak/LICENCJE.md."
+ },
+ "groups": [
+  {
+   "id": "laval",
+   "title": "Pierwsze wydanie (Laval)",
+   "lead": "Egzemplarz z muzeum w Laval, wydanie oryginalne."
+  },
+  {
+   "id": "cooper",
+   "title": "Wczesny fragment (Cooper Hewitt)",
+   "lead": "Fragment datowany przez muzeum na lata 1815–1820."
+  },
+  {
+   "id": "wismar",
+   "title": "Historyczne wnętrze (Wismar)",
+   "lead": "Tapeta zachowana w salonie mieszczańskiego domu; fotografie z 2015 roku."
+  },
+  {
+   "id": "hermitage",
+   "title": "Dokumentacja archiwalna (The Hermitage, 1936)",
+   "lead": "Fotografie Historic American Buildings Survey z domu Andrew Jacksona pod Nashville."
+  }
+ ],
+ "items": [
+  {
+   "id": "01_laval_6761",
+   "group": "laval",
+   "title": "Mentor i Telemak opowiadają Kalipso swoje przygody",
+   "caption": "Joseph Dufour (manufaktura) według projektu Xaviera Madera, „Paysage de Télémaque dans l’île de Calypso”, wydanie oryginalne, 1818; bryty 9–10 z 24. Kalipso spoczywa przy basenie wśród nimf i słucha Mentora i Telemaka. Musée du Vieux-Château, Laval; scena zgodna z opisem obiektu nr inw. 6761 w bazie Joconde (sam opis zdjęcia na Commons nie podaje numeru).",
+   "alt": "Fragment tapety panoramicznej w muzealnej ramie: ogród z drzewami i palmą, fontanna i półkolista kamienna ława; po lewej Kalipso z nimfami słucha dwóch mężczyzn, w środku tańczą nimfy.",
+   "credit": "Fot. Fab5669 (2024) / Wikimedia Commons",
+   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "derivative_license": "CC BY 4.0",
+   "not_feast": "To nie jest uczta Kalipso: muzeum opisuje scenę jako opowieść o przygodach."
+  },
+  {
+   "id": "02_cooper_hewitt_1996-108-1",
+   "group": "cooper",
+   "title": "Kalipso nad stawem z kariatydą",
+   "caption": "Joseph Dufour et Cie, „Telemachus on the Island of Calypso”, 1815–1820. Panel z dwóch brytów: Kalipso na skale obok kariatydy wlewającej wodę do stawu, po którym pływają trzy łabędzie; bordiura z pasmanterii. Cooper Hewitt, Smithsonian Design Museum.",
+   "alt": "Pionowy panel tapety: wysokie drzewa, po lewej kamienna kariatyda nad stawem z trzema łabędziami, na skale dwie postacie kobiece w antycznych szatach; panel obwiedziony bordiurą.",
+   "credit": "Cooper Hewitt, Smithsonian Design Museum (fotografia katalogowa) / Wikimedia Commons",
+   "changes": "zmniejszono (WebP 1200 px, JPG w szerokości oryginału 2139 px); bez kadrowania i retuszu.",
+   "not_feast": "To nie jest uczta Kalipso.",
+   "license_label": "domena publiczna (Public Domain Mark 1.0; na Commons: PD-old-100, CC-PD-Mark)",
+   "license_url_fallback": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  {
+   "id": "03_wismar_01",
+   "group": "wismar",
+   "title": "Tapetensaal w Welt-Erbe-Haus, Wismar (1)",
+   "caption": "Panorama „Paysage de Télémaque dans l’île de Calypso” z manufaktury Dufour et Leroy, zamontowana w 1828 roku na zlecenie rajcy, późniejszego burmistrza Gabriela Lembkego; panoramę podzielono na pięć scen oprawionych bordiurami (broszura Welt-Erbe-Haus Wismar, 2019). Fotografia wnętrza z 28 marca 2015.",
+   "alt": "Fragment ściany salonu: scena tapety w ramie z malowanych pilastrów i gzymsu; krajobraz z palmą, świątynią na wzgórzu i tańczącymi nimfami.",
+   "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
+   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "derivative_license": "CC BY-SA 4.0",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  },
+  {
+   "id": "04_wismar_02",
+   "group": "wismar",
+   "title": "Tapetensaal w Welt-Erbe-Haus, Wismar (2)",
+   "caption": "Kolejna scena tej samej panoramy w salonie domu przy Lübsche Straße 23: Kalipso z nimfami przy fontannie i półkolistej ławie, w tle morze. Fotografia wnętrza z 28 marca 2015.",
+   "alt": "Fragment ściany salonu: scena tapety w ramie z pilastrami; ogród z pinią i palmą, fontanna, grupy postaci w antycznych szatach, w tle morze.",
+   "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
+   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "derivative_license": "CC BY-SA 4.0",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  },
+  {
+   "id": "05_wismar_03",
+   "group": "wismar",
+   "title": "Tapetensaal w Welt-Erbe-Haus, Wismar (3)",
+   "caption": "Kolejna scena panoramy Dufour et Leroy w salonie Welt-Erbe-Haus. Fotografia wnętrza z 2015 roku.",
+   "alt": "Fragment ściany salonu z oprawioną sceną tapety panoramicznej.",
+   "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
+   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "derivative_license": "CC BY-SA 4.0",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  },
+  {
+   "id": "06_wismar_04",
+   "group": "wismar",
+   "title": "Tapetensaal w Welt-Erbe-Haus, Wismar (4)",
+   "caption": "Kolejna scena panoramy Dufour et Leroy w salonie Welt-Erbe-Haus. Fotografia wnętrza z 2015 roku.",
+   "alt": "Fragment ściany salonu z oprawioną sceną tapety panoramicznej.",
+   "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
+   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "derivative_license": "CC BY-SA 4.0",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  }
+ ]
+}

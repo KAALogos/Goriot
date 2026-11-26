@@ -375,6 +375,52 @@
     const k = el('details', 'more key'); k.append(el('summary', '', 'Klucz odpowiedzi')); const ko = el('ol'); z.key.forEach(x => ko.append(el('li', '', x))); k.append(ko);
     return [section('Czytanie ze zrozumieniem', `Tadeusz Boy-Żeleński o „Komedii ludzkiej” i epoce (s. ${z.pages[0]}–${z.pages[1]}).`, art), section('Zadania', null, q, k)];
   };
+  M.ikonografia = () => {
+    const K = window.IKONO, intro = el('div', 'ikintro');
+    const q = el('div', 'ikquote');
+    for (const id of K.intro.refs) q.append(el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id));
+    const hyp = el('aside', 'ikhyp'); hyp.append(el('h3', '', K.intro.hypothesis_title));
+    const ul = el('ul'); K.intro.points.forEach(t => ul.append(el('li', '', t))); hyp.append(ul);
+    intro.append(q, hyp);
+    const out = [section('Tapeta z „Telemakiem”', K.intro.lead, intro)];
+    for (const g of K.groups) {
+      const items = K.items.filter(e => e.group === g.id);
+      if (!items.length) continue;
+      const grid = el('div', 'ikgrid' + (items.length > 1 ? ' multi' : ''));
+      for (const e of items) {
+        const f = el('figure', 'ikfig'), a = el('a'), pic = el('img');
+        a.href = e.img.full.src; a.target = '_blank'; a.rel = 'noopener';
+        a.setAttribute('aria-label', `${e.title} — otwórz w większym rozmiarze`);
+        pic.src = e.img.web.src; pic.width = e.img.web.w; pic.height = e.img.web.h; pic.loading = 'lazy'; pic.decoding = 'async'; pic.alt = e.alt;
+        a.append(pic);
+        const cap = el('figcaption');
+        cap.append(el('strong', 'iktitle', e.title), el('span', 'ikcap', e.caption));
+        const meta = el('p', 'ikmeta');
+        meta.append(document.createTextNode(e.credit + '. '));
+        const src = el('a', '', 'Źródło'); src.href = e.source; src.target = '_blank'; src.rel = 'noopener';
+        meta.append(src, document.createTextNode(' · '));
+        if (e.license_url) { const l = el('a', '', e.license); l.href = e.license_url; l.target = '_blank'; l.rel = 'noopener'; meta.append(l); }
+        else meta.append(document.createTextNode(e.license));
+        meta.append(document.createTextNode(` · Przekształcenia: ${e.changes}`));
+        if (e.derivative_license) meta.append(document.createTextNode(` Wersje pochodne: ${e.derivative_license}.`));
+        cap.append(meta);
+        if (e.not_feast) cap.append(el('p', 'iknote', e.not_feast));
+        f.append(a, cap); grid.append(f);
+      }
+      out.push(section(g.title, g.lead, grid));
+    }
+    const t = el('div', 'tablewrap'), tb = el('table'), th = el('thead'), tr = el('tr');
+    ['Plik', 'Licencja oryginału', 'Master (oryginał)'].forEach(h => { const x = el('th', '', h); x.scope = 'col'; tr.append(x); }); th.append(tr); tb.append(th);
+    const body = el('tbody');
+    for (const e of K.items) {
+      const r = el('tr');
+      r.append(el('td', '', e.title), el('td', '', e.license + (e.derivative_license ? ` (pochodne: ${e.derivative_license})` : '')), el('td', '', `${e.master.file}, ${e.master.w}×${e.master.h} px, SHA-256 ${e.master.sha256.slice(0, 16)}…`));
+      body.append(r);
+    }
+    tb.append(body); t.append(tb);
+    out.push(section('Prawa i oryginały', K.intro.rights, t));
+    return out;
+  };
   M.zrodla = () => {
     const t = el('div', 'tablewrap'), tb = el('table'), th = el('thead'), tr = el('tr');
     ['Źródło', 'Stan', 'Uwagi'].forEach(h => { const x = el('th', '', h); x.scope = 'col'; tr.append(x); }); th.append(tr); tb.append(th);
@@ -410,7 +456,8 @@
   };
 
   /* ---------- zakładki ---------- */
-  const NAMES = { atlas: 'Atlas obyczajów', kontekst: 'Kontekst', paryz: 'Paryż', bohaterowie: 'Bohaterowie', mechanizmy: 'Mechanizmy', poetyka: 'Poetyka', sceny: 'Sceny', konteksty: 'Konteksty', czytanie: 'Czytanie ze zrozumieniem', zrodla: 'Źródła' };
+  const NAMES = { atlas: 'Atlas obyczajów', kontekst: 'Kontekst', paryz: 'Paryż', bohaterowie: 'Bohaterowie', mechanizmy: 'Mechanizmy', poetyka: 'Poetyka', sceny: 'Sceny', konteksty: 'Konteksty', ikonografia: 'Ikonografia', czytanie: 'Czytanie ze zrozumieniem', zrodla: 'Źródła' };
+  if (!window.IKONO) delete NAMES.ikonografia;
   const bar = $('tabs'), panels = $('panels'), built = new Set(['atlas']);
   const tabs = Object.entries(NAMES).map(([k, v]) => {
     const b = el('button', 'tab', v); b.type = 'button'; b.id = 'tab-' + k; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'panel-' + k); b.dataset.k = k;
