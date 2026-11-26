@@ -39,3 +39,23 @@ Ocena wersji opublikowanej (https://kaalogos.github.io/Goriot/) pod kątem użyt
 - W UI tylko treść dla ucznia; weryfikacja, statusy i licencje w repo, w przypisach lub stopce.
 - Fragmenty pełne, nie „sałatka” cytatów.
 - Każda nowa interpretacja z tekstem albo źródłem; bez metakomentarzy.
+
+## 6. Audyt porządkowy — wykonano (26.11.2026)
+Przegląd każdej zakładki pod kątem meta. Usunięto z widoku strony (dane zostają w repo):
+
+| Zakładka | Usunięte / zmienione |
+|---|---|
+| nagłówek | liczniki 21 · 333 · 46 · 40 |
+| stopka | uwagi o audycie stron, „interpretacyjnym uporządkowaniu”, stanie źródeł |
+| Atlas | zastrzeżenie o „powiązaniach interpretacyjnych, a nie przyczynowych”; nota „praktyki instytucjonalne nie są tożsame…” |
+| Kontekst | kolumna „Chronologia powstania i przekładów”; linie „Źródło:” przy datach |
+| wszystkie tezy | numery T01…T43, etykiety statusu źródła; „Źródło:” i cytat-dowód → krótki odsyłacz (cytat w dymku) |
+| Kontekst, Mechanizmy | nagłówek „Tezy” → „Interpretacje” |
+| Konteksty | zastrzeżenie „nie jest dowodem wpływu” → jedno zdanie zachęty |
+| Paryż | „Grafika robocza i jej zgodność z tekstem”, długie legendy rzutów, opis trybu „oba” |
+| Sceny | opis techniczny sekcji |
+| Postacie | lista tez zamiast kart; licznik relacji |
+| Ikonografia | tabela praw i SHA-256; nota o kolejności epizodów; dopiski „to nie jest uczta Kalipso”; licencje schowane pod „Źródło i licencja” |
+| Źródła | rejestr tez z filtrami i tabela stanów → zwykła bibliografia |
+
+Zostaje do zrobienia: fragmenty do omawiania (po paczce GPT), zadania P/R z kluczami.

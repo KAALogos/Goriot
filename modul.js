@@ -42,8 +42,8 @@
   function sourceLine(s) {
     if (!s) return null;
     const p = el('p', 'srcline');
-    p.append(el('span', 'k', 'Źródło: '), document.createTextNode(`${srcShort(s.id)}, ${s.loc}`));
-    if (s.quote) { const q = el('q', 'crit', s.quote); p.append(document.createTextNode(' — '), q); }
+    p.append(document.createTextNode(`${srcShort(s.id)}, ${s.loc}`));
+    if (s.quote) p.title = s.quote;
     return p;
   }
   function thesis(t, opts = {}) {
@@ -76,18 +76,17 @@
   const M = {};
   M.kontekst = () => {
     const tl = el('div', 'timelines');
-    for (const [k, title] of [['world', 'Chronologia świata przedstawionego'], ['publication', 'Chronologia powstania i przekładów']]) {
+    for (const [k, title] of [['world', 'Chronologia wydarzeń w powieści']]) {
       const col = el('div', 'tline'), ol = el('ol');
       col.append(el('h3', '', title));
       for (const e of O.timeline[k]) {
         const li = el('li'); li.append(el('strong', '', e.date), el('span', '', e.text));
         if (e.ref) { const r = refList([e.ref]); r && li.append(r); }
-        if (e.source) li.append(el('span', 'srcline', `Źródło: ${srcShort(e.source.id)}, ${e.source.loc}`));
         ol.append(li);
       }
       col.append(ol); tl.append(col);
     }
-    return [section('Kontekst historycznoliteracki', 'Restauracja, powstanie powieści, „Komedia ludzka” i powracające postacie.', tl), section('Tezy', null, theses('kontekst'))];
+    return [section('Kontekst historycznoliteracki', 'Restauracja, powstanie powieści, „Komedia ludzka” i powracające postacie.', tl), section('Interpretacje', null, theses('kontekst'))];
   };
   function pension() {
     const P = O.pension, wrap = el('div', 'pens'), house = el('div', 'house'), side = el('aside', 'pdetail');
@@ -260,7 +259,7 @@
     const s1 = section('Pensjonat pani Vauquer', 'Dom na początku akcji, w 1819 roku. Kliknij pokój.', wrap);
     return [s1,
       section('Zmiany miejsc w toku powieści', null, moves),
-      section('Duże fragmenty tekstu', 'Pełne akapity w wybranym przekładzie; tryb „oba” zestawia je obok siebie.', longs)];
+      section('Duże fragmenty tekstu', 'Najważniejsze opisy domu w całości.', longs)];
   }
 
   /* ---------- rysunek przekroju domu (SVG) ---------- */
@@ -413,7 +412,7 @@
       for (const s of x.steps) { const li = el('li'); li.append(el('span', '', s.text)); const r = refList([s.ref]); r && li.append(r); ol.append(li); }
       a.append(ol); ax.append(a);
     }
-    return [section('Mechanizmy', 'Osiem mechanizmów, które łączą obyczaje z fabułą.', mg), section('Trzy osie i model uczciwego działania', 'Kolejne etapy z odsyłaczami do tekstu.', ax), section('Tezy', null, theses('mechanizmy'))];
+    return [section('Mechanizmy', 'Osiem mechanizmów, które łączą obyczaje z fabułą.', mg), section('Trzy osie i model uczciwego działania', 'Kolejne etapy z odsyłaczami do tekstu.', ax), section('Interpretacje', null, theses('mechanizmy'))];
   };
   M.poetyka = () => [section('Poetyka', 'Kompozycja, czas, narrator, portret i realizm.', theses('poetyka'))];
   M.sceny = () => {
@@ -428,7 +427,7 @@
       const q = el('div', 'questions'); q.append(el('h4', '', 'Pytania')); const ol = el('ol'); s.questions.forEach(x => ol.append(el('li', '', x))); q.append(ol); a.append(q);
       w.append(a);
     }
-    return [section('Sceny kluczowe', 'Fragment w wybranym przekładzie, funkcja w kompozycji, interpretacje i pytania.', w)];
+    return [section('Sceny kluczowe', 'Jedenaście scen, które warto omówić na lekcji.', w)];
   };
   M.konteksty = () => {
     const w = el('div', 'ctxs');
@@ -439,7 +438,7 @@
       const r = refList(c.refs); r && a.append(r);
       w.append(a);
     }
-    return [section('Konteksty literackie', 'Porównanie pokazuje podobieństwo problemu. Nie jest dowodem wpływu jednego utworu na drugi.', w)];
+    return [section('Konteksty literackie', 'Utwory, które warto zestawić z „Ojcem Goriot”.', w)];
   };
   M.czytanie = () => {
     const z = O.czz, art = el('article', 'czz'), s = SRC.get(z.source);
@@ -473,6 +472,7 @@
         a.append(pic);
         const cap = el('figcaption');
         cap.append(el('strong', 'iktitle', e.title), el('span', 'ikcap', e.caption));
+        const det = el('details', 'ikdet'); det.append(el('summary', '', 'Źródło i licencja'));
         const meta = el('p', 'ikmeta');
         meta.append(document.createTextNode(e.credit + '. '));
         const src = el('a', '', 'Źródło'); src.href = e.source; src.target = '_blank'; src.rel = 'noopener';
@@ -482,8 +482,8 @@
         meta.append(document.createTextNode(` · Przekształcenia: ${e.changes}`));
         if (e.img.room) { const rl = el('a', '', 'zdjęcie wnętrza'); rl.href = e.img.room.full.src; rl.target = '_blank'; rl.rel = 'noopener'; meta.append(document.createTextNode(' '), rl, document.createTextNode('.')); }
         if (e.derivative_license) meta.append(document.createTextNode(` Wersje pochodne: ${e.derivative_license}.`));
-        cap.append(meta);
-        if (e.not_feast) cap.append(el('p', 'iknote', e.not_feast));
+        det.append(meta); cap.append(det);
+
         f.append(a, cap); grid.append(f);
       }
       out.push(section(g.title, g.lead, grid));
