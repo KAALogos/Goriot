@@ -68,16 +68,15 @@
     const b = mk('div', 'plansza');
     const bg = mk('div', 'plbg'); bg.style.backgroundImage = `url("${it.img.bg.src}")`; bg.style.backgroundPosition = m[2] || '50% 50%';
     const txt = mk('div', 'pltext');
-    txt.append(mk('span', 'plep', `Rozdział ${ep.n} · ${ep.title}`), mk('strong', 'plname', NAMES[k] || ''));
+    txt.append(mk('strong', 'plname', NAMES[k] || ''));
     const wl = mk('div', 'plwing l'), wr = mk('div', 'plwing r');
     const ref = mk('a', 'plref', 'ilustracja ↓'); ref.href = '#przypis-' + k;
     ref.setAttribute('aria-label', 'Przypis: źródło i licencja ilustracji');
     ref.addEventListener('click', e => { e.preventDefault(); document.getElementById('przypis-' + k).scrollIntoView({ block: 'center' }); });
     b.append(bg, txt, ref, wl, wr);
-    b.title = ep.evidence;
     panel.prepend(b);
     const note = credit(it, 'plnote'); note.id = 'przypis-' + k;
-    note.prepend(document.createTextNode(`Ilustracja w nagłówku (rozdział ${ep.n}): `));
+    note.prepend(document.createTextNode('Ilustracja w nagłówku: '));
     panel.append(note);
   }
   function play(panel) {

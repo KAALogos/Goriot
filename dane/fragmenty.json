@@ -1,0 +1,285 @@
+{
+ "note": "Pełne sceny do omawiania. Zakresy = indeksy akapitów w tekst.js (bort) i boy.js (boy), włącznie. Build sprawdza kotwice (początek pierwszego i ostatniego akapitu).",
+ "scenes": [
+  {
+   "id": "F01",
+   "title": "Dom pani Vauquer",
+   "part": "Początek powieści",
+   "lead": "Powieść otwiera długi opis: ulica, dom, ogródek, salon i jadalnia, a na końcu sama właścicielka. Narrator prowadzi czytelnika z zewnątrz do środka, krok po kroku, jak w głąb katakumb.",
+   "bort": [
+    0,
+    9
+   ],
+   "boy": [
+    0,
+    7
+   ],
+   "questions": [
+    "Wypisz trzy przedmioty z salonu lub jadalni, które najlepiej pokazują biedę pensjonatu. Dlaczego właśnie one?",
+    "Narrator zwraca się do czytelnika, który trzyma książkę „w białych rękach”. Kim jest ten czytelnik i czego narrator się po nim spodziewa?",
+    "W jaki sposób wygląd pani Vauquer powtarza wygląd jej domu? Wskaż podobieństwa.",
+    "Po co tak długi opis przed pojawieniem się bohaterów? Co dzięki niemu wiemy, zanim zacznie się akcja?"
+   ]
+  },
+  {
+   "id": "F02",
+   "title": "Lokatorzy",
+   "part": "Początek powieści",
+   "lead": "Narrator przedstawia mieszkańców piętro po piętrze: od najlepszych pokoi pani Vauquer i pani Couture po poddasze służby. Na koniec pyta, czy ta mała wspólnota nie jest całym społeczeństwem w miniaturze.",
+   "bort": [
+    10,
+    21
+   ],
+   "boy": [
+    8,
+    16
+   ],
+   "questions": [
+    "Jak piętro, na którym ktoś mieszka, i kwota, którą płaci, łączą się z jego pozycją w pensjonacie?",
+    "Czym Wiktoryna i Rastignac różnią się od pozostałych lokatorów?",
+    "Co w portrecie Vautrina budzi sympatię, a co niepokój?",
+    "Dlaczego to właśnie ojciec Goriot staje się celem drwin całej wspólnoty?"
+   ]
+  },
+  {
+   "id": "F03",
+   "title": "Jak pan Goriot stał się ojcem Goriot",
+   "part": "Retrospekcja",
+   "lead": "Goriot zamieszkał w pensjonacie w 1813 roku jako zamożny emerytowany kupiec i zajął najlepsze pokoje. W ciągu kilku lat przenosi się coraz wyżej i coraz taniej, a lokatorzy wymyślają coraz gorsze wyjaśnienia wizyt eleganckich pań.",
+   "bort": [
+    22,
+    54
+   ],
+   "boy": [
+    17,
+    54
+   ],
+   "questions": [
+    "Odtwórz kolejne przeprowadzki Goriota: na które piętro i za ile.",
+    "Jak zmienia się sposób, w jaki inni się do niego zwracają? Co oznacza przejście od „pana Goriot” do „ojca Goriot”?",
+    "Dlaczego pani Vauquer zmienia stosunek do Goriota? Jaką rolę odgrywa w tym wizyta hrabiny de l’Ambermesnil?",
+    "Jak lokatorzy tłumaczą sobie wizyty córek Goriota i co te wyjaśnienia mówią o samych lokatorach?"
+   ]
+  },
+  {
+   "id": "F04",
+   "title": "Noc po balu",
+   "part": "Wejście w świat",
+   "lead": "Rastignac wraca z pierwszego balu u kuzynki, pani de Beauséant, zauroczony hrabiną de Restaud. Nie może zasnąć. Przez szparę w drzwiach widzi, co ojciec Goriot robi w nocy ze srebrnym serwisem.",
+   "bort": [
+    62,
+    71
+   ],
+   "boy": [
+    62,
+    74
+   ],
+   "questions": [
+    "Co dokładnie robi Goriot i jak reaguje na to, co zrobił?",
+    "Jakie dwie tajemnice pensjonatu odkrywa Rastignac tej nocy?",
+    "Dlaczego narrator zestawia marzenia Rastignaca o karierze z widokiem starca niszczącego srebro?",
+    "Jak zmienia się opinia Rastignaca o Goriocie po tej nocy?"
+   ]
+  },
+  {
+   "id": "F05",
+   "title": "Wizyta u hrabiny de Restaud",
+   "part": "Wejście w świat",
+   "lead": "Rastignac idzie pieszo do hrabiny Anastazji de Restaud, którą poznał na balu. Zastaje u niej Maksyma de Trailles, widzi wychodzącego ojca Goriot i nie wiedząc, że to jej ojciec, wymienia jego nazwisko.",
+   "bort": [
+    263,
+    326
+   ],
+   "boy": [
+    265,
+    333
+   ],
+   "questions": [
+    "Jakie drobne upokorzenia spotykają Rastignaca w drodze i w pałacu?",
+    "W jaki sposób Maksym de Trailles daje mu do zrozumienia, że jest intruzem?",
+    "Nazwisko Goriota działa w salonie jak „różdżka czarnoksięska”. Co się zmienia w zachowaniu hrabiny i jej męża?",
+    "Czego Rastignac dowiaduje się z tej porażki o regułach salonu?"
+   ]
+  },
+  {
+   "id": "F06",
+   "title": "Lekcja pani de Beauséant",
+   "part": "Wejście w świat",
+   "lead": "Rastignac opowiada kuzynce o swojej gafie. Księżna de Langeais i wicehrabina wyjaśniają mu, kim jest Goriot i dlaczego córki się go wstydzą. Potem pani de Beauséant, sama porzucana przez kochanka, wykłada mu reguły paryskiego świata.",
+   "bort": [
+    432,
+    451
+   ],
+   "boy": [
+    436,
+    458
+   ],
+   "questions": [
+    "Jak córki Goriota weszły do wyższych sfer i dlaczego zamknęły przed ojcem drzwi?",
+    "Jakie rady daje Rastignacowi pani de Beauséant? Wypisz trzy i wyjaśnij porównanie ludzi do koni pocztowych.",
+    "Dlaczego tę lekcję wygłasza właśnie kobieta, która sama pada ofiarą paryskiego świata?",
+    "Porównaj tę lekcję z przemową Vautrina w ogródku (scena „Propozycja Vautrina”). Co je łączy, a co dzieli?"
+   ]
+  },
+  {
+   "id": "F07",
+   "title": "Listy z domu",
+   "part": "Wejście w świat",
+   "lead": "Rastignac poprosił rodzinę o pieniądze na stroje i wizyty. Na początku grudnia przychodzą dwa listy: od matki i od starszej siostry. Obie przysyłają mu wszystko, co mogły zebrać.",
+   "bort": [
+    493,
+    501
+   ],
+   "boy": [
+    501,
+    511
+   ],
+   "questions": [
+    "Jakim kosztem matka i siostry zdobyły pieniądze?",
+    "Czego matka obawia się najbardziej i jak to wyraża?",
+    "Dlaczego czytając list matki, Rastignac myśli o ojcu Goriot?",
+    "Jak listy z prowincji pokazują różnicę między domem rodzinnym a Paryżem?"
+   ]
+  },
+  {
+   "id": "F08",
+   "title": "Propozycja Vautrina",
+   "part": "Kusiciel",
+   "lead": "Vautrin zatrzymuje Rastignaca w ogródku i wygłasza najsłynniejszą przemowę powieści: rachunek kariery w Paryżu. Na końcu proponuje układ: małżeństwo z Wiktoryną, której brat ma zginąć w pojedynku.",
+   "bort": [
+    541,
+    560
+   ],
+   "boy": [
+    552,
+    572
+   ],
+   "questions": [
+    "Ile według Vautrina trwa i co daje uczciwa kariera prawnika?",
+    "Jakimi obrazami Vautrin opisuje paryskie społeczeństwo? Wypisz dwa i wyjaśnij.",
+    "Na czym polega jego propozycja i czego chce w zamian?",
+    "Co w tej przemowie potwierdza dalsza fabuła, a co jest tylko cynizmem mówiącego?"
+   ]
+  },
+  {
+   "id": "F09",
+   "title": "Paradoks mandaryna",
+   "part": "Kusiciel",
+   "lead": "Po rozmowie z Vautrinem Rastignac nie może się skupić. W Ogrodzie Luksemburskim pyta Bianchona o znane pytanie: czy zabiłbyś starego mandaryna w Chinach, gdyby jego śmierć dała ci majątek?",
+   "bort": [
+    686,
+    705
+   ],
+   "boy": [
+    701,
+    720
+   ],
+   "questions": [
+    "Jak brzmi pytanie o mandaryna i komu przypisuje je Rastignac?",
+    "Jak odpowiada Bianchon? Czym według niego jest szczęście?",
+    "Dlaczego Rastignac prosi przyjaciela: „wylecz mnie”?",
+    "Jak ta krótka rozmowa łączy się z propozycją Vautrina?"
+   ]
+  },
+  {
+   "id": "F10",
+   "title": "Aresztowanie Vautrina",
+   "part": "Kusiciel",
+   "lead": "Panna Michonneau, której policja obiecała nagrodę, potajemnie upewniła się, że Vautrin ma na ramieniu piętno galernika. Tego samego dnia brat Wiktoryny zginął w pojedynku. Przy obiedzie do jadalni wchodzą policjanci.",
+   "bort": [
+    1143,
+    1180
+   ],
+   "boy": [
+    1138,
+    1176
+   ],
+   "questions": [
+    "Jak Vautrin zachowuje się w chwili aresztowania? Jak opisuje go narrator?",
+    "Kogo Vautrin oskarża o zdradę i co mówi o społeczeństwie i o galernikach?",
+    "Co mówi Rastignacowi na pożegnanie?",
+    "Jak ostatnie słowa Sylwii oceniają Vautrina? Czy się z nią zgadzasz?"
+   ]
+  },
+  {
+   "id": "F11",
+   "title": "Córki u ojca",
+   "part": "Ojciec i córki",
+   "lead": "Delfina przyszła do ojca ze skargą na męża, który rozporządza jej majątkiem. Wtedy zjawia się Anastazja: hrabia de Restaud odkrył, że sprzedała rodzinne brylanty, by spłacić długi kochanka. Rastignac słyszy wszystko przez ścianę.",
+   "bort": [
+    1379,
+    1466
+   ],
+   "boy": [
+    1373,
+    1460
+   ],
+   "questions": [
+    "Czego każda z córek oczekuje od ojca?",
+    "Co siostry sobie zarzucają w czasie kłótni?",
+    "Jak zachowuje się Goriot i jak kończy się dla niego ta scena?",
+    "Jaką rolę odgrywa Rastignac? Co zmienia jego wejście?"
+   ]
+  },
+  {
+   "id": "F12",
+   "title": "Pożegnalny bal",
+   "part": "Ojciec i córki",
+   "lead": "Ojciec Goriot leży chory, a Delfina jedzie z Rastignakiem na bal u pani de Beauséant. Wicehrabina wie już, że kochanek porzuca ją dla bogatego małżeństwa. Przyjmuje cały Paryż, a nad ranem wyjeżdża z miasta na zawsze.",
+   "bort": [
+    1584,
+    1626
+   ],
+   "boy": [
+    1578,
+    1615
+   ],
+   "questions": [
+    "Jak goście zachowują się wobec porzuconej gospodyni?",
+    "O co pani de Beauséant prosi Rastignaca i co mu daje na pamiątkę?",
+    "Co przypominają Rastignacowi brylanty obu sióstr na balu?",
+    "Czego Rastignac uczy się tej nocy?"
+   ]
+  },
+  {
+   "id": "F13",
+   "title": "Śmierć ojca",
+   "part": "Ojciec i córki",
+   "lead": "Goriot umiera w swoim pokoju na trzecim piętrze. Czuwają przy nim tylko Rastignac i Bianchon. Krzysztof wraca od córek sam, a starzec w gorączce na przemian je przeklina i błogosławi.",
+   "bort": [
+    1661,
+    1690
+   ],
+   "boy": [
+    1650,
+    1677
+   ],
+   "questions": [
+    "Z jakimi odpowiedziami córek wraca Krzysztof?",
+    "Co Goriot mówi o pieniądzach i o miłości córek?",
+    "Jak zmieniają się jego uczucia w trakcie monologu?",
+    "Kto w tej scenie zachowuje się jak syn? Uzasadnij."
+   ]
+  },
+  {
+   "id": "F14",
+   "title": "Pogrzeb i wyzwanie",
+   "part": "Zakończenie",
+   "lead": "Studenci sami organizują pogrzeb. Zięciowie nie przysyłają pieniędzy. Po ceremonii na cmentarzu Père-Lachaise Rastignac zostaje sam i patrzy na Paryż.",
+   "bort": [
+    1789,
+    1811
+   ],
+   "boy": [
+    1777,
+    1799
+   ],
+   "questions": [
+    "Kto płaci za pogrzeb i kto w nim uczestniczy?",
+    "Jak lokatorzy przyjmują śmierć Goriota przy obiedzie?",
+    "Co znaczą dwa puste powozy z herbami?",
+    "Jak rozumiesz ostatnie słowa Rastignaca i to, dokąd idzie po pogrzebie?"
+   ]
+  }
+ ]
+}

@@ -59,3 +59,10 @@ Przegląd każdej zakładki pod kątem meta. Usunięto z widoku strony (dane zos
 | Źródła | rejestr tez z filtrami i tabela stanów → zwykła bibliografia |
 
 Zostaje do zrobienia: fragmenty do omawiania (po paczce GPT), zadania P/R z kluczami.
+
+## 7. Przebudowa (26.11.2026, po uwagach Adama)
+- Nawigacja: strona startowa z kaflami; zamiast paska zakładek przycisk „← Wszystkie działy” i nazwa działu. Na planszach nie ma już podpisów „Rozdział N · epizod”.
+- Usunięte z nawigacji: Ikonografia (fotografie zostają jako ilustracje, licencje w przypisach), Czytanie ze zrozumieniem (jeden tekst to za mało), Sceny kluczowe (krótkie cytaty).
+- Nowy dział „Sceny do omawiania”: 14 PEŁNYCH scen (450–3700 słów) w obu przekładach, z wprowadzeniem, stronami druku i pytaniami. Dane: `dane/fragmenty.json`, build `tools/buduj_fragmenty.py` (kotwice w `dane/fragmenty_kotwice.json`). Granice w przekładzie Boya ustalone przez automatyczne dopasowanie akapitów i sprawdzone ręcznie na początku i końcu każdej sceny.
+- Czytelność: `wyglad.css` (Source Sans 3 w interfejsie, Georgia w tekście powieści, większe pisma); Atlas bez linii powiązań i bez pustych pól.
+- Pensjonat: zamiast „Dużych fragmentów” odsyłacze do pełnych scen 1–3.

@@ -253,13 +253,12 @@
     const left = el('div', 'hcol'); left.append(drawing, house);
     wrap.append(left, side);
     show(...first);
-    /* duże fragmenty */
-    const longs = el('div', 'longs');
-    for (const id of P.long) { const a = el('article', 'long'); a.id = 'dlugi-' + id; a.append(el('h3', '', Gx.item(id).title), Gx.quoteBox(id)); longs.append(a); }
+    const longs = el('div', 'sclinks');
+    for (const id of ['F01', 'F02', 'F03']) { const sc = (window.SCENY || []).find(x => x.id === id); if (sc) longs.append(btn('sclink', sc.title + ' →', () => openScene(id))); }
     const s1 = section('Pensjonat pani Vauquer', 'Dom na początku akcji, w 1819 roku. Kliknij pokój.', wrap);
     return [s1,
       section('Zmiany miejsc w toku powieści', null, moves),
-      section('Duże fragmenty tekstu', 'Najważniejsze opisy domu w całości.', longs)];
+      section('Przeczytaj w całości', null, longs)];
   }
 
   /* ---------- rysunek przekroju domu (SVG) ---------- */
@@ -503,29 +502,28 @@
   M.start = () => {
     const K = window.IKONO || { items: [], modules: {} }, IMG = new Map(K.items.map(i => [i.id, i]));
     const hero = el('div', 'shero');
-    hero.append(el('p', 'slead', 'Paryż, rok 1819. W pensjonacie pani Vauquer mieszkają obok siebie zubożały ojciec, ambitny student i zbiegły galernik. Wybierz, od czego zaczynasz.'));
+    hero.append(el('p', 'slead', 'Paryż, rok 1819. W pensjonacie pani Vauquer mieszkają obok siebie zubożały ojciec, ambitny student i zbiegły galernik.'));
     const tiles = el('div', 'tiles'), mini = el('div', 'tiles mini');
     const T = [
-      ['czytaj', 'Czytaj powieść', 'Cały tekst w przekładzie Bortnowskiej i Boya-Żeleńskiego.', '01_laval_6761', '30% 78%', () => Gx.openPage(Gx.ED[Gx.mode() === 'boy' ? 'boy' : 'bort'].first, Gx.mode() === 'boy' ? 'boy' : 'bort'), 'big'],
-      ['paryz', 'Pensjonat pani Vauquer', 'Wejdź do domu: kto gdzie mieszka i za ile.', null, null, null, 'big house'],
-      ['bohaterowie', 'Postacie', 'Karty bohaterów i ich zależności.', '06_wismar_04', '45% 86%', null, ''],
-      ['sceny', 'Sceny kluczowe', 'Jedenaście scen z pytaniami.', '05_wismar_03', '42% 88%', null, ''],
-      ['atlas', 'Obyczaje epoki', 'Mapa i katalog obyczajów z cytatami.', '03_wismar_01', '40% 82%', null, ''],
-      ['mechanizmy', 'Pieniądz i awans', 'Posag, dług, protekcja: jak działa ten świat.', '04_wismar_02', '62% 88%', null, ''],
-      ['kontekst', 'Epoka i powieść', 'Restauracja, „Komedia ludzka”.', null, null, null, 'small'],
-      ['poetyka', 'Jak to jest napisane', 'Narrator, kompozycja, realizm.', null, null, null, 'small'],
-      ['konteksty', 'Porównania', '„Lalka”, „Król Lear” i inne.', null, null, null, 'small'],
-      ['ikonografia', 'Tapeta z „Telemakiem”', 'Ilustracje epoki na stronie.', null, null, null, 'small'],
-      ['czytanie', 'Czytanie ze zrozumieniem', 'Tekst Boya o Balzaku z zadaniami.', null, null, null, 'small']
+      ['fragmenty', 'Sceny do omawiania', 'Czternaście pełnych scen w obu przekładach, z pytaniami do rozmowy.', '01_laval_6761', '30% 78%', null, 'big'],
+      ['paryz', 'Pensjonat pani Vauquer', 'Przekrój domu: kto mieszka na którym piętrze i za ile.', null, null, null, 'big house'],
+      ['bohaterowie', 'Bohaterowie', 'Portrety z powieści i sieć wzajemnych zależności.', '06_wismar_04', '45% 86%', null, ''],
+      ['czytaj', 'Powieść', 'Pełny tekst w przekładach Bortnowskiej i Boya-Żeleńskiego.', '05_wismar_03', '42% 88%', () => Gx.openPage(Gx.ED[Gx.mode() === 'boy' ? 'boy' : 'bort'].first, Gx.mode() === 'boy' ? 'boy' : 'bort'), ''],
+      ['atlas', 'Obyczaje', 'Salon, posag, pojedynek, pogrzeb: obyczaje Paryża 1819 roku z przykładami z tekstu.', '03_wismar_01', '40% 82%', null, ''],
+      ['mechanizmy', 'Pieniądz i awans', 'Posag, dług i protekcja: reguły, według których działa świat powieści.', '04_wismar_02', '62% 88%', null, ''],
+      ['kontekst', 'Epoka', 'Restauracja Burbonów i „Komedia ludzka”.', null, null, null, 'small'],
+      ['poetyka', 'Sztuka powieści', 'Narrator, kompozycja, portret, opis.', null, null, null, 'small'],
+      ['konteksty', 'Porównania', '„Król Lear”, „Lalka” i inne utwory obok „Ojca Goriot”.', null, null, null, 'small'],
+      ['zrodla', 'Źródła', 'Wydania powieści i opracowania.', null, null, null, 'small']
     ];
     for (const [k, title, desc, img, pos, act, cls] of T) {
       const b = el('button', 'tile ' + (cls || '')); b.type = 'button';
       const pic = el('div', 'tpic');
       if (img && IMG.get(img)) { pic.style.backgroundImage = `url("${IMG.get(img).img.bg.src}")`; pic.style.backgroundPosition = pos; }
       else if (k !== 'paryz') pic.classList.add('tplain');
-      const tx = el('div', 'ttext'); tx.append(el('strong', '', title), el('span', '', desc));
+      const tx = el('div', 'tlabel'); tx.append(el('strong', '', title), el('span', '', desc));
       b.append(pic, tx);
-      b.addEventListener('click', act || (() => { tab(k); scrollTo(0, 0); }));
+      b.addEventListener('click', act || (() => { tab(k); history.replaceState(history.state, '', '#modul-' + k); scrollTo(0, 0); }));
       (cls === 'small' ? mini : tiles).append(b);
       if (k === 'paryz') b.dataset.house = '1';
     }
@@ -538,7 +536,75 @@
       fig.querySelector('svg').setAttribute('aria-hidden', 'true');
       houseTile.append(fig); houseTile.classList.add('thouse');
     }
-    return [section('Od czego zacząć', null, hero, tiles, mini)];
+    return [hero, tiles, mini];
+  };
+
+  /* ---------- sceny do omawiania (pełne fragmenty) ---------- */
+  const SC = window.SCENY || [];
+  const EDSRC = { bort: ['POWIESC', 'tekst.js?v=1', 'Amelia Bortnowska'], boy: ['POWIESC_BOY', 'boy.js?v=1', 'Tadeusz Boy-Żeleński'] };
+  const loadEd = ed => window[EDSRC[ed][0]] ? Promise.resolve(window[EDSRC[ed][0]]) : new Promise((ok, no) => {
+    const t = document.createElement('script'); t.src = EDSRC[ed][1];
+    t.onload = () => window[EDSRC[ed][0]] ? ok(window[EDSRC[ed][0]]) : no(); t.onerror = no; document.head.append(t);
+  });
+  const minutes = w => Math.max(2, Math.round(w / 200));
+  let sceneView = null, sceneList = null, sceneCur = null;
+  function sceneText(sc, ed, T) {
+    const col = el('div', 'sctext');
+    if (Gx.mode() === 'oba') col.append(el('p', 'sctrans', EDSRC[ed][2]));
+    let page = null;
+    for (let i = sc[ed].from; i <= sc[ed].to; i++) {
+      const [pg, txt] = T[i];
+      const p = el('p');
+      if (pg !== page) { page = pg; p.append(el('span', 'scpage', 's. ' + pg)); }
+      p.append(document.createTextNode(txt));
+      col.append(p);
+    }
+    return col;
+  }
+  async function renderScene(id) {
+    const i = SC.findIndex(x => x.id === id); if (i < 0) return;
+    const sc = SC[i]; sceneCur = id;
+    const v = sceneView; v.replaceChildren(); v.hidden = false; sceneList.hidden = true;
+    const back = btn('scback', '← Wszystkie sceny', () => { v.hidden = true; sceneList.hidden = false; sceneCur = null; history.replaceState(history.state, '', '#modul-fragmenty'); });
+    const head = el('header', 'schead');
+    head.append(el('p', 'scpart', `Scena ${i + 1} z ${SC.length} · ${sc.part}`), el('h2', '', sc.title));
+    const ed = Gx.mode() === 'boy' ? 'boy' : 'bort';
+    head.append(el('p', 'scmeta', `${minutes(sc[ed].words)} min czytania · s. ${sc[ed].pages[0]}–${sc[ed].pages[1]}`));
+    const lead = el('div', 'sclead'); lead.append(el('p', '', sc.lead));
+    v.append(back, head, lead);
+    const body = el('div', 'scbody' + (Gx.mode() === 'oba' ? ' both' : '')); body.append(el('p', 'scload', 'Wczytuję tekst…'));
+    v.append(body);
+    const qs = el('section', 'scq'); qs.append(el('h3', '', 'Pytania do rozmowy'));
+    const ol = el('ol'); sc.questions.forEach(q => ol.append(el('li', '', q))); qs.append(ol);
+    const nav = el('nav', 'scnav');
+    if (i > 0) nav.append(btn('scprev', '← ' + SC[i - 1].title, () => openScene(SC[i - 1].id)));
+    if (i < SC.length - 1) nav.append(btn('scnext', SC[i + 1].title + ' →', () => openScene(SC[i + 1].id)));
+    v.append(qs, nav);
+    const eds = Gx.mode() === 'oba' ? ['bort', 'boy'] : [ed];
+    try {
+      const texts = await Promise.all(eds.map(loadEd));
+      if (sceneCur !== id) return;
+      body.replaceChildren(...eds.map((e, k) => sceneText(sc, e, texts[k])));
+    } catch (e) { body.replaceChildren(el('p', 'scload', 'Nie udało się wczytać tekstu. Odśwież stronę.')); }
+  }
+  function openScene(id) {
+    tab('fragmenty');
+    renderScene(id);
+    history.replaceState(history.state, '', '#scena-' + id);
+    scrollTo(0, 0);
+  }
+  M.fragmenty = () => {
+    sceneList = el('ol', 'sclist'); sceneView = el('article', 'scview'); sceneView.hidden = true;
+    SC.forEach((sc, i) => {
+      const li = el('li'), b = el('button', 'scitem'); b.type = 'button';
+      const n = el('span', 'scnum', String(i + 1));
+      const d = el('span', 'scdesc');
+      d.append(el('span', 'scpart', sc.part), el('strong', '', sc.title), el('span', 'sclead2', sc.lead), el('span', 'scmeta', `${minutes(sc.bort.words)} min czytania`));
+      b.append(n, d); b.onclick = () => openScene(sc.id);
+      li.append(b); sceneList.append(li);
+    });
+    Gx.onMode(() => { if (sceneCur) renderScene(sceneCur); });
+    return [section('Sceny do omawiania', 'Pełne sceny w kolejności fabuły, w przekładzie Bortnowskiej lub Boya-Żeleńskiego. Do każdej krótkie wprowadzenie i pytania do rozmowy.', sceneList, sceneView)];
   };
   M.zrodla = () => {
     const ul = el('ul', 'biblio');
@@ -552,8 +618,7 @@
   };
 
   /* ---------- zakładki ---------- */
-  const NAMES = { start: 'Start', atlas: 'Atlas obyczajów', kontekst: 'Kontekst', paryz: 'Paryż', bohaterowie: 'Postacie', mechanizmy: 'Mechanizmy', poetyka: 'Poetyka', sceny: 'Sceny', konteksty: 'Konteksty', ikonografia: 'Ikonografia', czytanie: 'Czytanie ze zrozumieniem', zrodla: 'Źródła' };
-  if (!window.IKONO) delete NAMES.ikonografia;
+  const NAMES = { start: 'Start', fragmenty: 'Sceny do omawiania', paryz: 'Pensjonat i Paryż', bohaterowie: 'Bohaterowie', atlas: 'Obyczaje', mechanizmy: 'Pieniądz i awans', kontekst: 'Epoka', poetyka: 'Sztuka powieści', konteksty: 'Porównania', zrodla: 'Źródła' };
   const bar = $('tabs'), panels = $('panels'), built = new Set(['atlas']);
   const tabs = Object.entries(NAMES).map(([k, v]) => {
     const b = el('button', 'tab', v); b.type = 'button'; b.id = 'tab-' + k; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'panel-' + k); b.dataset.k = k;
@@ -566,6 +631,10 @@
     if (j === undefined) return; e.preventDefault(); j = (j + tabs.length) % tabs.length; tabs[j].focus(); tabs[j].click();
   });
   let current = null;
+  const crumb = el('div', 'crumb'), crumbTitle = el('strong', 'crumbtitle');
+  const home = btn('crumbback', '← Wszystkie działy', () => { tab('start'); history.replaceState(history.state, '', location.pathname + location.search); scrollTo(0, 0); });
+  crumb.append(home, crumbTitle);
+  bar.parentElement.insertBefore(crumb, bar);
   function tab(k) {
     if (!NAMES[k]) k = 'atlas';
     if (!built.has(k)) {
@@ -574,11 +643,16 @@
     }
     for (const b of tabs) { const on = b.dataset.k === k; b.setAttribute('aria-selected', String(on)); b.tabIndex = on ? 0 : -1; }
     for (const p of panels.children) p.hidden = p.id !== 'panel-' + k;
+    document.documentElement.dataset.page = k; crumbTitle.textContent = NAMES[k];
+    if (k === 'fragmenty' && sceneView && !/^#scena-/.test(location.hash)) { sceneView.hidden = true; sceneList.hidden = false; sceneCur = null; }
     if (current !== k) { current = k; if (k === 'atlas') select(selected); }
     tabs.find(b => b.dataset.k === k).scrollIntoView({ block: 'nearest', inline: 'nearest' });
   }
   window.GORIOT_TAB = tab;
-  const fromHash = () => { const m = /^#modul-(\w+)$/.exec(location.hash); if (m && m[1] !== current) { tab(m[1]); window.scrollTo(0, 0); } };
+  const fromHash = () => {
+    const sc = /^#scena-(F\d+)$/.exec(location.hash); if (sc) { openScene(sc[1]); return; }
+    const m = /^#modul-(\w+)$/.exec(location.hash); if (m && m[1] !== current) { tab(m[1]); window.scrollTo(0, 0); }
+  };
   window.addEventListener('hashchange', fromHash);
   tab(/^#(boy-)?(cytat|fragment|strona)-/.test(location.hash) ? 'atlas' : 'start'); fromHash();
 })();
