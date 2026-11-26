@@ -234,6 +234,16 @@ for rid, m in PEN['rooms'].items():
             err('pokój', rid, 'zły element planu', it)
         if it['src'] == 't' and not (m.get('desc') or m.get('char')):
             err('pokój', rid, 'element z tekstu bez odsyłacza')
+ROOMS = set(O['pension']['rooms'])
+AXES = {x['id'] for x in O['axes']}
+for c in O['cards']:
+    if c['id'] not in CH:
+        err('karta', c['id'], 'nieznana postać')
+    check_refs('karta ' + c['id'], [c['text']] + c['refs'])
+    if c.get('room') and c['room'] not in ROOMS:
+        err('karta', c['id'], 'nieznany pokój')
+    if c.get('arc') and c['arc'] not in AXES:
+        err('karta', c['id'], 'nieznana oś')
 for c in O['contexts']:
     check_refs(c['id'], c['refs'])
     c['source'] = check_source(c['id'], c.get('source'))
@@ -263,7 +273,7 @@ if errors:
     print('BŁĘDY:', *errors, sep='\n  ')
     sys.exit(1)
 
-out = {k: O[k] for k in ('sources', 'timeline', 'pension', 'characters', 'relations', 'mechanisms', 'axes', 'theses', 'scenes', 'contexts', 'czz')}
+out = {k: O[k] for k in ('sources', 'timeline', 'pension', 'cards', 'characters', 'relations', 'mechanisms', 'axes', 'theses', 'scenes', 'contexts', 'czz')}
 out['passages'] = passages
 out['variants'] = variants
 

@@ -50,7 +50,7 @@
     const a = el('article', 'thesis'), head = el('div', 'thead');
     if (!opts.noTags) a.id = 'teza-' + t.id;
     const st = STATUS[t.status];
-    head.append(el('span', 'tid', t.id), el('span', 'typ typ-' + t.typ, TYP[t.typ]), el('span', 'st st-' + st[1], st[0]));
+    void st; head.append(el('span', 'typ typ-' + t.typ, TYP[t.typ]));
     a.append(head, el('p', 'ttext', t.text));
     if (t.note) a.append(el('p', 'tnote', t.note));
     const s = sourceLine(t.source); if (s) a.append(s);
@@ -96,6 +96,7 @@
     const buttons = [];
     function show(r, f, b) {
       buttons.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      wrap.querySelectorAll('.hroom').forEach(g => g.classList.toggle('on', g.dataset.room === r.id));
       const m = P.rooms[r.id];
       const head = el('div', 'mhead');
       head.append(el('span', 'eyebrow', f.name), el('h3', '', r.name)); if (f.note) head.append(el('p', 'pnote', f.note)); head.append(el('p', 'msynth', m.synth));
@@ -224,11 +225,12 @@
       }
       if (fl.note) { const li = el('li', 'nonum'); li.append(document.createTextNode('Podłoga i ściany (z tekstu): ' + fl.note)); ol.append(li); }
       const cap = el('figcaption');
-      cap.append(el('strong', '', 'Rzut z góry. '), document.createTextNode('Obecność przedmiotów oznaczonych linią ciągłą wynika z tekstu; ich rozmieszczenie jest umowne, chyba że podano położenie z tekstu. Elementy przerywane to rekonstrukcja.'));
+      cap.append(document.createTextNode('Rzut z góry; rozmieszczenie umowne.'));
       fig.append(svg, key, ol, cap);
       return fig;
     }
     let first = null;
+    const groups = new Map();
     for (const f of P.floors) {
       const row = el('div', 'floor'), lab = el('div', 'flabel'), rooms = el('div', 'rooms');
       lab.append(el('strong', '', f.name)); if (f.note) lab.append(el('span', '', f.note));
@@ -237,9 +239,11 @@
         b.append(el('strong', '', r.name), el('span', '', r.who));
         b.setAttribute('aria-pressed', 'false'); buttons.push(b); rooms.append(b);
         if (r.name === 'Ojciec Goriot') first = [r, f, b];
+        groups.set(r.id, [r, f, b]);
       }
       row.append(lab, rooms); house.append(row);
     }
+    const drawing = houseDrawing(groups, (r, f, b) => { show(r, f, b); if (innerWidth < 1000) side.scrollIntoView({ block: 'start' }); });
     const moves = el('div', 'moves');
     for (const m of P.moves) {
       const a = el('article', 'move'), ol = el('ol');
@@ -247,32 +251,102 @@
       for (const s of m.steps) { const li = el('li'); li.append(el('span', '', s.text), Gx.chip(s.ref)); ol.append(li); }
       a.append(ol); moves.append(a);
     }
-    wrap.append(house, side);
+    const left = el('div', 'hcol'); left.append(drawing, house);
+    wrap.append(left, side);
     show(...first);
-    /* grafika robocza i jej weryfikacja */
-    const fig = el('figure', 'draft'), img = el('img'), link = el('a', 'read', 'Otwórz w pełnym rozmiarze ↗');
-    img.src = 'img/pensjonat-vauquer-roboczy.webp'; img.width = 1055; img.height = 1491; img.loading = 'lazy';
-    img.alt = 'Grafika robocza: przekrój pensjonatu pani Vauquer z podpisanymi mieszkańcami pięter i panelem zmian miejsc.';
-    link.href = img.src; link.target = '_blank'; link.rel = 'noopener';
-    const cap = el('figcaption'); cap.append(el('strong', '', 'Grafika robocza. '), document.createTextNode('Przed użyciem z uczniami zob. weryfikację obok; schemat interaktywny powyżej uwzględnia poprawki. '), link);
-    fig.append(img, cap);
-    const tbl = el('div', 'checks');
-    for (const c of P.checks) {
-      const a = el('article', 'check v-' + c.verdict);
-      const h = el('div', 'chead'); h.append(el('span', 'verdict', c.verdict), el('strong', '', c.claim)); a.append(h);
-      if (c.comment) a.append(el('p', '', c.comment));
-      const r = refList(c.refs); r && a.append(r);
-      tbl.append(a);
-    }
-    const draft = el('div', 'draftgrid'); draft.append(fig, tbl);
     /* duże fragmenty */
     const longs = el('div', 'longs');
     for (const id of P.long) { const a = el('article', 'long'); a.id = 'dlugi-' + id; a.append(el('h3', '', Gx.item(id).title), Gx.quoteBox(id)); longs.append(a); }
-    const s1 = section('Pensjonat pani Vauquer', 'Stan na początku akcji (1819). Wybierz pomieszczenie, aby zobaczyć, kto w nim mieszka i co mówi o tym tekst.', wrap);
+    const s1 = section('Pensjonat pani Vauquer', 'Dom na początku akcji, w 1819 roku. Kliknij pokój.', wrap);
     return [s1,
       section('Zmiany miejsc w toku powieści', null, moves),
-      section('Grafika robocza i jej zgodność z tekstem', 'Każde twierdzenie grafiki porównano z oboma przekładami.', draft),
       section('Duże fragmenty tekstu', 'Pełne akapity w wybranym przekładzie; tryb „oba” zestawia je obok siebie.', longs)];
+  }
+
+  /* ---------- rysunek przekroju domu (SVG) ---------- */
+  function houseDrawing(groups, pick) {
+    const NS = 'http://www.w3.org/2000/svg';
+    const S = (tag, at, txt) => { const n = document.createElementNS(NS, tag); for (const k in at) n.setAttribute(k, at[k]); if (txt != null) n.textContent = txt; return n; };
+    const svg = S('svg', { viewBox: '0 0 900 880', class: 'hdraw', role: 'group', 'aria-label': 'Przekrój pensjonatu pani Vauquer; pokoje można wybrać' });
+    svg.insertAdjacentHTML('afterbegin', `<defs>
+      <pattern id="hpaper" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#efe3c8"/><circle cx="5" cy="5" r=".9" fill="#d8c79f"/></pattern>
+      <pattern id="hpaper2" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#e4e6cf"/><path d="M0 6h12" stroke="#d3d6b8" stroke-width="1"/></pattern>
+      <pattern id="hpoor" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#e6dccb"/><path d="M2 3l3 2M9 10l2 1" stroke="#c9bba3" stroke-width="1"/></pattern>
+      <pattern id="hslate" width="16" height="8" patternUnits="userSpaceOnUse"><rect width="16" height="8" fill="#6f6a66"/><path d="M0 8h16M8 0v8" stroke="#5c5753" stroke-width="1"/></pattern>
+      <pattern id="hstone" width="40" height="20" patternUnits="userSpaceOnUse"><rect width="40" height="20" fill="#e2cf9c"/><path d="M0 20h40M20 0v10M0 10h40M40 10v10" stroke="#cdb67b" stroke-width="1"/></pattern>
+      <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4efe2"/><stop offset="1" stop-color="#ece4cf"/></linearGradient>
+    </defs>`);
+    svg.append(S('rect', { x: 0, y: 0, width: 900, height: 880, fill: 'url(#hsky)' }));
+    // ogródek: lipy i okrągły stół
+    const gar = S('g', { class: 'hgarden' });
+    gar.append(S('rect', { x: 0, y: 800, width: 900, height: 80, fill: '#cdbf98' }));
+    for (const [x, r] of [[48, 46], [112, 38]]) { gar.append(S('rect', { x: x - 4, y: 690, width: 8, height: 112, fill: '#7a5b3c' })); gar.append(S('ellipse', { cx: x, cy: 660, rx: r, ry: r * 1.15, fill: '#8ea06f', stroke: '#6f8456', 'stroke-width': 2 })); }
+    gar.append(S('ellipse', { cx: 80, cy: 790, rx: 26, ry: 6, fill: '#6f8a5f' }));
+    gar.append(S('rect', { x: 77, y: 790, width: 6, height: 12, fill: '#5d6f50' }));
+    gar.append(S('text', { x: 82, y: 840, 'text-anchor': 'middle', class: 'hcap' }, 'ogródek'));
+    svg.append(gar);
+    // bryła: mansarda, kominy, lukarny
+    const B = { x0: 170, x1: 850 };
+    svg.append(S('path', { d: `M${B.x0 - 10} 240 L${B.x0 + 40} 96 L${B.x1 - 40} 96 L${B.x1 + 10} 240 Z`, fill: 'url(#hslate)', stroke: '#3d3833', 'stroke-width': 3 }));
+    svg.append(S('path', { d: `M${B.x0 + 40} 96 L${B.x0 + 80} 52 L${B.x1 - 80} 52 L${B.x1 - 40} 96 Z`, fill: '#7d7873', stroke: '#3d3833', 'stroke-width': 3 }));
+    for (const x of [B.x0 + 70, B.x1 - 110]) { svg.append(S('rect', { x, y: 14, width: 40, height: 42, fill: '#b57a5a', stroke: '#3d3833', 'stroke-width': 2.5 })); svg.append(S('rect', { x: x - 4, y: 10, width: 48, height: 8, fill: '#8f5d43' })); }
+    svg.append(S('rect', { x: B.x0, y: 240, width: B.x1 - B.x0, height: 560, fill: 'url(#hstone)', stroke: '#3d3833', 'stroke-width': 3 }));
+    for (const y of [240, 380, 520, 660]) svg.append(S('rect', { x: B.x0 - 6, y: y - 5, width: B.x1 - B.x0 + 12, height: 9, fill: '#c9b27a', stroke: '#3d3833', 'stroke-width': 1.5 }));
+    // pokoje: [id, x0, x1, y0, y1, typ wnętrza]
+    const FL = { attic: [118, 232], f3: [252, 375], f2: [392, 515], f1: [532, 655], g: [672, 795] };
+    const ROOMS = [
+      ['krzysztof', 230, 380, ...FL.attic, 'bed'], ['suszarnia', 380, 640, ...FL.attic, 'lines'], ['sylwia', 640, 790, ...FL.attic, 'bed'],
+      ['michonneau', 180, 320, ...FL.f3, 'bed'], ['goriot', 320, 470, ...FL.f3, 'poor'], ['rastignac', 470, 610, ...FL.f3, 'desk'], ['wolny', 680, 840, ...FL.f3, 'empty'],
+      ['poiret', 180, 395, ...FL.f2, 'bed'], ['vautrin', 395, 610, ...FL.f2, 'bed'],
+      ['vauquer', 180, 360, ...FL.f1, 'salonik'], ['couture', 360, 610, ...FL.f1, 'bed2'], ['couture', 680, 840, ...FL.f1, 'bed'],
+      ['salon', 180, 395, ...FL.g, 'salon'], ['jadalnia', 395, 610, ...FL.g, 'dining'], ['kuchnia', 680, 840, ...FL.g, 'kitchen']
+    ];
+    // klatka schodowa i sień (między jadalnią a kuchnią)
+    const st = S('g', { class: 'hstairs' });
+    st.append(S('rect', { x: 610, y: 252, width: 70, height: 543, fill: '#d9c9a6', stroke: '#3d3833', 'stroke-width': 2 }));
+    for (let y = 262; y < 795; y += 14) st.append(S('line', { x1: 616, y1: y, x2: 674, y2: y + 8, stroke: '#9b8461', 'stroke-width': 2 }));
+    st.append(S('text', { x: 645, y: 790, 'text-anchor': 'middle', class: 'hcap' }, 'sień'));
+    svg.append(st);
+    const furn = (g, k, x0, x1, y0, y1) => {
+      const w = x1 - x0, fl = y1 - 6, c = (x0 + x1) / 2;
+      const P = (d, f = '#a77b52') => g.append(S('path', { d, fill: f, stroke: '#3d3833', 'stroke-width': 1.6 }));
+      const win = (x) => { g.append(S('rect', { x: x - 16, y: y0 + 14, width: 32, height: 46, fill: '#cfe0e4', stroke: '#3d3833', 'stroke-width': 1.6 })); g.append(S('path', { d: `M${x} ${y0 + 14}v46M${x - 16} ${y0 + 37}h32`, stroke: '#3d3833', 'stroke-width': 1.2 })); };
+      if (k !== 'lines' && k !== 'kitchen') win(x0 + w * .72);
+      if (k === 'bed' || k === 'bed2') { P(`M${x0 + 12} ${fl}v-26h${Math.min(70, w * .45)}v26z`, '#e9e1d2'); P(`M${x0 + 12} ${fl - 26}v-14h10v14z`); }
+      if (k === 'bed2') P(`M${x0 + 120} ${fl}v-26h70v26z`, '#e9e1d2');
+      if (k === 'poor') { P(`M${x0 + 10} ${fl}v-22h62v22z`, '#d4c7b0'); P(`M${x0 + 90} ${fl}v-24h26v24z`, '#8b4a3c'); g.append(S('path', { d: `M${x0 + 10} ${fl - 36}h62`, stroke: '#a33a3a', 'stroke-width': 3, 'stroke-dasharray': '4 3' })); }
+      if (k === 'desk') { P(`M${x0 + 14} ${fl}v-26h50v26z`); g.append(S('path', { d: `M${x0 + 18} ${fl - 30}l14-6 10 4 8-5`, stroke: '#fff', 'stroke-width': 3, fill: 'none' })); }
+      if (k === 'salonik') { P(`M${c - 30} ${fl}v-18h24v18z`, '#a5737a'); g.append(S('ellipse', { cx: c + 14, cy: fl - 16, rx: 14, ry: 4, fill: '#a77b52', stroke: '#3d3833' })); }
+      if (k === 'salon') { g.append(S('ellipse', { cx: c, cy: fl - 18, rx: 34, ry: 6, fill: '#e9e5dd', stroke: '#3d3833', 'stroke-width': 1.6 })); P(`M${c - 2} ${fl}v-12h4v12z`); P(`M${x0 + 14} ${fl}v-24h22v24z`, '#2f2b28'); P(`M${x1 - 36} ${fl}v-24h22v24z`, '#2f2b28'); g.append(S('rect', { x: x0 + 40, y: y0 + 16, width: 54, height: 30, fill: '#9fb59e', stroke: '#3d3833' })); }
+      if (k === 'dining') { P(`M${x0 + 24} ${fl - 18}h${w - 48}v6h-${w - 48}z`, '#a89470'); for (let i = 0; i < 4; i++) P(`M${x0 + 40 + i * 40} ${fl}v-16h10v16z`); P(`M${x1 - 30} ${fl}v-42h18v42z`, '#5f8a5a'); }
+      if (k === 'kitchen') { P(`M${x0 + 14} ${fl}v-40h56v40z`, '#cfc6b8'); g.append(S('path', { d: `M${x0 + 20} ${fl - 40}v-20h10v20`, fill: '#8f877c', stroke: '#3d3833' })); g.append(S('rect', { x: x1 - 52, y: y0 + 24, width: 34, height: 40, fill: '#cfe0e4', stroke: '#3d3833', 'stroke-width': 1.6 })); }
+      if (k === 'lines') for (const y of [y0 + 34, y0 + 60]) { g.append(S('path', { d: `M${x0 + 16} ${y}H${x1 - 16}`, stroke: '#7a6b57', 'stroke-width': 1.2 })); for (let x = x0 + 40; x < x1 - 30; x += 46) P(`M${x} ${y}h22v18h-22z`, '#fffaf0'); }
+    };
+    const wallFill = { goriot: 'url(#hpoor)', salon: 'url(#hpaper2)', jadalnia: '#c9a37a', kuchnia: '#e3ddd2', suszarnia: '#e2d2b0', krzysztof: '#e2d2b0', sylwia: '#e2d2b0', couture: 'url(#hpaper)', vauquer: 'url(#hpaper)' };
+    const made = new Map();
+    for (const [id, x0, x1, y0, y1, k] of ROOMS) {
+      const info = groups.get(id); if (!info) continue;
+      let g = made.get(id);
+      if (!g) {
+        g = S('g', { class: 'hroom', tabindex: 0, role: 'button', 'data-room': id, 'aria-label': `${info[0].name} — ${info[1].name}` });
+        g.addEventListener('click', () => pick(...info));
+        g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(...info); } });
+        made.set(id, g); svg.append(g);
+      }
+      g.append(S('rect', { x: x0, y: y0, width: x1 - x0, height: y1 - y0, fill: wallFill[id] || '#ece2cb', class: 'hwall' }));
+      g.append(S('rect', { x: x0, y: y1 - 6, width: x1 - x0, height: 6, fill: id === 'jadalnia' ? '#b0553f' : '#b38b5d' }));
+      furn(g, k, x0, x1, y0, y1);
+      g.append(S('rect', { x: x0, y: y0, width: x1 - x0, height: y1 - y0, fill: 'none', class: 'hframe' }));
+      if (!g.querySelector('.hname')) {
+        const LBL = { michonneau: 'Michonneau', goriot: 'Goriot', rastignac: 'Rastignac', wolny: 'wolny', poiret: 'Poiret', vautrin: 'Vautrin', vauquer: 'pani Vauquer', couture: 'Couture i Wiktoryna', krzysztof: 'Krzysztof', sylwia: 'Sylwia', suszarnia: 'suszarnia', salon: 'salon', jadalnia: 'jadalnia', kuchnia: 'kuchnia' };
+        const lab = S('text', { x: x0 + 8, y: y0 + 26, class: 'hname' }, LBL[id] || info[0].name);
+        g.append(lab);
+      }
+    }
+    // podpisy pięter
+    for (const [t, y] of [['poddasze', 180], ['3. piętro', 318], ['2. piętro', 458], ['1. piętro', 598], ['parter', 738]]) svg.append(S('text', { x: 862, y, class: 'hcap', 'text-anchor': 'start', transform: `rotate(90 862 ${y})` }, t));
+    const fig = document.createElement('figure'); fig.className = 'hfig'; fig.append(svg);
+    return fig;
   }
   M.paryz = () => [
     ...pension(),
@@ -281,20 +355,25 @@
   ];
   let focusChar = () => { };
   M.bohaterowie = () => {
-    const grid = el('div', 'chars'), relWrap = el('div'), filt = el('div', 'filterbar'), list = el('div', 'rels');
+    const grid = el('div', 'pcards'), relWrap = el('div'), filt = el('div', 'filterbar'), list = el('div', 'rels');
     let rtype = '', rchar = '';
-    for (const c of O.characters) {
-      const card = el('article', 'char'); card.id = 'postac-' + c.id;
-      card.append(el('h3', '', c.name), el('p', '', c.role));
-      const th = el('div', 'tags'); c.themes.forEach(x => th.append(el('span', 'tag', x))); card.append(th);
-      const r = refList(c.refs); r && card.append(r);
-      const ts = O.theses.filter(t => (t.chars || []).includes(c.id));
-      if (ts.length) {
-        const d = el('details', 'more'), s = el('summary', '', `Tezy o postaci (${ts.length})`);
-        d.append(s); ts.forEach(t => d.append(thesis(t, { noTags: true }))); card.append(d);
-      }
-      const rb = btn('read', 'Relacje tej postaci ↓', () => { rchar = c.id; draw(); $('relacje').scrollIntoView({ block: 'start' }); });
-      card.append(rb);
+    const ROOMNAME = {}; O.pension.floors.forEach(f => f.rooms.forEach(r => { ROOMNAME[r.id] = [r.name, f.name]; }));
+    const AX = new Map(O.axes.map(a => [a.id, a]));
+    for (const c of O.cards) {
+      const ch = CH.get(c.id), card = el('article', 'pcard'); card.id = 'postac-' + c.id;
+      const ini = ch.name.replace(/^(Ojciec|Pani|Panna|Wicehrabina|Baron|Hrabia)\s+/, '').replace(/\(.*\)/, '').trim();
+      const med = el('div', 'pmed'); med.append(el('span', '', ini.split(/\s+/).filter(w => /^[A-ZŻŹĆŚŁÓ]/.test(w)).map(w => w[0]).slice(0, 2).join('')));
+      const head = el('header', 'phead'); head.append(med, el('h3', '', ch.name));
+      card.append(head, el('p', 'prole', ch.role), el('p', 'pshort', c.short));
+      const q = el('div', 'pquote'); q.append(Gx.quoteBox(c.text)); card.append(q);
+      const facts = el('div', 'pfacts');
+      if (c.room) facts.append(btn('pchip', `Mieszka: ${ROOMNAME[c.room][1]} →`, () => { tab('paryz'); setTimeout(() => { const g = document.querySelector(`#panel-paryz .hroom[data-room="${c.room}"]`); g && g.dispatchEvent(new Event('click')); g && g.scrollIntoView({ block: 'center' }); }, 30); }));
+      if (c.arc) facts.append(btn('pchip', `Przemiana: ${AX.get(c.arc).title} →`, () => { tab('mechanizmy'); setTimeout(() => { const n = [...document.querySelectorAll('.axis h3')].find(h => h.textContent === AX.get(c.arc).title); n && n.scrollIntoView({ block: 'start' }); }, 30); }));
+      const rel = O.relations.filter(r => r.from === c.id || r.to === c.id);
+      const others = [...new Set(rel.map(r => r.from === c.id ? r.to : r.from))].filter(id => O.cards.some(x => x.id === id));
+      if (others.length) { const w = el('div', 'prel'); w.append(el('span', 'plab', 'Powiązania:')); others.forEach(id => w.append(btn('pname', CH.get(id).name.replace(/^(Ojciec|Pani|Panna|Wicehrabina) /, ''), () => { const n = document.getElementById('postac-' + id); n.scrollIntoView({ block: 'center' }); n.classList.add('flash'); setTimeout(() => n.classList.remove('flash'), 1500); }))); facts.append(w); }
+      card.append(facts);
+      const fr = refList(c.refs); if (fr) { const d = el('details', 'more'); d.append(el('summary', '', 'Fragmenty')); d.append(fr); card.append(d); }
       grid.append(card);
     }
     const types = ['', 'pokrewieństwo', 'ekonomia', 'mentoring', 'erotyka', 'prestiż', 'przymus'];
@@ -304,7 +383,7 @@
     function draw() {
       fb.forEach(b => { b.classList.toggle('on', b.dataset.t === rtype); b.setAttribute('aria-pressed', String(b.dataset.t === rtype)); });
       const rs = O.relations.filter(r => (!rtype || r.type === rtype) && (!rchar || r.from === rchar || r.to === rchar));
-      who.replaceChildren(document.createTextNode(`${rs.length} z ${O.relations.length} relacji` + (rchar ? ` · postać: ${CH.get(rchar).name} ` : '')));
+      who.replaceChildren(document.createTextNode(rchar ? `Postać: ${CH.get(rchar).name} ` : ''));
       if (rchar) who.append(btn('linkish', 'pokaż wszystkie', () => { rchar = ''; draw(); }));
       list.replaceChildren(...rs.map(r => {
         const a = el('article', 'rel'), h = el('div', 'rhead2');
@@ -318,8 +397,8 @@
     focusChar = id => { const n = document.getElementById('postac-' + id); n && n.scrollIntoView({ block: 'start' }); };
     draw();
     relWrap.append(filt, who, list);
-    const rs = section('Relacje kierunkowe', 'Strzałka wskazuje kierunek zależności. Opis relacji jest streszczeniem tekstu; interpretacje znajdują się w tezach.', relWrap); rs.id = 'relacje';
-    return [section('Bohaterowie', 'Rola w fabule według tekstu, tezy z rozróżnieniem faktów i interpretacji.', grid), rs];
+    const rs = section('Kto od kogo zależy', 'Strzałka wskazuje kierunek zależności.', relWrap); rs.id = 'relacje';
+    return [section('Postacie', null, grid), rs];
   };
   M.mechanizmy = () => {
     const mg = el('div', 'mechs');
@@ -356,7 +435,6 @@
     for (const c of O.contexts) {
       const a = el('article', 'ctx'); a.append(el('h3', '', c.work), el('p', 'ctheme', c.theme));
       const dl = el('dl'); dl.append(el('dt', '', 'Wspólny problem'), el('dd', '', c.common), el('dt', '', 'Różnica'), el('dd', '', c.diff)); a.append(dl);
-      const st = STATUS[c.status]; a.append(el('p', 'st st-' + st[1], st[0]));
       const s = sourceLine(c.source); s && a.append(s);
       const r = refList(c.refs); r && a.append(r);
       w.append(a);
@@ -418,50 +496,67 @@
       body.append(r);
     }
     tb.append(body); t.append(tb);
-    out.push(section('Prawa i oryginały', K.intro.rights, t));
+    void t;
     return out;
   };
-  M.zrodla = () => {
-    const t = el('div', 'tablewrap'), tb = el('table'), th = el('thead'), tr = el('tr');
-    ['Źródło', 'Stan', 'Uwagi'].forEach(h => { const x = el('th', '', h); x.scope = 'col'; tr.append(x); }); th.append(tr); tb.append(th);
-    const body = el('tbody');
-    for (const s of O.sources) {
-      const r = el('tr'), c1 = el('td');
-      c1.append(document.createTextNode(s.title + (s.edition ? '. ' + s.edition : '')));
-      if (s.doi) c1.append(document.createTextNode(` DOI ${s.doi}.`));
-      if (s.url) { c1.append(document.createTextNode(' ')); const a = el('a', '', 'link'); a.href = s.url; a.rel = 'noopener'; a.target = '_blank'; c1.append(a); }
-      const n = O.theses.filter(x => x.source && x.source.id === s.id).length;
-      r.append(c1, el('td', '', s.status + (n ? ` · ${n} tez` : '')), el('td', '', s.note || ''));
-      body.append(r);
+  M.start = () => {
+    const K = window.IKONO || { items: [], modules: {} }, IMG = new Map(K.items.map(i => [i.id, i]));
+    const hero = el('div', 'shero');
+    hero.append(el('p', 'slead', 'Paryż, rok 1819. W pensjonacie pani Vauquer mieszkają obok siebie zubożały ojciec, ambitny student i zbiegły galernik. Wybierz, od czego zaczynasz.'));
+    const tiles = el('div', 'tiles'), mini = el('div', 'tiles mini');
+    const T = [
+      ['czytaj', 'Czytaj powieść', 'Cały tekst w przekładzie Bortnowskiej i Boya-Żeleńskiego.', '01_laval_6761', '55% 45%', () => Gx.openPage(Gx.ED[Gx.mode() === 'boy' ? 'boy' : 'bort'].first, Gx.mode() === 'boy' ? 'boy' : 'bort'), 'big'],
+      ['paryz', 'Pensjonat pani Vauquer', 'Wejdź do domu: kto gdzie mieszka i za ile.', null, null, null, 'big house'],
+      ['bohaterowie', 'Postacie', 'Karty bohaterów i ich zależności.', '06_wismar_04', '30% 72%', null, ''],
+      ['sceny', 'Sceny kluczowe', 'Jedenaście scen z pytaniami.', '05_wismar_03', '35% 60%', null, ''],
+      ['atlas', 'Obyczaje epoki', 'Mapa i katalog obyczajów z cytatami.', '03_wismar_01', '50% 70%', null, ''],
+      ['mechanizmy', 'Pieniądz i awans', 'Posag, dług, protekcja: jak działa ten świat.', '04_wismar_02', '40% 72%', null, ''],
+      ['kontekst', 'Epoka i powieść', 'Restauracja, „Komedia ludzka”.', null, null, null, 'small'],
+      ['poetyka', 'Jak to jest napisane', 'Narrator, kompozycja, realizm.', null, null, null, 'small'],
+      ['konteksty', 'Porównania', '„Lalka”, „Król Lear” i inne.', null, null, null, 'small'],
+      ['ikonografia', 'Tapeta z „Telemakiem”', 'Ilustracje epoki na stronie.', null, null, null, 'small'],
+      ['czytanie', 'Czytanie ze zrozumieniem', 'Tekst Boya o Balzaku z zadaniami.', null, null, null, 'small']
+    ];
+    for (const [k, title, desc, img, pos, act, cls] of T) {
+      const b = el('button', 'tile ' + (cls || '')); b.type = 'button';
+      const pic = el('div', 'tpic');
+      if (img && IMG.get(img)) { pic.style.backgroundImage = `url("${IMG.get(img).img.bg.src}")`; pic.style.backgroundPosition = pos; }
+      else if (k !== 'paryz') pic.classList.add('tplain');
+      const tx = el('div', 'ttext'); tx.append(el('strong', '', title), el('span', '', desc));
+      b.append(pic, tx);
+      b.addEventListener('click', act || (() => { tab(k); scrollTo(0, 0); }));
+      (cls === 'small' ? mini : tiles).append(b);
+      if (k === 'paryz') b.dataset.house = '1';
     }
-    tb.append(body); t.append(tb);
-    /* rejestr tez */
-    const reg = el('div'), bar = el('div', 'toolbar'), inp = el('input', 'search'), selT = el('select', 'search'), selS = el('select', 'search'), out = el('div', 'tlist'), cnt = el('p', 'count');
-    inp.type = 'search'; inp.placeholder = 'Szukaj w tezach…'; inp.setAttribute('aria-label', 'Szukaj w tezach');
-    selT.setAttribute('aria-label', 'Typ tezy'); selS.setAttribute('aria-label', 'Status weryfikacji');
-    [['', 'każdy typ'], ...Object.keys(TYP).map(k => [k, k])].forEach(([v, l]) => { const o = el('option', '', l); o.value = v; selT.append(o); });
-    [['', 'każdy status'], ...Object.entries(STATUS).map(([k, v]) => [k, v[0]])].forEach(([v, l]) => { const o = el('option', '', l); o.value = v; selS.append(o); });
-    bar.append(inp, selT, selS);
-    const run = () => {
-      const w = norm(inp.value.trim()).split(/\s+/).filter(Boolean);
-      const ts = O.theses.filter(x => (!selT.value || x.typ === selT.value) && (!selS.value || x.status === selS.value) && w.every(k => norm(x.id + ' ' + x.text + ' ' + (x.chars || []).map(c => CH.get(c).name).join(' ')).includes(k)));
-      cnt.textContent = `${ts.length} z ${O.theses.length} tez`;
-      out.replaceChildren(...ts.map(x => { const a = thesis(x, { noTags: true }); a.removeAttribute('id'); const g = btn('linkish', `w module: ${NAMES[x.mod]} →`, () => showThesis(x.id)); a.append(g); return a; }));
-    };
-    inp.oninput = selT.onchange = selS.onchange = run; run();
-    reg.append(bar, cnt, out);
-    const legend = el('ul', 'legend2');
-    Object.values(STATUS).forEach(([l, k]) => { const li = el('li'); li.append(el('span', 'st st-' + k, l)); legend.append(li); });
-    return [section('Źródła', 'Stan odczytu każdego źródła. „Do pozyskania” oznacza, że żadna teza się na nie nie powołuje.', t), section('Rejestr tez', 'Wszystkie tezy z typem i statusem weryfikacji.', legend, reg)];
+    // miniatura rysunku domu w kaflu pensjonatu
+    const houseTile = tiles.querySelector('[data-house] .tpic');
+    if (houseTile) {
+      const groups = new Map(); O.pension.floors.forEach(f => f.rooms.forEach(r => groups.set(r.id, [r, f, null])));
+      const fig = houseDrawing(groups, () => { tab('paryz'); scrollTo(0, 0); });
+      fig.querySelectorAll('.hroom').forEach(g => { g.removeAttribute('tabindex'); g.removeAttribute('role'); });
+      fig.querySelector('svg').setAttribute('aria-hidden', 'true');
+      houseTile.append(fig); houseTile.classList.add('thouse');
+    }
+    return [section('Od czego zacząć', null, hero, tiles, mini)];
+  };
+  M.zrodla = () => {
+    const ul = el('ul', 'biblio');
+    for (const src of O.sources.filter(x => !/nieodczytany|niedostępny|tylko opis/.test(x.status))) {
+      const li = el('li');
+      li.append(document.createTextNode(src.title + (src.edition ? '. ' + src.edition : '') + (src.doi ? `. DOI ${src.doi}` : '') + ' '));
+      if (src.url) { const a = el('a', '', 'link'); a.href = src.url; a.target = '_blank'; a.rel = 'noopener'; li.append(a); }
+      ul.append(li);
+    }
+    return [section('Źródła', 'Teksty powieści i opracowania wykorzystane na stronie.', ul)];
   };
 
   /* ---------- zakładki ---------- */
-  const NAMES = { atlas: 'Atlas obyczajów', kontekst: 'Kontekst', paryz: 'Paryż', bohaterowie: 'Bohaterowie', mechanizmy: 'Mechanizmy', poetyka: 'Poetyka', sceny: 'Sceny', konteksty: 'Konteksty', ikonografia: 'Ikonografia', czytanie: 'Czytanie ze zrozumieniem', zrodla: 'Źródła' };
+  const NAMES = { start: 'Start', atlas: 'Atlas obyczajów', kontekst: 'Kontekst', paryz: 'Paryż', bohaterowie: 'Postacie', mechanizmy: 'Mechanizmy', poetyka: 'Poetyka', sceny: 'Sceny', konteksty: 'Konteksty', ikonografia: 'Ikonografia', czytanie: 'Czytanie ze zrozumieniem', zrodla: 'Źródła' };
   if (!window.IKONO) delete NAMES.ikonografia;
   const bar = $('tabs'), panels = $('panels'), built = new Set(['atlas']);
   const tabs = Object.entries(NAMES).map(([k, v]) => {
     const b = el('button', 'tab', v); b.type = 'button'; b.id = 'tab-' + k; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'panel-' + k); b.dataset.k = k;
-    b.onclick = () => { tab(k); history.replaceState(history.state, '', k === 'atlas' ? location.pathname + location.search : '#modul-' + k); };
+    b.onclick = () => { tab(k); history.replaceState(history.state, '', k === 'start' ? location.pathname + location.search : '#modul-' + k); };
     bar.append(b); return b;
   });
   bar.addEventListener('keydown', e => {
@@ -484,5 +579,5 @@
   window.GORIOT_TAB = tab;
   const fromHash = () => { const m = /^#modul-(\w+)$/.exec(location.hash); if (m && m[1] !== current) { tab(m[1]); window.scrollTo(0, 0); } };
   window.addEventListener('hashchange', fromHash);
-  tab('atlas'); fromHash();
+  tab(/^#(boy-)?(cytat|fragment|strona)-/.test(location.hash) ? 'atlas' : 'start'); fromHash();
 })();

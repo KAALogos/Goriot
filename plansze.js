@@ -98,25 +98,4 @@
   new MutationObserver(scan).observe(panels, { childList: true, subtree: false, attributes: true, attributeFilter: ['hidden'] });
   scan();
 
-  /* nota o kolejności w module Ikonografia */
-  const ik = () => {
-    const p = document.getElementById('panel-ikonografia');
-    if (!p || p.querySelector('.eporder')) return;
-    const box = mk('section', 'msec eporder'), h = mk('div', 'sectionhead'), d = mk('div');
-    d.append(mk('h2', '', 'Rozdziały strony a epizody tapety'), mk('p', '', K.order_note));
-    h.append(d); box.append(h);
-    const ol = mk('ol', 'eplist');
-    for (const e of K.episodes) {
-      const li = mk('li'); const has = e.img.some(x => IMG.has(x));
-      li.append(mk('strong', '', e.title), mk('span', '', ' — ' + e.evidence + (has ? '' : ' (fotografia jeszcze niepobrana)')));
-      const mods = Object.entries(K.modules).filter(([, v]) => v[0] === e.id).map(([kk]) => NAMES[kk]).filter(Boolean);
-      if (mods.length) li.append(mk('span', 'epmods', ' Moduły: ' + mods.join(', ') + '.'));
-      ol.append(li);
-    }
-    box.append(ol);
-    const first = p.querySelector('.plansza');
-    (first ? first.nextSibling : p.firstChild) ? p.insertBefore(box, (first ? first.nextSibling : p.firstChild)) : p.append(box);
-  };
-  new MutationObserver(ik).observe(panels, { childList: true });
-  ik();
 })();

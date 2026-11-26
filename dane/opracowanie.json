@@ -595,6 +595,26 @@
    "boy": [
     "Od czterdziestu lat, malowidło to jest przedmiotem żartów młodszych stołowników,"
    ]
+  },
+  {
+   "id": "P47",
+   "title": "Delfina oczami pani de Beauséant",
+   "bort": [
+    "Czy nie będzie to tylko ta blondynka, która ma boczną lożę w Operze i bywa w teatrze Komicznym, gdzie zawsze śmieje się bardzo głośno, chcąc zwrócić na siebie uwagę."
+   ],
+   "boy": [
+    "Czy to nie ta blondynka, która ma lożę w Operze w bocznej stalli, bywa także w Buffons i śmieje się bardzo głośno, aby zwrócić na siebie uwagę?"
+   ]
+  },
+  {
+   "id": "P48",
+   "title": "Portret Wiktoryny",
+   "bort": [
+    "twarz jej była młoda, głos wdzięczny i poruszenia żywe. Ta niedola młoda przypominała krzew o zżółkłych listkach, przesadzony na grunt niewłaściwy."
+   ],
+   "boy": [
+    "twarz jej nie była stara, ruchy i głos były świeże. To młode nieszczęście podobne było roślinie o pożółkłych liściach, świeżo zasadzonej w nieżyczliwym gruncie."
+   ]
   }
  ],
  "timeline": {
@@ -3655,5 +3675,140 @@
    "Upodabnianie się żywej osoby do tła; np. pani Vauquer i jej pensjonat opisane tak, że wygląd gospodyni i domu nawzajem się tłumaczą (przykład należy uzasadnić tekstem).",
    "To nie jest zwykła obserwacja, lecz „intuicja poety”; Balzac nie portretował osób z rzeczywistości, tylko tworzył postacie syntetycznie."
   ]
- }
+ },
+ "cards": [
+  {
+   "id": "goriot",
+   "short": "Dawny handlarz mąki, który oddał córkom cały majątek i umiera w nędzy, opuszczony przez nie.",
+   "text": "P35",
+   "room": "goriot",
+   "arc": "goriot",
+   "refs": [
+    "G08",
+    "P09",
+    "G39"
+   ]
+  },
+  {
+   "id": "rastignac",
+   "short": "Ubogi student z prowincji, który poznając Paryż uczy się, ile kosztuje awans — i postanawia ten koszt ponieść.",
+   "text": "P33",
+   "room": "rastignac",
+   "arc": "rastignac",
+   "refs": [
+    "G05",
+    "P05",
+    "G40"
+   ]
+  },
+  {
+   "id": "vautrin",
+   "short": "Zbiegły galernik, który najostrzej rozpoznaje mechanizmy świata i proponuje Rastignacowi zbrodniczą drogę na skróty.",
+   "text": "P32",
+   "room": "vautrin",
+   "arc": "vautrin",
+   "refs": [
+    "P03",
+    "G30",
+    "G06"
+   ]
+  },
+  {
+   "id": "bianchon",
+   "short": "Student medycyny, który odrzuca korzyść okupioną cudzym życiem i do końca opiekuje się Goriotem.",
+   "text": "P05",
+   "room": null,
+   "arc": "bianchon",
+   "refs": [
+    "G15",
+    "G38"
+   ]
+  },
+  {
+   "id": "anastazja",
+   "short": "Starsza córka Goriota, hrabina de Restaud, która dla kochanka sprzedaje rodzinne klejnoty.",
+   "text": "G03",
+   "room": null,
+   "arc": null,
+   "refs": [
+    "G20",
+    "G21"
+   ]
+  },
+  {
+   "id": "delfina",
+   "short": "Młodsza córka Goriota, żona bankiera; chce wejść do salonów arystokracji i zostaje kochanką Rastignaca.",
+   "text": "P47",
+   "room": null,
+   "arc": null,
+   "refs": [
+    "G22",
+    "G32"
+   ]
+  },
+  {
+   "id": "beauseant",
+   "short": "Kuzynka Rastignaca i dama wielkiego świata; uczy go reguł Paryża, a sama zostaje porzucona przez kochanka.",
+   "text": "G05",
+   "room": null,
+   "arc": null,
+   "refs": [
+    "G04",
+    "P13"
+   ]
+  },
+  {
+   "id": "wiktoryna",
+   "short": "Wydziedziczona córka bankiera, która po śmierci brata staje się bogatą dziedziczką.",
+   "text": "P48",
+   "room": "couture",
+   "arc": null,
+   "refs": [
+    "P18",
+    "G14"
+   ]
+  },
+  {
+   "id": "couture",
+   "short": "Wdowa, która zastępuje Wiktorynie matkę.",
+   "text": "G07",
+   "room": "couture",
+   "arc": null,
+   "refs": [
+    "P22"
+   ]
+  },
+  {
+   "id": "vauquer",
+   "short": "Właścicielka pensjonatu, która ocenia lokatorów według tego, ile płacą.",
+   "text": "P26",
+   "room": "vauquer",
+   "arc": null,
+   "refs": [
+    "G18",
+    "G35"
+   ]
+  },
+  {
+   "id": "michonneau",
+   "short": "Stara panna, która za nagrodę pomaga policji wydać Vautrina.",
+   "text": "P30",
+   "room": "michonneau",
+   "arc": null,
+   "refs": [
+    "G24",
+    "G25"
+   ]
+  },
+  {
+   "id": "poiret",
+   "short": "Staruszek nazwany „automatem”, który pomaga pannie Michonneau zdemaskować Vautrina.",
+   "text": "P31",
+   "room": "poiret",
+   "arc": null,
+   "refs": [
+    "G25"
+   ]
+  }
+ ]
 }
