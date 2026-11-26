@@ -352,6 +352,9 @@
     section('Dom, ulica, salon', null, areaButtons([8, 1, 11, 12, 15]))
   ];
   let focusChar = () => { };
+  const QU = window.QUINT || null;
+  const qimg = id => QU && (QU.crops[id] ? { ...QU.crops[id], ...QU.items[QU.crops[id].of], img: QU.crops[id].img, crop: true } : QU.items[id]);
+  const qlink = (it, txt) => { const a = el('a', '', txt || 'Maison de Balzac, CC0'); a.href = it.url; a.target = '_blank'; a.rel = 'noopener'; return a; };
   M.bohaterowie = () => {
     const grid = el('div', 'pcards'), relWrap = el('div'), filt = el('div', 'filterbar'), list = el('div', 'rels');
     let rtype = '', rchar = '';
@@ -363,6 +366,11 @@
       const ini = ch.name.replace(/^(Ojciec|Pani|Panna|Wicehrabina|Baron|Hrabia)\s+/, '').replace(/\(.*\)/, '').trim();
       const med = el('div', 'pmed'); med.append(el('span', '', ini.split(/\s+/).filter(w => /^[A-ZŻŹĆŚŁÓ]/.test(w)).map(w => w[0]).slice(0, 2).join('')));
       const head = el('header', 'phead'); head.append(med, el('h3', '', ch.name));
+      const QC = QU && QU.cards[c.id];
+      if (QC && QC.portrait) {
+        const pi = qimg(QC.portrait); if (pi) {
+          const fig = el('figure', 'pport'); const a = el('a'); a.href = pi.img.full.src; a.target = '_blank'; a.rel = 'noopener'; const big = el('img'); big.src = pi.img.web.src; big.width = pi.img.web.w; big.height = pi.img.web.h; big.loading = 'lazy'; big.alt = ch.name + ' na ilustracji Jean-Paula Quinta (1922)'; a.append(big); fig.append(a);
+          const cap = el('figcaption'); cap.append(document.createTextNode('Jean-Paul Quint, 1922 · '), qlink(pi)); fig.append(cap); card.append(fig); } }
       card.append(head, el('p', 'prole', ch.role), el('p', 'pshort', c.short));
       const q = el('div', 'pquote'); q.append(Gx.quoteBox(c.text)); card.append(q);
       const facts = el('div', 'pfacts');
@@ -372,6 +380,12 @@
       const others = [...new Set(rel.map(r => r.from === c.id ? r.to : r.from))].filter(id => O.cards.some(x => x.id === id));
       if (others.length) { const w = el('div', 'prel'); w.append(el('span', 'plab', 'Powiązania:')); others.forEach(id => w.append(btn('pname', CH.get(id).name.replace(/^(Ojciec|Pani|Panna|Wicehrabina) /, ''), () => { const n = document.getElementById('postac-' + id); n.scrollIntoView({ block: 'center' }); n.classList.add('flash'); setTimeout(() => n.classList.remove('flash'), 1500); }))); facts.append(w); }
       card.append(facts);
+      if (QC && QC.variants.length) {
+        const d = el('details', 'more pvar'); d.append(el('summary', '', `Inne ilustracje (${QC.variants.length})`));
+        const g = el('div', 'pvgrid');
+        for (const v of QC.variants) { const it = qimg(v); if (!it) continue; const f = el('figure'); const a = el('a'); a.href = it.img.full.src; a.target = '_blank'; a.rel = 'noopener'; const im = el('img'); im.src = it.img.web.src; im.loading = 'lazy'; im.alt = it.title; a.append(im); f.append(a); const fc = el('figcaption'); fc.append(qlink(it, it.title)); f.append(fc); g.append(f); }
+        d.append(g); card.append(d);
+      }
       const fr = refList(c.refs); if (fr) { const d = el('details', 'more'); d.append(el('summary', '', 'Fragmenty')); d.append(fr); card.append(d); }
       grid.append(card);
     }
