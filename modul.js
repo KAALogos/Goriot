@@ -89,7 +89,70 @@
     }
     return [section('Kontekst historycznoliteracki', 'Restauracja, powstanie powieści, „Komedia ludzka” i powracające postacie.', tl), section('Tezy', null, theses('kontekst'))];
   };
+  function pension() {
+    const P = O.pension, wrap = el('div', 'pens'), house = el('div', 'house'), side = el('aside', 'pdetail');
+    side.setAttribute('aria-live', 'polite');
+    house.append(el('div', 'roof'));
+    const buttons = [];
+    function show(r, f, b) {
+      buttons.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      const kids = [el('span', 'eyebrow', f.name), el('h3', '', r.name), el('p', 'pwho', r.who)];
+      if (f.note) kids.push(el('p', 'pnote', f.note));
+      for (const id of r.refs) {
+        if (P.long.includes(id)) kids.push(btn('linkish', `Pełny fragment: ${Gx.item(id).title} ↓`, () => { const n = document.getElementById('dlugi-' + id); n && n.scrollIntoView({ block: 'start' }); }));
+        else kids.push(el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id));
+      }
+      if (r.char) kids.push(btn('read', 'Karta postaci →', () => { tab('bohaterowie'); focusChar(r.char); }));
+      side.replaceChildren(...kids);
+    }
+    let first = null;
+    for (const f of P.floors) {
+      const row = el('div', 'floor'), lab = el('div', 'flabel'), rooms = el('div', 'rooms');
+      lab.append(el('strong', '', f.name)); if (f.note) lab.append(el('span', '', f.note));
+      for (const r of f.rooms) {
+        const b = btn('room' + (r.char ? ' person' : ''), '', () => { show(r, f, b); if (innerWidth < 1000) side.scrollIntoView({ block: 'start' }); });
+        b.append(el('strong', '', r.name), el('span', '', r.who));
+        b.setAttribute('aria-pressed', 'false'); buttons.push(b); rooms.append(b);
+        if (r.name === 'Ojciec Goriot') first = [r, f, b];
+      }
+      row.append(lab, rooms); house.append(row);
+    }
+    const moves = el('div', 'moves');
+    for (const m of P.moves) {
+      const a = el('article', 'move'), ol = el('ol');
+      a.append(el('h4', '', m.who));
+      for (const s of m.steps) { const li = el('li'); li.append(el('span', '', s.text), Gx.chip(s.ref)); ol.append(li); }
+      a.append(ol); moves.append(a);
+    }
+    wrap.append(house, side);
+    show(...first);
+    /* grafika robocza i jej weryfikacja */
+    const fig = el('figure', 'draft'), img = el('img'), link = el('a', 'read', 'Otwórz w pełnym rozmiarze ↗');
+    img.src = 'img/pensjonat-vauquer-roboczy.webp'; img.width = 1055; img.height = 1491; img.loading = 'lazy';
+    img.alt = 'Grafika robocza: przekrój pensjonatu pani Vauquer z podpisanymi mieszkańcami pięter i panelem zmian miejsc.';
+    link.href = img.src; link.target = '_blank'; link.rel = 'noopener';
+    const cap = el('figcaption'); cap.append(el('strong', '', 'Grafika robocza. '), document.createTextNode('Przed użyciem z uczniami zob. weryfikację obok; schemat interaktywny powyżej uwzględnia poprawki. '), link);
+    fig.append(img, cap);
+    const tbl = el('div', 'checks');
+    for (const c of P.checks) {
+      const a = el('article', 'check v-' + c.verdict);
+      const h = el('div', 'chead'); h.append(el('span', 'verdict', c.verdict), el('strong', '', c.claim)); a.append(h);
+      if (c.comment) a.append(el('p', '', c.comment));
+      const r = refList(c.refs); r && a.append(r);
+      tbl.append(a);
+    }
+    const draft = el('div', 'draftgrid'); draft.append(fig, tbl);
+    /* duże fragmenty */
+    const longs = el('div', 'longs');
+    for (const id of P.long) { const a = el('article', 'long'); a.id = 'dlugi-' + id; a.append(el('h3', '', Gx.item(id).title), Gx.quoteBox(id)); longs.append(a); }
+    const s1 = section('Pensjonat pani Vauquer', 'Stan na początku akcji (1819). Wybierz pomieszczenie, aby zobaczyć, kto w nim mieszka i co mówi o tym tekst.', wrap);
+    return [s1,
+      section('Zmiany miejsc w toku powieści', null, moves),
+      section('Grafika robocza i jej zgodność z tekstem', 'Każde twierdzenie grafiki porównano z oboma przekładami.', draft),
+      section('Duże fragmenty tekstu', 'Pełne akapity w wybranym przekładzie; tryb „oba” zestawia je obok siebie.', longs)];
+  }
   M.paryz = () => [
+    ...pension(),
     section('Anatomia Paryża', 'Pensjonat, salony, finansjera, prowincja i pionowy układ przestrzeni jako wskaźnik pozycji.', theses('paryz')),
     section('Obyczaje związane z przestrzenią', 'Przykłady z katalogu obyczajów.', areaButtons([8, 1, 11, 12, 15]))
   ];

@@ -75,6 +75,26 @@ def locate(ed, parts, label):
     return {'text': [T[p][1][a:b] for p, a, b in seg], 'seg': seg, 'page': pages[0], 'pages': pages}
 
 
+def locate_range(ed, start, end, label):
+    """Pełne akapity od zdania „start” do „end” włącznie (duże fragmenty)."""
+    T, flat, where = IDX[ed]
+    qs, qe = re.sub(r'\s', '', start), re.sub(r'\s', '', end)
+    if flat.count(qs) != 1:
+        err(label, ed, 'początek zakresu', flat.count(qs), start[:40])
+        return None
+    i = flat.index(qs)
+    j = flat.find(qe, i)
+    if j < 0 or flat.count(qe) != 1:
+        err(label, ed, 'koniec zakresu', end[:40])
+        return None
+    (p0, a), (p1, b) = where[i], where[j + len(qe) - 1]
+    if p1 - p0 > 15:
+        err(label, ed, 'zakres dłuższy niż 16 akapitów')
+    seg = [[p, a if p == p0 else 0, b + 1 if p == p1 else len(T[p][1])] for p in range(p0, p1 + 1)]
+    pages = sorted({page_at(T[p], x) for p, x, _ in seg} | {page_at(T[p], y - 1) for p, _, y in seg})
+    return {'text': [T[p][1][x:y] for p, x, y in seg], 'seg': seg, 'page': pages[0], 'pages': pages}
+
+
 # --- warianty Boya dla 40 cytatów ---
 Q = {q['id']: q for q in C['quotes']}
 variants = {}
@@ -94,9 +114,13 @@ for p in O['passages']:
     if p['id'] in ids:
         err(p['id'], 'powtórzone ID')
     ids.add(p['id'])
-    passages.append({'id': p['id'], 'title': p['title'],
-                     'bort': locate('bort', p['bort'], p['id']) if p.get('bort') else None,
-                     'boy': locate('boy', p['boy'], p['id']) if p.get('boy') else None})
+    rec = {'id': p['id'], 'title': p['title'], 'long': bool(p.get('long'))}
+    for ed in ('bort', 'boy'):
+        if p.get(ed + '_range'):
+            rec[ed] = locate_range(ed, *p[ed + '_range'], p['id'])
+        else:
+            rec[ed] = locate(ed, p[ed], p['id']) if p.get(ed) else None
+    passages.append(rec)
 
 SRC = {s['id']: s for s in O['sources']}
 CH = {c['id'] for c in O['characters']}
@@ -184,6 +208,19 @@ for side in O['timeline'].values():
         if e.get('ref'):
             check_refs('oś czasu', [e['ref']])
         e['source'] = check_source('oś czasu ' + e['date'], e.get('source'))
+PEN = O['pension']
+for f in PEN['floors']:
+    for r in f['rooms']:
+        check_refs('pensjonat ' + r['name'], r['refs'])
+        if r.get('char') and r['char'] not in CH:
+            err('pensjonat', 'nieznana postać', r['char'])
+for m in PEN['moves']:
+    check_refs('ruchy ' + m['who'], [x['ref'] for x in m['steps']])
+for c in PEN['checks']:
+    check_refs('weryfikacja schematu', c['refs'])
+    if c['verdict'] not in ('zgodne', 'nieprecyzyjne', 'uzupełnienie', 'niezgodne'):
+        err('zły werdykt', c['verdict'])
+check_refs('duże fragmenty', PEN['long'])
 for c in O['contexts']:
     check_refs(c['id'], c['refs'])
     c['source'] = check_source(c['id'], c.get('source'))
@@ -213,7 +250,7 @@ if errors:
     print('BŁĘDY:', *errors, sep='\n  ')
     sys.exit(1)
 
-out = {k: O[k] for k in ('sources', 'timeline', 'characters', 'relations', 'mechanisms', 'axes', 'theses', 'scenes', 'contexts', 'czz')}
+out = {k: O[k] for k in ('sources', 'timeline', 'pension', 'characters', 'relations', 'mechanisms', 'axes', 'theses', 'scenes', 'contexts', 'czz')}
 out['passages'] = passages
 out['variants'] = variants
 

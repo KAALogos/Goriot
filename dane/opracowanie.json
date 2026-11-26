@@ -1,236 +1,2352 @@
 {
-  "sources": [
-    {"id": "S-BORT", "kind": "tekst", "title": "Honoré de Balzac, Ojciec Goriot, tłum. Amelia Bortnowska", "edition": "Komedya ludzka, t. 3, wyd. S. Lewental, Warszawa 1881; wydanie Wolnych Lektur", "url": "https://wolnelektury.pl/katalog/lektura/ojciec-goriot/", "rights": "domena publiczna", "status": "odczytany w całości", "note": "Tekst wydobyty z PDF Wolnych Lektur; strony według tego PDF (s. 2–128)."},
-    {"id": "S-BOY", "kind": "tekst", "title": "Honoré de Balzac, Ojciec Goriot, tłum. Tadeusz Boy-Żeleński", "edition": "Biblioteka Boya, Zakłady Wydawnicze M. Arct, Warszawa 1938; transkrypcja Wikiźródeł", "url": "https://pl.wikisource.org/wiki/Ojciec_Goriot_(Balzac,_1938)/Ojciec_Goriot", "rights": "domena publiczna", "status": "odczytany w całości", "note": "Strony druku (s. 17–267) = numer skanu DjVu minus 4; przesunięcie sprawdzono na trzech obrazach skanu."},
-    {"id": "S-BOY-BALZAK", "kind": "krytyka", "title": "Tadeusz Boy-Żeleński, Balzak, rozdz. 8: „Komedja ludzka” na tle epoki", "edition": "Państwowe Wydawnictwo Książek Szkolnych, Lwów 1934; transkrypcja Wikiźródeł", "url": "https://pl.wikisource.org/wiki/Balzak/8._%E2%80%9EKomedja_ludzka%E2%80%9C_na_tle_epoki", "rights": "domena publiczna", "status": "odczytany w całości", "note": "Rozdział zajmuje s. 93–111 druku. Strona druku = numer skanu minus 11 (sprawdzono na skanie 110 = s. 99). Zakres „s. 110–115” z zamówienia to numery skanów, czyli s. 99–104 druku."},
-    {"id": "S-HZ2019", "kind": "naukowe", "title": "Anna Hanotte-Zawiślak, Le retour du « paradoxe du mandarin » dans la construction de l’arriviste littéraire au XIXe siècle", "edition": "Cahiers ERTA 18 (2019), s. 9–23", "doi": "10.4467/23538953CE.19.010.10695", "url": "https://czasopisma.bg.ug.edu.pl/index.php/CE/article/view/3313", "rights": "otwarty dostęp; nie redystrybuujemy PDF", "status": "odczytany (s. 9–17)", "note": "Wykorzystano wywód o Ojcu Goriot (s. 10–17); część o Claudzie Barsacu pominięto."},
-    {"id": "S-HZ2018", "kind": "naukowe", "title": "Anna Hanotte-Zawiślak, L’arriviste : emblème du déplacement dans le roman réaliste français des années 1830–1895. Esquisse", "edition": "Roczniki Humanistyczne 66/5 (2018), s. 103–113", "doi": "10.18290/rh.2018.66.5-7", "url": "https://ojs.tnkul.pl/index.php/rh/article/view/6758", "rights": "otwarty dostęp; nie redystrybuujemy PDF", "status": "odczytany w całości", "note": ""},
-    {"id": "S-VINC", "kind": "naukowe", "title": "Geneviève Vinciguerra, Trois drames de la paternité frustrée : Goriot, Vautrin, Balzac", "edition": "Littératures 17 (1970), s. 3–14", "doi": "10.3406/litts.1970.1025", "url": "https://www.persee.fr/doc/litts_0563-9751_1970_num_17_2_1025", "rights": "Persée", "status": "odczytano tylko s. 3", "note": "Pełny tekst i PDF chroni zabezpieczenie antybotowe Persée; wykorzystano wyłącznie pierwszą stronę."},
-    {"id": "S-PAISSE", "kind": "naukowe", "title": "Jean-Marie Paisse, Un portrait du Père Goriot", "edition": "Bulletin de l’Association Guillaume Budé 1968, nr 1, s. 125–130", "doi": "10.3406/bude.1968.3004", "url": "https://www.persee.fr/doc/bude_0004-5527_1968_num_1_1_3004", "rights": "Persée", "status": "odczytano tylko s. 125", "note": "Autor w zamówieniu nie był podany; ustalono go z rekordu Persée."},
-    {"id": "S-RIEGERT", "kind": "naukowe", "title": "Guy Riegert, Le Père Goriot (1835)", "edition": "Hatier 1992, ISBN 9782218947704", "status": "nieodczytany", "note": "Pliku EPUB nie było na komputerze w chwili wdrożenia. Żadna teza nie powołuje się na tę książkę."},
-    {"id": "S-MDB", "kind": "naukowe", "title": "Maison de Balzac, notice: Le Père Goriot", "url": "https://www.maisondebalzac.paris.fr/vocabulaire/furne/notices/pere_goriot.htm", "status": "niedostępny", "note": "26.11.2026 serwis Paris Musées wyświetlał komunikat o przerwie technicznej."},
-    {"id": "S-KUR", "kind": "naukowe", "title": "Jan Kurowicki, Bulgotanie brudów (Jak interpretować „Ojca Goriot” Honoriusza Balzaca?)", "edition": "Dydaktyka Literatury 15 (1995)", "url": "https://zbc.uz.zgora.pl/dlibra/publication/59084/edition/50799", "status": "tylko opis bibliograficzny", "note": "Pełnego tekstu nie pobrano."},
-    {"id": "S-KARCZ", "kind": "do pozyskania", "title": "Zofia Karczewska-Markiewicz, „Ojciec Goriot” Honoriusza Balzaka (Biblioteka Analiz Literackich 26)", "status": "nieodczytany"},
-    {"id": "S-BARB", "kind": "do pozyskania", "title": "Pierre Barbéris, Le Père Goriot de Balzac. Écriture, structures, significations (1972)", "status": "nieodczytany"},
-    {"id": "S-BROOKS", "kind": "do pozyskania", "title": "Peter Brooks (red.), Père Goriot, Norton Critical Edition (1998)", "status": "nieodczytany"},
-    {"id": "S-GINS", "kind": "do pozyskania", "title": "Michal Peled Ginsburg (red.), Approaches to Teaching Balzac’s Old Goriot (2000)", "status": "nieodczytany"}
-  ],
-
-  "passages": [
-    {"id": "P01", "title": "Paryż jako ocean", "bort": ["Ale Paryż to istny ocean. Na próżno sondę zapuszczać będziecie, nigdy nie zbadacie jego głębokości."], "boy": ["Ale Paryż to prawdziwy ocean. Możecie rzucać weń sondę, nigdy nie poznacie prawdziwej jego głębokości."]},
-    {"id": "P02", "title": "„All is true”", "bort": ["Ach! wierzcie mi, ten dramat nie jest ani wymysłem, ani romansem. All is true, jest on tak prawdziwy, że każdy znajdzie w sobie, może nawet w swym sercu, te same czynniki, z których on się składa."], "boy": ["Ach, wiedzcie: dramat ten nie jest ani wymysłem, ani romansem. All is true, jest on tak prawdziwy, że każdy odnajdzie jego składniki w sobie, może we własnym sercu."]},
-    {"id": "P03", "title": "Vautrin: nie ma zasad", "bort": ["Nie ma na świecie zasad, są tylko wypadki, nie ma praw, są tylko okoliczności. Człowiek wyższy umie korzystać z trafu i z okoliczności."], "boy": ["Nie ma zasad, są tylko wypadki; nie ma praw, tylko okoliczności: człowiek wyższy chwyta w ręce wypadki i okoliczności, aby nimi kierować."]},
-    {"id": "P04", "title": "Vautrin o hipokryzji społecznej", "bort": ["Inny ukradł milion i uchodzi w salonach za wzór cnoty."], "boy": ["Ukradnij milion, będziesz figurował w salonach jako cnota."]},
-    {"id": "P05", "title": "Paradoks mandaryna", "bort": ["— Czy przypominasz sobie ten ustęp, gdzie autor zapytuje, co by czytelnik zrobił, gdyby mógł, nie ruszając się z Paryża, siłą woli tylko zabić jakiegoś mandaryna w Chinach?", "— Przypominam.", "— I cóż ty na to?", "— Zachciałeś! Ja myślę już o trzydziestym trzecim mandarynie.", "— Nie żartuj. Słuchaj, gdybyś wiedział, że to rzecz prawdopodobna, że chodzi tylko o twe skinienie, powiedz, jakbyś postąpił?", "— A czy ten mandaryn bardzo stary? Wreszcie, młody czy stary, sparaliżowany czy zdrów, co mi tam! Słowo daję, że… Do licha! Nie, ja bym się nie zgodził."], "boy": ["— Przypominasz sobie ustęp, w którym pyta czytelnika, co by uczynił, gdyby mógł się stać bogatym, zabijając w Chinach, jedynie mocą swojej woli, nie ruszając się z Paryża, starego mandaryna?", "— Tak.", "— No i...?", "— Ba! jestem właśnie przy trzydziestym trzecim mandarynie.", "— Nie żartuj. No więc, gdyby ci udowodniono, że rzecz jest możliwa i że wystarczy skinienie głową, zrobiłbyś...?", "— A stary ten mandaryn? Ale ba! młody czy stary, sparaliżowany czy zdrów jak ryba, na honor... Do paralusza! Otóż — nie."]},
-    {"id": "P06", "title": "Powrót mandaryna", "bort": ["— Czy nie zabiliśmy tylko mandaryna? — zapytał go raz Bianchon, wstając od stołu.", "— Nie umarł dotychczas, ale już charczy — odparł Eugeniusz.", "Student medycyny wziął te słowa za żart, ale Eugeniusz nie myślał żartować."], "boy": ["— Zabiliśmy tedy mandaryna? rzekł doń pewnego dnia Bianchon, wstając od stołu.", "— Jeszcze nie, odparł, ale rzęzi.", "Student wziął to za żart, a nie było to żartem!"]},
-    {"id": "P07", "title": "Ideał ojcostwa / Chrystus ojcostwa", "bort": ["Chcąc dobrze odmalować oblicze tego ideału ojcostwa, trzeba by szukać wzoru w postaciach, które mistrze pędzla stworzyli dla oddania męki Zbawiciela, cierpiącego za świat cały."], "boy": ["Aby dobrze oddać twarz tego Chrystusa ojcostwa, trzebaby szukać porównań w obrazach, które wymyślili mistrze pędzla, aby odmalować mękę ścierpianą przez Zbawiciela dla dobra świata."]},
-    {"id": "P08", "title": "Świat stoi na ojcostwie", "bort": ["Społeczeństwo, świat cały stoi na ojcostwie, wszystko więc runie, gdy dzieci nie będą ojców kochały."], "boy": ["Społeczeństwo, świat wspierają się na ojcostwie, wszystko zawali się, jeśli dzieci nie będą kochały rodziców."]},
-    {"id": "P09", "title": "Pieniądz daje wszystko", "bort": ["Tak, mógłbym mieć to wszystko, a nic nie mam, pieniądz daje wszystko, nawet córki."], "boy": ["Miał bym to wszystko. Ale nic!... Pieniądz daje wszystko, nawet dzieci."]},
-    {"id": "P10", "title": "Rachunek Vautrina: koszt życia w Paryżu", "bort": ["Cóż, synku, musimy mieć dwadzieścia pięć tysiączków rocznie, lub wpadamy w błoto, wystawiamy się na pośmiewisko i jesteśmy pozbawieni przyszłości, powodzenia, kochanek!"], "boy": ["Razem, piękne dziecię, doliczyli byśmy się dwudziestu pięciu tysięcy na rok, inaczej wleziemy w błoto, ściągniemy na siebie drwiny i możemy pożegnać przyszłość, powodzenie, kochanki!"]},
-    {"id": "P11", "title": "Widok Paryża z Père-Lachaise", "bort": ["Oczy studenta zatrzymały się chciwie pomiędzy kolumną placu Vendôme a kopułą Inwalidów, w miejscu, gdzie żyło towarzystwo wykwintne, do którego on dostać się usiłował. Zmierzył ten ul brzęczący spojrzeniem, które zdawało się od razu wszystek miód z niego wysysać, i wyrzekł te wielkie słowa:"], "boy": ["Oczy jego uczepiły się niemal chciwie miejsca między placem Vendôme a kopułą Inwalidów, miejsca gdzie żył ten wykwintny świat, do którego chciał się dostać. Objął ten brzęczący ul spojrzeniem, które wysysało zeń zawczasu wszystkie miody, i wyrzekł te dumne słowa:"]},
-    {"id": "P12", "title": "Łowca milionów", "bort": ["pan jesteś łowiec milionów. Chcesz je pan schwytać, więc robisz zasadzki, zastawiasz sieci, nęcisz na wabika."], "boy": ["ty jesteś łowcą milionów. Aby je chwycić, używasz podstępów, zasadzek, przynęt."]},
-    {"id": "P13", "title": "Dwa domy, dwie dzielnice", "bort": ["mógł bywać na przedmieściu Saint-Germain u wicehrabiny de Beauséant, a na Chaussée-d’Antin uklęknąć przed hrabiną de Restaud;"], "boy": ["oprzeć stopę w Saint-Germain u wicehrabiny de Beauséant, kolano na Chaussée d’Antin u hrabiny de Restaud!"]},
-    {"id": "P14", "title": "Rok 1819", "bort": ["Jednakże w roku 1819, to jest w chwili rozpoczęcia się naszego dramatu, mieszkała tam jedna uboga dziewczyna."], "boy": ["W 1819 r. wszakże, epoce w której rozpoczyna się ten dramat, zamieszkała tam jedna młoda panienka."]},
-    {"id": "P15", "title": "Goriot u pani Vauquer od 1813 roku", "bort": ["Ojciec Goriot, starzec prawie sześćdziesięciodziewięcioletni, przeprowadził się do pani Vauquer w 1813 roku, wycofawszy się poprzednio z interesów."], "boy": ["Ojciec Goriot, starzec sześćdziesięciodziewięcioletni, osiedlił się u pani Vauquer w 1813, wycofawszy się z interesów."]},
-    {"id": "P16", "title": "Luty 1820: termin wyprowadzki", "bort": ["— Proszę pana — rzekła wdowa — i ojciec Goriot i pan mieliście opuścić mój dom piętnastego lutego. Tymczasem trzy dni upłynęły już od tej daty."], "boy": ["— Proszę pana, rzekła wdowa, pan Goriot i pan mieliście się wyprowadzić 15 lutego. Oto już trzy dni jak 15 minął, mamy dziś 18;"]},
-    {"id": "P17", "title": "Data pod tekstem", "bort": ["Sache, we wrześniu 1834."], "boy": ["Saché, wrzesień 1834."]},
-    {"id": "P19", "title": "Grudniowe listy z domu", "bort": ["W pierwszych dniach grudnia Rastignac otrzymał dwa listy: od matki i od starszej siostry."], "boy": ["Z początkiem grudnia Rastignac otrzymał dwa listy, jeden od matki, drugi od starszej siostry."]},
-    {"id": "P18", "title": "Wydziedziczenie Wiktoryny", "bort": ["Ojciec Wiktoryny sądził się w prawie nie uznawać córki, nie chciał jej mieć przy sobie, przeznaczał jej tylko sześćset franków rocznie, wreszcie sprzedał swoje dobra, chcąc wszystko przekazać synowi."], "boy": ["Ojciec Wiktoryny, podejrzewając że to dziecko nie jest jego, nie chciał jej przy sobie, wyznaczył córce jedynie sześćset franków rocznie i obszedł prawo, aby przekazać cały majątek synowi."]}
-  ],
-
-  "timeline": {
-    "world": [
-      {"date": "1813", "text": "Goriot, wycofany z interesów, zamieszkuje u pani Vauquer.", "ref": "P15"},
-      {"date": "1819", "text": "Początek akcji w pensjonacie pani Vauquer.", "ref": "P14"},
-      {"date": "grudzień", "text": "Rastignac otrzymuje listy od matki i siostry z pieniędzmi, o które prosił.", "ref": "P19"},
-      {"date": "luty następnego roku", "text": "Mija termin wyprowadzki z pensjonatu; w kolejnych dniach Goriot umiera i zostaje pochowany na Père-Lachaise.", "ref": "P16"}
-    ],
-    "publication": [
-      {"date": "IX 1834 – 26 I 1835", "text": "Balzac pisze powieść.", "source": {"id": "S-VINC", "loc": "s. 3"}},
-      {"date": "IX 1834", "text": "Data umieszczona pod tekstem powieści: Saché, wrzesień 1834.", "ref": "P17"},
-      {"date": "1881", "text": "Przekład Amelii Bortnowskiej w „Komedyi ludzkiej” wydawanej przez S. Lewentala.", "source": {"id": "S-BORT", "loc": "metryka wydania Wolnych Lektur"}},
-      {"date": "1934", "text": "Tadeusz Boy-Żeleński wydaje monografię „Balzak”.", "source": {"id": "S-BOY-BALZAK", "loc": "karta tytułowa"}},
-      {"date": "1938", "text": "Przekład Boya-Żeleńskiego w Bibliotece Boya.", "source": {"id": "S-BOY", "loc": "karta tytułowa"}}
-    ]
+ "sources": [
+  {
+   "id": "S-BORT",
+   "kind": "tekst",
+   "title": "Honoré de Balzac, Ojciec Goriot, tłum. Amelia Bortnowska",
+   "edition": "Komedya ludzka, t. 3, wyd. S. Lewental, Warszawa 1881; wydanie Wolnych Lektur",
+   "url": "https://wolnelektury.pl/katalog/lektura/ojciec-goriot/",
+   "rights": "domena publiczna",
+   "status": "odczytany w całości",
+   "note": "Tekst wydobyty z PDF Wolnych Lektur; strony według tego PDF (s. 2–128)."
   },
-
-  "characters": [
-    {"id": "goriot", "name": "Ojciec Goriot", "role": "Dawny fabrykant makaronu i handlarz mąki, od 1813 roku lokator pani Vauquer; oddał córkom majątek.", "refs": ["P15", "G17", "G03"], "themes": ["ojcostwo", "idealizacja córek", "degradacja"]},
-    {"id": "rastignac", "name": "Eugeniusz de Rastignac", "role": "Student prawa z ubogiej szlachty prowincjonalnej, kuzyn pani de Beauséant.", "refs": ["G02", "G04", "G40"], "themes": ["inicjacja społeczna", "konflikt ambicji i sumienia"]},
-    {"id": "vautrin", "name": "Vautrin (Jakub Collin)", "role": "Lokator pensjonatu, w rzeczywistości zbiegły galernik zwany Trompe-la-Mort (u Boya: Ołży-Śmierć).", "refs": ["G06", "P03", "G30"], "themes": ["alternatywny mentor", "bunt", "diagnoza hipokryzji"]},
-    {"id": "bianchon", "name": "Bianchon", "role": "Student medycyny (u Boya: Horacy), przyjaciel Rastignaca; pielęgnuje umierającego Goriota.", "refs": ["P05", "G15", "G38"], "themes": ["etyczna alternatywa"]},
-    {"id": "anastazja", "name": "Anastazja de Restaud", "role": "Starsza córka Goriota, żona hrabiego de Restaud, kochanka Maksyma de Trailles.", "refs": ["G03", "G20", "G21"], "themes": ["zależność od kochanka", "dług"]},
-    {"id": "delfina", "name": "Delfina de Nucingen", "role": "Młodsza córka Goriota, żona bankiera Nucingena; kochanka Rastignaca.", "refs": ["G03", "G22", "G23"], "themes": ["zależność od męża", "aspiracje salonowe"]},
-    {"id": "beauseant", "name": "Wicehrabina de Beauséant", "role": "Kuzynka Rastignaca, dama z przedmieścia Saint-Germain; porzucona przez markiza d’Ajuda-Pinto.", "refs": ["G04", "G05", "P13"], "themes": ["protekcja", "lekcja świata"]},
-    {"id": "wiktoryna", "name": "Wiktoryna Taillefer", "role": "Córka bankiera, odsunięta przez ojca od majątku; po śmierci brata jego dziedziczka.", "refs": ["P18", "G07", "G14"], "themes": ["wydziedziczenie", "posag"]},
-    {"id": "couture", "name": "Pani Couture", "role": "Wdowa po komisarzu wojskowym, daleka krewna matki Wiktoryny i jej opiekunka.", "refs": ["G07"], "themes": ["opieka"]},
-    {"id": "vauquer", "name": "Pani Vauquer", "role": "Właścicielka pensjonatu przy ulicy Neuve-Sainte-Geneviève.", "refs": ["G01", "G18", "G35"], "themes": ["szacunek zależny od zapłaty"]},
-    {"id": "michonneau", "name": "Panna Michonneau", "role": "Lokatorka pensjonatu; za nagrodę pomaga policji zdemaskować Vautrina.", "refs": ["G24", "G25"], "themes": ["donos"]},
-    {"id": "poiret", "name": "Poiret", "role": "Lokator pensjonatu, towarzysz panny Michonneau.", "refs": ["G25"], "themes": ["przeciętność"]},
-    {"id": "nucingen", "name": "Baron de Nucingen", "role": "Bankier, mąż Delfiny; dysponuje jej posagiem.", "refs": ["G22", "G23"], "themes": ["finansjera"]},
-    {"id": "restaud", "name": "Hrabia de Restaud", "role": "Mąż Anastazji.", "refs": ["G10"], "themes": ["arystokracja"]},
-    {"id": "maksym", "name": "Maksym de Trailles", "role": "Kochanek Anastazji, gracz i dłużnik.", "refs": ["G20", "G21"], "themes": ["dług"]},
-    {"id": "taillefer", "name": "Taillefer", "role": "Bankier, ojciec Wiktoryny i Michała (Fryderyka); syn ginie w pojedynku.", "refs": ["P18", "G14"], "themes": ["dziedziczenie"]}
-  ],
-
-  "relations": [
-    {"id": "R01", "from": "goriot", "to": "anastazja", "type": "pokrewieństwo", "label": "ojciec; dał posag i spłaca jej długi", "refs": ["G03", "G21"]},
-    {"id": "R02", "from": "goriot", "to": "delfina", "type": "pokrewieństwo", "label": "ojciec; dał posag i oddaje ostatnie środki", "refs": ["G03", "P09"]},
-    {"id": "R03", "from": "anastazja", "to": "maksym", "type": "erotyka", "label": "kochanka; płaci jego weksle", "refs": ["G20", "G21"]},
-    {"id": "R04", "from": "nucingen", "to": "delfina", "type": "ekonomia", "label": "mąż rozporządza jej posagiem i wyznacza pensję", "refs": ["G22", "G23"]},
-    {"id": "R05", "from": "restaud", "to": "goriot", "type": "prestiż", "label": "wstydzi się teścia i wyklucza go z domu", "refs": ["G10", "G11"]},
-    {"id": "R06", "from": "beauseant", "to": "rastignac", "type": "mentoring", "label": "wprowadza do świata i uczy jego reguł", "refs": ["G04", "G05"]},
-    {"id": "R07", "from": "vautrin", "to": "rastignac", "type": "mentoring", "label": "proponuje drogę na skróty: posag Wiktoryny za śmierć jej brata", "refs": ["G28", "G30", "P03"]},
-    {"id": "R08", "from": "vautrin", "to": "taillefer", "type": "przymus", "label": "organizuje pojedynek, w którym ginie syn Taillefera", "refs": ["G13", "G14"]},
-    {"id": "R09", "from": "rastignac", "to": "delfina", "type": "erotyka", "label": "kochanek; przez nią wchodzi do świata", "refs": ["G32"]},
-    {"id": "R10", "from": "delfina", "to": "rastignac", "type": "prestiż", "label": "przez niego zabiega o zaproszenie do pani de Beauséant", "refs": [], "rows": [[2, "Uczestniczenie w balach na podstawie zaproszenia"]]},
-    {"id": "R12", "from": "rastignac", "to": "beauseant", "type": "pokrewieństwo", "label": "kuzyn", "refs": ["G04"]},
-    {"id": "R13", "from": "michonneau", "to": "vautrin", "type": "przymus", "label": "usypia go i ujawnia piętno galernika na zlecenie policji", "refs": ["G24", "G25"]},
-    {"id": "R14", "from": "couture", "to": "wiktoryna", "type": "pokrewieństwo", "label": "daleka krewna matki, opiekunka", "refs": ["G07"]},
-    {"id": "R15", "from": "taillefer", "to": "wiktoryna", "type": "ekonomia", "label": "odsuwa córkę od majątku na rzecz syna", "refs": ["P18"]},
-    {"id": "R16", "from": "vauquer", "to": "goriot", "type": "ekonomia", "label": "traktuje go według wysokości opłat", "refs": ["G18", "G35"]},
-    {"id": "R17", "from": "rastignac", "to": "goriot", "type": "ekonomia", "label": "sąsiad z pensjonatu; razem z Bianchonem płaci za pogrzeb", "refs": ["G37", "G38"]}
-  ],
-
-  "mechanisms": [
-    {"id": "posag", "name": "Posag", "def": "Majątek wnoszony przez kobietę decyduje o jej wartości na rynku małżeńskim i przechodzi pod kontrolę męża.", "areas": [5, 12], "refs": ["G03", "G12", "G22", "G30"]},
-    {"id": "dlug", "name": "Dług", "def": "Weksel i pożyczka podtrzymują pozór zamożności, a ich koszt przerzucany jest na bliskich.", "areas": [12, 13, 6], "refs": ["G20", "G21"]},
-    {"id": "dziedziczenie", "name": "Dziedziczenie", "def": "Spadek zmienia pozycję osoby z dnia na dzień i staje się celem intrygi.", "areas": [7, 12], "refs": ["P18", "G13", "G14"]},
-    {"id": "reputacja", "name": "Reputacja", "def": "Dobre imię jest kapitałem, który trzeba chronić przed skandalem, nawet za cenę długów.", "areas": [16, 6], "refs": ["G21", "P04"]},
-    {"id": "salon", "name": "Salon", "def": "Salon jest miejscem wymiany: tam zapadają decyzje o tym, kto należy do towarzystwa.", "areas": [1, 2, 15], "refs": ["G05", "P13"]},
-    {"id": "protekcja", "name": "Protekcja", "def": "Kariera zależy od poparcia wpływowych osób bardziej niż od pracy i zdolności.", "areas": [14, 1], "refs": ["G04", "G28", "G29"]},
-    {"id": "wykluczenie", "name": "Wykluczenie", "def": "Kto traci pieniądze lub pochodzenie zdradza się nazwiskiem, ten zostaje odsunięty.", "areas": [15, 1, 16], "refs": ["G10", "G11", "G34", "G39"]},
-    {"id": "koszt-kariery", "name": "Koszt kariery", "def": "Wejście do świata wymaga wydatków, które ponosi rodzina, kochanka albo cudza krzywda.", "areas": [12, 14, 7], "refs": ["P10", "G26", "G27"]}
-  ],
-
-  "axes": [
-    {"id": "goriot", "title": "Degradacja Goriota", "steps": [
-      {"ref": "P15", "text": "Bogaty lokator wprowadza się do pensjonatu."},
-      {"ref": "G17", "text": "Zamożność widać w stroju i bieliźnie."},
-      {"ref": "G18", "text": "Przeprowadzka na drugie piętro; gospodyni zmienia sposób zwracania się do niego."},
-      {"ref": "G19", "text": "Trzecie piętro, rezygnacja z tabaki, fryzjera i pudru."},
-      {"ref": "G34", "text": "Pensjonariusze drwią z niego jako z otępiałego starca."},
-      {"ref": "G08", "text": "Niszczy ostatnie srebra, by zdobyć pieniądze dla córki."},
-      {"ref": "P09", "text": "W agonii rozpoznaje, że miłość córek zależała od pieniędzy."},
-      {"ref": "G39", "text": "Na pogrzeb przyjeżdżają puste powozy córek."}
-    ]},
-    {"id": "rastignac", "title": "Awans Rastignaca", "steps": [
-      {"ref": "G04", "text": "List ciotki otwiera drogę do kuzynki."},
-      {"ref": "G02", "text": "Odkłada naukę, by poznawać Paryż."},
-      {"ref": "G05", "text": "Pani de Beauséant wykłada mu reguły powodzenia."},
-      {"ref": "G26", "text": "Prosi rodzinę o pieniądze na wejście do świata."},
-      {"ref": "P05", "text": "Pyta Bianchona o paradoks mandaryna."},
-      {"ref": "G31", "text": "Odrzuca zbrodniczy plan Vautrina."},
-      {"ref": "G32", "text": "Wchodzi do świata u boku Delfiny."},
-      {"ref": "G40", "text": "Po pogrzebie Goriota rzuca Paryżowi wyzwanie i idzie na obiad do Delfiny."}
-    ]},
-    {"id": "vautrin", "title": "Demaskacja Vautrina", "steps": [
-      {"ref": "P03", "text": "Wykłada Rastignacowi swoją filozofię."},
-      {"ref": "G30", "text": "Proponuje układ: milion posagu za dwieście tysięcy prowizji."},
-      {"ref": "G13", "text": "Zapowiada pojedynek, który otworzy Wiktorynie drogę do spadku."},
-      {"ref": "G24", "text": "Panna Michonneau podaje mu środek usypiający."},
-      {"ref": "G25", "text": "Na ramieniu ukazuje się piętno galernika."},
-      {"ref": "G06", "text": "Przyznaje się do prawdziwego nazwiska."}
-    ]},
-    {"id": "bianchon", "title": "Model uczciwego działania: Bianchon", "steps": [
-      {"ref": "P05", "text": "Odmawia „zabicia mandaryna”, czyli korzyści kosztem cudzego życia."},
-      {"ref": "G15", "text": "Bada chorego Goriota i sprowadza lekarza ze szpitala."},
-      {"ref": "G16", "text": "Czuwa przy chorym na zmianę z Rastignakiem."},
-      {"ref": "G38", "text": "Zdobywa tanią trumnę, gdy rodzina nie płaci za pogrzeb."}
-    ]}
-  ],
-
-  "theses": [
-    {"id": "T01", "mod": "kontekst", "typ": "fakt", "text": "Akcja zaczyna się w 1819 roku; Goriot mieszka u pani Vauquer od 1813 roku.", "refs": ["P14", "P15"], "status": "tekst"},
-    {"id": "T02", "mod": "kontekst", "typ": "fakt", "text": "Ostatnie wydarzenia rozgrywają się w lutym następnego roku: pani Vauquer wspomina termin wyprowadzki 15 lutego, a mija już osiemnasty dzień miesiąca.", "refs": ["P16", "P19"], "status": "tekst", "note": "Rok 1820 wynika z rachuby: akcja zaczyna się w 1819, listy z domu przychodzą w grudniu, a luty jest następny."},
-    {"id": "T03", "mod": "kontekst", "typ": "fakt", "text": "Powieść powstawała od końca września 1834 do 26 stycznia 1835 roku; tekst zamyka podpis „Saché, wrzesień 1834”.", "refs": ["P17"], "source": {"id": "S-VINC", "loc": "s. 3"}, "status": "źródło-fragment"},
-    {"id": "T04", "mod": "kontekst", "typ": "kontekst", "text": "Restauracja oznaczała dla młodego pokolenia zamknięcie dróg awansu, jakie dawało Cesarstwo: liczyły się protekcja i urodzenie.", "source": {"id": "S-BOY-BALZAK", "quote": "Kazano młodzieży być cierpliwą, posłuszną, nabożną. Brak wszelkiego upustu dla energji, trudność wybicia się, — protekcja i urodzenie w miejsce talentów."}, "refs": ["G28", "G29"], "mech": ["protekcja"], "status": "źródło"},
-    {"id": "T05", "mod": "kontekst", "typ": "kontekst", "text": "Wywód Vautrina o protekcji pokrywa się z historycznym rozpoznaniem Restauracji jako epoki zablokowanej kariery młodych.", "refs": ["G28", "G29", "T04"], "chars": ["vautrin", "rastignac"], "mech": ["protekcja"], "status": "autorska"},
-    {"id": "T06", "mod": "kontekst", "typ": "fakt", "text": "Według noty tłumacza w wydaniu z 1938 roku powieść łączy się treścią m.in. ze „Straconymi złudzeniami”, „Blaskami i nędzami życia kurtyzany”, „Ostatnim wcieleniem Vautrina”, „Kobietą porzuconą”, „Gobseckiem” i „Bankiem Nucingena”.", "source": {"id": "S-BOY", "loc": "nota po tekście powieści, wyd. 1938"}, "status": "źródło"},
-    {"id": "T07", "mod": "kontekst", "typ": "kontekst", "text": "Boy wskazuje cykl otwierany przez „Ojca Goriot” jako najlepszy punkt wejścia w „Komedię ludzką”; dalsze losy pani de Beauséant zawiera „Kobieta porzucona”.", "source": {"id": "S-BOY-BALZAK", "loc": "przypis w rozdz. 8, s. 109 druku"}, "chars": ["beauseant"], "status": "źródło"},
-    {"id": "T08", "mod": "kontekst", "typ": "kontekst", "text": "Ojciec Wiktoryny, Taillefer, pojawia się także w noweli „L’Auberge rouge” (1831), gdzie popełnia morderstwo dla pieniędzy; w „Ojcu Goriot” śmierć jego syna zleca Vautrin z tej samej przyczyny.", "source": {"id": "S-HZ2019", "loc": "s. 16"}, "chars": ["taillefer", "vautrin"], "status": "źródło"},
-    {"id": "T09", "mod": "kontekst", "typ": "kontekst", "text": "W innych utworach cyklu Rastignac zostaje ministrem i parem Francji.", "source": {"id": "S-HZ2018", "loc": "s. 110"}, "chars": ["rastignac"], "status": "źródło"},
-    {"id": "T10", "mod": "kontekst", "typ": "interpretacja", "text": "Pieniądz jest dla Balzaka siłą przenikającą wszystkie sfery życia, a nie abstrakcyjnym „złotem” dawnej literatury.", "source": {"id": "S-BOY-BALZAK", "quote": "Pieniądz jest dla Balzaka nicią Arjadny, która prowadzi go nieomylnie w labiryncie nowego społeczeństwa"}, "mech": ["posag", "dlug"], "status": "źródło"},
-
-    {"id": "T11", "mod": "paryz", "typ": "fakt", "text": "Narrator nazywa Paryż oceanem, którego głębokości nie da się zbadać.", "refs": ["P01"], "motif": ["Paryż"], "status": "tekst"},
-    {"id": "T12", "mod": "paryz", "typ": "interpretacja", "text": "Dla bohaterów z prowincji Paryż jest jedynym miejscem, w którym można „zrobić karierę”, ale zarazem siłą, która zwykle niszczy przybyszów.", "source": {"id": "S-HZ2018", "loc": "s. 108–109"}, "chars": ["rastignac"], "status": "źródło"},
-    {"id": "T13", "mod": "paryz", "typ": "fakt", "text": "Piętro w pensjonacie odpowiada wysokości opłaty: Goriot zubożały przenosi się z pierwszego na drugie, a potem na trzecie piętro.", "refs": ["G18", "G19"], "rows": [[8, "Różnicowanie standardu mieszkań"]], "chars": ["goriot", "vauquer"], "status": "tekst"},
-    {"id": "T14", "mod": "paryz", "typ": "interpretacja", "text": "Pionowy układ pensjonatu jest mapą ekonomiczną: wspinanie się po schodach oznacza spadanie w hierarchii.", "refs": ["G18", "G19", "T13"], "chars": ["goriot"], "mech": ["wykluczenie"], "status": "autorska"},
-    {"id": "T15", "mod": "paryz", "typ": "fakt", "text": "Przestrzeń salonów dzieli się na dzielnice: stara arystokracja na przedmieściu Saint-Germain (pani de Beauséant), nowe pieniądze na Chaussée-d’Antin (hrabina de Restaud).", "refs": ["P13"], "chars": ["beauseant", "anastazja"], "mech": ["salon"], "status": "tekst"},
-    {"id": "T16", "mod": "paryz", "typ": "fakt", "text": "Vautrin oblicza, że życie młodego eleganta w Paryżu kosztuje dwadzieścia pięć tysięcy franków rocznie, a majątek rodziny Rastignaców przynosi około trzech tysięcy.", "refs": ["P10"], "source": {"id": "S-HZ2018", "loc": "s. 109"}, "mech": ["koszt-kariery"], "status": "źródło"},
-    {"id": "T17", "mod": "paryz", "typ": "fakt", "text": "W ujęciu Vautrina Paryż przyjmuje każdego, kto wraca z łowów na miliony, niezależnie od sposobu ich zdobycia.", "refs": ["P12", "P04"], "chars": ["vautrin"], "status": "tekst"},
-    {"id": "T18", "mod": "paryz", "typ": "interpretacja", "text": "Finałowy widok z cmentarza Père-Lachaise zamyka przestrzeń powieści: Rastignac patrzy na dzielnicę wielkiego świata między placem Vendôme a Inwalidami, czyli na cel, a nie na pensjonat.", "refs": ["P11", "G40"], "chars": ["rastignac"], "status": "autorska"},
-
-    {"id": "T19", "mod": "bohaterowie", "typ": "interpretacja", "text": "W tym samym miejscu Bortnowska nazywa Goriota „ideałem ojcostwa”, a Boy — „Chrystusem ojcostwa”; obie wersje zachowują porównanie z męką Zbawiciela. Formułę „le Christ de la paternité” przytacza też krytyka francuska.", "refs": ["P07"], "source": {"id": "S-VINC", "loc": "s. 3"}, "chars": ["goriot"], "motif": ["ojcostwo"], "status": "źródło-fragment"},
-    {"id": "T20", "mod": "bohaterowie", "typ": "fakt", "text": "Umierający Goriot mówi, że społeczeństwo opiera się na ojcostwie i runie, jeśli dzieci nie będą kochać rodziców.", "refs": ["P08"], "chars": ["goriot"], "motif": ["ojcostwo"], "status": "tekst"},
-    {"id": "T21", "mod": "bohaterowie", "typ": "interpretacja", "text": "Rastignac stoi między dwoma wzorami: Vautrinem, symbolem woli mocy, i Goriotem.", "source": {"id": "S-VINC", "loc": "s. 3"}, "chars": ["rastignac", "vautrin", "goriot"], "status": "źródło-fragment"},
-    {"id": "T22", "mod": "bohaterowie", "typ": "interpretacja", "text": "Vautrin reprezentuje bunt przeciw porządkowi społecznemu; Poiret i panna Michonneau — szkodliwą przeciętność.", "source": {"id": "S-VINC", "loc": "s. 3"}, "chars": ["vautrin", "poiret", "michonneau"], "status": "źródło-fragment"},
-    {"id": "T23", "mod": "bohaterowie", "typ": "interpretacja", "text": "Bianchon to „poważny student”, przedstawiciel arystokracji umysłu; Wiktoryna — łagodność, pobożność i rezygnacja.", "source": {"id": "S-VINC", "loc": "s. 3"}, "chars": ["bianchon", "wiktoryna"], "status": "źródło-fragment"},
-    {"id": "T24", "mod": "bohaterowie", "typ": "interpretacja", "text": "Rastignac przez Delfinę wchodzi w świat wielkiej finansjery, a Anastazja wprowadza powieść w świat lichwiarzy.", "source": {"id": "S-VINC", "loc": "s. 3"}, "refs": ["G23", "G21"], "chars": ["delfina", "anastazja", "rastignac"], "status": "źródło-fragment"},
-    {"id": "T25", "mod": "bohaterowie", "typ": "interpretacja", "text": "Rastignac jest bohaterem „zawieszonym”: oderwał się od swojej klasy, ale nie został jeszcze w pełni przyjęty przez wyższe sfery.", "source": {"id": "S-HZ2018", "loc": "s. 110"}, "chars": ["rastignac"], "status": "źródło"},
-    {"id": "T26", "mod": "bohaterowie", "typ": "interpretacja", "text": "Na drodze Rastignaca pojawiają się kolejni pomocnicy: pani de Beauséant, Vautrin i Delfina de Nucingen; jego przewagą jest pokrewieństwo z panią de Beauséant.", "source": {"id": "S-HZ2018", "loc": "s. 106, 111"}, "chars": ["rastignac", "beauseant", "vautrin", "delfina"], "status": "źródło"},
-    {"id": "T27", "mod": "bohaterowie", "typ": "fakt", "text": "Anastazja i Delfina zależą od różnych osób: Anastazja spłaca długi kochanka, Delfina nie może swobodnie rozporządzać posagiem, którym zarządza mąż.", "refs": ["G20", "G21", "G22", "G23"], "chars": ["anastazja", "delfina", "maksym", "nucingen"], "mech": ["dlug", "posag"], "status": "tekst"},
-
-    {"id": "T28", "mod": "mechanizmy", "typ": "interpretacja", "text": "Wspomnienie nazwiska Goriota w salonie de Restaud zamyka Rastignacowi drzwi tego domu: pochodzenie z handlu jest w tym świecie piętnem.", "refs": ["G10", "G11"], "source": {"id": "S-HZ2018", "loc": "s. 111"}, "chars": ["rastignac", "restaud", "goriot"], "mech": ["wykluczenie", "salon"], "status": "źródło"},
-    {"id": "T29", "mod": "mechanizmy", "typ": "interpretacja", "text": "Rastignac nie przyjmuje ofiary z brata Wiktoryny, wybiera bardziej akceptowaną w epoce drogę awansu — związek z żoną bankiera.", "source": {"id": "S-HZ2019", "loc": "s. 15"}, "refs": ["G31", "G32"], "chars": ["rastignac", "delfina", "wiktoryna"], "mech": ["koszt-kariery"], "status": "źródło"},
-    {"id": "T30", "mod": "mechanizmy", "typ": "interpretacja", "text": "Miłość w świecie Balzaka często przestaje być celem i staje się środkiem.", "source": {"id": "S-BOY-BALZAK", "quote": "Miłość aż nazbyt często z celu staje się środkiem."}, "refs": ["G05", "G32"], "mech": ["salon", "koszt-kariery"], "status": "źródło"},
-    {"id": "T31", "mod": "mechanizmy", "typ": "fakt", "text": "Vautrin traktuje małżeństwo jako transakcję z prowizją: dwieście tysięcy franków za milion posagu.", "refs": ["G30"], "chars": ["vautrin", "rastignac", "wiktoryna"], "mech": ["posag"], "status": "tekst"},
-    {"id": "T32", "mod": "mechanizmy", "typ": "interpretacja", "text": "Bianchon stanowi miarę, wobec której widać koszt wyborów Rastignaca: odrzuca korzyść okupioną cudzym życiem i bezinteresownie opiekuje się Goriotem.", "refs": ["P05", "G15", "G38"], "source": {"id": "S-HZ2019", "loc": "s. 14"}, "chars": ["bianchon", "rastignac"], "status": "źródło"},
-
-    {"id": "T33", "mod": "poetyka", "typ": "fakt", "text": "Narrator zwraca się wprost do czytelnika i zapewnia, że opowiadany „dramat” nie jest zmyśleniem.", "refs": ["P02"], "status": "tekst"},
-    {"id": "T34", "mod": "poetyka", "typ": "interpretacja", "text": "Realizm Balzaka nie jest kopiowaniem rzeczywistości: postacie powstają syntetycznie, a obserwacja łączy się z intuicją poety.", "source": {"id": "S-BOY-BALZAK", "quote": "Bo to nie jest zwykła obserwacja realisty, — to intuicja poety."}, "status": "źródło"},
-    {"id": "T35", "mod": "poetyka", "typ": "interpretacja", "text": "Balzac nigdy prawie nie portretował osób z rzeczywistości; tworzył figury syntetyczne.", "source": {"id": "S-BOY-BALZAK", "quote": "Mimo że nigdy prawie nie portretował z rzeczywistości, ale zawsze tworzył figury swoje syntetycznie"}, "status": "źródło"},
-    {"id": "T36", "mod": "poetyka", "typ": "interpretacja", "text": "Postać upodabnia się do otoczenia, więc opis miejsca jest zarazem portretem jego mieszkańców.", "source": {"id": "S-BOY-BALZAK", "quote": "Balzac odgadł prawo mimicry, upodobnianie się żywej osoby do tła."}, "refs": ["G01"], "chars": ["vauquer"], "status": "źródło"},
-    {"id": "T37", "mod": "poetyka", "typ": "interpretacja", "text": "Kilka akapitów o kolejnych latach Goriota w pensjonacie zawiera w zalążku całą jego przemianę; upadek pokazany jest przez zmiany stroju, wyglądu i mieszkania.", "refs": ["G17", "G18", "G19"], "source": {"id": "S-PAISSE", "loc": "s. 125"}, "chars": ["goriot"], "status": "źródło-fragment"},
-    {"id": "T38", "mod": "poetyka", "typ": "interpretacja", "text": "Wszystkie główne postacie łączą pensjonat Vauquer ze światem zewnętrznym: wielowątkowość ma wspólny punkt w jednym domu.", "source": {"id": "S-VINC", "loc": "s. 3"}, "status": "źródło-fragment"},
-    {"id": "T39", "mod": "poetyka", "typ": "interpretacja", "text": "Powieść Balzaka prawie zawsze daje przekrój społeczny od szczytów do nizin i pokazuje związki między faktami, których zwykle nie widzimy.", "source": {"id": "S-BOY-BALZAK", "quote": "Prawie zawsze daje on przekrój społeczny od szczytów do nizin"}, "status": "źródło"},
-    {"id": "T40", "mod": "poetyka", "typ": "interpretacja", "text": "Paradoks mandaryna powraca w powieści jako motyw: Bianchon go odrzuca, a odpowiedź Rastignaca przy drugiej rozmowie przestaje być żartem.", "refs": ["P05", "P06"], "source": {"id": "S-HZ2019", "loc": "s. 10, 14"}, "chars": ["rastignac", "bianchon"], "motif": ["mandaryn"], "status": "źródło"},
-    {"id": "T41", "mod": "poetyka", "typ": "fakt", "text": "Przypisanie paradoksu mandaryna Rousseau jest wątpliwe: takiego fragmentu nie znaleziono w jego dziełach, a za prawdopodobne źródło uchodzi „Geniusz chrześcijaństwa” Chateaubrianda.", "source": {"id": "S-HZ2019", "loc": "s. 10–13"}, "motif": ["mandaryn"], "status": "źródło"},
-    {"id": "T42", "mod": "poetyka", "typ": "interpretacja", "text": "Bal pożegnalny pani de Beauséant i agonia Goriota tworzą kontrast: obowiązki towarzyskie córek wygrywają z ostatnią wolą ojca.", "rows": [[2, "Organizowanie wystawnych balów"]], "links": [[2, 19]], "chars": ["goriot", "anastazja", "delfina", "beauseant"], "status": "autorska"},
-    {"id": "T43", "mod": "poetyka", "typ": "interpretacja", "text": "Dzieje Goriota i małżeństwa jego córek poznajemy z retrospekcji wstawionej w bieg akcji; przeszłość wyjaśnia teraźniejszą nędzę.", "refs": ["G03"], "chars": ["goriot"], "status": "autorska"}
-  ],
-
-  "scenes": [
-    {"id": "S01", "title": "Opis pensjonatu", "refs": ["G01", "P02"], "function": "Ekspozycja: wprowadza miejsce, które skupia wszystkie wątki, i ustala zasady opowiadania.", "theses": ["T33", "T36", "T38"], "questions": ["Jakie cechy pensjonatu zapowiadają losy jego mieszkańców?", "Po co narrator zwraca się bezpośrednio do czytelnika?"]},
-    {"id": "S02", "title": "Srebra Goriota", "refs": ["G08", "G09"], "function": "Tajemnica: Rastignac widzi przez dziurkę od klucza czynność, której sensu jeszcze nie rozumie.", "theses": ["T37"], "questions": ["Dlaczego scena jest pokazana z perspektywy Rastignaca, a nie narratora?", "Co zniszczenie pamiątkowych sreber mówi o hierarchii wartości Goriota?"]},
-    {"id": "S03", "title": "Pierwsza wizyta u Restaudów", "refs": ["G10", "G11"], "function": "Próba: pierwszy błąd Rastignaca w salonie ujawnia, czego wstydzą się córki Goriota.", "theses": ["T28"], "questions": ["Jak jedno nazwisko zmienia przebieg wizyty?", "Czego Rastignac dowiaduje się o świecie, w którym chce się znaleźć?"]},
-    {"id": "S04", "title": "Lekcja pani de Beauséant", "refs": ["G05", "P13"], "function": "Inicjacja: arystokratka wykłada reguły świata, w którym powodzenie jest kluczem do władzy.", "theses": ["T15", "T30"], "questions": ["Na czym według pani de Beauséant polega powodzenie w Paryżu?", "Jaką rolę w tej strategii odgrywają kobiety?"]},
-    {"id": "S05", "title": "Lekcja Vautrina", "refs": ["G28", "G29", "G30", "P03", "P04", "P10"], "function": "Kontrapunkt: drugi mentor pokazuje ten sam świat bez złudzeń i proponuje drogę przez zbrodnię.", "theses": ["T05", "T16", "T31"], "questions": ["Czym różni się diagnoza świata u Vautrina od lekcji pani de Beauséant, a w czym są zbieżne?", "Jak Vautrin wycenia drogę uczciwej kariery?"]},
-    {"id": "S06", "title": "Listy do rodziny", "refs": ["G26", "G27"], "function": "Koszt awansu: ofiara rodziny zostaje zestawiona z ofiarami Anastazji dla kochanka.", "theses": ["T16"], "questions": ["Jakie argumenty Rastignac stosuje w prośbie o pieniądze?", "Dlaczego porównuje siebie z Anastazją?"]},
-    {"id": "S07", "title": "Paradoks mandaryna", "refs": ["P05", "P06"], "function": "Probierz sumienia: abstrakcyjne pytanie filozoficzne przybiera konkretną postać w planie Vautrina.", "theses": ["T40", "T41", "T32"], "questions": ["Kogo w akcji powieści może oznaczać „mandaryn”?", "Jak zmienia się sens żartu między pierwszą a drugą rozmową?"]},
-    {"id": "S08", "title": "Los Wiktoryny", "refs": ["P18", "G07", "G13", "G14", "G12"], "function": "Wątek poboczny ilustruje mechanizm dziedziczenia: śmierć brata zmienia ubogą sierotę w bogatą partię.", "theses": ["T08", "T29"], "questions": ["Co decyduje o wartości Wiktoryny jako kandydatki do małżeństwa?", "Dlaczego jej los jest dla Rastignaca próbą moralną?"]},
-    {"id": "S09", "title": "Demaskacja Vautrina", "refs": ["G24", "G25", "G06"], "function": "Zwrot akcji: upadek najsilniejszej postaci pensjonatu następuje przez donos przeciętnych lokatorów.", "theses": ["T22"], "questions": ["Dlaczego Vautrina pokonują Michonneau i Poiret, a nie siła?", "Jak pensjonariusze oceniają donos panny Michonneau?"]},
-    {"id": "S10", "title": "Śmierć i pogrzeb Goriota", "refs": ["P08", "P09", "G37", "G38", "G39"], "function": "Kulminacja wątku ojcowskiego: pogrzeb opłacają obcy studenci, a córki przysyłają puste powozy.", "theses": ["T19", "T20", "T42"], "questions": ["Jak Goriot w agonii ocenia swoje ojcostwo?", "Co znaczą puste powozy z herbami w orszaku pogrzebowym?"]},
-    {"id": "S11", "title": "Wyzwanie rzucone Paryżowi", "refs": ["P11", "G40"], "function": "Zakończenie otwarte: inicjacja się dopełnia, a bohater wraca do świata, który zabił Goriota.", "theses": ["T18", "T09"], "questions": ["Jak można rozumieć słowa „Teraz my się spróbujemy!”?", "Dlaczego pierwszym krokiem Rastignaca jest obiad u pani de Nucingen?"]}
-  ],
-
-  "contexts": [
-    {"id": "C01", "work": "Bolesław Prus, „Lalka”", "theme": "pieniądz i pozycja", "common": "Majątek nie wystarcza, by zostać przyjętym przez arystokrację; liczą się pochodzenie i salon.", "diff": "Goriot oddaje pieniądze, by córki weszły wyżej, a sam zostaje wykluczony; Wokulski zdobywa majątek, by zbliżyć się do Izabeli, i przekonuje się, że arystokratyczny świat go nie przyjmie.", "refs": ["G03", "G10"], "status": "autorska"},
-    {"id": "C02", "work": "William Szekspir, „Król Lear”", "theme": "ojcostwo i utrata władzy", "common": "Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony.", "diff": "Lear traci królestwo i władzę polityczną; Goriot jest mieszczaninem, a jego upadek przebiega w realiach finansowych i obyczajowych Paryża.", "refs": ["P09", "P08", "G39"], "status": "autorska"},
-    {"id": "C03", "work": "Stendhal, „Czerwone i czarne”", "theme": "awans", "common": "Julien Sorel i Rastignac stanowią podstawy literackiego typu karierowicza, który otrzyma nazwę dopiero w 1893 roku.", "diff": "Sorel wywodzi się z niższej warstwy i nie zostaje przyjęty z powodu pochodzenia; Rastignac pochodzi ze zubożałej szlachty i korzysta z koneksji rodzinnych.", "refs": ["G04", "G40"], "source": {"id": "S-HZ2019", "loc": "s. 16–17; por. S-HZ2018, s. 106"}, "status": "źródło"},
-    {"id": "C04", "work": "Fiodor Dostojewski, „Zbrodnia i kara”", "theme": "moralny koszt korzyści", "common": "Pytanie, czy wolno poświęcić cudze życie dla dobra własnego lub bliskich, pada w rozmowie młodych ludzi: Rastignaca z Bianchonem oraz studenta z oficerem, którą podsłuchuje Raskolnikow.", "diff": "Rastignac nie zabija i odrzuca plan Vautrina, choć z niego korzysta; Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje.", "refs": ["P05", "P06", "G31"], "status": "autorska"}
-  ],
-
-  "czz": {
-    "title": "„Komedja ludzka” na tle epoki",
-    "source": "S-BOY-BALZAK",
-    "from": "Panowanie Ludwika Filipa",
-    "to": "pozował mu do jego dzieła, poczynając od owej księżnej de Castries, która posłużyła mu za model do niejednej arystokratycznej damy.",
-    "questions": [
-      "Jakie dwie cechy panowania Ludwika Filipa autor nazywa cnotami, które dopiero „dziś umiemy ocenić”?",
-      "Wyjaśnij, dlaczego Boy nazywa Balzaka „poetą pieniądza”.",
-      "Czym według autora różni się ujęcie pieniądza u Balzaka od jego obecności w komediach Moliera?",
-      "Jak autor określa Goriota w wyliczeniu postaci „Komedii ludzkiej”?",
-      "Co autor rozumie przez „prawo mimicry”? Podaj przykład z „Ojca Goriot”.",
-      "Jak autor odróżnia metodę Balzaka od „zwykłej obserwacji realisty”?"
-    ],
-    "key": [
-      "Pokój za wszelką cenę oraz popieranie przemysłu i handlu.",
-      "Bo pieniądz jest u niego przemożną, niemal symboliczną siłą, która przenika wszystko i kształtuje sprawy wielkie i drobne; Balzac ukazuje go dokładnie, aż do stanu posiadania bohaterów.",
-      "U Moliera pieniądz był abstrakcją, „złotem”; u Balzaka jest pokazany realistycznie: jak powstaje i krąży, kto go zdobywa i wydaje.",
-      "„Ex-jakobin Goriot, spekulujący niegdyś na żywności” — jeden z dwóch starych „poczciwców”.",
-      "Upodabnianie się żywej osoby do tła; np. pani Vauquer i jej pensjonat opisane tak, że wygląd gospodyni i domu nawzajem się tłumaczą (przykład należy uzasadnić tekstem).",
-      "To nie jest zwykła obserwacja, lecz „intuicja poety”; Balzac nie portretował osób z rzeczywistości, tylko tworzył postacie syntetycznie."
-    ]
+  {
+   "id": "S-BOY",
+   "kind": "tekst",
+   "title": "Honoré de Balzac, Ojciec Goriot, tłum. Tadeusz Boy-Żeleński",
+   "edition": "Biblioteka Boya, Zakłady Wydawnicze M. Arct, Warszawa 1938; transkrypcja Wikiźródeł",
+   "url": "https://pl.wikisource.org/wiki/Ojciec_Goriot_(Balzac,_1938)/Ojciec_Goriot",
+   "rights": "domena publiczna",
+   "status": "odczytany w całości",
+   "note": "Strony druku (s. 17–267) = numer skanu DjVu minus 4; przesunięcie sprawdzono na trzech obrazach skanu."
+  },
+  {
+   "id": "S-BOY-BALZAK",
+   "kind": "krytyka",
+   "title": "Tadeusz Boy-Żeleński, Balzak, rozdz. 8: „Komedja ludzka” na tle epoki",
+   "edition": "Państwowe Wydawnictwo Książek Szkolnych, Lwów 1934; transkrypcja Wikiźródeł",
+   "url": "https://pl.wikisource.org/wiki/Balzak/8._%E2%80%9EKomedja_ludzka%E2%80%9C_na_tle_epoki",
+   "rights": "domena publiczna",
+   "status": "odczytany w całości",
+   "note": "Rozdział zajmuje s. 93–111 druku. Strona druku = numer skanu minus 11 (sprawdzono na skanie 110 = s. 99). Zakres „s. 110–115” z zamówienia to numery skanów, czyli s. 99–104 druku."
+  },
+  {
+   "id": "S-HZ2019",
+   "kind": "naukowe",
+   "title": "Anna Hanotte-Zawiślak, Le retour du « paradoxe du mandarin » dans la construction de l’arriviste littéraire au XIXe siècle",
+   "edition": "Cahiers ERTA 18 (2019), s. 9–23",
+   "doi": "10.4467/23538953CE.19.010.10695",
+   "url": "https://czasopisma.bg.ug.edu.pl/index.php/CE/article/view/3313",
+   "rights": "otwarty dostęp; nie redystrybuujemy PDF",
+   "status": "odczytany (s. 9–17)",
+   "note": "Wykorzystano wywód o Ojcu Goriot (s. 10–17); część o Claudzie Barsacu pominięto."
+  },
+  {
+   "id": "S-HZ2018",
+   "kind": "naukowe",
+   "title": "Anna Hanotte-Zawiślak, L’arriviste : emblème du déplacement dans le roman réaliste français des années 1830–1895. Esquisse",
+   "edition": "Roczniki Humanistyczne 66/5 (2018), s. 103–113",
+   "doi": "10.18290/rh.2018.66.5-7",
+   "url": "https://ojs.tnkul.pl/index.php/rh/article/view/6758",
+   "rights": "otwarty dostęp; nie redystrybuujemy PDF",
+   "status": "odczytany w całości",
+   "note": ""
+  },
+  {
+   "id": "S-VINC",
+   "kind": "naukowe",
+   "title": "Geneviève Vinciguerra, Trois drames de la paternité frustrée : Goriot, Vautrin, Balzac",
+   "edition": "Littératures 17 (1970), s. 3–14",
+   "doi": "10.3406/litts.1970.1025",
+   "url": "https://www.persee.fr/doc/litts_0563-9751_1970_num_17_2_1025",
+   "rights": "Persée",
+   "status": "odczytano tylko s. 3",
+   "note": "Pełny tekst i PDF chroni zabezpieczenie antybotowe Persée; wykorzystano wyłącznie pierwszą stronę."
+  },
+  {
+   "id": "S-PAISSE",
+   "kind": "naukowe",
+   "title": "Jean-Marie Paisse, Un portrait du Père Goriot",
+   "edition": "Bulletin de l’Association Guillaume Budé 1968, nr 1, s. 125–130",
+   "doi": "10.3406/bude.1968.3004",
+   "url": "https://www.persee.fr/doc/bude_0004-5527_1968_num_1_1_3004",
+   "rights": "Persée",
+   "status": "odczytano tylko s. 125",
+   "note": "Autor w zamówieniu nie był podany; ustalono go z rekordu Persée."
+  },
+  {
+   "id": "S-RIEGERT",
+   "kind": "naukowe",
+   "title": "Guy Riegert, Le Père Goriot (1835)",
+   "edition": "Hatier 1992, ISBN 9782218947704",
+   "status": "nieodczytany",
+   "note": "Pliku EPUB nie było na komputerze w chwili wdrożenia. Żadna teza nie powołuje się na tę książkę."
+  },
+  {
+   "id": "S-MDB",
+   "kind": "naukowe",
+   "title": "Maison de Balzac, notice: Le Père Goriot",
+   "url": "https://www.maisondebalzac.paris.fr/vocabulaire/furne/notices/pere_goriot.htm",
+   "status": "niedostępny",
+   "note": "26.11.2026 serwis Paris Musées wyświetlał komunikat o przerwie technicznej."
+  },
+  {
+   "id": "S-KUR",
+   "kind": "naukowe",
+   "title": "Jan Kurowicki, Bulgotanie brudów (Jak interpretować „Ojca Goriot” Honoriusza Balzaca?)",
+   "edition": "Dydaktyka Literatury 15 (1995)",
+   "url": "https://zbc.uz.zgora.pl/dlibra/publication/59084/edition/50799",
+   "status": "tylko opis bibliograficzny",
+   "note": "Pełnego tekstu nie pobrano."
+  },
+  {
+   "id": "S-KARCZ",
+   "kind": "do pozyskania",
+   "title": "Zofia Karczewska-Markiewicz, „Ojciec Goriot” Honoriusza Balzaka (Biblioteka Analiz Literackich 26)",
+   "status": "nieodczytany"
+  },
+  {
+   "id": "S-BARB",
+   "kind": "do pozyskania",
+   "title": "Pierre Barbéris, Le Père Goriot de Balzac. Écriture, structures, significations (1972)",
+   "status": "nieodczytany"
+  },
+  {
+   "id": "S-BROOKS",
+   "kind": "do pozyskania",
+   "title": "Peter Brooks (red.), Père Goriot, Norton Critical Edition (1998)",
+   "status": "nieodczytany"
+  },
+  {
+   "id": "S-GINS",
+   "kind": "do pozyskania",
+   "title": "Michal Peled Ginsburg (red.), Approaches to Teaching Balzac’s Old Goriot (2000)",
+   "status": "nieodczytany"
   }
+ ],
+ "passages": [
+  {
+   "id": "P01",
+   "title": "Paryż jako ocean",
+   "bort": [
+    "Ale Paryż to istny ocean. Na próżno sondę zapuszczać będziecie, nigdy nie zbadacie jego głębokości."
+   ],
+   "boy": [
+    "Ale Paryż to prawdziwy ocean. Możecie rzucać weń sondę, nigdy nie poznacie prawdziwej jego głębokości."
+   ]
+  },
+  {
+   "id": "P02",
+   "title": "„All is true”",
+   "bort": [
+    "Ach! wierzcie mi, ten dramat nie jest ani wymysłem, ani romansem. All is true, jest on tak prawdziwy, że każdy znajdzie w sobie, może nawet w swym sercu, te same czynniki, z których on się składa."
+   ],
+   "boy": [
+    "Ach, wiedzcie: dramat ten nie jest ani wymysłem, ani romansem. All is true, jest on tak prawdziwy, że każdy odnajdzie jego składniki w sobie, może we własnym sercu."
+   ]
+  },
+  {
+   "id": "P03",
+   "title": "Vautrin: nie ma zasad",
+   "bort": [
+    "Nie ma na świecie zasad, są tylko wypadki, nie ma praw, są tylko okoliczności. Człowiek wyższy umie korzystać z trafu i z okoliczności."
+   ],
+   "boy": [
+    "Nie ma zasad, są tylko wypadki; nie ma praw, tylko okoliczności: człowiek wyższy chwyta w ręce wypadki i okoliczności, aby nimi kierować."
+   ]
+  },
+  {
+   "id": "P04",
+   "title": "Vautrin o hipokryzji społecznej",
+   "bort": [
+    "Inny ukradł milion i uchodzi w salonach za wzór cnoty."
+   ],
+   "boy": [
+    "Ukradnij milion, będziesz figurował w salonach jako cnota."
+   ]
+  },
+  {
+   "id": "P05",
+   "title": "Paradoks mandaryna",
+   "bort": [
+    "— Czy przypominasz sobie ten ustęp, gdzie autor zapytuje, co by czytelnik zrobił, gdyby mógł, nie ruszając się z Paryża, siłą woli tylko zabić jakiegoś mandaryna w Chinach?",
+    "— Przypominam.",
+    "— I cóż ty na to?",
+    "— Zachciałeś! Ja myślę już o trzydziestym trzecim mandarynie.",
+    "— Nie żartuj. Słuchaj, gdybyś wiedział, że to rzecz prawdopodobna, że chodzi tylko o twe skinienie, powiedz, jakbyś postąpił?",
+    "— A czy ten mandaryn bardzo stary? Wreszcie, młody czy stary, sparaliżowany czy zdrów, co mi tam! Słowo daję, że… Do licha! Nie, ja bym się nie zgodził."
+   ],
+   "boy": [
+    "— Przypominasz sobie ustęp, w którym pyta czytelnika, co by uczynił, gdyby mógł się stać bogatym, zabijając w Chinach, jedynie mocą swojej woli, nie ruszając się z Paryża, starego mandaryna?",
+    "— Tak.",
+    "— No i...?",
+    "— Ba! jestem właśnie przy trzydziestym trzecim mandarynie.",
+    "— Nie żartuj. No więc, gdyby ci udowodniono, że rzecz jest możliwa i że wystarczy skinienie głową, zrobiłbyś...?",
+    "— A stary ten mandaryn? Ale ba! młody czy stary, sparaliżowany czy zdrów jak ryba, na honor... Do paralusza! Otóż — nie."
+   ]
+  },
+  {
+   "id": "P06",
+   "title": "Powrót mandaryna",
+   "bort": [
+    "— Czy nie zabiliśmy tylko mandaryna? — zapytał go raz Bianchon, wstając od stołu.",
+    "— Nie umarł dotychczas, ale już charczy — odparł Eugeniusz.",
+    "Student medycyny wziął te słowa za żart, ale Eugeniusz nie myślał żartować."
+   ],
+   "boy": [
+    "— Zabiliśmy tedy mandaryna? rzekł doń pewnego dnia Bianchon, wstając od stołu.",
+    "— Jeszcze nie, odparł, ale rzęzi.",
+    "Student wziął to za żart, a nie było to żartem!"
+   ]
+  },
+  {
+   "id": "P07",
+   "title": "Ideał ojcostwa / Chrystus ojcostwa",
+   "bort": [
+    "Chcąc dobrze odmalować oblicze tego ideału ojcostwa, trzeba by szukać wzoru w postaciach, które mistrze pędzla stworzyli dla oddania męki Zbawiciela, cierpiącego za świat cały."
+   ],
+   "boy": [
+    "Aby dobrze oddać twarz tego Chrystusa ojcostwa, trzebaby szukać porównań w obrazach, które wymyślili mistrze pędzla, aby odmalować mękę ścierpianą przez Zbawiciela dla dobra świata."
+   ]
+  },
+  {
+   "id": "P08",
+   "title": "Świat stoi na ojcostwie",
+   "bort": [
+    "Społeczeństwo, świat cały stoi na ojcostwie, wszystko więc runie, gdy dzieci nie będą ojców kochały."
+   ],
+   "boy": [
+    "Społeczeństwo, świat wspierają się na ojcostwie, wszystko zawali się, jeśli dzieci nie będą kochały rodziców."
+   ]
+  },
+  {
+   "id": "P09",
+   "title": "Pieniądz daje wszystko",
+   "bort": [
+    "Tak, mógłbym mieć to wszystko, a nic nie mam, pieniądz daje wszystko, nawet córki."
+   ],
+   "boy": [
+    "Miał bym to wszystko. Ale nic!... Pieniądz daje wszystko, nawet dzieci."
+   ]
+  },
+  {
+   "id": "P10",
+   "title": "Rachunek Vautrina: koszt życia w Paryżu",
+   "bort": [
+    "Cóż, synku, musimy mieć dwadzieścia pięć tysiączków rocznie, lub wpadamy w błoto, wystawiamy się na pośmiewisko i jesteśmy pozbawieni przyszłości, powodzenia, kochanek!"
+   ],
+   "boy": [
+    "Razem, piękne dziecię, doliczyli byśmy się dwudziestu pięciu tysięcy na rok, inaczej wleziemy w błoto, ściągniemy na siebie drwiny i możemy pożegnać przyszłość, powodzenie, kochanki!"
+   ]
+  },
+  {
+   "id": "P11",
+   "title": "Widok Paryża z Père-Lachaise",
+   "bort": [
+    "Oczy studenta zatrzymały się chciwie pomiędzy kolumną placu Vendôme a kopułą Inwalidów, w miejscu, gdzie żyło towarzystwo wykwintne, do którego on dostać się usiłował. Zmierzył ten ul brzęczący spojrzeniem, które zdawało się od razu wszystek miód z niego wysysać, i wyrzekł te wielkie słowa:"
+   ],
+   "boy": [
+    "Oczy jego uczepiły się niemal chciwie miejsca między placem Vendôme a kopułą Inwalidów, miejsca gdzie żył ten wykwintny świat, do którego chciał się dostać. Objął ten brzęczący ul spojrzeniem, które wysysało zeń zawczasu wszystkie miody, i wyrzekł te dumne słowa:"
+   ]
+  },
+  {
+   "id": "P12",
+   "title": "Łowca milionów",
+   "bort": [
+    "pan jesteś łowiec milionów. Chcesz je pan schwytać, więc robisz zasadzki, zastawiasz sieci, nęcisz na wabika."
+   ],
+   "boy": [
+    "ty jesteś łowcą milionów. Aby je chwycić, używasz podstępów, zasadzek, przynęt."
+   ]
+  },
+  {
+   "id": "P13",
+   "title": "Dwa domy, dwie dzielnice",
+   "bort": [
+    "mógł bywać na przedmieściu Saint-Germain u wicehrabiny de Beauséant, a na Chaussée-d’Antin uklęknąć przed hrabiną de Restaud;"
+   ],
+   "boy": [
+    "oprzeć stopę w Saint-Germain u wicehrabiny de Beauséant, kolano na Chaussée d’Antin u hrabiny de Restaud!"
+   ]
+  },
+  {
+   "id": "P14",
+   "title": "Rok 1819",
+   "bort": [
+    "Jednakże w roku 1819, to jest w chwili rozpoczęcia się naszego dramatu, mieszkała tam jedna uboga dziewczyna."
+   ],
+   "boy": [
+    "W 1819 r. wszakże, epoce w której rozpoczyna się ten dramat, zamieszkała tam jedna młoda panienka."
+   ]
+  },
+  {
+   "id": "P15",
+   "title": "Goriot u pani Vauquer od 1813 roku",
+   "bort": [
+    "Ojciec Goriot, starzec prawie sześćdziesięciodziewięcioletni, przeprowadził się do pani Vauquer w 1813 roku, wycofawszy się poprzednio z interesów."
+   ],
+   "boy": [
+    "Ojciec Goriot, starzec sześćdziesięciodziewięcioletni, osiedlił się u pani Vauquer w 1813, wycofawszy się z interesów."
+   ]
+  },
+  {
+   "id": "P16",
+   "title": "Luty 1820: termin wyprowadzki",
+   "bort": [
+    "— Proszę pana — rzekła wdowa — i ojciec Goriot i pan mieliście opuścić mój dom piętnastego lutego. Tymczasem trzy dni upłynęły już od tej daty."
+   ],
+   "boy": [
+    "— Proszę pana, rzekła wdowa, pan Goriot i pan mieliście się wyprowadzić 15 lutego. Oto już trzy dni jak 15 minął, mamy dziś 18;"
+   ]
+  },
+  {
+   "id": "P17",
+   "title": "Data pod tekstem",
+   "bort": [
+    "Sache, we wrześniu 1834."
+   ],
+   "boy": [
+    "Saché, wrzesień 1834."
+   ]
+  },
+  {
+   "id": "P19",
+   "title": "Grudniowe listy z domu",
+   "bort": [
+    "W pierwszych dniach grudnia Rastignac otrzymał dwa listy: od matki i od starszej siostry."
+   ],
+   "boy": [
+    "Z początkiem grudnia Rastignac otrzymał dwa listy, jeden od matki, drugi od starszej siostry."
+   ]
+  },
+  {
+   "id": "P20",
+   "title": "Mieszkańcy pensjonatu",
+   "long": true,
+   "bort_range": [
+    "W chwili, gdy się ta powieść zaczyna",
+    "gdzie sypiał posługacz zwany Krzysztofem i gruba Sylwia, kucharka."
+   ],
+   "boy_range": [
+    "W dobie gdy zaczyna się ta historia",
+    "gdzie sypiali posługacz Krzysztof i gruba Sylwia, kucharka."
+   ]
+  },
+  {
+   "id": "P21",
+   "title": "Goriot na kolejnych piętrach",
+   "long": true,
+   "bort_range": [
+    "Ku końcowi drugiego roku, Goriot usprawiedliwił",
+    "odprawił fryzjera i odtąd się nie pudrował."
+   ],
+   "boy_range": [
+    "Na nieszczęście, z końcem drugiego roku",
+    "oddalił fryzjera i przestał używać pudru."
+   ]
+  },
+  {
+   "id": "P22",
+   "title": "Pani Couture i Wiktoryna opuszczają pensjonat",
+   "long": true,
+   "bort_range": [
+    "Pani Couture i Wiktoryna żądają",
+    "brak pięciu stołowników!"
+   ],
+   "boy_range": [
+    "Pani Couture i Wiktoryna proszą",
+    "pięcioro pensjonarzy mniej!..."
+   ]
+  },
+  {
+   "id": "P23",
+   "title": "Bianchon zajmie miejsce Eugeniusza",
+   "bort": [
+    "Eugeniusz pocieszał wdowę, że na swoje miejsce zostawi jej pewnie Bianchona, którego kontrakt kończy się za dni kilka,"
+   ],
+   "boy": [
+    "Eugeniusz pocieszył ją, mówiąc że Bianchon, którego internat kończy się za kilka dni, zajmie z pewnością jego miejsce;"
+   ]
+  },
+  {
+   "id": "P24",
+   "title": "Pierwsze mieszkanie Goriota",
+   "bort": [
+    "Zajął zrazu mieszkanie należące obecnie do pani Couture i płacił tysiąc dwieście franków komornego,"
+   ],
+   "boy": [
+    "Zrazu wziął mieszkanie zajmowane obecnie przez panią Couture i płacił tysiąc dwieście franków,"
+   ]
+  },
+  {
+   "id": "P25",
+   "title": "Front domu od strony ogródka",
+   "bort": [
+    "Front gospody zwrócony jest na ogródek;"
+   ],
+   "boy": [
+    "Front wychodzi na ogródek,"
+   ]
+  },
+  {
+   "id": "P18",
+   "title": "Wydziedziczenie Wiktoryny",
+   "bort": [
+    "Ojciec Wiktoryny sądził się w prawie nie uznawać córki, nie chciał jej mieć przy sobie, przeznaczał jej tylko sześćset franków rocznie, wreszcie sprzedał swoje dobra, chcąc wszystko przekazać synowi."
+   ],
+   "boy": [
+    "Ojciec Wiktoryny, podejrzewając że to dziecko nie jest jego, nie chciał jej przy sobie, wyznaczył córce jedynie sześćset franków rocznie i obszedł prawo, aby przekazać cały majątek synowi."
+   ]
+  }
+ ],
+ "timeline": {
+  "world": [
+   {
+    "date": "1813",
+    "text": "Goriot, wycofany z interesów, zamieszkuje u pani Vauquer.",
+    "ref": "P15"
+   },
+   {
+    "date": "1819",
+    "text": "Początek akcji w pensjonacie pani Vauquer.",
+    "ref": "P14"
+   },
+   {
+    "date": "grudzień",
+    "text": "Rastignac otrzymuje listy od matki i siostry z pieniędzmi, o które prosił.",
+    "ref": "P19"
+   },
+   {
+    "date": "luty następnego roku",
+    "text": "Mija termin wyprowadzki z pensjonatu; w kolejnych dniach Goriot umiera i zostaje pochowany na Père-Lachaise.",
+    "ref": "P16"
+   }
+  ],
+  "publication": [
+   {
+    "date": "IX 1834 – 26 I 1835",
+    "text": "Balzac pisze powieść.",
+    "source": {
+     "id": "S-VINC",
+     "loc": "s. 3"
+    }
+   },
+   {
+    "date": "IX 1834",
+    "text": "Data umieszczona pod tekstem powieści: Saché, wrzesień 1834.",
+    "ref": "P17"
+   },
+   {
+    "date": "1881",
+    "text": "Przekład Amelii Bortnowskiej w „Komedyi ludzkiej” wydawanej przez S. Lewentala.",
+    "source": {
+     "id": "S-BORT",
+     "loc": "metryka wydania Wolnych Lektur"
+    }
+   },
+   {
+    "date": "1934",
+    "text": "Tadeusz Boy-Żeleński wydaje monografię „Balzak”.",
+    "source": {
+     "id": "S-BOY-BALZAK",
+     "loc": "karta tytułowa"
+    }
+   },
+   {
+    "date": "1938",
+    "text": "Przekład Boya-Żeleńskiego w Bibliotece Boya.",
+    "source": {
+     "id": "S-BOY",
+     "loc": "karta tytułowa"
+    }
+   }
+  ]
+ },
+ "pension": {
+  "floors": [
+   {
+    "name": "Poddasze",
+    "rooms": [
+     {
+      "name": "Suszarnia",
+      "who": "strych do suszenia bielizny",
+      "refs": [
+       "P20"
+      ]
+     },
+     {
+      "name": "Krzysztof",
+      "who": "posługacz",
+      "refs": [
+       "P20"
+      ]
+     },
+     {
+      "name": "Sylwia",
+      "who": "kucharka",
+      "refs": [
+       "P20"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "3. piętro",
+    "note": "cztery pokoje; 45 franków miesięcznie za stół i mieszkanie",
+    "rooms": [
+     {
+      "name": "Panna Michonneau",
+      "who": "stara panna",
+      "refs": [
+       "P20"
+      ],
+      "char": "michonneau"
+     },
+     {
+      "name": "Ojciec Goriot",
+      "who": "tu od końca trzeciego roku pobytu",
+      "refs": [
+       "P20",
+       "G19"
+      ],
+      "char": "goriot"
+     },
+     {
+      "name": "Eugeniusz de Rastignac",
+      "who": "student prawa spod Angoulême",
+      "refs": [
+       "P20"
+      ],
+      "char": "rastignac"
+     },
+     {
+      "name": "Pokój wolny",
+      "who": "dla „przelotnych ptaków”, najczęściej studentów",
+      "refs": [
+       "P20"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "2. piętro",
+    "note": "po 72 franki miesięcznie",
+    "rooms": [
+     {
+      "name": "Poiret",
+      "who": "staruszek",
+      "refs": [
+       "P20"
+      ],
+      "char": "poiret"
+     },
+     {
+      "name": "Vautrin",
+      "who": "uchodzi za byłego kupca",
+      "refs": [
+       "P20",
+       "G06"
+      ],
+      "char": "vautrin"
+     }
+    ]
+   },
+   {
+    "name": "1. piętro",
+    "note": "dwa najlepsze mieszkania w domu",
+    "rooms": [
+     {
+      "name": "Pani Vauquer",
+      "who": "skromniejsze z dwóch mieszkań",
+      "refs": [
+       "P20"
+      ],
+      "char": "vauquer"
+     },
+     {
+      "name": "Pani Couture i Wiktoryna",
+      "who": "razem 1800 franków rocznie; wcześniej mieszkał tu Goriot",
+      "refs": [
+       "P20",
+       "P24"
+      ],
+      "char": "wiktoryna"
+     }
+    ]
+   },
+   {
+    "name": "Parter",
+    "note": "część wspólna; front domu od strony ogródka",
+    "rooms": [
+     {
+      "name": "Salon",
+      "who": "szklane drzwi, dwa okna",
+      "refs": [
+       "P25"
+      ]
+     },
+     {
+      "name": "Jadalnia",
+      "who": "obok salonu",
+      "refs": [
+       "P25"
+      ]
+     },
+     {
+      "name": "Kuchnia",
+      "who": "za sienią ze schodami",
+      "refs": [
+       "P25"
+      ]
+     }
+    ]
+   }
+  ],
+  "moves": [
+   {
+    "who": "Ojciec Goriot",
+    "char": "goriot",
+    "steps": [
+     {
+      "text": "1813: mieszkanie na 1. piętrze, 1200 franków",
+      "ref": "P24"
+     },
+     {
+      "text": "koniec 2. roku: 2. piętro, 900 franków",
+      "ref": "G18"
+     },
+     {
+      "text": "koniec 3. roku: 3. piętro, 45 franków miesięcznie",
+      "ref": "G19"
+     },
+     {
+      "text": "luty: umiera w swoim pokoju",
+      "ref": "G37"
+     }
+    ]
+   },
+   {
+    "who": "Vautrin",
+    "char": "vautrin",
+    "steps": [
+     {
+      "text": "2. piętro",
+      "ref": "P20"
+     },
+     {
+      "text": "aresztowany w jadalni pensjonatu",
+      "ref": "G06"
+     }
+    ]
+   },
+   {
+    "who": "Pani Couture i Wiktoryna",
+    "char": "wiktoryna",
+    "steps": [
+     {
+      "text": "1. piętro",
+      "ref": "P20"
+     },
+     {
+      "text": "po śmierci brata Wiktoryny przenoszą się do jej ojca",
+      "ref": "P22"
+     }
+    ]
+   },
+   {
+    "who": "Eugeniusz de Rastignac",
+    "char": "rastignac",
+    "steps": [
+     {
+      "text": "3. piętro, pokój studenta",
+      "ref": "P20"
+     },
+     {
+      "text": "opuszcza pensjonat; jego miejsce ma zająć Bianchon",
+      "ref": "P23"
+     }
+    ]
+   }
+  ],
+  "checks": [
+   {
+    "claim": "Rozkład lokatorów na piętrach na początku akcji",
+    "verdict": "zgodne",
+    "refs": [
+     "P20"
+    ]
+   },
+   {
+    "claim": "Poddasze: suszarnia, Krzysztof i Sylwia",
+    "verdict": "zgodne",
+    "refs": [
+     "P20"
+    ]
+   },
+   {
+    "claim": "Czwarty pokój na 3. piętrze dla studentów",
+    "verdict": "zgodne",
+    "comment": "Tekst mówi o dwóch pokojach dla „przelotnych ptaków”; jeden z nich zajmuje Rastignac.",
+    "refs": [
+     "P20"
+    ]
+   },
+   {
+    "claim": "Goriot: najpierw lepszy pokój niżej, potem tańszy",
+    "verdict": "zgodne",
+    "comment": "Najpierw obecne mieszkanie pani Couture na 1. piętrze, potem 2. piętro.",
+    "refs": [
+     "P24",
+     "G18"
+    ]
+   },
+   {
+    "claim": "Goriot: „1819: 3. piętro, 45 franków miesięcznie”",
+    "verdict": "nieprecyzyjne",
+    "comment": "Przeprowadzka nastąpiła pod koniec trzeciego roku pobytu (Goriot zamieszkał w 1813). Rok 1819 to początek akcji, gdy już mieszka na 3. piętrze.",
+    "refs": [
+     "P15",
+     "G19"
+    ]
+   },
+   {
+    "claim": "Vautrin: aresztowanie",
+    "verdict": "zgodne",
+    "refs": [
+     "G06"
+    ]
+   },
+   {
+    "claim": "Wiktoryna opuszcza pensjonat po odmianie losu",
+    "verdict": "zgodne",
+    "comment": "Uzupełnienie: razem z panią Couture przenosi się do ojca.",
+    "refs": [
+     "P22"
+    ]
+   },
+   {
+    "claim": "Rastignac: brak informacji o odejściu",
+    "verdict": "uzupełnienie",
+    "comment": "Pod koniec Rastignac opuszcza pensjonat, a jego miejsce ma zająć Bianchon.",
+    "refs": [
+     "P23"
+    ]
+   }
+  ],
+  "long": [
+   "P20",
+   "P21",
+   "P22"
+  ]
+ },
+ "characters": [
+  {
+   "id": "goriot",
+   "name": "Ojciec Goriot",
+   "role": "Dawny fabrykant makaronu i handlarz mąki, od 1813 roku lokator pani Vauquer; oddał córkom majątek.",
+   "refs": [
+    "P15",
+    "G17",
+    "G03"
+   ],
+   "themes": [
+    "ojcostwo",
+    "idealizacja córek",
+    "degradacja"
+   ]
+  },
+  {
+   "id": "rastignac",
+   "name": "Eugeniusz de Rastignac",
+   "role": "Student prawa z ubogiej szlachty prowincjonalnej, kuzyn pani de Beauséant.",
+   "refs": [
+    "G02",
+    "G04",
+    "G40"
+   ],
+   "themes": [
+    "inicjacja społeczna",
+    "konflikt ambicji i sumienia"
+   ]
+  },
+  {
+   "id": "vautrin",
+   "name": "Vautrin (Jakub Collin)",
+   "role": "Lokator pensjonatu, w rzeczywistości zbiegły galernik zwany Trompe-la-Mort (u Boya: Ołży-Śmierć).",
+   "refs": [
+    "G06",
+    "P03",
+    "G30"
+   ],
+   "themes": [
+    "alternatywny mentor",
+    "bunt",
+    "diagnoza hipokryzji"
+   ]
+  },
+  {
+   "id": "bianchon",
+   "name": "Bianchon",
+   "role": "Student medycyny (u Boya: Horacy), przyjaciel Rastignaca; pielęgnuje umierającego Goriota.",
+   "refs": [
+    "P05",
+    "G15",
+    "G38"
+   ],
+   "themes": [
+    "etyczna alternatywa"
+   ]
+  },
+  {
+   "id": "anastazja",
+   "name": "Anastazja de Restaud",
+   "role": "Starsza córka Goriota, żona hrabiego de Restaud, kochanka Maksyma de Trailles.",
+   "refs": [
+    "G03",
+    "G20",
+    "G21"
+   ],
+   "themes": [
+    "zależność od kochanka",
+    "dług"
+   ]
+  },
+  {
+   "id": "delfina",
+   "name": "Delfina de Nucingen",
+   "role": "Młodsza córka Goriota, żona bankiera Nucingena; kochanka Rastignaca.",
+   "refs": [
+    "G03",
+    "G22",
+    "G23"
+   ],
+   "themes": [
+    "zależność od męża",
+    "aspiracje salonowe"
+   ]
+  },
+  {
+   "id": "beauseant",
+   "name": "Wicehrabina de Beauséant",
+   "role": "Kuzynka Rastignaca, dama z przedmieścia Saint-Germain; porzucona przez markiza d’Ajuda-Pinto.",
+   "refs": [
+    "G04",
+    "G05",
+    "P13"
+   ],
+   "themes": [
+    "protekcja",
+    "lekcja świata"
+   ]
+  },
+  {
+   "id": "wiktoryna",
+   "name": "Wiktoryna Taillefer",
+   "role": "Córka bankiera, odsunięta przez ojca od majątku; po śmierci brata jego dziedziczka.",
+   "refs": [
+    "P18",
+    "G07",
+    "G14"
+   ],
+   "themes": [
+    "wydziedziczenie",
+    "posag"
+   ]
+  },
+  {
+   "id": "couture",
+   "name": "Pani Couture",
+   "role": "Wdowa po komisarzu wojskowym, daleka krewna matki Wiktoryny i jej opiekunka.",
+   "refs": [
+    "G07"
+   ],
+   "themes": [
+    "opieka"
+   ]
+  },
+  {
+   "id": "vauquer",
+   "name": "Pani Vauquer",
+   "role": "Właścicielka pensjonatu przy ulicy Neuve-Sainte-Geneviève.",
+   "refs": [
+    "G01",
+    "G18",
+    "G35"
+   ],
+   "themes": [
+    "szacunek zależny od zapłaty"
+   ]
+  },
+  {
+   "id": "michonneau",
+   "name": "Panna Michonneau",
+   "role": "Lokatorka pensjonatu; za nagrodę pomaga policji zdemaskować Vautrina.",
+   "refs": [
+    "G24",
+    "G25"
+   ],
+   "themes": [
+    "donos"
+   ]
+  },
+  {
+   "id": "poiret",
+   "name": "Poiret",
+   "role": "Lokator pensjonatu, towarzysz panny Michonneau.",
+   "refs": [
+    "G25"
+   ],
+   "themes": [
+    "przeciętność"
+   ]
+  },
+  {
+   "id": "nucingen",
+   "name": "Baron de Nucingen",
+   "role": "Bankier, mąż Delfiny; dysponuje jej posagiem.",
+   "refs": [
+    "G22",
+    "G23"
+   ],
+   "themes": [
+    "finansjera"
+   ]
+  },
+  {
+   "id": "restaud",
+   "name": "Hrabia de Restaud",
+   "role": "Mąż Anastazji.",
+   "refs": [
+    "G10"
+   ],
+   "themes": [
+    "arystokracja"
+   ]
+  },
+  {
+   "id": "maksym",
+   "name": "Maksym de Trailles",
+   "role": "Kochanek Anastazji, gracz i dłużnik.",
+   "refs": [
+    "G20",
+    "G21"
+   ],
+   "themes": [
+    "dług"
+   ]
+  },
+  {
+   "id": "taillefer",
+   "name": "Taillefer",
+   "role": "Bankier, ojciec Wiktoryny i Michała (Fryderyka); syn ginie w pojedynku.",
+   "refs": [
+    "P18",
+    "G14"
+   ],
+   "themes": [
+    "dziedziczenie"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "id": "R01",
+   "from": "goriot",
+   "to": "anastazja",
+   "type": "pokrewieństwo",
+   "label": "ojciec; dał posag i spłaca jej długi",
+   "refs": [
+    "G03",
+    "G21"
+   ]
+  },
+  {
+   "id": "R02",
+   "from": "goriot",
+   "to": "delfina",
+   "type": "pokrewieństwo",
+   "label": "ojciec; dał posag i oddaje ostatnie środki",
+   "refs": [
+    "G03",
+    "P09"
+   ]
+  },
+  {
+   "id": "R03",
+   "from": "anastazja",
+   "to": "maksym",
+   "type": "erotyka",
+   "label": "kochanka; płaci jego weksle",
+   "refs": [
+    "G20",
+    "G21"
+   ]
+  },
+  {
+   "id": "R04",
+   "from": "nucingen",
+   "to": "delfina",
+   "type": "ekonomia",
+   "label": "mąż rozporządza jej posagiem i wyznacza pensję",
+   "refs": [
+    "G22",
+    "G23"
+   ]
+  },
+  {
+   "id": "R05",
+   "from": "restaud",
+   "to": "goriot",
+   "type": "prestiż",
+   "label": "wstydzi się teścia i wyklucza go z domu",
+   "refs": [
+    "G10",
+    "G11"
+   ]
+  },
+  {
+   "id": "R06",
+   "from": "beauseant",
+   "to": "rastignac",
+   "type": "mentoring",
+   "label": "wprowadza do świata i uczy jego reguł",
+   "refs": [
+    "G04",
+    "G05"
+   ]
+  },
+  {
+   "id": "R07",
+   "from": "vautrin",
+   "to": "rastignac",
+   "type": "mentoring",
+   "label": "proponuje drogę na skróty: posag Wiktoryny za śmierć jej brata",
+   "refs": [
+    "G28",
+    "G30",
+    "P03"
+   ]
+  },
+  {
+   "id": "R08",
+   "from": "vautrin",
+   "to": "taillefer",
+   "type": "przymus",
+   "label": "organizuje pojedynek, w którym ginie syn Taillefera",
+   "refs": [
+    "G13",
+    "G14"
+   ]
+  },
+  {
+   "id": "R09",
+   "from": "rastignac",
+   "to": "delfina",
+   "type": "erotyka",
+   "label": "kochanek; przez nią wchodzi do świata",
+   "refs": [
+    "G32"
+   ]
+  },
+  {
+   "id": "R10",
+   "from": "delfina",
+   "to": "rastignac",
+   "type": "prestiż",
+   "label": "przez niego zabiega o zaproszenie do pani de Beauséant",
+   "refs": [],
+   "rows": [
+    [
+     2,
+     "Uczestniczenie w balach na podstawie zaproszenia"
+    ]
+   ]
+  },
+  {
+   "id": "R12",
+   "from": "rastignac",
+   "to": "beauseant",
+   "type": "pokrewieństwo",
+   "label": "kuzyn",
+   "refs": [
+    "G04"
+   ]
+  },
+  {
+   "id": "R13",
+   "from": "michonneau",
+   "to": "vautrin",
+   "type": "przymus",
+   "label": "usypia go i ujawnia piętno galernika na zlecenie policji",
+   "refs": [
+    "G24",
+    "G25"
+   ]
+  },
+  {
+   "id": "R14",
+   "from": "couture",
+   "to": "wiktoryna",
+   "type": "pokrewieństwo",
+   "label": "daleka krewna matki, opiekunka",
+   "refs": [
+    "G07"
+   ]
+  },
+  {
+   "id": "R15",
+   "from": "taillefer",
+   "to": "wiktoryna",
+   "type": "ekonomia",
+   "label": "odsuwa córkę od majątku na rzecz syna",
+   "refs": [
+    "P18"
+   ]
+  },
+  {
+   "id": "R16",
+   "from": "vauquer",
+   "to": "goriot",
+   "type": "ekonomia",
+   "label": "traktuje go według wysokości opłat",
+   "refs": [
+    "G18",
+    "G35"
+   ]
+  },
+  {
+   "id": "R17",
+   "from": "rastignac",
+   "to": "goriot",
+   "type": "ekonomia",
+   "label": "sąsiad z pensjonatu; razem z Bianchonem płaci za pogrzeb",
+   "refs": [
+    "G37",
+    "G38"
+   ]
+  }
+ ],
+ "mechanisms": [
+  {
+   "id": "posag",
+   "name": "Posag",
+   "def": "Majątek wnoszony przez kobietę decyduje o jej wartości na rynku małżeńskim i przechodzi pod kontrolę męża.",
+   "areas": [
+    5,
+    12
+   ],
+   "refs": [
+    "G03",
+    "G12",
+    "G22",
+    "G30"
+   ]
+  },
+  {
+   "id": "dlug",
+   "name": "Dług",
+   "def": "Weksel i pożyczka podtrzymują pozór zamożności, a ich koszt przerzucany jest na bliskich.",
+   "areas": [
+    12,
+    13,
+    6
+   ],
+   "refs": [
+    "G20",
+    "G21"
+   ]
+  },
+  {
+   "id": "dziedziczenie",
+   "name": "Dziedziczenie",
+   "def": "Spadek zmienia pozycję osoby z dnia na dzień i staje się celem intrygi.",
+   "areas": [
+    7,
+    12
+   ],
+   "refs": [
+    "P18",
+    "G13",
+    "G14"
+   ]
+  },
+  {
+   "id": "reputacja",
+   "name": "Reputacja",
+   "def": "Dobre imię jest kapitałem, który trzeba chronić przed skandalem, nawet za cenę długów.",
+   "areas": [
+    16,
+    6
+   ],
+   "refs": [
+    "G21",
+    "P04"
+   ]
+  },
+  {
+   "id": "salon",
+   "name": "Salon",
+   "def": "Salon jest miejscem wymiany: tam zapadają decyzje o tym, kto należy do towarzystwa.",
+   "areas": [
+    1,
+    2,
+    15
+   ],
+   "refs": [
+    "G05",
+    "P13"
+   ]
+  },
+  {
+   "id": "protekcja",
+   "name": "Protekcja",
+   "def": "Kariera zależy od poparcia wpływowych osób bardziej niż od pracy i zdolności.",
+   "areas": [
+    14,
+    1
+   ],
+   "refs": [
+    "G04",
+    "G28",
+    "G29"
+   ]
+  },
+  {
+   "id": "wykluczenie",
+   "name": "Wykluczenie",
+   "def": "Kto traci pieniądze lub pochodzenie zdradza się nazwiskiem, ten zostaje odsunięty.",
+   "areas": [
+    15,
+    1,
+    16
+   ],
+   "refs": [
+    "G10",
+    "G11",
+    "G34",
+    "G39"
+   ]
+  },
+  {
+   "id": "koszt-kariery",
+   "name": "Koszt kariery",
+   "def": "Wejście do świata wymaga wydatków, które ponosi rodzina, kochanka albo cudza krzywda.",
+   "areas": [
+    12,
+    14,
+    7
+   ],
+   "refs": [
+    "P10",
+    "G26",
+    "G27"
+   ]
+  }
+ ],
+ "axes": [
+  {
+   "id": "goriot",
+   "title": "Degradacja Goriota",
+   "steps": [
+    {
+     "ref": "P15",
+     "text": "Bogaty lokator wprowadza się do pensjonatu."
+    },
+    {
+     "ref": "G17",
+     "text": "Zamożność widać w stroju i bieliźnie."
+    },
+    {
+     "ref": "G18",
+     "text": "Przeprowadzka na drugie piętro; gospodyni zmienia sposób zwracania się do niego."
+    },
+    {
+     "ref": "G19",
+     "text": "Trzecie piętro, rezygnacja z tabaki, fryzjera i pudru."
+    },
+    {
+     "ref": "G34",
+     "text": "Pensjonariusze drwią z niego jako z otępiałego starca."
+    },
+    {
+     "ref": "G08",
+     "text": "Niszczy ostatnie srebra, by zdobyć pieniądze dla córki."
+    },
+    {
+     "ref": "P09",
+     "text": "W agonii rozpoznaje, że miłość córek zależała od pieniędzy."
+    },
+    {
+     "ref": "G39",
+     "text": "Na pogrzeb przyjeżdżają puste powozy córek."
+    }
+   ]
+  },
+  {
+   "id": "rastignac",
+   "title": "Awans Rastignaca",
+   "steps": [
+    {
+     "ref": "G04",
+     "text": "List ciotki otwiera drogę do kuzynki."
+    },
+    {
+     "ref": "G02",
+     "text": "Odkłada naukę, by poznawać Paryż."
+    },
+    {
+     "ref": "G05",
+     "text": "Pani de Beauséant wykłada mu reguły powodzenia."
+    },
+    {
+     "ref": "G26",
+     "text": "Prosi rodzinę o pieniądze na wejście do świata."
+    },
+    {
+     "ref": "P05",
+     "text": "Pyta Bianchona o paradoks mandaryna."
+    },
+    {
+     "ref": "G31",
+     "text": "Odrzuca zbrodniczy plan Vautrina."
+    },
+    {
+     "ref": "G32",
+     "text": "Wchodzi do świata u boku Delfiny."
+    },
+    {
+     "ref": "G40",
+     "text": "Po pogrzebie Goriota rzuca Paryżowi wyzwanie i idzie na obiad do Delfiny."
+    }
+   ]
+  },
+  {
+   "id": "vautrin",
+   "title": "Demaskacja Vautrina",
+   "steps": [
+    {
+     "ref": "P03",
+     "text": "Wykłada Rastignacowi swoją filozofię."
+    },
+    {
+     "ref": "G30",
+     "text": "Proponuje układ: milion posagu za dwieście tysięcy prowizji."
+    },
+    {
+     "ref": "G13",
+     "text": "Zapowiada pojedynek, który otworzy Wiktorynie drogę do spadku."
+    },
+    {
+     "ref": "G24",
+     "text": "Panna Michonneau podaje mu środek usypiający."
+    },
+    {
+     "ref": "G25",
+     "text": "Na ramieniu ukazuje się piętno galernika."
+    },
+    {
+     "ref": "G06",
+     "text": "Przyznaje się do prawdziwego nazwiska."
+    }
+   ]
+  },
+  {
+   "id": "bianchon",
+   "title": "Model uczciwego działania: Bianchon",
+   "steps": [
+    {
+     "ref": "P05",
+     "text": "Odmawia „zabicia mandaryna”, czyli korzyści kosztem cudzego życia."
+    },
+    {
+     "ref": "G15",
+     "text": "Bada chorego Goriota i sprowadza lekarza ze szpitala."
+    },
+    {
+     "ref": "G16",
+     "text": "Czuwa przy chorym na zmianę z Rastignakiem."
+    },
+    {
+     "ref": "G38",
+     "text": "Zdobywa tanią trumnę, gdy rodzina nie płaci za pogrzeb."
+    }
+   ]
+  }
+ ],
+ "theses": [
+  {
+   "id": "T01",
+   "mod": "kontekst",
+   "typ": "fakt",
+   "text": "Akcja zaczyna się w 1819 roku; Goriot mieszka u pani Vauquer od 1813 roku.",
+   "refs": [
+    "P14",
+    "P15"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T02",
+   "mod": "kontekst",
+   "typ": "fakt",
+   "text": "Ostatnie wydarzenia rozgrywają się w lutym następnego roku: pani Vauquer wspomina termin wyprowadzki 15 lutego, a mija już osiemnasty dzień miesiąca.",
+   "refs": [
+    "P16",
+    "P19"
+   ],
+   "status": "tekst",
+   "note": "Rok 1820 wynika z rachuby: akcja zaczyna się w 1819, listy z domu przychodzą w grudniu, a luty jest następny."
+  },
+  {
+   "id": "T03",
+   "mod": "kontekst",
+   "typ": "fakt",
+   "text": "Powieść powstawała od końca września 1834 do 26 stycznia 1835 roku; tekst zamyka podpis „Saché, wrzesień 1834”.",
+   "refs": [
+    "P17"
+   ],
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T04",
+   "mod": "kontekst",
+   "typ": "kontekst",
+   "text": "Restauracja oznaczała dla młodego pokolenia zamknięcie dróg awansu, jakie dawało Cesarstwo: liczyły się protekcja i urodzenie.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Kazano młodzieży być cierpliwą, posłuszną, nabożną. Brak wszelkiego upustu dla energji, trudność wybicia się, — protekcja i urodzenie w miejsce talentów."
+   },
+   "refs": [
+    "G28",
+    "G29"
+   ],
+   "mech": [
+    "protekcja"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T05",
+   "mod": "kontekst",
+   "typ": "kontekst",
+   "text": "Wywód Vautrina o protekcji pokrywa się z historycznym rozpoznaniem Restauracji jako epoki zablokowanej kariery młodych.",
+   "refs": [
+    "G28",
+    "G29",
+    "T04"
+   ],
+   "chars": [
+    "vautrin",
+    "rastignac"
+   ],
+   "mech": [
+    "protekcja"
+   ],
+   "status": "autorska"
+  },
+  {
+   "id": "T06",
+   "mod": "kontekst",
+   "typ": "fakt",
+   "text": "Według noty tłumacza w wydaniu z 1938 roku powieść łączy się treścią m.in. ze „Straconymi złudzeniami”, „Blaskami i nędzami życia kurtyzany”, „Ostatnim wcieleniem Vautrina”, „Kobietą porzuconą”, „Gobseckiem” i „Bankiem Nucingena”.",
+   "source": {
+    "id": "S-BOY",
+    "loc": "nota po tekście powieści, wyd. 1938"
+   },
+   "status": "źródło"
+  },
+  {
+   "id": "T07",
+   "mod": "kontekst",
+   "typ": "kontekst",
+   "text": "Boy wskazuje cykl otwierany przez „Ojca Goriot” jako najlepszy punkt wejścia w „Komedię ludzką”; dalsze losy pani de Beauséant zawiera „Kobieta porzucona”.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "loc": "przypis w rozdz. 8, s. 109 druku"
+   },
+   "chars": [
+    "beauseant"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T08",
+   "mod": "kontekst",
+   "typ": "kontekst",
+   "text": "Ojciec Wiktoryny, Taillefer, pojawia się także w noweli „L’Auberge rouge” (1831), gdzie popełnia morderstwo dla pieniędzy; w „Ojcu Goriot” śmierć jego syna zleca Vautrin z tej samej przyczyny.",
+   "source": {
+    "id": "S-HZ2019",
+    "loc": "s. 16"
+   },
+   "chars": [
+    "taillefer",
+    "vautrin"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T09",
+   "mod": "kontekst",
+   "typ": "kontekst",
+   "text": "W innych utworach cyklu Rastignac zostaje ministrem i parem Francji.",
+   "source": {
+    "id": "S-HZ2018",
+    "loc": "s. 110"
+   },
+   "chars": [
+    "rastignac"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T10",
+   "mod": "kontekst",
+   "typ": "interpretacja",
+   "text": "Pieniądz jest dla Balzaka siłą przenikającą wszystkie sfery życia, a nie abstrakcyjnym „złotem” dawnej literatury.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Pieniądz jest dla Balzaka nicią Arjadny, która prowadzi go nieomylnie w labiryncie nowego społeczeństwa"
+   },
+   "mech": [
+    "posag",
+    "dlug"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T11",
+   "mod": "paryz",
+   "typ": "fakt",
+   "text": "Narrator nazywa Paryż oceanem, którego głębokości nie da się zbadać.",
+   "refs": [
+    "P01"
+   ],
+   "motif": [
+    "Paryż"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T12",
+   "mod": "paryz",
+   "typ": "interpretacja",
+   "text": "Dla bohaterów z prowincji Paryż jest jedynym miejscem, w którym można „zrobić karierę”, ale zarazem siłą, która zwykle niszczy przybyszów.",
+   "source": {
+    "id": "S-HZ2018",
+    "loc": "s. 108–109"
+   },
+   "chars": [
+    "rastignac"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T13",
+   "mod": "paryz",
+   "typ": "fakt",
+   "text": "Piętro w pensjonacie odpowiada wysokości opłaty: Goriot zubożały przenosi się z pierwszego na drugie, a potem na trzecie piętro.",
+   "refs": [
+    "G18",
+    "G19"
+   ],
+   "rows": [
+    [
+     8,
+     "Różnicowanie standardu mieszkań"
+    ]
+   ],
+   "chars": [
+    "goriot",
+    "vauquer"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T14",
+   "mod": "paryz",
+   "typ": "interpretacja",
+   "text": "Pionowy układ pensjonatu jest mapą ekonomiczną: wspinanie się po schodach oznacza spadanie w hierarchii.",
+   "refs": [
+    "G18",
+    "G19",
+    "T13"
+   ],
+   "chars": [
+    "goriot"
+   ],
+   "mech": [
+    "wykluczenie"
+   ],
+   "status": "autorska"
+  },
+  {
+   "id": "T15",
+   "mod": "paryz",
+   "typ": "fakt",
+   "text": "Przestrzeń salonów dzieli się na dzielnice: stara arystokracja na przedmieściu Saint-Germain (pani de Beauséant), nowe pieniądze na Chaussée-d’Antin (hrabina de Restaud).",
+   "refs": [
+    "P13"
+   ],
+   "chars": [
+    "beauseant",
+    "anastazja"
+   ],
+   "mech": [
+    "salon"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T16",
+   "mod": "paryz",
+   "typ": "fakt",
+   "text": "Vautrin oblicza, że życie młodego eleganta w Paryżu kosztuje dwadzieścia pięć tysięcy franków rocznie, a majątek rodziny Rastignaców przynosi około trzech tysięcy.",
+   "refs": [
+    "P10"
+   ],
+   "source": {
+    "id": "S-HZ2018",
+    "loc": "s. 109"
+   },
+   "mech": [
+    "koszt-kariery"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T17",
+   "mod": "paryz",
+   "typ": "fakt",
+   "text": "W ujęciu Vautrina Paryż przyjmuje każdego, kto wraca z łowów na miliony, niezależnie od sposobu ich zdobycia.",
+   "refs": [
+    "P12",
+    "P04"
+   ],
+   "chars": [
+    "vautrin"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T18",
+   "mod": "paryz",
+   "typ": "interpretacja",
+   "text": "Finałowy widok z cmentarza Père-Lachaise zamyka przestrzeń powieści: Rastignac patrzy na dzielnicę wielkiego świata między placem Vendôme a Inwalidami, czyli na cel, a nie na pensjonat.",
+   "refs": [
+    "P11",
+    "G40"
+   ],
+   "chars": [
+    "rastignac"
+   ],
+   "status": "autorska"
+  },
+  {
+   "id": "T19",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "W tym samym miejscu Bortnowska nazywa Goriota „ideałem ojcostwa”, a Boy — „Chrystusem ojcostwa”; obie wersje zachowują porównanie z męką Zbawiciela. Formułę „le Christ de la paternité” przytacza też krytyka francuska.",
+   "refs": [
+    "P07"
+   ],
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "chars": [
+    "goriot"
+   ],
+   "motif": [
+    "ojcostwo"
+   ],
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T20",
+   "mod": "bohaterowie",
+   "typ": "fakt",
+   "text": "Umierający Goriot mówi, że społeczeństwo opiera się na ojcostwie i runie, jeśli dzieci nie będą kochać rodziców.",
+   "refs": [
+    "P08"
+   ],
+   "chars": [
+    "goriot"
+   ],
+   "motif": [
+    "ojcostwo"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T21",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "Rastignac stoi między dwoma wzorami: Vautrinem, symbolem woli mocy, i Goriotem.",
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "chars": [
+    "rastignac",
+    "vautrin",
+    "goriot"
+   ],
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T22",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "Vautrin reprezentuje bunt przeciw porządkowi społecznemu; Poiret i panna Michonneau — szkodliwą przeciętność.",
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "chars": [
+    "vautrin",
+    "poiret",
+    "michonneau"
+   ],
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T23",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "Bianchon to „poważny student”, przedstawiciel arystokracji umysłu; Wiktoryna — łagodność, pobożność i rezygnacja.",
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "chars": [
+    "bianchon",
+    "wiktoryna"
+   ],
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T24",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "Rastignac przez Delfinę wchodzi w świat wielkiej finansjery, a Anastazja wprowadza powieść w świat lichwiarzy.",
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "refs": [
+    "G23",
+    "G21"
+   ],
+   "chars": [
+    "delfina",
+    "anastazja",
+    "rastignac"
+   ],
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T25",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "Rastignac jest bohaterem „zawieszonym”: oderwał się od swojej klasy, ale nie został jeszcze w pełni przyjęty przez wyższe sfery.",
+   "source": {
+    "id": "S-HZ2018",
+    "loc": "s. 110"
+   },
+   "chars": [
+    "rastignac"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T26",
+   "mod": "bohaterowie",
+   "typ": "interpretacja",
+   "text": "Na drodze Rastignaca pojawiają się kolejni pomocnicy: pani de Beauséant, Vautrin i Delfina de Nucingen; jego przewagą jest pokrewieństwo z panią de Beauséant.",
+   "source": {
+    "id": "S-HZ2018",
+    "loc": "s. 106, 111"
+   },
+   "chars": [
+    "rastignac",
+    "beauseant",
+    "vautrin",
+    "delfina"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T27",
+   "mod": "bohaterowie",
+   "typ": "fakt",
+   "text": "Anastazja i Delfina zależą od różnych osób: Anastazja spłaca długi kochanka, Delfina nie może swobodnie rozporządzać posagiem, którym zarządza mąż.",
+   "refs": [
+    "G20",
+    "G21",
+    "G22",
+    "G23"
+   ],
+   "chars": [
+    "anastazja",
+    "delfina",
+    "maksym",
+    "nucingen"
+   ],
+   "mech": [
+    "dlug",
+    "posag"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T28",
+   "mod": "mechanizmy",
+   "typ": "interpretacja",
+   "text": "Wspomnienie nazwiska Goriota w salonie de Restaud zamyka Rastignacowi drzwi tego domu: pochodzenie z handlu jest w tym świecie piętnem.",
+   "refs": [
+    "G10",
+    "G11"
+   ],
+   "source": {
+    "id": "S-HZ2018",
+    "loc": "s. 111"
+   },
+   "chars": [
+    "rastignac",
+    "restaud",
+    "goriot"
+   ],
+   "mech": [
+    "wykluczenie",
+    "salon"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T29",
+   "mod": "mechanizmy",
+   "typ": "interpretacja",
+   "text": "Rastignac nie przyjmuje ofiary z brata Wiktoryny, wybiera bardziej akceptowaną w epoce drogę awansu — związek z żoną bankiera.",
+   "source": {
+    "id": "S-HZ2019",
+    "loc": "s. 15"
+   },
+   "refs": [
+    "G31",
+    "G32"
+   ],
+   "chars": [
+    "rastignac",
+    "delfina",
+    "wiktoryna"
+   ],
+   "mech": [
+    "koszt-kariery"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T30",
+   "mod": "mechanizmy",
+   "typ": "interpretacja",
+   "text": "Miłość w świecie Balzaka często przestaje być celem i staje się środkiem.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Miłość aż nazbyt często z celu staje się środkiem."
+   },
+   "refs": [
+    "G05",
+    "G32"
+   ],
+   "mech": [
+    "salon",
+    "koszt-kariery"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T31",
+   "mod": "mechanizmy",
+   "typ": "fakt",
+   "text": "Vautrin traktuje małżeństwo jako transakcję z prowizją: dwieście tysięcy franków za milion posagu.",
+   "refs": [
+    "G30"
+   ],
+   "chars": [
+    "vautrin",
+    "rastignac",
+    "wiktoryna"
+   ],
+   "mech": [
+    "posag"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T32",
+   "mod": "mechanizmy",
+   "typ": "interpretacja",
+   "text": "Bianchon stanowi miarę, wobec której widać koszt wyborów Rastignaca: odrzuca korzyść okupioną cudzym życiem i bezinteresownie opiekuje się Goriotem.",
+   "refs": [
+    "P05",
+    "G15",
+    "G38"
+   ],
+   "source": {
+    "id": "S-HZ2019",
+    "loc": "s. 14"
+   },
+   "chars": [
+    "bianchon",
+    "rastignac"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T33",
+   "mod": "poetyka",
+   "typ": "fakt",
+   "text": "Narrator zwraca się wprost do czytelnika i zapewnia, że opowiadany „dramat” nie jest zmyśleniem.",
+   "refs": [
+    "P02"
+   ],
+   "status": "tekst"
+  },
+  {
+   "id": "T34",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Realizm Balzaka nie jest kopiowaniem rzeczywistości: postacie powstają syntetycznie, a obserwacja łączy się z intuicją poety.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Bo to nie jest zwykła obserwacja realisty, — to intuicja poety."
+   },
+   "status": "źródło"
+  },
+  {
+   "id": "T35",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Balzac nigdy prawie nie portretował osób z rzeczywistości; tworzył figury syntetyczne.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Mimo że nigdy prawie nie portretował z rzeczywistości, ale zawsze tworzył figury swoje syntetycznie"
+   },
+   "status": "źródło"
+  },
+  {
+   "id": "T36",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Postać upodabnia się do otoczenia, więc opis miejsca jest zarazem portretem jego mieszkańców.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Balzac odgadł prawo mimicry, upodobnianie się żywej osoby do tła."
+   },
+   "refs": [
+    "G01"
+   ],
+   "chars": [
+    "vauquer"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T37",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Kilka akapitów o kolejnych latach Goriota w pensjonacie zawiera w zalążku całą jego przemianę; upadek pokazany jest przez zmiany stroju, wyglądu i mieszkania.",
+   "refs": [
+    "G17",
+    "G18",
+    "G19"
+   ],
+   "source": {
+    "id": "S-PAISSE",
+    "loc": "s. 125"
+   },
+   "chars": [
+    "goriot"
+   ],
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T38",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Wszystkie główne postacie łączą pensjonat Vauquer ze światem zewnętrznym: wielowątkowość ma wspólny punkt w jednym domu.",
+   "source": {
+    "id": "S-VINC",
+    "loc": "s. 3"
+   },
+   "status": "źródło-fragment"
+  },
+  {
+   "id": "T39",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Powieść Balzaka prawie zawsze daje przekrój społeczny od szczytów do nizin i pokazuje związki między faktami, których zwykle nie widzimy.",
+   "source": {
+    "id": "S-BOY-BALZAK",
+    "quote": "Prawie zawsze daje on przekrój społeczny od szczytów do nizin"
+   },
+   "status": "źródło"
+  },
+  {
+   "id": "T40",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Paradoks mandaryna powraca w powieści jako motyw: Bianchon go odrzuca, a odpowiedź Rastignaca przy drugiej rozmowie przestaje być żartem.",
+   "refs": [
+    "P05",
+    "P06"
+   ],
+   "source": {
+    "id": "S-HZ2019",
+    "loc": "s. 10, 14"
+   },
+   "chars": [
+    "rastignac",
+    "bianchon"
+   ],
+   "motif": [
+    "mandaryn"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T41",
+   "mod": "poetyka",
+   "typ": "fakt",
+   "text": "Przypisanie paradoksu mandaryna Rousseau jest wątpliwe: takiego fragmentu nie znaleziono w jego dziełach, a za prawdopodobne źródło uchodzi „Geniusz chrześcijaństwa” Chateaubrianda.",
+   "source": {
+    "id": "S-HZ2019",
+    "loc": "s. 10–13"
+   },
+   "motif": [
+    "mandaryn"
+   ],
+   "status": "źródło"
+  },
+  {
+   "id": "T42",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Bal pożegnalny pani de Beauséant i agonia Goriota tworzą kontrast: obowiązki towarzyskie córek wygrywają z ostatnią wolą ojca.",
+   "rows": [
+    [
+     2,
+     "Organizowanie wystawnych balów"
+    ]
+   ],
+   "links": [
+    [
+     2,
+     19
+    ]
+   ],
+   "chars": [
+    "goriot",
+    "anastazja",
+    "delfina",
+    "beauseant"
+   ],
+   "status": "autorska"
+  },
+  {
+   "id": "T43",
+   "mod": "poetyka",
+   "typ": "interpretacja",
+   "text": "Dzieje Goriota i małżeństwa jego córek poznajemy z retrospekcji wstawionej w bieg akcji; przeszłość wyjaśnia teraźniejszą nędzę.",
+   "refs": [
+    "G03"
+   ],
+   "chars": [
+    "goriot"
+   ],
+   "status": "autorska"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "S01",
+   "title": "Opis pensjonatu",
+   "refs": [
+    "G01",
+    "P02"
+   ],
+   "function": "Ekspozycja: wprowadza miejsce, które skupia wszystkie wątki, i ustala zasady opowiadania.",
+   "theses": [
+    "T33",
+    "T36",
+    "T38"
+   ],
+   "questions": [
+    "Jakie cechy pensjonatu zapowiadają losy jego mieszkańców?",
+    "Po co narrator zwraca się bezpośrednio do czytelnika?"
+   ]
+  },
+  {
+   "id": "S02",
+   "title": "Srebra Goriota",
+   "refs": [
+    "G08",
+    "G09"
+   ],
+   "function": "Tajemnica: Rastignac widzi przez dziurkę od klucza czynność, której sensu jeszcze nie rozumie.",
+   "theses": [
+    "T37"
+   ],
+   "questions": [
+    "Dlaczego scena jest pokazana z perspektywy Rastignaca, a nie narratora?",
+    "Co zniszczenie pamiątkowych sreber mówi o hierarchii wartości Goriota?"
+   ]
+  },
+  {
+   "id": "S03",
+   "title": "Pierwsza wizyta u Restaudów",
+   "refs": [
+    "G10",
+    "G11"
+   ],
+   "function": "Próba: pierwszy błąd Rastignaca w salonie ujawnia, czego wstydzą się córki Goriota.",
+   "theses": [
+    "T28"
+   ],
+   "questions": [
+    "Jak jedno nazwisko zmienia przebieg wizyty?",
+    "Czego Rastignac dowiaduje się o świecie, w którym chce się znaleźć?"
+   ]
+  },
+  {
+   "id": "S04",
+   "title": "Lekcja pani de Beauséant",
+   "refs": [
+    "G05",
+    "P13"
+   ],
+   "function": "Inicjacja: arystokratka wykłada reguły świata, w którym powodzenie jest kluczem do władzy.",
+   "theses": [
+    "T15",
+    "T30"
+   ],
+   "questions": [
+    "Na czym według pani de Beauséant polega powodzenie w Paryżu?",
+    "Jaką rolę w tej strategii odgrywają kobiety?"
+   ]
+  },
+  {
+   "id": "S05",
+   "title": "Lekcja Vautrina",
+   "refs": [
+    "G28",
+    "G29",
+    "G30",
+    "P03",
+    "P04",
+    "P10"
+   ],
+   "function": "Kontrapunkt: drugi mentor pokazuje ten sam świat bez złudzeń i proponuje drogę przez zbrodnię.",
+   "theses": [
+    "T05",
+    "T16",
+    "T31"
+   ],
+   "questions": [
+    "Czym różni się diagnoza świata u Vautrina od lekcji pani de Beauséant, a w czym są zbieżne?",
+    "Jak Vautrin wycenia drogę uczciwej kariery?"
+   ]
+  },
+  {
+   "id": "S06",
+   "title": "Listy do rodziny",
+   "refs": [
+    "G26",
+    "G27"
+   ],
+   "function": "Koszt awansu: ofiara rodziny zostaje zestawiona z ofiarami Anastazji dla kochanka.",
+   "theses": [
+    "T16"
+   ],
+   "questions": [
+    "Jakie argumenty Rastignac stosuje w prośbie o pieniądze?",
+    "Dlaczego porównuje siebie z Anastazją?"
+   ]
+  },
+  {
+   "id": "S07",
+   "title": "Paradoks mandaryna",
+   "refs": [
+    "P05",
+    "P06"
+   ],
+   "function": "Probierz sumienia: abstrakcyjne pytanie filozoficzne przybiera konkretną postać w planie Vautrina.",
+   "theses": [
+    "T40",
+    "T41",
+    "T32"
+   ],
+   "questions": [
+    "Kogo w akcji powieści może oznaczać „mandaryn”?",
+    "Jak zmienia się sens żartu między pierwszą a drugą rozmową?"
+   ]
+  },
+  {
+   "id": "S08",
+   "title": "Los Wiktoryny",
+   "refs": [
+    "P18",
+    "G07",
+    "G13",
+    "G14",
+    "G12"
+   ],
+   "function": "Wątek poboczny ilustruje mechanizm dziedziczenia: śmierć brata zmienia ubogą sierotę w bogatą partię.",
+   "theses": [
+    "T08",
+    "T29"
+   ],
+   "questions": [
+    "Co decyduje o wartości Wiktoryny jako kandydatki do małżeństwa?",
+    "Dlaczego jej los jest dla Rastignaca próbą moralną?"
+   ]
+  },
+  {
+   "id": "S09",
+   "title": "Demaskacja Vautrina",
+   "refs": [
+    "G24",
+    "G25",
+    "G06"
+   ],
+   "function": "Zwrot akcji: upadek najsilniejszej postaci pensjonatu następuje przez donos przeciętnych lokatorów.",
+   "theses": [
+    "T22"
+   ],
+   "questions": [
+    "Dlaczego Vautrina pokonują Michonneau i Poiret, a nie siła?",
+    "Jak pensjonariusze oceniają donos panny Michonneau?"
+   ]
+  },
+  {
+   "id": "S10",
+   "title": "Śmierć i pogrzeb Goriota",
+   "refs": [
+    "P08",
+    "P09",
+    "G37",
+    "G38",
+    "G39"
+   ],
+   "function": "Kulminacja wątku ojcowskiego: pogrzeb opłacają obcy studenci, a córki przysyłają puste powozy.",
+   "theses": [
+    "T19",
+    "T20",
+    "T42"
+   ],
+   "questions": [
+    "Jak Goriot w agonii ocenia swoje ojcostwo?",
+    "Co znaczą puste powozy z herbami w orszaku pogrzebowym?"
+   ]
+  },
+  {
+   "id": "S11",
+   "title": "Wyzwanie rzucone Paryżowi",
+   "refs": [
+    "P11",
+    "G40"
+   ],
+   "function": "Zakończenie otwarte: inicjacja się dopełnia, a bohater wraca do świata, który zabił Goriota.",
+   "theses": [
+    "T18",
+    "T09"
+   ],
+   "questions": [
+    "Jak można rozumieć słowa „Teraz my się spróbujemy!”?",
+    "Dlaczego pierwszym krokiem Rastignaca jest obiad u pani de Nucingen?"
+   ]
+  }
+ ],
+ "contexts": [
+  {
+   "id": "C01",
+   "work": "Bolesław Prus, „Lalka”",
+   "theme": "pieniądz i pozycja",
+   "common": "Majątek nie wystarcza, by zostać przyjętym przez arystokrację; liczą się pochodzenie i salon.",
+   "diff": "Goriot oddaje pieniądze, by córki weszły wyżej, a sam zostaje wykluczony; Wokulski zdobywa majątek, by zbliżyć się do Izabeli, i przekonuje się, że arystokratyczny świat go nie przyjmie.",
+   "refs": [
+    "G03",
+    "G10"
+   ],
+   "status": "autorska"
+  },
+  {
+   "id": "C02",
+   "work": "William Szekspir, „Król Lear”",
+   "theme": "ojcostwo i utrata władzy",
+   "common": "Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony.",
+   "diff": "Lear traci królestwo i władzę polityczną; Goriot jest mieszczaninem, a jego upadek przebiega w realiach finansowych i obyczajowych Paryża.",
+   "refs": [
+    "P09",
+    "P08",
+    "G39"
+   ],
+   "status": "autorska"
+  },
+  {
+   "id": "C03",
+   "work": "Stendhal, „Czerwone i czarne”",
+   "theme": "awans",
+   "common": "Julien Sorel i Rastignac stanowią podstawy literackiego typu karierowicza, który otrzyma nazwę dopiero w 1893 roku.",
+   "diff": "Sorel wywodzi się z niższej warstwy i nie zostaje przyjęty z powodu pochodzenia; Rastignac pochodzi ze zubożałej szlachty i korzysta z koneksji rodzinnych.",
+   "refs": [
+    "G04",
+    "G40"
+   ],
+   "source": {
+    "id": "S-HZ2019",
+    "loc": "s. 16–17; por. S-HZ2018, s. 106"
+   },
+   "status": "źródło"
+  },
+  {
+   "id": "C04",
+   "work": "Fiodor Dostojewski, „Zbrodnia i kara”",
+   "theme": "moralny koszt korzyści",
+   "common": "Pytanie, czy wolno poświęcić cudze życie dla dobra własnego lub bliskich, pada w rozmowie młodych ludzi: Rastignaca z Bianchonem oraz studenta z oficerem, którą podsłuchuje Raskolnikow.",
+   "diff": "Rastignac nie zabija i odrzuca plan Vautrina, choć z niego korzysta; Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje.",
+   "refs": [
+    "P05",
+    "P06",
+    "G31"
+   ],
+   "status": "autorska"
+  }
+ ],
+ "czz": {
+  "title": "„Komedja ludzka” na tle epoki",
+  "source": "S-BOY-BALZAK",
+  "from": "Panowanie Ludwika Filipa",
+  "to": "pozował mu do jego dzieła, poczynając od owej księżnej de Castries, która posłużyła mu za model do niejednej arystokratycznej damy.",
+  "questions": [
+   "Jakie dwie cechy panowania Ludwika Filipa autor nazywa cnotami, które dopiero „dziś umiemy ocenić”?",
+   "Wyjaśnij, dlaczego Boy nazywa Balzaka „poetą pieniądza”.",
+   "Czym według autora różni się ujęcie pieniądza u Balzaka od jego obecności w komediach Moliera?",
+   "Jak autor określa Goriota w wyliczeniu postaci „Komedii ludzkiej”?",
+   "Co autor rozumie przez „prawo mimicry”? Podaj przykład z „Ojca Goriot”.",
+   "Jak autor odróżnia metodę Balzaka od „zwykłej obserwacji realisty”?"
+  ],
+  "key": [
+   "Pokój za wszelką cenę oraz popieranie przemysłu i handlu.",
+   "Bo pieniądz jest u niego przemożną, niemal symboliczną siłą, która przenika wszystko i kształtuje sprawy wielkie i drobne; Balzac ukazuje go dokładnie, aż do stanu posiadania bohaterów.",
+   "U Moliera pieniądz był abstrakcją, „złotem”; u Balzaka jest pokazany realistycznie: jak powstaje i krąży, kto go zdobywa i wydaje.",
+   "„Ex-jakobin Goriot, spekulujący niegdyś na żywności” — jeden z dwóch starych „poczciwców”.",
+   "Upodabnianie się żywej osoby do tła; np. pani Vauquer i jej pensjonat opisane tak, że wygląd gospodyni i domu nawzajem się tłumaczą (przykład należy uzasadnić tekstem).",
+   "To nie jest zwykła obserwacja, lecz „intuicja poety”; Balzac nie portretował osób z rzeczywistości, tylko tworzył postacie syntetycznie."
+  ]
+ }
 }
