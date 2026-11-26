@@ -1,12 +1,16 @@
-/* Stylistyka Restauracji (1815–1830): tapeta w pasy z drobną rozetą, podwójne filety, winiety.
-   Tekst pozostaje na jasnym papierze — kontrast bez zmian. */
-:root{--gold:#a8874f;--gold-soft:#d9c7a1;--wall:#e9e0cc;--wall-stripe:#e1d5bb;--empire:#3f5a48}
-body{background-color:var(--wall);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Crect x='0' y='0' width='11' height='56' fill='%23e1d5bb'/%3E%3Crect x='13' y='0' width='1.2' height='56' fill='%23d6c7a5'/%3E%3Cg transform='translate(35 28)' fill='none' stroke='%23c9b68c' stroke-width='1.1'%3E%3Cpath d='M0-7c3 2 3 5 0 7c-3-2-3-5 0-7zM0 7c3-2 3-5 0-7c-3 2-3 5 0 7zM-7 0c2 3 5 3 7 0c-2-3-5-3-7 0zM7 0c-2 3-5 3-7 0c2-3 5-3 7 0z'/%3E%3Ccircle r='1.4' fill='%23c9b68c' stroke='none'/%3E%3C/g%3E%3Ccircle cx='35' cy='0' r='1' fill='%23cdbb93'/%3E%3Ccircle cx='35' cy='56' r='1' fill='%23cdbb93'/%3E%3C/svg%3E")}
-main{background:var(--paper);box-shadow:0 0 0 1px var(--gold-soft),0 0 0 6px var(--paper),0 0 0 7px var(--gold-soft),0 18px 50px #5b4a2a26;margin:28px auto 40px;border-radius:2px}
+/* Stylistyka Restauracji (1815–1830).
+   Tło: wektorowe przerysowanie tapety w pasy z kłosami (Francja, ok. 1820; V&A O192960, opis muzeum: pasy jasno- i ciemnozielone).
+   Bordiura: złocona draperia (wzór wg V&A O121751, ok. 1820). Tekst pozostaje na jasnym papierze — kontrast bez zmian. */
+:root{--gold:#a8874f;--gold-soft:#d9c7a1}
+html{background:#cdd4bb}
+body{background-color:#d6dcc4;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='48' viewBox='0 0 64 48'%3E%3Crect width='64' height='48' fill='%23d6dcc4'/%3E%3Crect x='0' width='22' height='48' fill='%23bcc6a6'/%3E%3Crect x='22' width='1.4' height='48' fill='%23a9b593'/%3E%3Crect x='-1.4' width='1.4' height='48' fill='%23a9b593'/%3E%3Cg fill='%23a3ad86'%3E%3Cellipse cx='43' cy='9' rx='1.6' ry='3.4'/%3E%3Cellipse cx='40.4' cy='12' rx='1.3' ry='2.8' transform='rotate(-28 40.4 12)'/%3E%3Cellipse cx='45.6' cy='12' rx='1.3' ry='2.8' transform='rotate(28 45.6 12)'/%3E%3Crect x='42.6' y='12' width='.8' height='8'/%3E%3Cellipse cx='43' cy='33' rx='1.6' ry='3.4'/%3E%3Cellipse cx='40.4' cy='36' rx='1.3' ry='2.8' transform='rotate(-28 40.4 36)'/%3E%3Cellipse cx='45.6' cy='36' rx='1.3' ry='2.8' transform='rotate(28 45.6 36)'/%3E%3Crect x='42.6' y='36' width='.8' height='8'/%3E%3C/g%3E%3Cg fill='%23a9b593'%3E%3Ccircle cx='11' cy='12' r='1.1'/%3E%3Ccircle cx='11' cy='36' r='1.1'/%3E%3C/g%3E%3C/svg%3E")}
+main{position:relative;background:var(--paper);box-shadow:0 0 0 1px var(--gold-soft),0 0 0 6px var(--paper),0 0 0 7px var(--gold-soft),0 18px 50px #2f3a2226;margin:28px auto 40px;padding-top:26px;padding-bottom:70px;border-radius:2px}
+main:before,main:after{content:'';position:absolute;left:0;right:0;height:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='24' viewBox='0 0 72 24'%3E%3Crect width='72' height='24' fill='%23f3efe4'/%3E%3Crect width='72' height='4' fill='%23c9a24a'/%3E%3Crect y='20' width='72' height='4' fill='%23c9a24a'/%3E%3Cg fill='%23e3c77a'%3E%3Ccircle cx='4' cy='2' r='.9'/%3E%3Ccircle cx='10' cy='2' r='.9'/%3E%3Ccircle cx='16' cy='2' r='.9'/%3E%3Ccircle cx='22' cy='2' r='.9'/%3E%3Ccircle cx='28' cy='2' r='.9'/%3E%3Ccircle cx='34' cy='2' r='.9'/%3E%3Ccircle cx='40' cy='2' r='.9'/%3E%3Ccircle cx='46' cy='2' r='.9'/%3E%3Ccircle cx='52' cy='2' r='.9'/%3E%3Ccircle cx='58' cy='2' r='.9'/%3E%3Ccircle cx='64' cy='2' r='.9'/%3E%3Ccircle cx='70' cy='2' r='.9'/%3E%3C/g%3E%3Cpath d='M8 7C20 18 52 18 64 7C52 13 20 13 8 7Z' fill='%23ffffff' stroke='%23c8c3b6' stroke-width='.6'/%3E%3Cpath d='M14 9C26 15 46 15 58 9' fill='none' stroke='%23d9d4c8' stroke-width='.6'/%3E%3Cg fill='none' stroke='%23b8902f' stroke-width='2'%3E%3Ccircle cx='4' cy='9' r='3'/%3E%3Ccircle cx='68' cy='9' r='3'/%3E%3C/g%3E%3Cpath d='M0 20.6H72' stroke='%23a88232' stroke-width='.5'/%3E%3C/svg%3E") repeat-x left center/auto 24px}
+main:before{top:0}
+main:after{bottom:0}
 .mast{border-bottom:0;position:relative}
 .mast:after{content:'';position:absolute;left:0;right:0;bottom:0;height:4px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
 .mast .eyebrow{letter-spacing:.24em}
-h1{font-variant-ligatures:common-ligatures}
 section>.sectionhead h2,.msec>.sectionhead h2{position:relative;padding-left:30px}
 section>.sectionhead h2:before,.msec>.sectionhead h2:before{content:'';position:absolute;left:0;top:50%;width:20px;height:20px;margin-top:-10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cg fill='none' stroke='%23a8874f' stroke-width='1.3'%3E%3Cpath d='M10 2c3 3 3 6 0 8c-3-2-3-5 0-8zM10 18c3-3 3-6 0-8c-3 2-3 5 0 8zM2 10c3 3 6 3 8 0c-2-3-5-3-8 0zM18 10c-3 3-6 3-8 0c2-3 5-3 8 0z'/%3E%3C/g%3E%3Ccircle cx='10' cy='10' r='1.6' fill='%23a8874f'/%3E%3C/svg%3E") center/contain no-repeat}
 .sectionhead{border-bottom:1px solid var(--gold-soft);padding-bottom:10px}
@@ -16,5 +20,5 @@ section>.sectionhead h2:before,.msec>.sectionhead h2:before{content:'';position:
 .house{background:#efe6d3;box-shadow:inset 0 0 0 3px #f7f1e5,inset 0 0 0 4px var(--gold-soft)}
 .foot{border-top:0;position:relative;padding-top:22px}
 .foot:before{content:'';position:absolute;left:0;right:0;top:0;height:4px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
-@media(max-width:650px){main{margin:0;box-shadow:none}}
-@media print{body{background:#fff}main{box-shadow:none;margin:0}}
+@media(max-width:650px){main{margin:10px;padding-top:22px;padding-bottom:56px;box-shadow:0 0 0 1px var(--gold-soft),0 6px 20px #2f3a2226}main:before,main:after{height:18px;background-size:auto 18px}}
+@media print{html,body{background:#fff}main{box-shadow:none;margin:0;padding:0}main:before,main:after{display:none}}

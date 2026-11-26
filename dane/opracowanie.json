@@ -981,7 +981,13 @@
        "w": 76,
        "src": "r"
       }
-     ]
+     ],
+     "floor": {
+      "type": "attic",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "krzysztof": {
@@ -1019,7 +1025,13 @@
        "src": "r",
        "label": "posłanie"
       }
-     ]
+     ],
+     "floor": {
+      "type": "attic",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "sylwia": {
@@ -1057,7 +1069,13 @@
        "src": "r",
        "label": "posłanie"
       }
-     ]
+     ],
+     "floor": {
+      "type": "attic",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "michonneau": {
@@ -1086,7 +1104,13 @@
        "src": "r",
        "label": "drzwi na korytarz"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "goriot": {
@@ -1122,7 +1146,8 @@
        "w": 22,
        "h": 38,
        "src": "t",
-       "label": "ubogie łóżko z cienką kołdrą"
+       "label": "ubogie łóżko z cienką kołdrą",
+       "m": "poor-linen"
       },
       {
        "k": "curtain",
@@ -1130,7 +1155,8 @@
        "y": 10,
        "w": 22,
        "src": "t",
-       "label": "kotara w czerwono-białą kratę na żerdzi (tylko u Bortnowskiej)"
+       "label": "kotara w czerwono-białą kratę na żerdzi (tylko u Bortnowskiej)",
+       "m": "check-red"
       },
       {
        "k": "nightstand",
@@ -1140,7 +1166,8 @@
        "h": 8,
        "src": "t",
        "label": "szafka bez drzwiczek i blatu",
-       "pos": "„w głowach, przy łóżku”"
+       "pos": "„w głowach, przy łóżku”",
+       "m": "wood"
       },
       {
        "k": "commode",
@@ -1150,7 +1177,8 @@
        "h": 10,
        "src": "t",
        "label": "pękata komoda z drzewa różanego",
-       "pos": "„naprzeciw okna”"
+       "pos": "„naprzeciw okna”",
+       "m": "rosewood"
       },
       {
        "k": "stool",
@@ -1160,7 +1188,8 @@
        "h": 9,
        "src": "t",
        "label": "zydel z dzbanem, miską i przyborami do golenia",
-       "pos": "„nieco dalej”"
+       "pos": "„nieco dalej”",
+       "m": "wood-jug"
       },
       {
        "k": "shoes",
@@ -1170,7 +1199,8 @@
        "h": 6,
        "src": "t",
        "label": "trzewiki",
-       "pos": "„w kącie”"
+       "pos": "„w kącie”",
+       "m": "leather"
       },
       {
        "k": "fireplace",
@@ -1179,7 +1209,8 @@
        "w": 9,
        "h": 20,
        "src": "t",
-       "label": "kominek bez śladu ognia"
+       "label": "kominek bez śladu ognia",
+       "m": "cold-stone"
       },
       {
        "k": "table",
@@ -1189,7 +1220,8 @@
        "h": 12,
        "src": "t",
        "label": "czworograniasty stół orzechowy (tu Goriot zgniatał srebra)",
-       "pos": "„w rogu komina”"
+       "pos": "„w rogu komina”",
+       "m": "walnut"
       },
       {
        "k": "desk",
@@ -1198,7 +1230,8 @@
        "w": 12,
        "h": 8,
        "src": "t",
-       "label": "biurko (sekretarzyk) z kapeluszem"
+       "label": "biurko (sekretarzyk) z kapeluszem",
+       "m": "wood"
       },
       {
        "k": "armchair",
@@ -1207,7 +1240,8 @@
        "w": 10,
        "h": 10,
        "src": "t",
-       "label": "fotel wyplatany"
+       "label": "fotel wyplatany",
+       "m": "wicker"
       },
       {
        "k": "chair",
@@ -1216,7 +1250,8 @@
        "w": 7,
        "h": 7,
        "src": "t",
-       "label": "dwa krzesła"
+       "label": "dwa krzesła",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1224,9 +1259,16 @@
        "y": 40,
        "w": 7,
        "h": 7,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       }
-     ]
+     ],
+     "floor": {
+      "type": "dusty",
+      "src": "t",
+      "note": "podłoga wilgotna i zapylona; obicia odstają od ścian"
+     },
+     "walls": "peeling"
     },
     "extra": [
      "G08"
@@ -1265,7 +1307,8 @@
        "w": 9,
        "h": 18,
        "src": "t",
-       "label": "kominek (Goriot kładzie na nim puzderko z herbem)"
+       "label": "kominek (Goriot kładzie na nim puzderko z herbem)",
+       "m": "cold-stone"
       },
       {
        "k": "bed",
@@ -1292,9 +1335,16 @@
        "w": 24,
        "h": 10,
        "src": "t",
-       "label": "nieład"
+       "label": "nieład",
+       "m": "paper"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     },
     "extra": [
      "P44"
@@ -1325,7 +1375,13 @@
        "src": "r",
        "label": "drzwi na korytarz"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "poiret": {
@@ -1361,7 +1417,13 @@
        "src": "r",
        "label": "drzwi na klatkę schodową"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "vautrin": {
@@ -1397,7 +1459,13 @@
        "src": "r",
        "label": "drzwi na klatkę schodową"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "vauquer": {
@@ -1458,7 +1526,13 @@
        "h": 10,
        "src": "r"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    },
    "couture": {
@@ -1491,21 +1565,24 @@
        "y": 0,
        "w": 16,
        "src": "t",
-       "label": "okna z firankami z żółtej tkaniny bawełnianej (u Boya: perkalowymi)"
+       "label": "okna z firankami z żółtej tkaniny bawełnianej (u Boya: perkalowymi)",
+       "m": "curtain-yellow"
       },
       {
        "k": "window",
        "x": 52,
        "y": 0,
        "w": 16,
-       "src": "t"
+       "src": "t",
+       "m": "curtain-yellow"
       },
       {
        "k": "window",
        "x": 92,
        "y": 0,
        "w": 16,
-       "src": "t"
+       "src": "t",
+       "m": "curtain-yellow"
       },
       {
        "k": "door",
@@ -1522,7 +1599,8 @@
        "w": 10,
        "h": 10,
        "src": "t",
-       "label": "fotele obite pluszem"
+       "label": "fotele obite pluszem",
+       "m": "plush"
       },
       {
        "k": "armchair",
@@ -1530,7 +1608,8 @@
        "y": 26,
        "w": 10,
        "h": 10,
-       "src": "t"
+       "src": "t",
+       "m": "plush"
       },
       {
        "k": "picture",
@@ -1538,7 +1617,8 @@
        "y": 40,
        "h": 14,
        "src": "t",
-       "label": "kilka malowideł"
+       "label": "kilka malowideł",
+       "m": "mural"
       },
       {
        "k": "bed",
@@ -1557,7 +1637,13 @@
        "h": 30,
        "src": "r"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "r",
+      "note": "tapety (obicie papierowe)"
+     },
+     "walls": "paper"
     }
    },
    "salon": {
@@ -1591,7 +1677,8 @@
        "w": 16,
        "src": "t",
        "label": "uczta Kalipso na tapecie",
-       "pos": "„między dwoma oknami”"
+       "pos": "„między dwoma oknami”",
+       "m": "mural"
       },
       {
        "k": "glassdoor",
@@ -1609,7 +1696,8 @@
        "h": 20,
        "src": "t",
        "label": "okrągły stół z białym serwisem",
-       "pos": "„pośrodku”"
+       "pos": "„pośrodku”",
+       "m": "marble"
       },
       {
        "k": "fireplace",
@@ -1618,7 +1706,8 @@
        "w": 9,
        "h": 22,
        "src": "t",
-       "label": "kominek z zegarem i wazonami sztucznych kwiatów"
+       "label": "kominek z zegarem i wazonami sztucznych kwiatów",
+       "m": "marble-fire"
       },
       {
        "k": "armchair",
@@ -1627,7 +1716,8 @@
        "w": 10,
        "h": 10,
        "src": "t",
-       "label": "fotele i krzesła obite włosianą materią w pasy"
+       "label": "fotele i krzesła obite włosianą materią w pasy",
+       "m": "horsehair"
       },
       {
        "k": "armchair",
@@ -1635,7 +1725,8 @@
        "y": 36,
        "w": 10,
        "h": 10,
-       "src": "t"
+       "src": "t",
+       "m": "horsehair"
       },
       {
        "k": "chair",
@@ -1643,7 +1734,8 @@
        "y": 54,
        "w": 7,
        "h": 7,
-       "src": "t"
+       "src": "t",
+       "m": "horsehair"
       },
       {
        "k": "chair",
@@ -1651,7 +1743,8 @@
        "y": 54,
        "w": 7,
        "h": 7,
-       "src": "t"
+       "src": "t",
+       "m": "horsehair"
       },
       {
        "k": "paper",
@@ -1667,7 +1760,13 @@
        "vertical": true,
        "label": "przejście do jadalni"
       }
-     ]
+     ],
+     "floor": {
+      "type": "boards",
+      "src": "t",
+      "note": "podłoga „dosyć nędzna”; lamperia i tapeta ze scenami z „Telemaka”"
+     },
+     "walls": "paper"
     }
    },
    "jadalnia": {
@@ -1694,7 +1793,8 @@
        "w": 56,
        "h": 16,
        "src": "t",
-       "label": "długi stół pokryty ceratą"
+       "label": "długi stół pokryty ceratą",
+       "m": "oilcloth"
       },
       {
        "k": "chair",
@@ -1703,7 +1803,8 @@
        "w": 6,
        "h": 6,
        "src": "t",
-       "label": "kulawe krzesła"
+       "label": "kulawe krzesła",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1711,7 +1812,8 @@
        "y": 18,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1719,7 +1821,8 @@
        "y": 18,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1727,7 +1830,8 @@
        "y": 18,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1735,7 +1839,8 @@
        "y": 44,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1743,7 +1848,8 @@
        "y": 44,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1751,7 +1857,8 @@
        "y": 44,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "chair",
@@ -1759,7 +1866,8 @@
        "y": 44,
        "w": 6,
        "h": 6,
-       "src": "t"
+       "src": "t",
+       "m": "wood"
       },
       {
        "k": "shelf",
@@ -1768,7 +1876,8 @@
        "w": 4,
        "h": 40,
        "src": "t",
-       "label": "lepkie półki z karafkami i talerzami"
+       "label": "lepkie półki z karafkami i talerzami",
+       "m": "wood"
       },
       {
        "k": "box",
@@ -1778,7 +1887,8 @@
        "h": 8,
        "src": "t",
        "label": "skrzynka z przegródkami na serwety",
-       "pos": "„w kącie”"
+       "pos": "„w kącie”",
+       "m": "wood"
       },
       {
        "k": "stove",
@@ -1787,19 +1897,20 @@
        "w": 10,
        "h": 12,
        "src": "t",
-       "label": "zielony piec"
+       "label": "zielony piec",
+       "m": "green"
       },
       {
        "k": "clock",
        "x": 96,
-       "y": 30,
+       "y": 46,
        "src": "t",
        "label": "zegar szyldkretowy, barometr z kapucynem, ryciny"
       },
       {
        "k": "lamp",
-       "x": 50,
-       "y": 34,
+       "x": 72,
+       "y": 4,
        "src": "t",
        "label": "kinkiety z zakurzoną oliwą"
       },
@@ -1810,7 +1921,8 @@
        "w": 40,
        "h": 8,
        "src": "t",
-       "label": "maty (słomianki)"
+       "label": "maty (słomianki)",
+       "m": "straw"
       },
       {
        "k": "paper",
@@ -1835,7 +1947,13 @@
        "vertical": true,
        "label": "wyjście do sieni"
       }
-     ]
+     ],
+     "floor": {
+      "type": "red",
+      "src": "t",
+      "note": "czerwona podłoga; ściany wykładane drzewem"
+     },
+     "walls": "wood"
     }
    },
    "kuchnia": {
@@ -1863,7 +1981,8 @@
        "w": 16,
        "h": 34,
        "src": "t",
-       "label": "drewniane woskowane schody w sieni"
+       "label": "drewniane woskowane schody w sieni",
+       "m": "wax-wood"
       },
       {
        "k": "glassdoor",
@@ -1906,7 +2025,13 @@
        "src": "r",
        "label": "kuchnia"
       }
-     ]
+     ],
+     "floor": {
+      "type": "stone",
+      "src": "r",
+      "note": null
+     },
+     "walls": null
     }
    }
   }

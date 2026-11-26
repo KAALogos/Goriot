@@ -156,3 +156,13 @@ select.search{flex:0 1 auto;min-width:160px}
 .pdetail{max-height:calc(100vh - 96px)}
 @media(max-width:1000px){.pens{grid-template-columns:1fr}}
 @media(max-width:650px){.plegend{columns:1}.msynth{font-size:16px}}
+
+.pt{stroke:#3b2f2a;stroke-width:.45}
+.grec .pr{fill:#ebe6de;stroke:#7c736a;stroke-width:.5;stroke-dasharray:1.4 1}
+.pwall{stroke:#2e2520;stroke-width:2.6}
+.plan svg{background:#efe6d3}
+.gap{fill:#efe6d3}
+.win{stroke:#4f6f86;stroke-width:.7}
+.plegend li.nonum{list-style:none;margin-left:-26px;font-size:12px;color:#57524e;margin-top:6px}
+.pkey span:before{background:#d8b98a}
+.pkey .kr:before{background:#ebe6de}

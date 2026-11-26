@@ -111,16 +111,50 @@
     /* rzut z góry: SVG z elementów planu; „t” = przedmiot wymieniony w tekście, „r” = rekonstrukcja */
     const NS = 'http://www.w3.org/2000/svg';
     const sv = (tag, at) => { const n = document.createElementNS(NS, tag); for (const k in at) n.setAttribute(k, at[k]); return n; };
+    let planId = 0;
+    /* materiały: [wypełnienie główne, detal]; nazwy bez # to wzory z DEFS */
+    const MAT = {
+      default: ['#efe4cf', '#f8f1e3'], rosewood: ['#8b4a3c', '#a35b4a'], walnut: ['#6f4b34', '#86603f'], wood: ['#a77b52', '#bb8f63'],
+      'check-red': ['check'], wicker: ['wicker', '#d9bb84'], 'poor-linen': ['#d8ccb6', '#eee6d6'], 'wood-jug': ['#a07a52', '#f4f1ea'],
+      'cold-stone': ['#cfc6b8', '#8f877c'], leather: ['#4a3428', '#5d4436'], marble: ['marble', '#ffffff'], horsehair: ['horsehair', 'horsehair'],
+      'marble-fire': ['#bdb8b2', '#8f8a84'], oilcloth: ['#a89470', '#bba886'], green: ['#5f8a5a', '#78a170'], straw: ['straw'],
+      plush: ['#a5737a', '#b98a90'], paper: ['#fffdf8'], 'wax-wood': ['#b88a55', '#c99c66']
+    };
+    const DEFS = `<defs>
+      <filter id="shadow-UID" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale=".28" result="d"/><feDropShadow in="d" dx=".7" dy=".9" stdDeviation=".55" flood-color="#3b2a1a" flood-opacity=".38"/></filter>
+      <pattern id="fl-boards-UID" width="40" height="5" patternUnits="userSpaceOnUse"><rect width="40" height="5" fill="#d8b98a"/><path d="M0 4.8H40M12 0V4.8M31 0V4.8" stroke="#b99062" stroke-width=".35"/><path d="M2 1.6H9M17 3H27M33 1.4H38" stroke="#caa678" stroke-width=".25"/></pattern>
+      <pattern id="fl-dusty-UID" width="40" height="5" patternUnits="userSpaceOnUse"><rect width="40" height="5" fill="#b9ab94"/><path d="M0 4.8H40M14 0V4.8M33 0V4.8" stroke="#958670" stroke-width=".35"/><circle cx="6" cy="2" r=".35" fill="#8a7d6a"/><circle cx="24" cy="3.2" r=".3" fill="#8a7d6a"/><circle cx="36" cy="1.2" r=".25" fill="#a1937e"/></pattern>
+      <pattern id="fl-red-UID" width="40" height="5" patternUnits="userSpaceOnUse"><rect width="40" height="5" fill="#b0553f"/><path d="M0 4.8H40M10 0V4.8M29 0V4.8" stroke="#8f3f2e" stroke-width=".35"/><ellipse cx="20" cy="2.4" rx="3" ry=".8" fill="#9c4a37" opacity=".7"/></pattern>
+      <pattern id="fl-stone-UID" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#cfc7b8"/><path d="M0 11.8H12M11.8 0V12" stroke="#a89f90" stroke-width=".4"/></pattern>
+      <pattern id="fl-attic-UID" width="50" height="7" patternUnits="userSpaceOnUse"><rect width="50" height="7" fill="#c9a97c"/><path d="M0 6.8H50M20 0V6.8" stroke="#a9875b" stroke-width=".4"/></pattern>
+      <pattern id="grain-UID" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="2" r=".18" fill="#5b4630" opacity=".25"/><circle cx="6.2" cy="6.8" r=".14" fill="#5b4630" opacity=".2"/><circle cx="4" cy="4.4" r=".1" fill="#fff" opacity=".4"/></pattern>
+      <pattern id="w-wood-UID" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#7a5537"/><path d="M0 1.5H3" stroke="#946a47" stroke-width=".5"/></pattern>
+      <pattern id="w-paper-UID" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#9fb59e"/><circle cx="2" cy="2" r=".7" fill="#d8c48e"/></pattern>
+      <pattern id="w-peel-UID" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#bdb29c"/><path d="M1 1l1.5 1.2M4 4l1 .8" stroke="#8e826d" stroke-width=".4"/></pattern>
+      <pattern id="check-UID" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#fff"/><rect width="1" height="1" fill="#b23a3a"/><rect x="1" y="1" width="1" height="1" fill="#b23a3a"/></pattern>
+      <pattern id="horsehair-UID" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#2f2b28"/><rect width=".9" height="2" fill="#57514b"/></pattern>
+      <pattern id="marble-UID" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#e9e5dd"/><path d="M0 7C3 5 5 8 10 4M2 0C3 3 6 2 7 5" stroke="#b9b2a6" stroke-width=".3" fill="none"/></pattern>
+      <pattern id="wicker-UID" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#c9a36a"/><path d="M0 0L2 2M2 0L0 2" stroke="#a9834e" stroke-width=".3"/></pattern>
+      <pattern id="straw-UID" width="2" height="2" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#d9c27a"/><path d="M0 1H2" stroke="#b9a05a" stroke-width=".35"/></pattern>
+    </defs>`;
     function plan(p, name) {
       const fig = el('figure', 'plan'), W = p.w, H = p.h, pad = 7;
       const svg = sv('svg', { viewBox: `${-pad} ${-pad} ${W + 2 * pad} ${H + 2 * pad}`, role: 'img', 'aria-label': `Rzut z góry: ${name}` });
-      const g = sv('g', {}), marks = sv('g', {});
-      svg.append(sv('rect', { x: 0, y: 0, width: W, height: H, class: 'pfloor' }));
+      const uid = 'p' + (++planId), U = id => `url(#${id}-${uid})`;
+      svg.insertAdjacentHTML('afterbegin', DEFS.replace(/-UID/g, '-' + uid));
+      const gt = sv('g', { filter: U('shadow') }), gr = sv('g', { class: 'grec' }), go = sv('g', {}), marks = sv('g', {});
+      const fl = p.floor || { type: 'boards', src: 'r' };
+      svg.append(sv('rect', { x: 0, y: 0, width: W, height: H, fill: U('fl-' + fl.type) }));
+      if (fl.src === 'r') svg.append(sv('rect', { x: 0, y: 0, width: W, height: H, fill: '#fbf7ef', opacity: .45 }));
+      if (p.walls) svg.append(sv('rect', { x: 1.6, y: 1.6, width: W - 3.2, height: H - 3.2, fill: 'none', 'stroke-width': 2.4, stroke: U(p.walls === 'wood' ? 'w-wood' : p.walls === 'paper' ? 'w-paper' : 'w-peel') }));
+      svg.append(sv('rect', { x: 0, y: 0, width: W, height: H, fill: U('grain'), opacity: .5 }));
       const legend = [];
       let n = 0;
       const cls = it => it.src === 't' ? 'pt' : 'pr';
       for (const it of p.items) {
         const c = cls(it), x = it.x, y = it.y, w = it.w || 0, h = it.h || 0;
+        const g = ['window', 'glassdoor', 'door', 'wall', 'paper', 'label'].includes(it.k) ? go : it.src === 't' ? gt : gr;
+        const before = g.childNodes.length;
         const R = (a) => g.append(sv('rect', Object.assign({ class: c }, a)));
         switch (it.k) {
           case 'bed': R({ x, y, width: w, height: h, rx: 1 }); g.append(sv('rect', { x: x + 2, y: y + 2, width: w - 4, height: Math.min(7, h / 4), rx: 1.5, class: c })); break;
@@ -155,6 +189,12 @@
           case 'paper': break;
           case 'label': g.append(Object.assign(sv('text', { x, y, class: 'plabel', 'text-anchor': 'middle' }), { textContent: it.label })); break;
         }
+        if (it.src === 't' && !['window', 'glassdoor', 'door', 'wall', 'paper', 'label', 'curtain', 'line', 'picture'].includes(it.k)) {
+          const f = MAT[it.m] || MAT.default;
+          [...g.childNodes].slice(before).forEach((n2, i) => { const fill = i === 0 ? f[0] : (f[1] || f[0]); n2.style.fill = fill.startsWith('#') ? fill : U(fill); });
+        }
+        if (it.src === 't' && it.m === 'curtain-yellow' && it.k === 'window') g.append(sv('rect', { x, y: y + 1.4, width: w, height: 2.2, fill: '#e2c25a' }));
+        if (it.src === 't' && it.m === 'mural') [...g.childNodes].slice(before).forEach(n2 => { n2.style.stroke = '#5f8a73'; });
         if (it.label && it.k !== 'label') {
           n++;
           legend.push([n, it]);
@@ -172,7 +212,7 @@
         }
       }
       for (const [x1, y1, x2, y2] of [[0, 0, W, 0], [W, 0, W, H], [W, H, 0, H], [0, H, 0, 0]]) svg.append(sv('line', { x1, y1, x2, y2, class: 'pwall' }));
-      svg.append(g, marks);
+      svg.append(gr, gt, go, marks);
       const key = el('div', 'pkey'); key.append(el('span', 'kt', 'przedmiot wymieniony w tekście'), el('span', 'kr', 'rekonstrukcja umowna'));
       const ol = el('ol', 'plegend');
       for (const [i, it] of legend) {
@@ -182,6 +222,7 @@
         if (it.k === 'paper') li.append(el('span', 'lpos', ' · cechy ścian i podłogi'));
         ol.append(li);
       }
+      if (fl.note) { const li = el('li', 'nonum'); li.append(document.createTextNode('Podłoga i ściany (z tekstu): ' + fl.note)); ol.append(li); }
       const cap = el('figcaption');
       cap.append(el('strong', '', 'Rzut z góry. '), document.createTextNode('Obecność przedmiotów oznaczonych linią ciągłą wynika z tekstu; ich rozmieszczenie jest umowne, chyba że podano położenie z tekstu. Elementy przerywane to rekonstrukcja.'));
       fig.append(svg, key, ol, cap);
