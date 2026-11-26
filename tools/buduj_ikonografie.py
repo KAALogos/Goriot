@@ -36,7 +36,7 @@ for e in D['items']:
         im = im.convert('RGB')
     W, H = im.size
     out = {}
-    for name, width, fmt, q in (('web', 1200, 'WEBP', 82), ('full', 2400, 'JPEG', 88)):
+    for name, width, fmt, q in (('web', 1200, 'WEBP', 82), ('bg', 1920, 'WEBP', 78), ('full', 2400, 'JPEG', 88)):
         w = min(width, W)
         h = round(H * w / W)
         res = im if w == W else im.resize((w, h), Image.LANCZOS)
@@ -56,7 +56,7 @@ for e in items:
         assert e.get(k), (e['id'], k)
     if 'BY-SA' in e['license'] and 'BY-SA' not in e.get('derivative_license', ''):
         sys.exit(e['id'] + ': adaptacja CC BY-SA bez licencji pochodnej')
-(R / 'ikonografia.js').write_text('window.IKONO=' + json.dumps({'intro': D['intro'], 'groups': D['groups'], 'items': items},
+(R / 'ikonografia.js').write_text('window.IKONO=' + json.dumps({'intro': D['intro'], 'groups': D['groups'], 'items': items, 'episodes': D.get('episodes', []), 'modules': D.get('modules', {}), 'opening': D.get('opening'), 'order_note': D.get('order_note')},
                                   ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8', newline='\n')
 (R / 'img/telemak/LICENCJE.md').write_text('\n'.join(
     ['# Fotografie tapety „Paysage de Télémaque dans l’île de Calypso” — licencje', '',

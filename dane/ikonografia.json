@@ -86,24 +86,173 @@
   {
    "id": "05_wismar_03",
    "group": "wismar",
-   "title": "Tapetensaal w Welt-Erbe-Haus, Wismar (3)",
-   "caption": "Kolejna scena panoramy Dufour et Leroy w salonie Welt-Erbe-Haus. Fotografia wnętrza z 2015 roku.",
-   "alt": "Fragment ściany salonu z oprawioną sceną tapety panoramicznej.",
+   "title": "Wenus powierza Kupidyna Kalipso i nimfom (Wismar)",
+   "caption": "Pałac z kolumnadą i schodami, obłok z rydwanem Wenus. Scena zgodna z opisem arkusza z Laval w bazie Joconde („Vénus descendue de son char confie Cupidon à Calypso et à ses nymphes”); identyfikacja na podstawie porównania z opisem. Panorama Dufour et Leroy w salonie Welt-Erbe-Haus w Wismarze; fotografia z 2015 roku.",
+   "alt": "Fragment ściany salonu: scena tapety w ramie z pilastrami; po lewej pałac z kolumnadą i szerokimi schodami, białe obłoki, postacie w antycznych szatach.",
    "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
    "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
    "derivative_license": "CC BY-SA 4.0",
-   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+   "not_feast": "To nie jest uczta Kalipso."
   },
   {
    "id": "06_wismar_04",
    "group": "wismar",
-   "title": "Tapetensaal w Welt-Erbe-Haus, Wismar (4)",
-   "caption": "Kolejna scena panoramy Dufour et Leroy w salonie Welt-Erbe-Haus. Fotografia wnętrza z 2015 roku.",
-   "alt": "Fragment ściany salonu z oprawioną sceną tapety panoramicznej.",
+   "title": "Telemak i Eucharis; zazdrość Kalipso (Wismar)",
+   "caption": "Telemak przy balustradzie, nimfy z Kupidynem, w tle okrągła świątynia. Scena zgodna z opisem arkusza z Laval w bazie Joconde („Télémaque part à la chasse avec la nymphe Eucharis… Calypso les épie avec jalousie”); identyfikacja na podstawie porównania z opisem. Panorama Dufour et Leroy w salonie Welt-Erbe-Haus w Wismarze; fotografia z 2015 roku.",
+   "alt": "Fragment ściany salonu: scena tapety w ramie; po lewej okrągła świątynia i balustrada z postacią w czerwonym płaszczu, na łące tańczące nimfy i skrzydlaty chłopiec.",
    "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
    "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
    "derivative_license": "CC BY-SA 4.0",
+   "not_feast": "To nie jest uczta Kalipso."
+  },
+  {
+   "id": "07_hermitage_habs_19",
+   "group": "hermitage",
+   "title": "The Hermitage, Nashville: wschodnia ściana holu wejściowego, odcinek między drzwiami",
+   "caption": "Tapeta z „Telemakiem” w holu wejściowym domu Andrew Jacksona; fotografia archiwalna Historic American Buildings Survey z 12 listopada 1936 (HABS TENN,19-NASH.V,1-19). Instalacja łączy różne druki; sceny nie identyfikowano.",
+   "alt": "Czarno-biała fotografia ściany z panoramiczną tapetą krajobrazową; na pierwszym planie meble i barierka muzealna.",
+   "credit": "Fot. W. Jeter Eason (1936), Historic American Buildings Survey / Library of Congress / Wikimedia Commons",
+   "changes": "konwersja z TIFF, zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "license_label": "domena publiczna (fotografia agencji federalnej USA, HABS)",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  },
+  {
+   "id": "08_hermitage_habs_13",
+   "group": "hermitage",
+   "title": "The Hermitage, Nashville: zachodnia ściana holu wejściowego, odcinek zaokrąglony",
+   "caption": "Tapeta z „Telemakiem” w holu wejściowym domu Andrew Jacksona; fotografia archiwalna Historic American Buildings Survey z 12 listopada 1936 (HABS TENN,19-NASH.V,1-13). Instalacja łączy różne druki; sceny nie identyfikowano.",
+   "alt": "Czarno-biała fotografia ściany z panoramiczną tapetą krajobrazową; na pierwszym planie meble i barierka muzealna.",
+   "credit": "Fot. W. Jeter Eason (1936), Historic American Buildings Survey / Library of Congress / Wikimedia Commons",
+   "changes": "konwersja z TIFF, zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "license_label": "domena publiczna (fotografia agencji federalnej USA, HABS)",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  },
+  {
+   "id": "09_hermitage_habs_11",
+   "group": "hermitage",
+   "title": "The Hermitage, Nashville: zachodnia ściana holu wejściowego, odcinek między drzwiami",
+   "caption": "Tapeta z „Telemakiem” w holu wejściowym domu Andrew Jacksona; fotografia archiwalna Historic American Buildings Survey z 12 listopada 1936 (HABS TENN,19-NASH.V,1-11). Instalacja łączy różne druki; sceny nie identyfikowano.",
+   "alt": "Czarno-biała fotografia ściany z panoramiczną tapetą krajobrazową; na pierwszym planie meble i barierka muzealna.",
+   "credit": "Fot. W. Jeter Eason (1936), Historic American Buildings Survey / Library of Congress / Wikimedia Commons",
+   "changes": "konwersja z TIFF, zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "license_label": "domena publiczna (fotografia agencji federalnej USA, HABS)",
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+  },
+  {
+   "id": "10_hermitage_habs_12",
+   "group": "hermitage",
+   "title": "The Hermitage, Nashville: zachodnia ściana holu wejściowego, odcinek między drzwiami",
+   "caption": "Tapeta z „Telemakiem” w holu wejściowym domu Andrew Jacksona; fotografia archiwalna Historic American Buildings Survey z 12 listopada 1936 (HABS TENN,19-NASH.V,1-12). Instalacja łączy różne druki; sceny nie identyfikowano.",
+   "alt": "Czarno-biała fotografia ściany z panoramiczną tapetą krajobrazową; na pierwszym planie meble i barierka muzealna.",
+   "credit": "Fot. W. Jeter Eason (1936), Historic American Buildings Survey / Library of Congress / Wikimedia Commons",
+   "changes": "konwersja z TIFF, zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "license_label": "domena publiczna (fotografia agencji federalnej USA, HABS)",
    "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
   }
- ]
+ ],
+ "episodes": [
+  {
+   "id": "e1",
+   "title": "Tańce i ofiary nimf",
+   "img": [
+    "03_wismar_01"
+   ],
+   "evidence": "Scena zgodna z opisem arkusza nr inw. 6754 z Laval (Joconde): nimfy składają ofiary posągowi Pomony i tańczą przy dźwiękach fletu, w tle świątynia. Miejsce tej sceny w panoramie nie zostało ustalone w źródłach."
+  },
+  {
+   "id": "e2",
+   "title": "Mentor i Telemak opowiadają Kalipso swoje przygody",
+   "img": [
+    "01_laval_6761",
+    "04_wismar_02"
+   ],
+   "evidence": "Musée de Laval: bryty 9–10 z 24; Joconde, nr inw. 6761."
+  },
+  {
+   "id": "e3",
+   "title": "Wenus powierza Kupidyna Kalipso i nimfom",
+   "img": [
+    "05_wismar_03"
+   ],
+   "evidence": "Scena zgodna z opisem arkusza z Laval (Joconde 07660015764): pałac z kolumnadą i schodami, rydwan Wenus."
+  },
+  {
+   "id": "e4",
+   "title": "Telemak na polowaniu z Eucharis; zazdrość Kalipso",
+   "img": [
+    "06_wismar_04"
+   ],
+   "evidence": "Scena zgodna z opisem arkusza z Laval (Joconde 07660015766): Telemak i Eucharis, Eros, w tle świątynia i balustrada."
+  },
+  {
+   "id": "e5",
+   "title": "Kalipso nad stawem z kariatydą",
+   "img": [
+    "02_cooper_hewitt_1996-108-1"
+   ],
+   "evidence": "Cooper Hewitt opisuje scenę bez wskazania epizodu; jej miejsce w opowieści nie zostało ustalone."
+  }
+ ],
+ "order_note": "Kolejność epizodów 2–4 według powieści Fénelona i tytułów arkuszy z Laval. Miejsca scen 1 i 5 w panoramie źródła nie podają.",
+ "modules": {
+  "atlas": [
+   "e1",
+   "03_wismar_01",
+   "50% 70%"
+  ],
+  "kontekst": [
+   "e1",
+   "03_wismar_01",
+   "78% 55%"
+  ],
+  "paryz": [
+   "e2",
+   "01_laval_6761",
+   "30% 72%"
+  ],
+  "bohaterowie": [
+   "e2",
+   "04_wismar_02",
+   "40% 72%"
+  ],
+  "mechanizmy": [
+   "e3",
+   "05_wismar_03",
+   "35% 60%"
+  ],
+  "poetyka": [
+   "e3",
+   "05_wismar_03",
+   "70% 70%"
+  ],
+  "sceny": [
+   "e4",
+   "06_wismar_04",
+   "30% 75%"
+  ],
+  "konteksty": [
+   "e4",
+   "06_wismar_04",
+   "70% 70%"
+  ],
+  "ikonografia": [
+   "e5",
+   "02_cooper_hewitt_1996-108-1",
+   "50% 78%"
+  ],
+  "czytanie": [
+   "e5",
+   "02_cooper_hewitt_1996-108-1",
+   "50% 35%"
+  ],
+  "zrodla": [
+   "e5",
+   "02_cooper_hewitt_1996-108-1",
+   "50% 55%"
+  ]
+ },
+ "opening": {
+  "img": "01_laval_6761",
+  "pos": "58% 62%"
+ }
 }
