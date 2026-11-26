@@ -576,10 +576,25 @@
     v.append(body);
     const qs = el('section', 'scq'); qs.append(el('h3', '', 'Pytania do rozmowy'));
     const ol = el('ol'); sc.questions.forEach(q => ol.append(el('li', '', q))); qs.append(ol);
+    let tasks = null;
+    if (sc.tasks && sc.tasks.length) {
+      tasks = el('section', 'sctasks'); tasks.append(el('h3', '', 'Zadania z kluczem'));
+      const tl = el('ol');
+      for (const t of sc.tasks) {
+        const li = el('li', 'sctask');
+        li.append(el('span', 'sclvl lvl-' + t.lvl, t.lvl === 'P' ? 'Rozumienie' : 'Interpretacja'), el('p', 'sctq', t.q));
+        const det = el('details', 'sckey'); det.append(el('summary', '', 'Pokaż klucz'));
+        det.append(el('p', '', t.key));
+        const eds2 = Gx.mode() === 'oba' ? ['bort', 'boy'] : [ed];
+        for (const e2 of eds2) { const c = el('p', 'sccite'); c.append(document.createTextNode((eds2.length > 1 ? EDSRC[e2][2] + ': ' : 'W tekście: ')), el('q', '', t.cite[e2])); det.append(c); }
+        li.append(det); tl.append(li);
+      }
+      tasks.append(tl);
+    }
     const nav = el('nav', 'scnav');
     if (i > 0) nav.append(btn('scprev', '← ' + SC[i - 1].title, () => openScene(SC[i - 1].id)));
     if (i < SC.length - 1) nav.append(btn('scnext', SC[i + 1].title + ' →', () => openScene(SC[i + 1].id)));
-    v.append(qs, nav);
+    v.append(qs); if (tasks) v.append(tasks); v.append(nav);
     const eds = Gx.mode() === 'oba' ? ['bort', 'boy'] : [ed];
     try {
       const texts = await Promise.all(eds.map(loadEd));

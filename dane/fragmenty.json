@@ -19,6 +19,44 @@
     "Narrator zwraca się do czytelnika, który trzyma książkę „w białych rękach”. Kim jest ten czytelnik i czego narrator się po nim spodziewa?",
     "W jaki sposób wygląd pani Vauquer powtarza wygląd jej domu? Wskaż podobieństwa.",
     "Po co tak długi opis przed pojawieniem się bohaterów? Co dzięki niemu wiemy, zanim zacznie się akcja?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Jak narrator opisuje zapach jadalni? Wymień trzy jego składniki.",
+     "key": "Stęchlizna (pleśń), wilgoć i chłód, zapach resztek potraw; całość przypomina kredens i szpital.",
+     "cite": {
+      "bort": "Czuć w niej zaduch, stęchliznę, pleśń",
+      "boy": "Odór ten trąci stęchlizną, butwielą, jełkością"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Co według narratora zrobi czytelnik po lekturze historii Goriota?",
+     "key": "Zje obiad z apetytem i zrzuci własną obojętność na autora, zarzucając mu przesadę.",
+     "cite": {
+      "bort": "zjecie obiad z apetytem",
+      "boy": "zjecie ze smakiem obiad"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Wyjaśnij porównanie ulicy i domu do zejścia do katakumb. Jak przygotowuje ono czytelnika do historii?",
+     "key": "Opis prowadzi coraz głębiej w ciemność: z każdym krokiem mniej światła. Zapowiada ponurą historię i każe czytać ją z powagą; dom jest miejscem schyłku i śmierci (losu Goriota).",
+     "cite": {
+      "bort": "tak wędrowiec zstępujący do katakumb",
+      "boy": "w miarę jak podróżnik zstępuje do katakumb"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Na czym polega związek między panią Vauquer a jej pensjonatem? Odwołaj się do zakończenia jej portretu.",
+     "key": "Portret i opis domu wzajemnie się objaśniają: wygląd właścicielki (otyłość, chytrość, przechodzenie od uśmiechu do zimnego rachunku) odpowiada nędzy i chciwości domu. To realistyczna zasada zgodności postaci i środowiska.",
+     "cite": {
+      "bort": "cała wreszcie jej osoba wyjaśnia lepiej gospodę",
+      "boy": "cała jej osoba tłumaczy ten pensjonat"
+     }
+    }
    ]
   },
   {
@@ -39,6 +77,44 @@
     "Czym Wiktoryna i Rastignac różnią się od pozostałych lokatorów?",
     "Co w portrecie Vautrina budzi sympatię, a co niepokój?",
     "Dlaczego to właśnie ojciec Goriot staje się celem drwin całej wspólnoty?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Ile płacą miesięcznie najubożsi lokatorzy, tacy jak Goriot i panna Michonneau?",
+     "key": "Czterdzieści pięć franków miesięcznie za stół i mieszkanie.",
+     "cite": {
+      "bort": "czterdzieści pięć franków miesięcznie",
+      "boy": "czterdzieści pięć franków miesięcznie"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Dlaczego Wiktoryna Taillefer mieszka w pensjonacie?",
+     "key": "Ojciec nie uznaje jej za córkę, daje jej tylko 600 franków rocznie i chce przekazać majątek synowi; opiekuje się nią pani Couture.",
+     "cite": {
+      "bort": "przeznaczał jej tylko sześćset franków rocznie",
+      "boy": "wyznaczył córce jedynie sześćset franków rocznie"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Narrator twierdzi, że pensjonat odbija w małej skali całe społeczeństwo. Uzasadnij to na przykładach lokatorów.",
+     "key": "Mieszkańcy reprezentują różne grupy (wdowa, sierota, stara panna, urzędnik, student, zrujnowany kupiec, tajemniczy „rentier”); piętro i opłata wyznaczają hierarchię; jest też ofiara, z której wszyscy drwią.",
+     "cite": {
+      "bort": "na małą skalę wszystkie składowe części społeczeństwa",
+      "boy": "w miniaturze odbiciem społeczeństwa"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Które szczegóły portretu Vautrina sugerują, że ukrywa on przeszłość?",
+     "key": "Gwałtowne, „juwenalowe” ataki na prawo i społeczeństwo, wiedza o wszystkim, siła; narrator wprost sugeruje starannie ukrytą tajemnicę.",
+     "cite": {
+      "bort": "w zapał godny Juwenala",
+      "boy": "wybuch godny Juwenala"
+     }
+    }
    ]
   },
   {
@@ -59,6 +135,44 @@
     "Jak zmienia się sposób, w jaki inni się do niego zwracają? Co oznacza przejście od „pana Goriot” do „ojca Goriot”?",
     "Dlaczego pani Vauquer zmienia stosunek do Goriota? Jaką rolę odgrywa w tym wizyta hrabiny de l’Ambermesnil?",
     "Jak lokatorzy tłumaczą sobie wizyty córek Goriota i co te wyjaśnienia mówią o samych lokatorach?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Ile płacił Goriot na początku pobytu, a ile pod koniec trzeciego roku?",
+     "key": "Najpierw 1200 franków rocznie (apartament na pierwszym piętrze), potem 900 franków (drugie piętro), wreszcie 45 franków miesięcznie (trzecie piętro).",
+     "cite": {
+      "bort": "zmniejszając komorne do czterdziestu pięciu franków na miesiąc",
+      "boy": "obniżając pensję do czterdziestu pięciu franków na miesiąc"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Kiedy pani Vauquer zaczyna mówić o lokatorze „ojciec Goriot”?",
+     "key": "Gdy Goriot przenosi się na drugie piętro i płaci mniej; wdowa żąda wtedy zapłaty z góry.",
+     "cite": {
+      "bort": "zaczęła odtąd nazywać swego lokatora ojcem Goriot",
+      "boy": "którego odtąd nazywała ojcem Goriot"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Dlaczego lokatorzy nie wierzą, że eleganckie panie są córkami Goriota? Co ich rozumowanie mówi o nich samych?",
+     "key": "Rozumują według pieniędzy: gdyby miał bogate córki, nie mieszkałby na trzecim piętrze za 45 franków. Nie dopuszczają myśli o ojcu, który oddał wszystko; ich wyjaśnienia są wulgarne i świadczą o ich własnej małości.",
+     "cite": {
+      "bort": "nie mieszkałby u mnie na trzecim piętrze",
+      "boy": "nie mieszkałby tu na trzecim piętrze"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Jak zmienia się wygląd Goriota i co narrator chce przez to pokazać?",
+     "key": "Znika puder, pojawiają się brudnozielone siwe włosy, zniszczona bielizna, chudnie; degradacja fizyczna jest znakiem upadku społecznego i ofiary złożonej z pieniędzy na córki.",
+     "cite": {
+      "bort": "Ku końcowi trzeciego roku, ojciec Goriot ograniczył jeszcze swoje wydatki",
+      "boy": "Pod koniec trzeciego roku, ojciec Goriot jeszcze ograniczył wydatki"
+     }
+    }
    ]
   },
   {
@@ -79,6 +193,44 @@
     "Jakie dwie tajemnice pensjonatu odkrywa Rastignac tej nocy?",
     "Dlaczego narrator zestawia marzenia Rastignaca o karierze z widokiem starca niszczącego srebro?",
     "Jak zmienia się opinia Rastignaca o Goriocie po tej nocy?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Co robi Goriot w nocy ze srebrnymi naczyniami?",
+     "key": "Przywiązuje srebrny półmisek i wazę do stołu, ściska je sznurem i zgniata w bryłę, potem wałkuje ją w walec.",
+     "cite": {
+      "bort": "zaczął je ściskać z nadzwyczajną siłą",
+      "boy": "ściskając z taką siłą"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Jak Goriot reaguje na swoje dzieło?",
+     "key": "Patrzy na nie ze smutkiem, w oczach ma łzy, wzdycha.",
+     "cite": {
+      "bort": "łzy zabłysły mu w oczach",
+      "boy": "łzy zalśniły mu w oczach"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Za kogo w pierwszej chwili Rastignac bierze Goriota? Dlaczego to podejrzenie jest ważne dla całej powieści?",
+     "key": "Za złodzieja lub pasera udającego głupotę. Podejrzenie pokazuje, że w Paryżu Rastignac widzi wszędzie interes i zbrodnię; prawda (ojciec sprzedaje srebro dla córki) okaże się szlachetniejsza i bardziej bolesna.",
+     "cite": {
+      "bort": "Może to złodziej lub spólnik złodziejski",
+      "boy": "Byłże to złodziej albo passer"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Rastignac mówi o „tajemnicach” pensjonatu. Jakie dwie zagadki odkrywa tej nocy?",
+     "key": "Nocne zajęcie Goriota (niszczenie srebra) i ciche wyjście dwóch mężczyzn oraz późny powrót Vautrina. To zapowiedź dwóch wątków: ojca i galernika.",
+     "cite": {
+      "bort": "Ile tu tajemnic w tej gospodzie mieszczańskiej",
+      "boy": "Sporo tu tajemnic, jak na zwykły pensjonat"
+     }
+    }
    ]
   },
   {
@@ -99,6 +251,44 @@
     "W jaki sposób Maksym de Trailles daje mu do zrozumienia, że jest intruzem?",
     "Nazwisko Goriota działa w salonie jak „różdżka czarnoksięska”. Co się zmienia w zachowaniu hrabiny i jej męża?",
     "Czego Rastignac dowiaduje się z tej porażki o regułach salonu?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Jak Rastignac dociera do hrabiny i co z tego wynika?",
+     "key": "Idzie pieszo, zabłoci się i musi czyścić buty w Palais-Royal; służba widzi, że nie przyjechał powozem.",
+     "cite": {
+      "bort": "musiał kazać oczyścić sobie buty i spodnie",
+      "boy": "musiał sobie dać oczyścić buty i pantalony"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Jak Maksym de Trailles okazuje lekceważenie Rastignacowi?",
+     "key": "Wyzywająco na niego patrzy, wzrusza ramionami, porozumiewa się wzrokiem z hrabiną, daje do zrozumienia, że student przeszkadza.",
+     "cite": {
+      "bort": "Maksym wzruszył ramionami",
+      "boy": "Maksym lekko wzruszył ramionami"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Porównaj działanie dwóch nazwisk w salonie: „krewny pani de Beauséant” i „Goriot”. Czego uczy to Rastignaca?",
+     "key": "Pokrewieństwo z panią de Beauséant otwiera drzwi, nazwisko Goriota je zamyka. W salonie liczą się koneksje i pochodzenie; ojciec-kupiec jest wstydliwą tajemnicą córki.",
+     "cite": {
+      "bort": "Nazwisko ojca Goriot było znów niby skinieniem różdżki czarnoksięskiej",
+      "boy": "niby dotknięcie różdżki czarodziejskiej"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Dlaczego scena kończy się porażką Rastignaca, choć niczego złego nie zrobił?",
+     "key": "Nie zna reguł i stosunków rodzinnych w salonie: wymienia nazwisko, którego wymawiać nie wolno. Porażka pokazuje, że w świecie wyższym liczy się wiedza o tajemnicach i układach.",
+     "cite": {
+      "bort": "Nazwisko ojca Goriot",
+      "boy": "Wymówione przez Eugeniusza nazwisko"
+     }
+    }
    ]
   },
   {
@@ -119,6 +309,44 @@
     "Jakie rady daje Rastignacowi pani de Beauséant? Wypisz trzy i wyjaśnij porównanie ludzi do koni pocztowych.",
     "Dlaczego tę lekcję wygłasza właśnie kobieta, która sama pada ofiarą paryskiego świata?",
     "Porównaj tę lekcję z przemową Vautrina w ogródku (scena „Propozycja Vautrina”). Co je łączy, a co dzieli?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Za kogo wyszły córki Goriota?",
+     "key": "Anastazja za hrabiego de Restaud, Delfina za barona de Nucingen, bogatego bankiera.",
+     "cite": {
+      "bort": "z baronem de Nucingen, bogatym bankierem",
+      "boy": "barona de Nucingen, bogatego bankiera"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Za co pani de Beauséant wini Rastignaca?",
+     "key": "Wymówił nazwisko Goriota i przez to zamknął sobie dom hrabiny de Restaud.",
+     "cite": {
+      "bort": "Pan zamknąłeś sobie dom hrabiny, wymówiwszy imię ojca Goriot",
+      "boy": "zamknięto drzwi u hrabiny za to, żeś wymówił nazwisko Goriot"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Wyjaśnij radę, by traktować ludzi jak konie pocztowe. Jaki obraz świata z niej wynika?",
+     "key": "Ludzie mają być narzędziem: wykorzystać ich i porzucić na „stacji”, byle dojść do celu. Świat jest bezwzględny, a sukces wymaga zimnego wyrachowania.",
+     "cite": {
+      "bort": "końmi pocztowymi",
+      "boy": "konie pocztowe"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Dlaczego pani de Beauséant radzi Rastignacowi zbliżyć się do Delfiny de Nucingen?",
+     "key": "Delfina pragnie wejść do salonu wicehrabiny i zazdrości siostrze; będzie wdzięczna temu, kto ją wprowadzi. Rastignac może zrobić z niej „szyld” i drogę do świata; to rachunek, nie uczucie.",
+     "cite": {
+      "bort": "Pani de Nucingen wypiłaby wszystko błoto",
+      "boy": "pani de Nucingen wychłeptałaby wszystko błoto"
+     }
+    }
    ]
   },
   {
@@ -139,6 +367,44 @@
     "Czego matka obawia się najbardziej i jak to wyraża?",
     "Dlaczego czytając list matki, Rastignac myśli o ojcu Goriot?",
     "Jak listy z prowincji pokazują różnicę między domem rodzinnym a Paryżem?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Co poświęciły matka i ciotka, żeby przysłać pieniądze?",
+     "key": "Matka pozbyła się klejnotów, ciotka sprzedała swoje pamiątki („relikwie”).",
+     "cite": {
+      "bort": "Ciotka twa płakała pewnie sprzedając jedną ze swych relikwii",
+      "boy": "Ciotka płakała z pewnością, sprzedając swoje relikwie"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Skąd pieniądze od sióstr?",
+     "key": "Z ich oszczędności: Agata zbierała pieniądze, Laura miała mniej, bo wydała na drobiazgi.",
+     "cite": {
+      "bort": "zbiera dukaty jak sroka jaka",
+      "boy": "dusi talary jak sroka"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Dlaczego czytając list matki, Rastignac myśli o ojcu Goriot?",
+     "key": "Widzi podobieństwo ofiary: Goriot zgniótł i sprzedał srebro dla córki, matka sprzedała klejnoty dla syna. Rodzina poświęca się dla dziecka, które chce zrobić karierę w Paryżu.",
+     "cite": {
+      "bort": "Myślał o ojcu Goriot, który zgniótł srebrny półmisek",
+      "boy": "myślał o ojcu Goriot gniotącym srebra"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Jak list siostry pokazuje różnicę między domem rodzinnym a Paryżem?",
+     "key": "Siostry żyją skromnie, cieszą się drobiazgami (paski, igiełka), liczą talary; ich czułość i naiwność kontrastują z paryskim światem, w którym liczą się wielkie sumy i wyrachowanie.",
+     "cite": {
+      "bort": "Kupiłam sobie przedtem dwa paski",
+      "boy": "Kupiłam sobie dwa paski"
+     }
+    }
    ]
   },
   {
@@ -159,6 +425,44 @@
     "Jakimi obrazami Vautrin opisuje paryskie społeczeństwo? Wypisz dwa i wyjaśnij.",
     "Na czym polega jego propozycja i czego chce w zamian?",
     "Co w tej przemowie potwierdza dalsza fabuła, a co jest tylko cynizmem mówiącego?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Ile według Vautrina zarabia sędzia około trzydziestki?",
+     "key": "Tysiąc dwieście franków rocznie, i to po latach wyrzeczeń.",
+     "cite": {
+      "bort": "będziesz pobierał tysiąc dwieście franków rocznie",
+      "boy": "będziesz sędzią z tysiącdwustoma frankami na rok"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Czego Vautrin żąda w zamian za „nastręczenie” miliona posagu?",
+     "key": "Dwustu tysięcy franków, za które chce kupić niewolników w Ameryce.",
+     "cite": {
+      "bort": "czy dasz mi pan dwieście tysięcy franków",
+      "boy": "czy dasz mi dwieście tysięcy franków"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Wyjaśnij porównanie młodych ludzi do pająków w garnku.",
+     "key": "Kandydatów jest wielu, dobrych posad mało; muszą się nawzajem pożerać. Kariera to walka wszystkich ze wszystkimi.",
+     "cite": {
+      "bort": "jak pająki w garnku",
+      "boy": "niby pająki w garnku"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "„Nie ma zasad, są tylko wypadki”. Jak rozumiesz to zdanie i co sądzisz o nim w świetle dalszej fabuły?",
+     "key": "Vautrin zaprzecza stałej moralności: liczy się wykorzystanie okoliczności. Fabuła częściowo mu przyznaje rację (córki, Delfina, pani de Beauséant), ale Bianchon i rodzina Rastignaca pokazują, że zasady jednak istnieją.",
+     "cite": {
+      "bort": "Nie ma na świecie zasad, są tylko wypadki",
+      "boy": "Nie ma zasad, są tylko wypadki"
+     }
+    }
    ]
   },
   {
@@ -179,6 +483,44 @@
     "Jak odpowiada Bianchon? Czym według niego jest szczęście?",
     "Dlaczego Rastignac prosi przyjaciela: „wylecz mnie”?",
     "Jak ta krótka rozmowa łączy się z propozycją Vautrina?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Na jakiego autora powołuje się Rastignac?",
+     "key": "Na Rousseau („Czytałeś Roussa?”).",
+     "cite": {
+      "bort": "Czytałeś Roussa?",
+      "boy": "Czytałeś Russa?"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Czym według Bianchona jest szczęście?",
+     "key": "Mieści się „między podeszwą a wierzchołkiem głowy”: kosztuje milion albo sto luidorów, a odczucie jest takie samo.",
+     "cite": {
+      "bort": "Szczęście ludzkie, mój drogi, musi się zawsze pomieścić między podeszwą a wierzchołkiem głowy",
+      "boy": "Szczęście, mój drogi, zawsze będzie się mieściło między naszą stopą a ciemieniem"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Dlaczego Rastignac wspomina o siostrach? Jak łączy się to z propozycją Vautrina?",
+     "key": "Chce pieniędzy także dla nich; to argument, który usprawiedliwiałby zbrodnię. Vautrin też grał na tej strunie (siostry „zwiędną w panieństwie”).",
+     "cite": {
+      "bort": "Mam dwie siostry",
+      "boy": "Mam dwie siostry"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Co różni postawę Bianchona i Vautrina wobec ambicji?",
+     "key": "Bianchon wybiera skromne, uczciwe życie i nie zabije „mandaryna”; Vautrin uważa zbrodnię za koszt sukcesu. Bianchon jest wzorem moralnym, Vautrin kusicielem.",
+     "cite": {
+      "bort": "raz płaci się za nie milion, drugi raz sto luidorów",
+      "boy": "czy kosztuje rocznie milion czy sto ludwików"
+     }
+    }
    ]
   },
   {
@@ -199,6 +541,44 @@
     "Kogo Vautrin oskarża o zdradę i co mówi o społeczeństwie i o galernikach?",
     "Co mówi Rastignacowi na pożegnanie?",
     "Jak ostatnie słowa Sylwii oceniają Vautrina? Czy się z nią zgadzasz?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Kogo Vautrin oskarża o zdradę?",
+     "key": "Pannę Michonneau, która wywołała u niego fałszywą apopleksję, by sprawdzić piętno.",
+     "cite": {
+      "bort": "To ty, stara świętoszko",
+      "boy": "To ty, rzekł, stara wiedźmo!"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Jak Vautrin żegna się z Rastignakiem?",
+     "key": "Łagodnym, smutnym głosem mówi „Bywaj zdrów, Eugeniuszu” i wskazuje mu, gdzie szukać pomocy.",
+     "cite": {
+      "bort": "Bywaj zdrów, Eugeniuszu",
+      "boy": "Bądź zdrów, Eugeniuszu"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Jak zmienia się twarz Vautrina w chwili zdemaskowania? Co oznacza ta „zrzucona maska”?",
+     "key": "Znika dobroduszność, twarz staje się dzika i wyrazista. Vautrin przez cały czas grał rolę; prawdziwa natura to siła i bunt przeciw społeczeństwu.",
+     "cite": {
+      "bort": "Galernik zrzucił maskę dobroduszności",
+      "boy": "gdy odrzucił dobroduszną maskę"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Vautrin mówi, że galernik jest mniej nikczemny od innych. Jak uzasadnia to oskarżenie społeczeństwa?",
+     "key": "Uważa, że społeczeństwo kłamie i jest zepsute; galernik przynajmniej otwarcie się mu sprzeciwia. Zarzut przypomina jego wcześniejszą przemowę o moralności epoki.",
+     "cite": {
+      "bort": "Czyście nie widzieli nigdy galernika?",
+      "boy": "Nie widzieliście nigdy galernika?"
+     }
+    }
    ]
   },
   {
@@ -219,6 +599,44 @@
     "Co siostry sobie zarzucają w czasie kłótni?",
     "Jak zachowuje się Goriot i jak kończy się dla niego ta scena?",
     "Jaką rolę odgrywa Rastignac? Co zmienia jego wejście?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Co zrobiła Anastazja, by ratować Maksyma?",
+     "key": "Zaniosła lichwiarzowi Gobseckowi rodzinne brylanty i je sprzedała; mąż to odkrył.",
+     "cite": {
+      "bort": "gdzie są twoje brylanty?",
+      "boy": "gdzie twoje diamenty?"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Ilu pieniędzy jeszcze potrzebuje Anastazja?",
+     "key": "Dwunastu tysięcy franków.",
+     "cite": {
+      "bort": "Pozostaje zapłacić tylko dwanaście tysięcy",
+      "boy": "Trzeba nam spłacić jeszcze tylko dwanaście tysięcy franków"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Co siostry sobie zarzucają? Jak ich kłótnia odsłania ich stosunek do ojca?",
+     "key": "Wypominają sobie kochanków (de Marsay, de Trailles) i pieniądze; ojciec jest dla obu źródłem funduszy, a ich spór dosłownie go zabija.",
+     "cite": {
+      "bort": "pan de Trailles kosztuje mnie przeszło dwieście tysięcy franków",
+      "boy": "pan de Trailles kosztuje mnie przeszło dwieście tysięcy"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Jak Rastignac rozwiązuje sytuację i jaki ma to sens?",
+     "key": "Przerabia weksel przygotowany dla Vautrina na 12 000 franków na imię Goriota. Ratuje starca kosztem własnego długu i staje się „synem”, który płaci za ojca.",
+     "cite": {
+      "bort": "zrobił na imię Goriota rewers regularny na dwanaście tysięcy franków",
+      "boy": "sporządził zeń prawidłowy akcept na dwanaście tysięcy"
+     }
+    }
    ]
   },
   {
@@ -239,6 +657,44 @@
     "O co pani de Beauséant prosi Rastignaca i co mu daje na pamiątkę?",
     "Co przypominają Rastignacowi brylanty obu sióstr na balu?",
     "Czego Rastignac uczy się tej nocy?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Co pani de Beauséant daje Rastignacowi na pamiątkę?",
+     "key": "Pudełko (szkatułkę), w którym chowała rękawiczki.",
+     "cite": {
+      "bort": "pudełko, w którym chowałam rękawiczki",
+      "boy": "szkatułka, w której chowałam rękawiczki"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Gdzie Rastignac jedzie na prośbę wicehrabiny?",
+     "key": "Do pałacu Rochefide’ów, do margrabiego d’Ajuda, który ma mu oddać rzeczy wicehrabiny.",
+     "cite": {
+      "bort": "Rastignac pojechał do pałacu Rochefide",
+      "boy": "Rastignac udał się do pałacu Rochefide"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Co przypominają Rastignacowi brylanty sióstr na balu? Dlaczego to zestawienie jest ważne?",
+     "key": "Barłóg umierającego ojca. Blask balu i nędza Goriota to dwa bieguny tej samej historii: przepych córek jest opłacony ruiną ojca.",
+     "cite": {
+      "bort": "przywodziły na myśl barłóg",
+      "boy": "widział barłóg"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Co łączy los pani de Beauséant i ojca Goriot?",
+     "key": "Oboje kochają bezinteresownie i zostają porzuceni dla pieniędzy (kochanek wybiera bogate małżeństwo, córki wybierają świat). Wielki świat nie zna wdzięczności.",
+     "cite": {
+      "bort": "pudełko, w którym chowałam rękawiczki",
+      "boy": "szkatułka, w której chowałam rękawiczki"
+     }
+    }
    ]
   },
   {
@@ -259,6 +715,44 @@
     "Co Goriot mówi o pieniądzach i o miłości córek?",
     "Jak zmieniają się jego uczucia w trakcie monologu?",
     "Kto w tej scenie zachowuje się jak syn? Uzasadnij."
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Z jaką odpowiedzią wraca Krzysztof od hrabiny?",
+     "key": "Hrabina pokłóciła się z mężem i nie może wyjść, bo „chodzi o życie lub śmierć jej dzieci”; przyjdzie później.",
+     "cite": {
+      "bort": "chodzi o śmierć lub życie moich dzieci",
+      "boy": "chodzi o życie i śmierć moich dzieci"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Co Goriot mówi o pieniądzach?",
+     "key": "Że pieniądz daje wszystko, nawet córki (dzieci); nadskakiwano jego pieniądzom, nie jemu.",
+     "cite": {
+      "bort": "pieniądz daje wszystko, nawet córki",
+      "boy": "Pieniądz daje wszystko, nawet dzieci"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Jak zmieniają się uczucia Goriota w ciągu sceny?",
+     "key": "Od nadziei („zaraz przyjdą”), przez rozpacz i przekleństwa, do przebaczenia i błogosławieństwa. Miłość ojcowska okazuje się silniejsza niż gniew.",
+     "cite": {
+      "bort": "Przeklinam je!",
+      "boy": "przeklinam je"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Kto w tej scenie zachowuje się jak syn Goriota? Uzasadnij odwołaniem do tekstu.",
+     "key": "Rastignac (i Bianchon): czuwają, płacą, sprowadzają lekarza; Goriot nazywa Rastignaca dobrym dzieckiem i może dać mu tylko błogosławieństwo.",
+     "cite": {
+      "bort": "nic ci dać nie mogę oprócz błogosławieństwa umierającego",
+      "boy": "nic nie mogę ci dać prócz błogosławieństwa umierającego"
+     }
+    }
    ]
   },
   {
@@ -279,6 +773,44 @@
     "Jak lokatorzy przyjmują śmierć Goriota przy obiedzie?",
     "Co znaczą dwa puste powozy z herbami?",
     "Jak rozumiesz ostatnie słowa Rastignaca i to, dokąd idzie po pogrzebie?"
+   ],
+   "tasks": [
+    {
+     "lvl": "P",
+     "q": "Ile kosztowało nabożeństwo żałobne?",
+     "key": "Siedemdziesiąt franków; za tyle przyszło dwóch księży, chłopiec i kościelny.",
+     "cite": {
+      "bort": "za siedemdziesiąt franków",
+      "boy": "za siedemdziesiąt franków"
+     }
+    },
+    {
+     "lvl": "P",
+     "q": "Jaki napis proponuje Bianchon, jeśli rodzina nie zwróci kosztów?",
+     "key": "„Tu spoczywa pan Goriot, ojciec hrabiny de Restaud i baronowej de Nucingen, pochowany kosztem dwóch studentów”.",
+     "cite": {
+      "bort": "pochowany kosztem dwóch studentów",
+      "boy": "pogrzebany kosztem dwóch studentów"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Co znaczą dwa puste powozy z herbami w orszaku?",
+     "key": "Córki i zięciowie zachowują pozory i dbają o opinię, ale osobiście nie przychodzą. Herb zastępuje człowieka: rodzina jest obecna tylko jako znak pozycji.",
+     "cite": {
+      "bort": "dwa próżne powozy",
+      "boy": "dwie karety, zdobne herbami ale próżne"
+     }
+    },
+    {
+     "lvl": "R",
+     "q": "Jak rozumiesz słowa „Teraz my się spróbujemy!” i to, że Rastignac idzie potem na obiad do pani de Nucingen?",
+     "key": "Rastignac grzebie „ostatnią łzę młodzieńczą” i rzuca wyzwanie Paryżowi; wybiera walkę według reguł świata, który zabił Goriota. Pierwszym krokiem jest obiad u córki zmarłego.",
+     "cite": {
+      "bort": "Teraz my się spróbujemy!",
+      "boy": "Teraz się spróbujemy!"
+     }
+    }
    ]
   }
  ]

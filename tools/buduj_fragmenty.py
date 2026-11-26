@@ -37,6 +37,13 @@ for s in D['scenes']:
         lock[key] = anchor
         e[ed] = {'from': a, 'to': b, 'pages': [T[ed][a][0], T[ed][b][0]], 'words': words}
     assert len(s['questions']) >= 3, s['id']
+    for t in s.get('tasks', []):
+        assert t['lvl'] in ('P', 'R') and t['q'] and t['key'], (s['id'], t)
+        for ed in ('bort', 'boy'):
+            a2, b2 = s[ed]
+            if not any(t['cite'][ed] in T[ed][i][1] for i in range(a2, b2 + 1)):
+                err.append(f"{s['id']} {ed}: cytat w kluczu nie występuje w scenie: {t['cite'][ed]!r}")
+    e['tasks'] = s.get('tasks', [])
     out.append(e)
 if err:
     print('BŁĘDY', *err, sep='\n  '); sys.exit(1)
