@@ -58,3 +58,6 @@ html.intro-on{overflow:hidden}
 .secintro .ititle{transition:opacity .9s}
 .secintro.go .ititle{opacity:0}
 .secintro .ititle strong{font-size:clamp(34px,5vw,64px)}
+
+.secintro.fast .ihalf{transition-duration:.75s}
+.secintro.fast .ititle{transition-duration:.3s}

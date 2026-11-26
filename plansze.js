@@ -76,7 +76,9 @@
     const ep = EP.get(m[0]), it = IMG.get(m[1]) || (ep && IMG.get((ep.img || []).find(x => IMG.has(x))));
     if (!it) return;
     document.querySelectorAll('.secintro').forEach(x => x.remove());
-    const ov = mk('div', 'intro secintro'); ov.setAttribute('aria-hidden', 'true');
+    let first = true;
+    try { const seenK = JSON.parse(sessionStorage.getItem('goriot-plansze') || '[]'); first = !seenK.includes(k); if (first) { seenK.push(k); sessionStorage.setItem('goriot-plansze', JSON.stringify(seenK)); } } catch (e) { first = true; }
+    const ov = mk('div', 'intro secintro' + (first ? '' : ' fast')); ov.setAttribute('aria-hidden', 'true');
     for (const side of ['l', 'r']) {
       const half = mk('div', 'ihalf ' + side), inner = mk('div', 'iimg');
       inner.style.backgroundImage = `url("${it.img.bg.src}")`; inner.style.backgroundPosition = m[2] || '50% 50%';
@@ -86,10 +88,10 @@
     t.append(mk('span', 'ieyebrow', 'Ojciec Goriot'), mk('strong', '', NAMES[k] || ''));
     ov.append(t);
     document.body.append(ov);
-    const open = () => { if (ov.classList.contains('go')) return; ov.classList.add('go'); setTimeout(() => ov.remove(), 2600); };
+    const open = () => { if (ov.classList.contains('go')) return; ov.classList.add('go'); setTimeout(() => ov.remove(), first ? 2600 : 900); };
     ov.addEventListener('click', open);
     const im = new Image(); im.src = it.img.bg.src;
-    const go = () => setTimeout(open, 900);
+    const go = () => setTimeout(open, first ? 900 : 250);
     (im.decode ? im.decode() : Promise.resolve()).then(go, go);
     setTimeout(open, 3500);
   }
