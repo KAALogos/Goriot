@@ -10,6 +10,7 @@ python -I tools/buduj_ikonografie.py <folder_z_raport_pobrania.json>
 """
 import json, sys, hashlib, pathlib
 from PIL import Image, ImageOps
+import numpy as np
 sys.stdout.reconfigure(encoding='utf-8')
 R = pathlib.Path(__file__).resolve().parent.parent
 SRC = pathlib.Path(sys.argv[1])
@@ -35,14 +36,36 @@ for e in D['items']:
     if im.mode == 'L':
         im = im.convert('RGB')
     W, H = im.size
-    out = {}
-    for name, width, fmt, q in (('web', 1200, 'WEBP', 82), ('bg', 1920, 'WEBP', 78), ('full', 2400, 'JPEG', 88)):
-        w = min(width, W)
-        h = round(H * w / W)
-        res = im if w == W else im.resize((w, h), Image.LANCZOS)
-        fn = f"{e['id']}-{w}.{'webp' if fmt == 'WEBP' else 'jpg'}"
-        res.save(OUT / fn, fmt, quality=q, **({'method': 6} if fmt == 'WEBP' else {'optimize': True, 'progressive': True}))
-        out[name] = {'src': f'img/telemak/{fn}', 'w': w, 'h': h}
+    MW, MH = W, H
+
+    def derive(im, tag=''):
+        W, H = im.size
+        out = {}
+        for name, width, fmt, q in (('web', 1200, 'WEBP', 82), ('bg', 1920, 'WEBP', 78), ('full', 2400, 'JPEG', 88)):
+            w = min(width, W)
+            h = round(H * w / W)
+            res = im if w == W else im.resize((w, h), Image.LANCZOS)
+            fn = f"{e['id']}{tag}-{w}.{'webp' if fmt == 'WEBP' else 'jpg'}"
+            res.save(OUT / fn, fmt, quality=q, **({'method': 6} if fmt == 'WEBP' else {'optimize': True, 'progressive': True}))
+            out[name] = {'src': f'img/telemak/{fn}', 'w': w, 'h': h}
+        return out
+    out = derive(im)
+    if e.get('rectify'):
+        # prostowanie perspektywy: cztery narożniki pola sceny (TL, TR, BR, BL) w skali szerokości 1000 px
+        k = W / 1000
+        P = [(x * k, y * k) for x, y in e['rectify']['corners_1000w']]
+        dist = lambda a, b: ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** .5
+        RW = int(max(dist(P[0], P[1]), dist(P[3], P[2])))
+        RH = int(max(dist(P[0], P[3]), dist(P[1], P[2])) * e['rectify'].get('stretch_h', 1))
+        A, B = [], []
+        for (x, y), (u, v) in zip([(0, 0), (RW, 0), (RW, RH), (0, RH)], P):
+            A += [[x, y, 1, 0, 0, 0, -u * x, -u * y], [0, 0, 0, x, y, 1, -v * x, -v * y]]; B += [u, v]
+        c = np.linalg.solve(np.array(A, float), np.array(B, float)).tolist()
+        rim = im.transform((RW, RH), Image.PERSPECTIVE, c, Image.BICUBIC)
+        t = e['rectify'].get('trim', 0)
+        rim = rim.crop((round(RW * t), round(RH * t), round(RW * (1 - t)), round(RH * (1 - t))))
+        out = {**derive(rim, '-scena'), 'room': out}
+    W, H = MW, MH
     items.append({**e, 'license': e.get('license_label') or r['actual_license'], 'license_url': r['license_url'] or e.get('license_url_fallback'),
                   'source': r['source'], 'master': {'file': r['filename'], 'w': W, 'h': H, 'bytes': r['size'],
                                                     'sha256': sha, 'mime': 'image/tiff' if r['filename'].endswith('.tif') else 'image/jpeg'},
@@ -61,7 +84,9 @@ for e in items:
 (R / 'img/telemak/LICENCJE.md').write_text('\n'.join(
     ['# Fotografie tapety „Paysage de Télémaque dans l’île de Calypso” — licencje', '',
      'Pliki w tym folderze to zmniejszone wersje (WebP 1200 px, JPG do 2400 px) oryginałów z Wikimedia Commons;',
-     'bez kadrowania, retuszu, uzupełniania i powiększania. Oryginały (mastery) przechowywane lokalnie poza repozytorium.', ''] +
+     'bez retuszu, uzupełniania i powiększania. Pliki `*-scena-*` to zdjęcia z Wismaru z wyprostowaną perspektywą',
+     '(przekształcenie geometryczne pola sceny w ramie, narożniki zapisane w dane/ikonografia.json, pole `rectify`) i przycięte do tego pola.',
+     'Oryginały (mastery) przechowywane lokalnie poza repozytorium.', ''] +
     [f"- `{e['img']['web']['src'].split('/')[-1]}`, `{e['img']['full']['src'].split('/')[-1]}` — {e['title']}. {e['credit']}. "
      f"Źródło: {e['source']}. Licencja oryginału: {e['license']}" + (f" ({e['license_url']})" if e['license_url'] else '') +
      (f". Wersje pochodne: {e['derivative_license']}." if e.get('derivative_license') else '.') +

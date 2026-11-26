@@ -480,6 +480,7 @@
         if (e.license_url) { const l = el('a', '', e.license); l.href = e.license_url; l.target = '_blank'; l.rel = 'noopener'; meta.append(l); }
         else meta.append(document.createTextNode(e.license));
         meta.append(document.createTextNode(` · Przekształcenia: ${e.changes}`));
+        if (e.img.room) { const rl = el('a', '', 'zdjęcie wnętrza'); rl.href = e.img.room.full.src; rl.target = '_blank'; rl.rel = 'noopener'; meta.append(document.createTextNode(' '), rl, document.createTextNode('.')); }
         if (e.derivative_license) meta.append(document.createTextNode(` Wersje pochodne: ${e.derivative_license}.`));
         cap.append(meta);
         if (e.not_feast) cap.append(el('p', 'iknote', e.not_feast));
@@ -505,12 +506,12 @@
     hero.append(el('p', 'slead', 'Paryż, rok 1819. W pensjonacie pani Vauquer mieszkają obok siebie zubożały ojciec, ambitny student i zbiegły galernik. Wybierz, od czego zaczynasz.'));
     const tiles = el('div', 'tiles'), mini = el('div', 'tiles mini');
     const T = [
-      ['czytaj', 'Czytaj powieść', 'Cały tekst w przekładzie Bortnowskiej i Boya-Żeleńskiego.', '01_laval_6761', '55% 45%', () => Gx.openPage(Gx.ED[Gx.mode() === 'boy' ? 'boy' : 'bort'].first, Gx.mode() === 'boy' ? 'boy' : 'bort'), 'big'],
+      ['czytaj', 'Czytaj powieść', 'Cały tekst w przekładzie Bortnowskiej i Boya-Żeleńskiego.', '01_laval_6761', '30% 78%', () => Gx.openPage(Gx.ED[Gx.mode() === 'boy' ? 'boy' : 'bort'].first, Gx.mode() === 'boy' ? 'boy' : 'bort'), 'big'],
       ['paryz', 'Pensjonat pani Vauquer', 'Wejdź do domu: kto gdzie mieszka i za ile.', null, null, null, 'big house'],
-      ['bohaterowie', 'Postacie', 'Karty bohaterów i ich zależności.', '06_wismar_04', '30% 72%', null, ''],
-      ['sceny', 'Sceny kluczowe', 'Jedenaście scen z pytaniami.', '05_wismar_03', '35% 60%', null, ''],
-      ['atlas', 'Obyczaje epoki', 'Mapa i katalog obyczajów z cytatami.', '03_wismar_01', '50% 70%', null, ''],
-      ['mechanizmy', 'Pieniądz i awans', 'Posag, dług, protekcja: jak działa ten świat.', '04_wismar_02', '40% 72%', null, ''],
+      ['bohaterowie', 'Postacie', 'Karty bohaterów i ich zależności.', '06_wismar_04', '45% 86%', null, ''],
+      ['sceny', 'Sceny kluczowe', 'Jedenaście scen z pytaniami.', '05_wismar_03', '42% 88%', null, ''],
+      ['atlas', 'Obyczaje epoki', 'Mapa i katalog obyczajów z cytatami.', '03_wismar_01', '40% 82%', null, ''],
+      ['mechanizmy', 'Pieniądz i awans', 'Posag, dług, protekcja: jak działa ten świat.', '04_wismar_02', '62% 88%', null, ''],
       ['kontekst', 'Epoka i powieść', 'Restauracja, „Komedia ludzka”.', null, null, null, 'small'],
       ['poetyka', 'Jak to jest napisane', 'Narrator, kompozycja, realizm.', null, null, null, 'small'],
       ['konteksty', 'Porównania', '„Lalka”, „Król Lear” i inne.', null, null, null, 'small'],

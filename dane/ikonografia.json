@@ -45,9 +45,31 @@
    "caption": "Joseph Dufour (manufaktura) według projektu Xaviera Madera, „Paysage de Télémaque dans l’île de Calypso”, wydanie oryginalne, 1818; bryty 9–10 z 24. Kalipso spoczywa przy basenie wśród nimf i słucha Mentora i Telemaka. Musée du Vieux-Château, Laval; scena zgodna z opisem obiektu nr inw. 6761 w bazie Joconde (sam opis zdjęcia na Commons nie podaje numeru).",
    "alt": "Fragment tapety panoramicznej w muzealnej ramie: ogród z drzewami i palmą, fontanna i półkolista kamienna ława; po lewej Kalipso z nimfami słucha dwóch mężczyzn, w środku tańczą nimfy.",
    "credit": "Fot. Fab5669 (2024) / Wikimedia Commons",
-   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "changes": "wyprostowano lekkie zniekształcenie perspektywy i przycięto do pola tapety w ramie (przekształcenie geometryczne, narożniki w danych); zmniejszono (WebP 1200 px, JPG 2400 px); bez retuszu i uzupełniania. Zdjęcie ekspozycji bez zmian: link „zdjęcie wnętrza”.",
    "derivative_license": "CC BY 4.0",
-   "not_feast": "To nie jest uczta Kalipso: muzeum opisuje scenę jako opowieść o przygodach."
+   "not_feast": "To nie jest uczta Kalipso: muzeum opisuje scenę jako opowieść o przygodach.",
+   "rectify": {
+    "corners_1000w": [
+     [
+      145,
+      27
+     ],
+     [
+      866,
+      28
+     ],
+     [
+      865,
+      648
+     ],
+     [
+      156,
+      650
+     ]
+    ],
+    "stretch_h": 1.0,
+    "trim": 0.008
+   }
   },
   {
    "id": "02_cooper_hewitt_1996-108-1",
@@ -68,9 +90,31 @@
    "caption": "Panorama „Paysage de Télémaque dans l’île de Calypso” z manufaktury Dufour et Leroy, zamontowana w 1828 roku na zlecenie rajcy, późniejszego burmistrza Gabriela Lembkego; panoramę podzielono na pięć scen oprawionych bordiurami (broszura Welt-Erbe-Haus Wismar, 2019). Fotografia wnętrza z 28 marca 2015.",
    "alt": "Fragment ściany salonu: scena tapety w ramie z malowanych pilastrów i gzymsu; krajobraz z palmą, świątynią na wzgórzu i tańczącymi nimfami.",
    "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
-   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "changes": "wyprostowano perspektywę zdjęcia (przekształcenie geometryczne pola sceny w ramie, wskazanego czterema narożnikami) i przycięto do tego pola; zmniejszono (WebP 1200 px, JPG 2400 px); bez retuszu i uzupełniania. Zdjęcie wnętrza bez zmian: link „zdjęcie wnętrza”.",
    "derivative_license": "CC BY-SA 4.0",
-   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso.",
+   "rectify": {
+    "corners_1000w": [
+     [
+      232,
+      92
+     ],
+     [
+      772,
+      88
+     ],
+     [
+      808,
+      718
+     ],
+     [
+      182,
+      722
+     ]
+    ],
+    "stretch_h": 1.06,
+    "trim": 0.015
+   }
   },
   {
    "id": "04_wismar_02",
@@ -79,9 +123,31 @@
    "caption": "Kolejna scena tej samej panoramy w salonie domu przy Lübsche Straße 23: Kalipso z nimfami przy fontannie i półkolistej ławie, w tle morze. Fotografia wnętrza z 28 marca 2015.",
    "alt": "Fragment ściany salonu: scena tapety w ramie z pilastrami; ogród z pinią i palmą, fontanna, grupy postaci w antycznych szatach, w tle morze.",
    "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
-   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "changes": "wyprostowano perspektywę zdjęcia (przekształcenie geometryczne pola sceny w ramie, wskazanego czterema narożnikami) i przycięto do tego pola; zmniejszono (WebP 1200 px, JPG 2400 px); bez retuszu i uzupełniania. Zdjęcie wnętrza bez zmian: link „zdjęcie wnętrza”.",
    "derivative_license": "CC BY-SA 4.0",
-   "not_feast": "Nie zidentyfikowano tu uczty Kalipso."
+   "not_feast": "Nie zidentyfikowano tu uczty Kalipso.",
+   "rectify": {
+    "corners_1000w": [
+     [
+      175,
+      145
+     ],
+     [
+      800,
+      140
+     ],
+     [
+      845,
+      712
+     ],
+     [
+      120,
+      712
+     ]
+    ],
+    "stretch_h": 1.06,
+    "trim": 0.015
+   }
   },
   {
    "id": "05_wismar_03",
@@ -90,9 +156,31 @@
    "caption": "Pałac z kolumnadą i schodami, obłok z rydwanem Wenus. Scena zgodna z opisem arkusza z Laval w bazie Joconde („Vénus descendue de son char confie Cupidon à Calypso et à ses nymphes”); identyfikacja na podstawie porównania z opisem. Panorama Dufour et Leroy w salonie Welt-Erbe-Haus w Wismarze; fotografia z 2015 roku.",
    "alt": "Fragment ściany salonu: scena tapety w ramie z pilastrami; po lewej pałac z kolumnadą i szerokimi schodami, białe obłoki, postacie w antycznych szatach.",
    "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
-   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "changes": "wyprostowano perspektywę zdjęcia (przekształcenie geometryczne pola sceny w ramie, wskazanego czterema narożnikami) i przycięto do tego pola; zmniejszono (WebP 1200 px, JPG 2400 px); bez retuszu i uzupełniania. Zdjęcie wnętrza bez zmian: link „zdjęcie wnętrza”.",
    "derivative_license": "CC BY-SA 4.0",
-   "not_feast": "To nie jest uczta Kalipso."
+   "not_feast": "To nie jest uczta Kalipso.",
+   "rectify": {
+    "corners_1000w": [
+     [
+      215,
+      52
+     ],
+     [
+      835,
+      45
+     ],
+     [
+      880,
+      750
+     ],
+     [
+      170,
+      750
+     ]
+    ],
+    "stretch_h": 1.06,
+    "trim": 0.015
+   }
   },
   {
    "id": "06_wismar_04",
@@ -101,9 +189,31 @@
    "caption": "Telemak przy balustradzie, nimfy z Kupidynem, w tle okrągła świątynia. Scena zgodna z opisem arkusza z Laval w bazie Joconde („Télémaque part à la chasse avec la nymphe Eucharis… Calypso les épie avec jalousie”); identyfikacja na podstawie porównania z opisem. Panorama Dufour et Leroy w salonie Welt-Erbe-Haus w Wismarze; fotografia z 2015 roku.",
    "alt": "Fragment ściany salonu: scena tapety w ramie; po lewej okrągła świątynia i balustrada z postacią w czerwonym płaszczu, na łące tańczące nimfy i skrzydlaty chłopiec.",
    "credit": "Fot. Assenmacher (2015) / Wikimedia Commons",
-   "changes": "zmniejszono (WebP 1200 px, JPG 2400 px); bez kadrowania i retuszu.",
+   "changes": "wyprostowano perspektywę zdjęcia (przekształcenie geometryczne pola sceny w ramie, wskazanego czterema narożnikami) i przycięto do tego pola; zmniejszono (WebP 1200 px, JPG 2400 px); bez retuszu i uzupełniania. Zdjęcie wnętrza bez zmian: link „zdjęcie wnętrza”.",
    "derivative_license": "CC BY-SA 4.0",
-   "not_feast": "To nie jest uczta Kalipso."
+   "not_feast": "To nie jest uczta Kalipso.",
+   "rectify": {
+    "corners_1000w": [
+     [
+      165,
+      40
+     ],
+     [
+      830,
+      38
+     ],
+     [
+      858,
+      728
+     ],
+     [
+      118,
+      728
+     ]
+    ],
+    "stretch_h": 1.06,
+    "trim": 0.015
+   }
   },
   {
    "id": "07_hermitage_habs_19",
@@ -198,42 +308,42 @@
   "atlas": [
    "e1",
    "03_wismar_01",
-   "50% 70%"
+   "40% 80%"
   ],
   "kontekst": [
    "e1",
    "03_wismar_01",
-   "78% 55%"
+   "75% 62%"
   ],
   "paryz": [
    "e2",
    "01_laval_6761",
-   "30% 72%"
+   "35% 82%"
   ],
   "bohaterowie": [
    "e2",
    "04_wismar_02",
-   "40% 72%"
+   "62% 88%"
   ],
   "mechanizmy": [
    "e3",
    "05_wismar_03",
-   "35% 60%"
+   "42% 88%"
   ],
   "poetyka": [
    "e3",
    "05_wismar_03",
-   "70% 70%"
+   "45% 50%"
   ],
   "sceny": [
    "e4",
    "06_wismar_04",
-   "30% 75%"
+   "45% 86%"
   ],
   "konteksty": [
    "e4",
    "06_wismar_04",
-   "70% 70%"
+   "20% 72%"
   ],
   "ikonografia": [
    "e5",
@@ -253,6 +363,6 @@
  },
  "opening": {
   "img": "01_laval_6761",
-  "pos": "58% 62%"
+  "pos": "50% 70%"
  }
 }
