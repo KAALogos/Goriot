@@ -96,14 +96,96 @@
     const buttons = [];
     function show(r, f, b) {
       buttons.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-      const kids = [el('span', 'eyebrow', f.name), el('h3', '', r.name), el('p', 'pwho', r.who)];
-      if (f.note) kids.push(el('p', 'pnote', f.note));
-      for (const id of r.refs) {
-        if (P.long.includes(id)) kids.push(btn('linkish', `Pełny fragment: ${Gx.item(id).title} ↓`, () => { const n = document.getElementById('dlugi-' + id); n && n.scrollIntoView({ block: 'start' }); }));
-        else kids.push(el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id));
-      }
+      const m = P.rooms[r.id];
+      const head = el('div', 'mhead');
+      head.append(el('span', 'eyebrow', f.name), el('h3', '', r.name)); if (f.note) head.append(el('p', 'pnote', f.note)); head.append(el('p', 'msynth', m.synth));
+      const kids = [head, plan(m.plan, r.name)];
+      const block = (title, id) => { const s = el('section', 'mblock'); s.append(el('h4', '', title)); if (id) s.append(el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id)); return s; };
+      if (m.char) kids.push(block(r.id === 'couture' ? 'Postać w tekście: Wiktoryna i pani Couture' : 'Postać w tekście', m.char));
+      if (m.desc) kids.push(block('Pomieszczenie w tekście', m.desc));
+      else { const s = block('Pomieszczenie w tekście'); s.append(el('p', 'nodesc', m.nodesc)); kids.push(s); }
+      for (const id of m.extra || []) kids.push(block('Zob. też', id));
       if (r.char) kids.push(btn('read', 'Karta postaci →', () => { tab('bohaterowie'); focusChar(r.char); }));
       side.replaceChildren(...kids);
+    }
+    /* rzut z góry: SVG z elementów planu; „t” = przedmiot wymieniony w tekście, „r” = rekonstrukcja */
+    const NS = 'http://www.w3.org/2000/svg';
+    const sv = (tag, at) => { const n = document.createElementNS(NS, tag); for (const k in at) n.setAttribute(k, at[k]); return n; };
+    function plan(p, name) {
+      const fig = el('figure', 'plan'), W = p.w, H = p.h, pad = 7;
+      const svg = sv('svg', { viewBox: `${-pad} ${-pad} ${W + 2 * pad} ${H + 2 * pad}`, role: 'img', 'aria-label': `Rzut z góry: ${name}` });
+      const g = sv('g', {}), marks = sv('g', {});
+      svg.append(sv('rect', { x: 0, y: 0, width: W, height: H, class: 'pfloor' }));
+      const legend = [];
+      let n = 0;
+      const cls = it => it.src === 't' ? 'pt' : 'pr';
+      for (const it of p.items) {
+        const c = cls(it), x = it.x, y = it.y, w = it.w || 0, h = it.h || 0;
+        const R = (a) => g.append(sv('rect', Object.assign({ class: c }, a)));
+        switch (it.k) {
+          case 'bed': R({ x, y, width: w, height: h, rx: 1 }); g.append(sv('rect', { x: x + 2, y: y + 2, width: w - 4, height: Math.min(7, h / 4), rx: 1.5, class: c })); break;
+          case 'rtable': g.append(sv('ellipse', { cx: x + w / 2, cy: y + h / 2, rx: w / 2, ry: h / 2, class: c })); break;
+          case 'table': case 'desk': case 'nightstand': case 'commode': case 'box': R({ x, y, width: w, height: h }); if (it.k === 'commode') g.append(sv('line', { x1: x, y1: y + h / 2, x2: x + w, y2: y + h / 2, class: c })); break;
+          case 'chair': R({ x, y, width: w, height: h, rx: .8 }); g.append(sv('line', { x1: x, y1: y + 1.2, x2: x + w, y2: y + 1.2, class: c + ' thick' })); break;
+          case 'armchair': R({ x, y, width: w, height: h, rx: 2.5 }); g.append(sv('rect', { x: x + 2, y: y + 2, width: w - 4, height: h - 4, rx: 1.5, class: c })); break;
+          case 'stool': g.append(sv('circle', { cx: x + w / 2, cy: y + h / 2, r: w / 2, class: c })); g.append(sv('circle', { cx: x + w / 2, cy: y + h / 2, r: w / 4, class: c })); break;
+          case 'shoes': g.append(sv('ellipse', { cx: x + w * .3, cy: y + h / 2, rx: w * .2, ry: h / 2, class: c })); g.append(sv('ellipse', { cx: x + w * .72, cy: y + h / 2, rx: w * .2, ry: h / 2, class: c })); break;
+          case 'fireplace': R({ x, y, width: w, height: h }); g.append(sv('rect', { x: x + 2, y: y + 4, width: w - 4, height: h - 8, class: c + ' hearth' })); break;
+          case 'stove': R({ x, y, width: w, height: h, rx: 2 }); g.append(sv('circle', { cx: x + w / 2, cy: y + h / 2, r: Math.min(w, h) / 4, class: c })); break;
+          case 'shelf': R({ x, y, width: w, height: h, class: c + ' hatch' }); break;
+          case 'stairs': R({ x, y, width: w, height: h }); for (let s = y + 4; s < y + h; s += 4) g.append(sv('line', { x1: x, y1: s, x2: x + w, y2: s, class: c })); break;
+          case 'mat': R({ x, y, width: w, height: h, class: c + ' dots' }); break;
+          case 'mess': for (let i = 0; i < 6; i++) g.append(sv('rect', { x: x + (i * 4.3) % w, y: y + (i % 3) * 3, width: 5, height: 3.4, transform: `rotate(${(i * 37) % 50 - 25} ${x + (i * 4.3) % w} ${y})`, class: c })); break;
+          case 'curtain': g.append(sv('line', { x1: x, y1: y, x2: x + w, y2: y, class: c + ' curtain' })); break;
+          case 'line': g.append(sv('line', { x1: x, y1: y, x2: x + w, y2: y, class: c + ' cord' })); break;
+          case 'picture': if (it.h) g.append(sv('line', { x1: x, y1: y, x2: x, y2: y + it.h, class: c + ' thick' })); else g.append(sv('line', { x1: x, y1: y, x2: x + w, y2: y, class: c + ' thick' })); break;
+          case 'lamp': g.append(sv('circle', { cx: x, cy: y, r: 2.4, class: c })); g.append(sv('path', { d: `M${x - 2.4} ${y}H${x + 2.4}M${x} ${y - 2.4}V${y + 2.4}`, class: c })); break;
+          case 'clock': g.append(sv('circle', { cx: x, cy: y, r: 2.6, class: c })); g.append(sv('path', { d: `M${x} ${y}V${y - 1.8}M${x} ${y}H${x + 1.4}`, class: c })); break;
+          case 'wall': g.append(sv('line', { x1: x, y1: y, x2: x, y2: y + (it.h || H), class: 'pwall inner ' + c })); break;
+          case 'window': case 'glassdoor': {
+            const vert = it.vertical, wy = y;
+            g.append(sv('rect', { x: vert ? x - 1.4 : x, y: vert ? wy : wy - 1.4, width: vert ? 2.8 : w, height: vert ? w : 2.8, class: 'gap' }));
+            g.append(sv('path', { d: vert ? `M${x - .7} ${wy}v${w}M${x + .7} ${wy}v${w}` : `M${x} ${wy - .7}h${w}M${x} ${wy + .7}h${w}`, class: c + (it.k === 'glassdoor' ? ' glass' : ' win') }));
+            break; }
+          case 'door': {
+            const vert = it.vertical, s = w;
+            if (vert) { const inward = x === 0 ? 1 : -1; g.append(sv('rect', { x: x - 1.4, y, width: 2.8, height: s, class: 'gap' })); g.append(sv('path', { d: `M${x} ${y}l${inward * s} 0A${s} ${s} 0 0 ${inward > 0 ? 1 : 0} ${x} ${y + s}`, class: c + ' door' })); }
+            else { const inward = y === 0 ? 1 : -1; g.append(sv('rect', { x, y: y - 1.4, width: s, height: 2.8, class: 'gap' })); g.append(sv('path', { d: `M${x} ${y}l0 ${inward * s}A${s} ${s} 0 0 ${inward > 0 ? 0 : 1} ${x + s} ${y}`, class: c + ' door' })); }
+            break; }
+          case 'paper': break;
+          case 'label': g.append(Object.assign(sv('text', { x, y, class: 'plabel', 'text-anchor': 'middle' }), { textContent: it.label })); break;
+        }
+        if (it.label && it.k !== 'label') {
+          n++;
+          legend.push([n, it]);
+          if (it.k !== 'paper') {
+            let cx = x + (w || 0) / 2, cy = y + (h || 0) / 2;
+            if (['window', 'glassdoor'].includes(it.k)) cy = it.vertical ? y + w / 2 : (y === 0 ? y + 4.6 : y - 4.6), cx = it.vertical ? (x === 0 ? 4.6 : x - 4.6) : x + w / 2;
+            if (it.k === 'door') { if (it.vertical) { cx = x === 0 ? 4 : x - 4; cy = y + w / 2; } else { cx = x + w / 2; cy = y === 0 ? 4 : y - 4; } }
+            if (it.k === 'curtain' || it.k === 'line' || (it.k === 'picture' && !it.h)) { cy = y + (y < 4 ? 3.6 : -3.6); if (it.k === 'curtain') { cx = x + w - 4; cy = y; } }
+            if (it.k === 'picture' && it.h) cx = x + 3.6;
+            if (it.k === 'wall') { cx = x; cy = 6; }
+            const mk = sv('g', { class: 'mk ' + (it.src === 't' ? 'mt' : 'mr') });
+            mk.append(sv('circle', { cx, cy, r: 2.9 }), Object.assign(sv('text', { x: cx, y: cy + 1.15, 'text-anchor': 'middle' }), { textContent: n }));
+            marks.append(mk);
+          }
+        }
+      }
+      for (const [x1, y1, x2, y2] of [[0, 0, W, 0], [W, 0, W, H], [W, H, 0, H], [0, H, 0, 0]]) svg.append(sv('line', { x1, y1, x2, y2, class: 'pwall' }));
+      svg.append(g, marks);
+      const key = el('div', 'pkey'); key.append(el('span', 'kt', 'przedmiot wymieniony w tekście'), el('span', 'kr', 'rekonstrukcja umowna'));
+      const ol = el('ol', 'plegend');
+      for (const [i, it] of legend) {
+        const li = el('li', it.src === 't' ? 'lt' : 'lr'); li.value = i;
+        li.append(document.createTextNode(it.label));
+        if (it.pos) li.append(el('span', 'lpos', ' · położenie: ' + it.pos));
+        if (it.k === 'paper') li.append(el('span', 'lpos', ' · cechy ścian i podłogi'));
+        ol.append(li);
+      }
+      const cap = el('figcaption');
+      cap.append(el('strong', '', 'Rzut z góry. '), document.createTextNode('Obecność przedmiotów oznaczonych linią ciągłą wynika z tekstu; ich rozmieszczenie jest umowne, chyba że podano położenie z tekstu. Elementy przerywane to rekonstrukcja.'));
+      fig.append(svg, key, ol, cap);
+      return fig;
     }
     let first = null;
     for (const f of P.floors) {

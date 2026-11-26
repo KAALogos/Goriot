@@ -1,0 +1,20 @@
+/* Stylistyka Restauracji (1815–1830): tapeta w pasy z drobną rozetą, podwójne filety, winiety.
+   Tekst pozostaje na jasnym papierze — kontrast bez zmian. */
+:root{--gold:#a8874f;--gold-soft:#d9c7a1;--wall:#e9e0cc;--wall-stripe:#e1d5bb;--empire:#3f5a48}
+body{background-color:var(--wall);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Crect x='0' y='0' width='11' height='56' fill='%23e1d5bb'/%3E%3Crect x='13' y='0' width='1.2' height='56' fill='%23d6c7a5'/%3E%3Cg transform='translate(35 28)' fill='none' stroke='%23c9b68c' stroke-width='1.1'%3E%3Cpath d='M0-7c3 2 3 5 0 7c-3-2-3-5 0-7zM0 7c3-2 3-5 0-7c-3 2-3 5 0 7zM-7 0c2 3 5 3 7 0c-2-3-5-3-7 0zM7 0c-2 3-5 3-7 0c2-3 5-3 7 0z'/%3E%3Ccircle r='1.4' fill='%23c9b68c' stroke='none'/%3E%3C/g%3E%3Ccircle cx='35' cy='0' r='1' fill='%23cdbb93'/%3E%3Ccircle cx='35' cy='56' r='1' fill='%23cdbb93'/%3E%3C/svg%3E")}
+main{background:var(--paper);box-shadow:0 0 0 1px var(--gold-soft),0 0 0 6px var(--paper),0 0 0 7px var(--gold-soft),0 18px 50px #5b4a2a26;margin:28px auto 40px;border-radius:2px}
+.mast{border-bottom:0;position:relative}
+.mast:after{content:'';position:absolute;left:0;right:0;bottom:0;height:4px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.mast .eyebrow{letter-spacing:.24em}
+h1{font-variant-ligatures:common-ligatures}
+section>.sectionhead h2,.msec>.sectionhead h2{position:relative;padding-left:30px}
+section>.sectionhead h2:before,.msec>.sectionhead h2:before{content:'';position:absolute;left:0;top:50%;width:20px;height:20px;margin-top:-10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cg fill='none' stroke='%23a8874f' stroke-width='1.3'%3E%3Cpath d='M10 2c3 3 3 6 0 8c-3-2-3-5 0-8zM10 18c3-3 3-6 0-8c-3 2-3 5 0 8zM2 10c3 3 6 3 8 0c-2-3-5-3-8 0zM18 10c-3 3-6 3-8 0c2-3 5-3 8 0z'/%3E%3C/g%3E%3Ccircle cx='10' cy='10' r='1.6' fill='%23a8874f'/%3E%3C/svg%3E") center/contain no-repeat}
+.sectionhead{border-bottom:1px solid var(--gold-soft);padding-bottom:10px}
+.tabbar{border-bottom:0;box-shadow:0 1px 0 var(--gold),0 4px 0 var(--paper),0 5px 0 var(--gold)}
+.thesis,.char,.mech,.axis,.scene,.ctx,.rel,.czz,.tline,.move,.long,.check,.card,.area,.synth,.detail,.pdetail,.draft{box-shadow:inset 0 0 0 3px #fff,inset 0 0 0 4px #efe5d2}
+.synth{border-top-color:var(--gold)}
+.house{background:#efe6d3;box-shadow:inset 0 0 0 3px #f7f1e5,inset 0 0 0 4px var(--gold-soft)}
+.foot{border-top:0;position:relative;padding-top:22px}
+.foot:before{content:'';position:absolute;left:0;right:0;top:0;height:4px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+@media(max-width:650px){main{margin:0;box-shadow:none}}
+@media print{body{background:#fff}main{box-shadow:none;margin:0}}

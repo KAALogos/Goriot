@@ -221,6 +221,19 @@ for c in PEN['checks']:
     if c['verdict'] not in ('zgodne', 'nieprecyzyjne', 'uzupełnienie', 'niezgodne'):
         err('zły werdykt', c['verdict'])
 check_refs('duże fragmenty', PEN['long'])
+KINDS = {'bed', 'rtable', 'table', 'chair', 'armchair', 'commode', 'fireplace', 'stove', 'shelf', 'stool', 'nightstand', 'desk', 'stairs', 'box', 'picture', 'lamp', 'clock', 'shoes', 'curtain', 'mat', 'window', 'door', 'glassdoor', 'paper', 'wall', 'line', 'mess', 'label'}
+for rid, m in PEN['rooms'].items():
+    refs = [x for x in [m.get('char'), m.get('desc')] + m.get('extra', []) if x]
+    check_refs('pokój ' + rid, refs)
+    if not m['synth'] or m['synth'].count('.') > 2:
+        err('pokój', rid, 'synteza: 1–2 zdania')
+    if not m.get('desc') and not m.get('nodesc'):
+        err('pokój', rid, 'brak opisu i brak adnotacji')
+    for it in m['plan']['items']:
+        if it['k'] not in KINDS or it['src'] not in ('t', 'r'):
+            err('pokój', rid, 'zły element planu', it)
+        if it['src'] == 't' and not (m.get('desc') or m.get('char')):
+            err('pokój', rid, 'element z tekstu bez odsyłacza')
 for c in O['contexts']:
     check_refs(c['id'], c['refs'])
     c['source'] = check_source(c['id'], c.get('source'))

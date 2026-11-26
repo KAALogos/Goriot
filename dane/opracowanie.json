@@ -397,6 +397,194 @@
    "boy": [
     "Ojciec Wiktoryny, podejrzewając że to dziecko nie jest jego, nie chciał jej przy sobie, wyznaczył córce jedynie sześćset franków rocznie i obszedł prawo, aby przekazać cały majątek synowi."
    ]
+  },
+  {
+   "id": "P26",
+   "title": "Pani Vauquer i jej dom",
+   "bort": [
+    "cała wreszcie jej osoba wyjaśnia lepiej gospodę, która, ze swej strony, stanowi niby jednolitą całość z jej osobą. Gdzie jest więzienie, tam musi być i dozorca, jednego nie można sobie przedstawić bez drugiego."
+   ],
+   "boy": [
+    "cała jej osoba tłumaczy ten pensjonat, jak pensjonat wyraża jej osobę. Kaźń nie może istnieć bez dozorcy."
+   ]
+  },
+  {
+   "id": "P27",
+   "title": "Wieczory w pokoju pani Vauquer",
+   "bort": [
+    "Po obiedzie obie wdowy udawały się do pokoju pani Vauquer, gdzie zajmowały się gawędką popijając przy tym nalewkę porzeczkową i zajadając przysmaczki przeznaczone dla podniebienia samej gospodyni."
+   ],
+   "boy": [
+    "Obie wdowy przychodziły po obiedzie do pokoju pani Vauquer i ucinały tam pogawędkę, popijając nalewkę i zajadając smakołyki zrobione specjalnie dla pani domu."
+   ]
+  },
+  {
+   "id": "P28",
+   "title": "Trzy pokoje odświeżone dla Goriota",
+   "bort": [
+    "Pani Vauquer odświeżyła wszystkie trzy pokoje (wzięła jednak z góry pieniądze, wystarczające aż nadto na pokrycie kosztów nędznego umeblowania), sprawiła firanki z żółtej bawełnianej tkaniny, fotele lakierowane wybite pluszem, kilka nędznych malowideł i tapety, którymi pogardziłby każdy szynk miejski."
+   ],
+   "boy": [
+    "Pani Vaquer odświeżyła trzy pokoje, wzamian za kwotę, która pokryła podobno wartość lichego urządzenia, perkalowych firanek, politurowanych i obitych pluszem foteli, kilku malowideł i papierowego obicia jakiem wzgardziłby lada szynk podmiejski."
+   ]
+  },
+  {
+   "id": "P30",
+   "title": "Portret panny Michonneau",
+   "bort": [
+    "Stara panna Michonneau osłaniała swe oczy zmęczone daszkiem, który mógłby rozdrażnić samego anioła litości, składał się on z zatłuszczonego kawałka zielonej kitajki rozpiętej na drucie."
+   ],
+   "boy": [
+    "Zmęczone oczy starej panny Michonneau przysłaniał brudny zielony daszek, zdolny wystraszyć anioła litości."
+   ]
+  },
+  {
+   "id": "P31",
+   "title": "Portret Poireta",
+   "bort": [
+    "Pan Poiret był rodzajem automatu."
+   ],
+   "boy": [
+    "Pan Poiret był to istny automat."
+   ]
+  },
+  {
+   "id": "P32",
+   "title": "Portret Vautrina",
+   "bort": [
+    "Szeroki w ramionach, biust miał potężny, muskuły wydatne i ogromne, czworogranne ręce porośnięte na palcach kępami gęstych, ognistorudych włosów."
+   ],
+   "boy": [
+    "Miał szerokie ramiona, rozwinięty tors, wybitnie zarysowane mięśnie, grube, kwadratowe ręce porosłe pęczkami rudej szczeci."
+   ]
+  },
+  {
+   "id": "P33",
+   "title": "Portret Rastignaca",
+   "bort": [
+    "Eugeniusz de Rastignac przedstawiał typ południowy; miał płeć białą przy czarnych włosach i oczach niebieskich."
+   ],
+   "boy": [
+    "Eugeniusz de Rastignac miał typową twarz południowca, białą cerę, czarne włosy, niebieskie oczy."
+   ]
+  },
+  {
+   "id": "P34",
+   "title": "Izdebka Rastignaca",
+   "bort": [
+    "Eugeniusz milczący przechadzał się z założonymi rękoma po biednej swej izdebce, w której nieład panował. Ojciec Goriot dobrał chwilę, w której student zwrócony był do niego plecami i położył na kominku czerwone safianowe pudełko, na którym wyzłocony był herb Rastignaca."
+   ],
+   "boy": [
+    "Eugeniusz oniemiał; przechadzał się z założonymi rękami po izdebce pełnej nieładu. Ojciec Goriot pochwycił chwilę w której student odwrócił się doń plecami, i położył na kominku czerwone safianowe puzderko, na którym widniał wyciśnięty w złocie herb Rastignaków."
+   ]
+  },
+  {
+   "id": "P35",
+   "title": "Goriot bez pudru",
+   "bort": [
+    "Gdy ukazał się pierwszy raz bez pudru, gospodyni wydała okrzyk podziwu na widok jego włosów; były one brudnego szarozielonkawego koloru."
+   ],
+   "boy": [
+    "Kiedy ojciec Goriot ukazał się pierwszy raz nieupudrowany, gospodyni wydała okrzyk zdumienia na widok włosów, których siwizna miała odcień brudno-zielonkawy."
+   ]
+  },
+  {
+   "id": "P36",
+   "title": "Pokój Goriota",
+   "long": true,
+   "bort_range": [
+    "W oknie nie było firanek",
+    "przypominającej najsmutniejszą celę więzienną."
+   ],
+   "boy_range": [
+    "Okna były bez firanek",
+    "podobna była do smutnej celi więziennej."
+   ]
+  },
+  {
+   "id": "P37",
+   "title": "Salon",
+   "bort": [
+    "Trudno znaleźć coś bardziej smutnego jak ten salon, którego całe umeblowanie stanowią fotele i krzesła, obite włosianą materią w pasy błyszczące i matowe. Pośrodku stoi stół okrągły z marmuru Sainte-Anne, na którym postawiono dla ozdoby bardzo dzisiaj rozpowszechniony serwis biały porcelanowy, o złotych paskach w połowie już pozacieranych. Podłoga w tym pokoju dosyć nędzna, ściany obwiedzione u dołu szeroką lamperią, wyżej zaś wyklejone lakierowanym papierem, przedstawiającym główne sceny z Telemaka, w których klasyczne osoby dla odróżnienia odmalowano żywszymi barwami. Przestrzeń między dwoma oknami o żelaznych sztabach, przedstawia mieszkańcom gospody obraz uczty, którą Kalipso wydała na cześć syna Ulissesowego.",
+    "Kominek ozdobiony pośrodku szkaradnym zegarem z sinawego marmuru, a po bokach dwoma wazonami sztucznych kwiatów, co dawne czasy zdają się pamiętać. Ognisko kominka, zawsze czysto umiecione, zdaje się mówić, że ogień bywa tu rzadkim gościem."
+   ],
+   "boy": [
+    "Trudno o smutniejszy widok niż ten salon, którego całe umeblowanie stanowią fotele i krzesła obite włosiem w matowe na przemian i błyszczące pasy. W środku, okrągły stół z płytą imitującą marmur, na nim ów serwis z białej porcelany, o złotych, wpół zatartych już prążkach, jaki spotyka się dziś wszędzie. Pokój ten, o dość lichej podłodze, wyłożony jest, do wysokości klamki, drzewem. Powyżej, błyszczące obicie przedstawia sceny z Telemaka. Przestrzeń między dwoma zakratowanymi oknami bawi oczy pensjonarzy ucztą wydaną przez Kalipso dla syna Odyssowego.",
+    "Kominek, którego palenisko, zawsze czyste, świadczy że ogień zjawia się tylko w ważnych uroczystościach, zdobny jest dwoma wazonami sztucznych kwiatów, starych i zapylonych, które okalają szkaradny alabastrowy zegar."
+   ]
+  },
+  {
+   "id": "P38",
+   "title": "Jadalnia",
+   "long": true,
+   "bort_range": [
+    "Ściany drugiego pokoju, od góry do dołu wykładane drzewem",
+    "z połamanymi zawiasami i przepalonym drzewem."
+   ],
+   "boy_range": [
+    "Ta sala, cała wykładana drzewem",
+    "piecyki o połamanych dziurkach i zniszczonej blasze."
+   ]
+  },
+  {
+   "id": "P39",
+   "title": "Sień między jadalnią a kuchnią",
+   "bort": [
+    "Rastignac zamknął drzwi i zszedł z Vautrinem aż na platformę, oddzielającą kuchnię od sali jadalnej. Stamtąd prowadziły do ogrodu drzwi, nad którymi znajdowała się wielka szyba opatrzona kratą żelazną."
+   ],
+   "boy": [
+    "Rastignac zamknął drzwi, wyprowadzając z sobą Vautrina do sieni, która dzieliła jadalnię od kuchni. Sień ta posiadała wychodzące na ogród drzwi z zakratowaną podłużną szybą."
+   ]
+  },
+  {
+   "id": "P41",
+   "title": "Układ parteru",
+   "bort": [
+    "Parter, przeznaczony na mieszczańską gospodę, składa się z pokoju o szklanych drzwiach i dwóch oknach wychodzących na ulicę. Ten salon łączy się z jadalnym pokojem oddzielonym od kuchni sionką, w której znajdują się schody drewniane malowane i woskowane."
+   ],
+   "boy": [
+    "Parter, z natury rzeczy stanowiący rdzeń pensjonatu, składa się najpierw z pokoju o szklanych drzwiach i dwóch oknach wychodzących na ulicę. Salon ten sąsiaduje z jadalnią; tę oddziela od kuchni sień, w której wznoszą się drewniane woskowane schody."
+   ]
+  },
+  {
+   "id": "P42",
+   "title": "Poddasze",
+   "bort": [
+    "Ponad trzecim piętrem był strych do suszenia bielizny i dwa poddasza, gdzie sypiał posługacz zwany Krzysztofem i gruba Sylwia, kucharka."
+   ],
+   "boy": [
+    "Nad trzecim piętrem był strych do bielizny, oraz dwie klitki, gdzie sypiali posługacz Krzysztof i gruba Sylwia, kucharka."
+   ]
+  },
+  {
+   "id": "P43",
+   "title": "Pokoje dla studentów",
+   "bort": [
+    "Dwa pozostałe pokoje dawały schronienie różnym przelotnym ptakom, a najczęściej nieszczęśliwym studentom,"
+   ],
+   "boy": [
+    "Dwa pozostałe pokoje przeznaczone były dla przelotnych ptaków, dla nieszczęśliwych studentów,"
+   ]
+  },
+  {
+   "id": "P44",
+   "title": "Przez dziurkę od klucza",
+   "bort": [
+    "przyłożył oko do dziurki od klucza i zajrzawszy w głąb pokoju, spostrzegł starca zajętego dziwną pracą."
+   ],
+   "boy": [
+    "przyłożył oko do dziurki od klucza i ujrzał starca zajętego dziwną pracą."
+   ]
+  },
+  {
+   "id": "P45",
+   "title": "Sylwia śledzi gościa Goriota",
+   "bort": [
+    "Pani Vauquer i kucharka stanęły na czatach i dosłyszały kilka słów zamienionych czule podczas dość długich odwiedzin."
+   ],
+   "boy": [
+    "Pani Vauquer i kucharka zasadziły się na czatach i podchwyciły kilka czułych wyrazów podczas wizyty, która trwała jakiś czas."
+   ]
   }
  ],
  "timeline": {
@@ -472,21 +660,24 @@
       "who": "strych do suszenia bielizny",
       "refs": [
        "P20"
-      ]
+      ],
+      "id": "suszarnia"
      },
      {
       "name": "Krzysztof",
       "who": "posługacz",
       "refs": [
        "P20"
-      ]
+      ],
+      "id": "krzysztof"
      },
      {
       "name": "Sylwia",
       "who": "kucharka",
       "refs": [
        "P20"
-      ]
+      ],
+      "id": "sylwia"
      }
     ]
    },
@@ -500,7 +691,8 @@
       "refs": [
        "P20"
       ],
-      "char": "michonneau"
+      "char": "michonneau",
+      "id": "michonneau"
      },
      {
       "name": "Ojciec Goriot",
@@ -509,7 +701,8 @@
        "P20",
        "G19"
       ],
-      "char": "goriot"
+      "char": "goriot",
+      "id": "goriot"
      },
      {
       "name": "Eugeniusz de Rastignac",
@@ -517,14 +710,16 @@
       "refs": [
        "P20"
       ],
-      "char": "rastignac"
+      "char": "rastignac",
+      "id": "rastignac"
      },
      {
       "name": "Pokój wolny",
       "who": "dla „przelotnych ptaków”, najczęściej studentów",
       "refs": [
        "P20"
-      ]
+      ],
+      "id": "wolny"
      }
     ]
    },
@@ -538,7 +733,8 @@
       "refs": [
        "P20"
       ],
-      "char": "poiret"
+      "char": "poiret",
+      "id": "poiret"
      },
      {
       "name": "Vautrin",
@@ -547,7 +743,8 @@
        "P20",
        "G06"
       ],
-      "char": "vautrin"
+      "char": "vautrin",
+      "id": "vautrin"
      }
     ]
    },
@@ -561,7 +758,8 @@
       "refs": [
        "P20"
       ],
-      "char": "vauquer"
+      "char": "vauquer",
+      "id": "vauquer"
      },
      {
       "name": "Pani Couture i Wiktoryna",
@@ -570,7 +768,8 @@
        "P20",
        "P24"
       ],
-      "char": "wiktoryna"
+      "char": "wiktoryna",
+      "id": "couture"
      }
     ]
    },
@@ -582,22 +781,25 @@
       "name": "Salon",
       "who": "szklane drzwi, dwa okna",
       "refs": [
-       "P25"
-      ]
+       "P41"
+      ],
+      "id": "salon"
      },
      {
       "name": "Jadalnia",
       "who": "obok salonu",
       "refs": [
-       "P25"
-      ]
+       "P41"
+      ],
+      "id": "jadalnia"
      },
      {
       "name": "Kuchnia",
       "who": "za sienią ze schodami",
       "refs": [
-       "P25"
-      ]
+       "P41"
+      ],
+      "id": "kuchnia"
      }
     ]
    }
@@ -737,7 +939,977 @@
    "P20",
    "P21",
    "P22"
-  ]
+  ],
+  "rooms": {
+   "suszarnia": {
+    "floor": "Poddasze",
+    "synth": "Strych do suszenia bielizny nad trzecim piętrem: przestrzeń gospodarcza, nie mieszkalna.",
+    "char": null,
+    "desc": "P42",
+    "plan": {
+     "w": 100,
+     "h": 46,
+     "items": [
+      {
+       "k": "window",
+       "x": 44,
+       "y": 0,
+       "w": 12,
+       "src": "r",
+       "label": "okno w dachu"
+      },
+      {
+       "k": "door",
+       "x": 6,
+       "y": 46,
+       "w": 10,
+       "src": "r",
+       "label": "wejście ze schodów"
+      },
+      {
+       "k": "line",
+       "x": 12,
+       "y": 16,
+       "w": 76,
+       "src": "r",
+       "label": "sznury na bieliznę"
+      },
+      {
+       "k": "line",
+       "x": 12,
+       "y": 28,
+       "w": 76,
+       "src": "r"
+      }
+     ]
+    }
+   },
+   "krzysztof": {
+    "floor": "Poddasze",
+    "synth": "Klitka posługacza na poddaszu: w hierarchii domu najniżej, a po schodach najwyżej.",
+    "char": "P42",
+    "desc": null,
+    "nodesc": "Powieść wymienia tylko „klitkę” (u Bortnowskiej: „poddasze”); wnętrza nie opisuje.",
+    "plan": {
+     "w": 60,
+     "h": 46,
+     "items": [
+      {
+       "k": "window",
+       "x": 22,
+       "y": 0,
+       "w": 14,
+       "src": "r",
+       "label": "okno w dachu"
+      },
+      {
+       "k": "door",
+       "x": 6,
+       "y": 46,
+       "w": 10,
+       "src": "r",
+       "label": "drzwi"
+      },
+      {
+       "k": "bed",
+       "x": 34,
+       "y": 14,
+       "w": 22,
+       "h": 28,
+       "src": "r",
+       "label": "posłanie"
+      }
+     ]
+    }
+   },
+   "sylwia": {
+    "floor": "Poddasze",
+    "synth": "Klitka kucharki, która razem z gospodynią podgląda gości lokatorów i donosi jej, co widziała.",
+    "char": "P45",
+    "desc": null,
+    "nodesc": "Powieść wymienia tylko „klitkę” (u Bortnowskiej: „poddasze”); wnętrza nie opisuje.",
+    "plan": {
+     "w": 60,
+     "h": 46,
+     "items": [
+      {
+       "k": "window",
+       "x": 22,
+       "y": 0,
+       "w": 14,
+       "src": "r",
+       "label": "okno w dachu"
+      },
+      {
+       "k": "door",
+       "x": 44,
+       "y": 46,
+       "w": 10,
+       "src": "r",
+       "label": "drzwi"
+      },
+      {
+       "k": "bed",
+       "x": 4,
+       "y": 14,
+       "w": 22,
+       "h": 28,
+       "src": "r",
+       "label": "posłanie"
+      }
+     ]
+    }
+   },
+   "michonneau": {
+    "floor": "3. piętro",
+    "synth": "Jeden z najtańszych pokoi zajmuje stara panna o niejasnej przeszłości; za nagrodę pomoże policji zdemaskować Vautrina.",
+    "char": "P30",
+    "desc": null,
+    "nodesc": "Powieść nie opisuje wnętrza tego pokoju.",
+    "plan": {
+     "w": 70,
+     "h": 60,
+     "items": [
+      {
+       "k": "window",
+       "x": 26,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okno"
+      },
+      {
+       "k": "door",
+       "x": 6,
+       "y": 60,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na korytarz"
+      }
+     ]
+    }
+   },
+   "goriot": {
+    "floor": "3. piętro",
+    "synth": "Najnędzniejszy pokój domu zajmuje człowiek, który oddał córkom cały majątek. To jedyne mieszkanie lokatora opisane w powieści przedmiot po przedmiocie.",
+    "char": "P35",
+    "desc": "P36",
+    "plan": {
+     "w": 100,
+     "h": 72,
+     "items": [
+      {
+       "k": "window",
+       "x": 42,
+       "y": 0,
+       "w": 18,
+       "src": "t",
+       "label": "okno bez firanek",
+       "pos": "„w oknie nie było firanek”"
+      },
+      {
+       "k": "door",
+       "x": 8,
+       "y": 72,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na korytarz (z dziurką od klucza)"
+      },
+      {
+       "k": "bed",
+       "x": 3,
+       "y": 12,
+       "w": 22,
+       "h": 38,
+       "src": "t",
+       "label": "ubogie łóżko z cienką kołdrą"
+      },
+      {
+       "k": "curtain",
+       "x": 3,
+       "y": 10,
+       "w": 22,
+       "src": "t",
+       "label": "kotara w czerwono-białą kratę na żerdzi (tylko u Bortnowskiej)"
+      },
+      {
+       "k": "nightstand",
+       "x": 3,
+       "y": 2,
+       "w": 11,
+       "h": 8,
+       "src": "t",
+       "label": "szafka bez drzwiczek i blatu",
+       "pos": "„w głowach, przy łóżku”"
+      },
+      {
+       "k": "commode",
+       "x": 38,
+       "y": 61,
+       "w": 26,
+       "h": 10,
+       "src": "t",
+       "label": "pękata komoda z drzewa różanego",
+       "pos": "„naprzeciw okna”"
+      },
+      {
+       "k": "stool",
+       "x": 70,
+       "y": 62,
+       "w": 9,
+       "h": 9,
+       "src": "t",
+       "label": "zydel z dzbanem, miską i przyborami do golenia",
+       "pos": "„nieco dalej”"
+      },
+      {
+       "k": "shoes",
+       "x": 88,
+       "y": 63,
+       "w": 8,
+       "h": 6,
+       "src": "t",
+       "label": "trzewiki",
+       "pos": "„w kącie”"
+      },
+      {
+       "k": "fireplace",
+       "x": 91,
+       "y": 22,
+       "w": 9,
+       "h": 20,
+       "src": "t",
+       "label": "kominek bez śladu ognia"
+      },
+      {
+       "k": "table",
+       "x": 74,
+       "y": 4,
+       "w": 15,
+       "h": 12,
+       "src": "t",
+       "label": "czworograniasty stół orzechowy (tu Goriot zgniatał srebra)",
+       "pos": "„w rogu komina”"
+      },
+      {
+       "k": "desk",
+       "x": 28,
+       "y": 3,
+       "w": 12,
+       "h": 8,
+       "src": "t",
+       "label": "biurko (sekretarzyk) z kapeluszem"
+      },
+      {
+       "k": "armchair",
+       "x": 58,
+       "y": 30,
+       "w": 10,
+       "h": 10,
+       "src": "t",
+       "label": "fotel wyplatany"
+      },
+      {
+       "k": "chair",
+       "x": 44,
+       "y": 34,
+       "w": 7,
+       "h": 7,
+       "src": "t",
+       "label": "dwa krzesła"
+      },
+      {
+       "k": "chair",
+       "x": 74,
+       "y": 40,
+       "w": 7,
+       "h": 7,
+       "src": "t"
+      }
+     ]
+    },
+    "extra": [
+     "G08"
+    ]
+   },
+   "rastignac": {
+    "floor": "3. piętro",
+    "synth": "Izdebka studenta pełna nieładu sąsiaduje z pokojem Goriota; przez dziurkę od klucza Rastignac odkrywa tajemnicę sąsiada.",
+    "char": "P33",
+    "desc": "P34",
+    "plan": {
+     "w": 80,
+     "h": 64,
+     "items": [
+      {
+       "k": "window",
+       "x": 32,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okno"
+      },
+      {
+       "k": "door",
+       "x": 62,
+       "y": 64,
+       "w": 12,
+       "src": "t",
+       "label": "drzwi na korytarz",
+       "pos": "wychodzi na korytarz, by zajrzeć do Goriota"
+      },
+      {
+       "k": "fireplace",
+       "x": 71,
+       "y": 20,
+       "w": 9,
+       "h": 18,
+       "src": "t",
+       "label": "kominek (Goriot kładzie na nim puzderko z herbem)"
+      },
+      {
+       "k": "bed",
+       "x": 3,
+       "y": 10,
+       "w": 20,
+       "h": 34,
+       "src": "r",
+       "label": "łóżko"
+      },
+      {
+       "k": "table",
+       "x": 34,
+       "y": 26,
+       "w": 16,
+       "h": 10,
+       "src": "r",
+       "label": "stół do nauki"
+      },
+      {
+       "k": "mess",
+       "x": 30,
+       "y": 46,
+       "w": 24,
+       "h": 10,
+       "src": "t",
+       "label": "nieład"
+      }
+     ]
+    },
+    "extra": [
+     "P44"
+    ]
+   },
+   "wolny": {
+    "floor": "3. piętro",
+    "synth": "Pokój dla „przelotnych ptaków”: gospodyni przyjmowała tu studentów niechętnie, bo jej zdaniem jedli za dużo chleba.",
+    "char": null,
+    "desc": "P43",
+    "plan": {
+     "w": 70,
+     "h": 60,
+     "items": [
+      {
+       "k": "window",
+       "x": 26,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okno"
+      },
+      {
+       "k": "door",
+       "x": 6,
+       "y": 60,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na korytarz"
+      }
+     ]
+    }
+   },
+   "poiret": {
+    "floor": "2. piętro",
+    "synth": "Staruszek nazwany automatem płaci 72 franki miesięcznie; razem z panną Michonneau doprowadzi do aresztowania Vautrina.",
+    "char": "P31",
+    "desc": null,
+    "nodesc": "Powieść nie opisuje wnętrza tego mieszkania.",
+    "plan": {
+     "w": 90,
+     "h": 64,
+     "items": [
+      {
+       "k": "window",
+       "x": 20,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okna"
+      },
+      {
+       "k": "window",
+       "x": 54,
+       "y": 0,
+       "w": 16,
+       "src": "r"
+      },
+      {
+       "k": "door",
+       "x": 8,
+       "y": 64,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na klatkę schodową"
+      }
+     ]
+    }
+   },
+   "vautrin": {
+    "floor": "2. piętro",
+    "synth": "Najsilniejsza postać domu mieszka na drugim piętrze za 72 franki miesięcznie. Powieść nie opisuje jego pokoju, za to bardzo dokładnie jego wygląd.",
+    "char": "P32",
+    "desc": null,
+    "nodesc": "Powieść nie opisuje wnętrza tego mieszkania.",
+    "plan": {
+     "w": 90,
+     "h": 64,
+     "items": [
+      {
+       "k": "window",
+       "x": 20,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okna"
+      },
+      {
+       "k": "window",
+       "x": 54,
+       "y": 0,
+       "w": 16,
+       "src": "r"
+      },
+      {
+       "k": "door",
+       "x": 70,
+       "y": 64,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na klatkę schodową"
+      }
+     ]
+    }
+   },
+   "vauquer": {
+    "floor": "1. piętro",
+    "synth": "Gospodyni zajmuje skromniejsze z dwóch mieszkań pierwszego piętra. Narrator twierdzi, że jej osoba tłumaczy pensjonat, a pensjonat — ją.",
+    "char": "P26",
+    "desc": "P27",
+    "plan": {
+     "w": 90,
+     "h": 64,
+     "items": [
+      {
+       "k": "window",
+       "x": 20,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okna"
+      },
+      {
+       "k": "window",
+       "x": 54,
+       "y": 0,
+       "w": 16,
+       "src": "r"
+      },
+      {
+       "k": "door",
+       "x": 8,
+       "y": 64,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na klatkę schodową"
+      },
+      {
+       "k": "rtable",
+       "x": 40,
+       "y": 28,
+       "w": 14,
+       "h": 14,
+       "src": "r",
+       "label": "stolik (wieczorne pogawędki przy nalewce)"
+      },
+      {
+       "k": "armchair",
+       "x": 26,
+       "y": 30,
+       "w": 10,
+       "h": 10,
+       "src": "r",
+       "label": "fotele"
+      },
+      {
+       "k": "armchair",
+       "x": 58,
+       "y": 30,
+       "w": 10,
+       "h": 10,
+       "src": "r"
+      }
+     ]
+    }
+   },
+   "couture": {
+    "floor": "1. piętro",
+    "synth": "Najlepsze mieszkanie domu zajmują wdowa i jej podopieczna; trzy pokoje odświeżono niegdyś dla zamożnego wówczas Goriota.",
+    "char": "G07",
+    "desc": "P28",
+    "plan": {
+     "w": 120,
+     "h": 64,
+     "items": [
+      {
+       "k": "wall",
+       "x": 40,
+       "y": 0,
+       "h": 64,
+       "src": "t",
+       "label": "trzy pokoje"
+      },
+      {
+       "k": "wall",
+       "x": 80,
+       "y": 0,
+       "h": 64,
+       "src": "t"
+      },
+      {
+       "k": "window",
+       "x": 12,
+       "y": 0,
+       "w": 16,
+       "src": "t",
+       "label": "okna z firankami z żółtej tkaniny bawełnianej (u Boya: perkalowymi)"
+      },
+      {
+       "k": "window",
+       "x": 52,
+       "y": 0,
+       "w": 16,
+       "src": "t"
+      },
+      {
+       "k": "window",
+       "x": 92,
+       "y": 0,
+       "w": 16,
+       "src": "t"
+      },
+      {
+       "k": "door",
+       "x": 52,
+       "y": 64,
+       "w": 12,
+       "src": "r",
+       "label": "drzwi na klatkę schodową"
+      },
+      {
+       "k": "armchair",
+       "x": 46,
+       "y": 26,
+       "w": 10,
+       "h": 10,
+       "src": "t",
+       "label": "fotele obite pluszem"
+      },
+      {
+       "k": "armchair",
+       "x": 64,
+       "y": 26,
+       "w": 10,
+       "h": 10,
+       "src": "t"
+      },
+      {
+       "k": "picture",
+       "x": 42,
+       "y": 40,
+       "h": 14,
+       "src": "t",
+       "label": "kilka malowideł"
+      },
+      {
+       "k": "bed",
+       "x": 4,
+       "y": 20,
+       "w": 18,
+       "h": 30,
+       "src": "r",
+       "label": "łóżka"
+      },
+      {
+       "k": "bed",
+       "x": 98,
+       "y": 20,
+       "w": 18,
+       "h": 30,
+       "src": "r"
+      }
+     ]
+    }
+   },
+   "salon": {
+    "floor": "Parter",
+    "synth": "Salon obity tapetą ze scenami z „Telemaka” to najsmutniejszy pokój, jaki można sobie wyobrazić — a jednak przy jadalni wydaje się buduarem.",
+    "char": null,
+    "desc": "P37",
+    "plan": {
+     "w": 100,
+     "h": 70,
+     "items": [
+      {
+       "k": "window",
+       "x": 14,
+       "y": 0,
+       "w": 16,
+       "src": "t",
+       "label": "dwa okna z żelaznymi kratami"
+      },
+      {
+       "k": "window",
+       "x": 54,
+       "y": 0,
+       "w": 16,
+       "src": "t"
+      },
+      {
+       "k": "picture",
+       "x": 34,
+       "y": 1,
+       "w": 16,
+       "src": "t",
+       "label": "uczta Kalipso na tapecie",
+       "pos": "„między dwoma oknami”"
+      },
+      {
+       "k": "glassdoor",
+       "x": 78,
+       "y": 0,
+       "w": 14,
+       "src": "t",
+       "label": "szklane drzwi"
+      },
+      {
+       "k": "rtable",
+       "x": 40,
+       "y": 26,
+       "w": 20,
+       "h": 20,
+       "src": "t",
+       "label": "okrągły stół z białym serwisem",
+       "pos": "„pośrodku”"
+      },
+      {
+       "k": "fireplace",
+       "x": 91,
+       "y": 26,
+       "w": 9,
+       "h": 22,
+       "src": "t",
+       "label": "kominek z zegarem i wazonami sztucznych kwiatów"
+      },
+      {
+       "k": "armchair",
+       "x": 6,
+       "y": 20,
+       "w": 10,
+       "h": 10,
+       "src": "t",
+       "label": "fotele i krzesła obite włosianą materią w pasy"
+      },
+      {
+       "k": "armchair",
+       "x": 6,
+       "y": 36,
+       "w": 10,
+       "h": 10,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 30,
+       "y": 54,
+       "w": 7,
+       "h": 7,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 60,
+       "y": 54,
+       "w": 7,
+       "h": 7,
+       "src": "t"
+      },
+      {
+       "k": "paper",
+       "src": "t",
+       "label": "lamperia u dołu, wyżej tapeta ze scenami z „Telemaka”"
+      },
+      {
+       "k": "door",
+       "x": 0,
+       "y": 56,
+       "w": 10,
+       "src": "r",
+       "vertical": true,
+       "label": "przejście do jadalni"
+      }
+     ]
+    }
+   },
+   "jadalnia": {
+    "floor": "Parter",
+    "synth": "Serce pensjonatu: przy długim stole pokrytym ceratą siada do obiadu osiemnaście osób. Tu Vautrin zostaje aresztowany.",
+    "char": null,
+    "desc": "P38",
+    "plan": {
+     "w": 100,
+     "h": 70,
+     "items": [
+      {
+       "k": "window",
+       "x": 40,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okno"
+      },
+      {
+       "k": "table",
+       "x": 22,
+       "y": 26,
+       "w": 56,
+       "h": 16,
+       "src": "t",
+       "label": "długi stół pokryty ceratą"
+      },
+      {
+       "k": "chair",
+       "x": 26,
+       "y": 18,
+       "w": 6,
+       "h": 6,
+       "src": "t",
+       "label": "kulawe krzesła"
+      },
+      {
+       "k": "chair",
+       "x": 40,
+       "y": 18,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 54,
+       "y": 18,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 68,
+       "y": 18,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 26,
+       "y": 44,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 40,
+       "y": 44,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 54,
+       "y": 44,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "chair",
+       "x": 68,
+       "y": 44,
+       "w": 6,
+       "h": 6,
+       "src": "t"
+      },
+      {
+       "k": "shelf",
+       "x": 2,
+       "y": 8,
+       "w": 4,
+       "h": 40,
+       "src": "t",
+       "label": "lepkie półki z karafkami i talerzami"
+      },
+      {
+       "k": "box",
+       "x": 90,
+       "y": 2,
+       "w": 8,
+       "h": 8,
+       "src": "t",
+       "label": "skrzynka z przegródkami na serwety",
+       "pos": "„w kącie”"
+      },
+      {
+       "k": "stove",
+       "x": 88,
+       "y": 54,
+       "w": 10,
+       "h": 12,
+       "src": "t",
+       "label": "zielony piec"
+      },
+      {
+       "k": "clock",
+       "x": 96,
+       "y": 30,
+       "src": "t",
+       "label": "zegar szyldkretowy, barometr z kapucynem, ryciny"
+      },
+      {
+       "k": "lamp",
+       "x": 50,
+       "y": 34,
+       "src": "t",
+       "label": "kinkiety z zakurzoną oliwą"
+      },
+      {
+       "k": "mat",
+       "x": 30,
+       "y": 56,
+       "w": 40,
+       "h": 8,
+       "src": "t",
+       "label": "maty (słomianki)"
+      },
+      {
+       "k": "paper",
+       "src": "t",
+       "label": "ściany wykładane drzewem; czerwona podłoga"
+      },
+      {
+       "k": "door",
+       "x": 0,
+       "y": 56,
+       "w": 10,
+       "src": "r",
+       "vertical": true,
+       "label": "przejście do salonu"
+      },
+      {
+       "k": "door",
+       "x": 100,
+       "y": 18,
+       "w": 10,
+       "src": "r",
+       "vertical": true,
+       "label": "wyjście do sieni"
+      }
+     ]
+    }
+   },
+   "kuchnia": {
+    "floor": "Parter",
+    "synth": "Kuchnię oddziela od jadalni sień ze schodami; stamtąd drzwi z zakratowaną szybą prowadzą do ogrodu.",
+    "char": null,
+    "desc": "P39",
+    "nodesc": "Wnętrza samej kuchni powieść nie opisuje; rzut pokazuje sień i jej drzwi.",
+    "plan": {
+     "w": 100,
+     "h": 70,
+     "items": [
+      {
+       "k": "wall",
+       "x": 44,
+       "y": 0,
+       "h": 70,
+       "src": "t",
+       "label": "sień oddziela jadalnię od kuchni"
+      },
+      {
+       "k": "stairs",
+       "x": 4,
+       "y": 6,
+       "w": 16,
+       "h": 34,
+       "src": "t",
+       "label": "drewniane woskowane schody w sieni"
+      },
+      {
+       "k": "glassdoor",
+       "x": 22,
+       "y": 70,
+       "w": 14,
+       "src": "t",
+       "label": "drzwi do ogrodu z zakratowaną szybą"
+      },
+      {
+       "k": "door",
+       "x": 0,
+       "y": 50,
+       "w": 10,
+       "src": "r",
+       "vertical": true,
+       "label": "z jadalni"
+      },
+      {
+       "k": "door",
+       "x": 44,
+       "y": 48,
+       "w": 10,
+       "src": "r",
+       "vertical": true,
+       "label": "do kuchni"
+      },
+      {
+       "k": "window",
+       "x": 64,
+       "y": 0,
+       "w": 16,
+       "src": "r",
+       "label": "okno kuchenne (na podwórze)"
+      },
+      {
+       "k": "label",
+       "x": 72,
+       "y": 38,
+       "src": "r",
+       "label": "kuchnia"
+      }
+     ]
+    }
+   }
+  }
  },
  "characters": [
   {
