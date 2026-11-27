@@ -1,0 +1,42 @@
+# Pensjonat Vauquer – kwerenda przedstawień przestrzennych
+27 listopada 2026 | Raport roboczy do projektu Ojciec Goriot – dom
+
+## Wynik
+Odnaleziono gotowy schemat przekroju całego domu w książce Emmanuela Querouila (1990), schematy kondygnacji w rozprawie doktorskiej (2011) oraz potwierdzenie prowadzonego od 2025 projektu Vauquer 3D. Nie znaleziono zweryfikowanego, dostępnego publicznie zestawu rzutów architektonicznych w skali ani publicznego pliku modelu 3D. Kwerenda nie jest wyczerpująca.
+
+## Katalog
+| Typ | Autor, data, instytucja, sygnatura | Źródło | Prawa / dostęp | Znaczenie |
+|---|---|---|---|---|
+| Przekrój | Emmanuel Querouil, Le Père Goriot de Balzac et le roman d’éducation, Pierre Bordas et fils, 1990, s. 2 (3. strona PDF) | [Skan](https://excerpts.numilog.com/books/9782402985031.pdf#page=3), [katalog BnF](https://catalogue.bnf.fr/affiner.do?afficheRegroup=false&critereRecherche=&index=SUJ3&listeAffinages=FacLocal_Lcl2CRdjTol&motRecherche=&nbResultParPage=100&numNotice=11988051&triResultParPage=5&trouveDansFiltre=NoticePUB&typeNotice=s) | PDF publicznie dostępny; brak wolnej licencji; rozdzielczość oryginału niezmierzona | Zweryfikowany wizualnie; wszystkie piętra i mieszkańcy; nie zawiera schodów, kuchni, dziedzińców |
+| Model 3D | Université d’Artois, New Atlantis, Textes et Cultures, CPER Anamorphose, od 2025; Marie-Clémence Régnier | [MESHS – program](https://www.meshs.fr/shs-valo/shs-valo-2026/), [komunikat New Atlantis](https://fr.linkedin.com/posts/newatlantis-innovations_hier-nous-%C3%A9tions-au-colloque-international-activity-7516018039058956288-4k3t) | Brak publicznego pliku i ustalonej licencji | Pierwsze wyniki zaprezentowane na kolokwium Loger le personnage, habiter la fiction; nie oglądano modelu |
+| Schematy społeczne | Anwar Younes Kaddis Youssef, Strasbourg, 2011, La société bourgeoise française au XIXe et au XXe siècle vue par les écrivains contemporains, s. 36–50 | [Rozprawa](https://publication-theses.unistra.fr/public/theses_doctorat/2011/YOUNES_KADDIS_YOUSSEF_Anwar_2011.pdf) | PDF; licencja nieustalona; próba odczytu obrazu strony nie powiodła się | W tekście PDF potwierdzone schematy lokatorów na piętrach, nie rzuty |
+| Jadalnia, rycina | Albert Lynch, Eugène Abot, 1885, Quantin, naprzeciw s. 46, BnF RES P-Y2-159, NUMM-315874 | [BnF](https://catalogue.bnf.fr/ark:/12148/cb300513594), [galeria – opis i reprodukcja](https://www.galerie-leserbon.fr/albert-lynch-pere-goriot-rastignac/) | Oryginał w domenie publicznej wg dat BnF (Lynch 1860–1950, Abot 1836–1894); warunki pliku sprawdzić; nie pobrano | Pierwsza z 10 rycin, posiłek; sam plik obrazu nie otworzył się |
+| Zespół ilustracji | Lynch, wyd. 1900, Biblioteka Narodowa w Warszawie | [10 skanów Commons](https://commons.wikimedia.org/wiki/Category:Le_père_Goriot_(1900)) | JPG ok. 2190–2273 × 3500–3559 px; sprawdzić licencję każdego pliku | Nie zidentyfikowano poszczególnych scen |
+| Scenografia jadalni | Jean-Daniel Verhaeghe, film 2004, Castel Film, Rumunia | [Le Parisien, 16.02.2004](https://www.leparisien.fr/culture-loisirs/aznavour-devient-le-pere-goriot-16-02-2004-2004761530.php) | Film chroniony; planów dekoracji nie znaleziono | Potwierdzona realizacja wnętrza z meblami i rekwizytami z Francji |
+| Topografia | Julien Barret, 2021, Autour de Paris | [Artykuł z komentarzami](https://autour-de-paris.com/project/balade-poetique-montagne-sainte-genevieve) | Fotografie współczesne, licencja nieustalona | Hipotezy 24, 28, 30, 33–35 rue Tournefort; 21 rue de la Clef jako możliwy model |
+| Fotografia historyczna – trop katalogowy | Eugène Atget, 1912, Musée Carnavalet, PH35610, Puits dans une cour, 24 rue Tournefort | [Rekord](https://parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/puits-dans-une-cour-24-rue-tournefort-5eme-arrondissement-paris) | Według rekordu CC0, odbitka 22,4 × 18 cm; piksele nieustalone | Fotografia sprzed rozbiórki postulowanego pensjonatu; nie dowodzi związku z Balzakiem |
+| Fotografia historyczna – trop katalogowy | Eugène Atget, 1900, Musée Carnavalet, PH13096, Maison du précepteur de François II, 21 rue de la Clef | [Rekord](https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/maison-du-precepteur-de-francois-ii-21-rue-de-la-clef-5eme-arrondissement) | W indeksie CC0, odbitka 22,7 × 17,6 cm; otwarcie pełnej strony nie powiodło się | Nie ustalono tożsamości z oberżą wymienianą przez Bruneau |
+
+## A. Rozkład lokatorów
+Querouil, s. 2, od lewej: strych – suszarnia, Sylvie, Christophe; III – Rastignac, wolny pokój, Goriot, Michonneau; II – Vautrin, Poiret; I – Vauquer, Couture i Victorine; parter – wejście, salon, jadalnia. Jest to schemat bez skali, nie dowód konkretnego położenia każdej izby. W tekście Balzaka mieszkanie Vauquer jest mniejsze od apartamentu Couture; schemat rysuje obie części podobnej wielkości. Opis nie uzasadnia automatycznie lewo-prawej kolejności pokoi. Kwoty na schemacie sprawdzić osobno: 1800 franków to nie 1800 franków miesięcznie (tak napisano na ilustracji). Nie powtarzać błędu.
+
+## B. Kontrola zgodności
+Podstawa: [Furne, eBalzac](https://ebalzac.proj.lip6.fr/edition/22-pere-goriot/furne), początek powieści, s. 305–309.
+- Fasada skierowana na ogródek, prostopadła do ulicy. Pięć okien na piętro od strony ogródka; dwa okna na ścianie od strony ulicy; parterowe zakratowane.
+- Trzy piętra i mansardy nad parterem. Żółta elewacja z kamienia. Ogródek, obramowane ścieżki, rośliny doniczkowe, altana z lip, figura Amora, wejście od ulicy z szyldem; ogród i zaplecze rozdzielone budynkiem.
+- Parter: salon z dwoma oknami od ulicy; salon łączy się z jadalnią, od kuchni jadalnię oddziela klatka schodowa. Z tyłu dziedziniec gospodarczy szeroki ok. 20 stóp, składzik drewna, wyjście na ulicę.
+- Przekrój Querouila upraszcza te relacje, nie pokazuje klatki, kuchni, okien ani parceli. Ilustracja przestrzenna musi być oparta na powieści, nie na samym schemacie.
+- Nie porównano wizualnie kadrów filmów ani wszystkich skanów Lyncha, dlatego ich zgodności nie przesądzono.
+
+## C. Materiały priorytetowe
+1. Querouil – jako punkt kontrolny kondygnacji i lokatorów, nie do kopiowania kompozycji.
+2. Quint, znany projektowi widok od ulicy, 1922 – układ bramy i ogrodu; [karta muzealna](https://www.parismuseescollections.paris.fr/fr/maison-de-balzac/oeuvres/vue-de-la-pension-vauquer-depuis-la-rue), CC0.
+3. Quint, znana projektowi jadalnia – wystrój parteru; [szkic](https://parismuseescollections.paris.fr/en/node/930741), CC0 według rekordu.
+4. Lynch/Abot – jadalnia w XIX-wiecznej interpretacji; wymaga oględzin pliku.
+5. Atget, PH35610 – historyczny kontekst zaplecza 24 rue Tournefort, nie ilustracja powieści.
+Najważniejszy nowy kontakt badawczy: zespół Vauquer 3D. Ustalić możliwość dostępu do modelu, renderów, dokumentacji i zasad publikacji; nie wysłano żadnej wiadomości.
+
+## D. Adaptacje i zakres kwerendy
+[Filmografia Société des Amis de Balzac](https://www.lesamisdebalzac.org/le-pere-goriot/): USA 1915, Węgry 1916–19, Włochy 1919, Francja 1921 (Baroncelli), USA 1926 (Paris at Midnight), Francja 1945 (Vernay), NRD 1951 (Karriere in Paris); TV BBC 1968 (Paddy Russell), Włochy 1970 (Tino Buazzelli), Francja 1972 (Guy Jorré), 2004 (Verhaeghe). Dalsze luźniejsze adaptacje nie są priorytetem dla rekonstrukcji. Nie pozyskano planów scenografii, nie oglądano filmów. Nie znaleziono zweryfikowanej makiety fizycznej, operowej ani teatralnej scenografii.
+
+Przeszukano indeksy internetowe zapytaniami francuskimi, polskimi i angielskimi; otwarto m.in. BnF, eBalzac, Commons (katalog skanów), Numilog (PDF oraz obraz przekroju), MESHS, New Atlantis, Autour de Paris, Le Parisien i filmografię. W wynikach Paris Musées pojawiły się także dwie matryce Huarda i Gusmana (BAL 1999.128, BAL 1999.133; Huard zm. 1965, nie zakładać domeny publicznej w UE przed 2036); pełne otwarcie kart zakończyło się błędem. Wyszukiwanie domenowe Gallica, POP, Europeana, Cinémathèque, INA, Internet Archive nie dało w tej sesji dalszych zweryfikowanych obiektów; nie oznacza to pełnego przeglądu zasobów. Nie przejrzano strona po stronie Houssiaux, Marescq, Ollendorff, Conquet, wszystkich edycji szkolnych, HathiTrust, Pléiade, czasopism balzakowskich ani Norton/Approaches to Teaching Balzac. Nie sprawdzono bezpośrednio książek Bruneau/Hillaireta; adresy to hipotezy z relacji wtórnych. Nie przeprowadzono niezależnego drugiego researchu w Gemini. Brak potwierdzonej licencji Vauquer 3D i przekroju z 1990. Nie pobrano obrazów; tylko wskazano źródła. Nie deklarowano wyczerpującej kwerendy.
