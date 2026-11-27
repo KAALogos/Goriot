@@ -99,6 +99,7 @@
       const m = P.rooms[r.id];
       const head = el('div', 'mhead');
       head.append(el('span', 'eyebrow', f.name), el('h3', '', r.name)); if (f.note) head.append(el('p', 'pnote', f.note)); head.append(el('p', 'msynth', m.synth));
+      if (m.cyt) { const t = m.cyt.text, q = el('figure', 'mcyt'), bq = el('blockquote', '', (/^[a-ząćęłńóśźż]/.test(t) ? '[…] ' : '') + t.replace(/[.,;]$/, m => m === '.' ? '.' : '') + (/[.!?]$/.test(t) ? '' : ' […]')); q.append(el('span', 'mcytlab', 'Z powieści'), bq, el('figcaption', '', `przekł. A. Bortnowskiej, s. ${m.cyt.page}`)); head.append(q); }
       const kids = [head, plan(m.plan, r.name)];
       const block = (title, id) => { const s = el('section', 'mblock'); s.append(el('h4', '', title)); if (id) s.append(el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id)); return s; };
       if (m.char) kids.push(block(r.id === 'couture' ? 'Postać w tekście: Wiktoryna i pani Couture' : 'Postać w tekście', m.char));
@@ -355,7 +356,7 @@
       ['krzysztof', 261, 111, 399, 236], ['suszarnia', 399, 111, 776, 236], ['sylwia', 776, 111, 926, 236],
       ['michonneau', 199, 246, 344, 396], ['goriot', 344, 246, 585, 396], ['rastignac', 585, 246, 755, 396], ['wolny', 828, 246, 991, 396],
       ['poiret', 199, 404, 432, 549], ['vautrin', 432, 404, 755, 549],
-      ['vauquer', 199, 556, 406, 701], ['couture', 406, 556, 755, 701], ['couture', 828, 556, 991, 701],
+      ['vauquer', 199, 556, 406, 701], ['couture', 406, 556, 755, 701],
       ['salon', 199, 709, 440, 906], ['jadalnia', 440, 709, 701, 906], ['kuchnia', 774, 709, 991, 906]
     ];
     // postać: [plik, środek x, linia podłogi, wysokość]
