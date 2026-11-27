@@ -348,7 +348,7 @@
   }
   M.paryz = () => [
     ...pension(),
-    section('Paryż w powieści', 'Adres mówi, kim jesteś: od Dzielnicy Łacińskiej po przedmieście Saint-Germain.', theses('paryz')),
+    section('Paryż w powieści', 'Adres zdradza pozycję społeczną mieszkańca Paryża: od Dzielnicy Łacińskiej po przedmieście Saint-Germain.', theses('paryz')),
     section('Dom, ulica, salon', null, areaButtons([8, 1, 11, 12, 15]))
   ];
   let focusChar = () => { };
@@ -426,7 +426,7 @@
       for (const s of x.steps) { const li = el('li'); li.append(el('span', '', s.text)); const r = refList([s.ref]); r && li.append(r); ol.append(li); }
       a.append(ol); ax.append(a);
     }
-    return [section('Jak działa ten świat', 'Posag, dług, protekcja i inne siły, które popychają fabułę.', mg), section('Losy czterech bohaterów', null, ax), section('W skrócie', null, theses('mechanizmy'))];
+    return [section('Jak działa ten świat', 'Jak posag, długi i protekcja wpływają na losy bohaterów.', mg), section('Losy czterech bohaterów', null, ax), section('W skrócie', null, theses('mechanizmy'))];
   };
   M.poetyka = () => [section('Sztuka powieści', 'Jak Balzac opowiada: narrator, czas, portret, opis.', theses('poetyka'))];
   M.sceny = () => {
@@ -441,7 +441,7 @@
       const q = el('div', 'questions'); q.append(el('h4', '', 'Pytania')); const ol = el('ol'); s.questions.forEach(x => ol.append(el('li', '', x))); q.append(ol); a.append(q);
       w.append(a);
     }
-    return [section('Sceny kluczowe', 'Jedenaście scen, które warto omówić na lekcji.', w)];
+    return [section('Najważniejsze sceny', 'Jedenaście scen, które warto omówić na lekcji.', w)];
   };
   M.konteksty = () => {
     const w = el('div', 'ctxs');
@@ -520,15 +520,15 @@
     hero.append(el('p', 'slead', 'Paryż, rok 1819. W pensjonacie pani Vauquer mieszkają obok siebie zubożały ojciec, ambitny student i zbiegły galernik.'));
     const tiles = el('div', 'tiles'), mini = el('div', 'tiles mini');
     const T = [
-      ['fragmenty', 'Sceny do omawiania', 'Czternaście pełnych scen w obu przekładach, z pytaniami do rozmowy.', '01_laval_6761', '30% 78%', null, 'big'],
-      ['paryz', 'Pensjonat pani Vauquer', 'Przekrój domu: kto mieszka na którym piętrze i za ile.', null, null, null, 'big house'],
+      ['fragmenty', 'Sceny do omawiania', 'Czternaście scen w całości, w obu przekładach, z pytaniami do dyskusji.', '01_laval_6761', '30% 78%', null, 'big'],
+      ['paryz', 'Pensjonat pani Vauquer', 'Przekrój pensjonatu: kto mieszka na którym piętrze i ile płaci.', null, null, null, 'big house'],
       ['bohaterowie', 'Bohaterowie', 'Portrety z powieści i sieć wzajemnych zależności.', '06_wismar_04', '45% 86%', null, ''],
       ['powiesc', 'Powieść', 'Pełny tekst w przekładach Bortnowskiej i Boya-Żeleńskiego.', '05_wismar_03', '42% 88%', null, ''],
       ['atlas', 'Obyczaje', 'Salon, posag, pojedynek, pogrzeb: obyczaje Paryża 1819 roku z przykładami z tekstu.', '03_wismar_01', '40% 82%', null, ''],
       ['mechanizmy', 'Pieniądz i awans', 'Posag, dług i protekcja: reguły, według których działa świat powieści.', '04_wismar_02', '62% 88%', null, ''],
       ['kontekst', 'Epoka', 'Restauracja Burbonów i „Komedia ludzka”.', null, null, null, 'small'],
       ['poetyka', 'Sztuka powieści', 'Narrator, kompozycja, portret, opis.', null, null, null, 'small'],
-      ['konteksty', 'Porównania', '„Król Lear”, „Lalka” i inne utwory obok „Ojca Goriot”.', null, null, null, 'small'],
+      ['konteksty', 'Porównania', '„Król Lear”, „Lalka” i inne utwory, które można porównać z „Ojcem Goriot”.', null, null, null, 'small'],
       ['zrodla', 'Źródła', 'Wydania powieści i opracowania.', null, null, null, 'small']
     ];
     for (const [k, title, desc, img, pos, act, cls] of T) {
@@ -634,7 +634,7 @@
       li.append(b); sceneList.append(li);
     });
     Gx.onMode(() => { if (sceneCur) renderScene(sceneCur); });
-    return [section('Sceny do omawiania', 'Czternaście pełnych scen w kolejności fabuły. Do każdej wprowadzenie, pytania i zadania z kluczem.', sceneList, sceneView)];
+    return [section('Sceny do omawiania', 'Czternaście scen w całości, w kolejności wydarzeń. Do każdej z nich: wprowadzenie, pytania i zadania z kluczem odpowiedzi.', sceneList, sceneView)];
   };
 
   /* ---------- powieść: wejście do czytania ---------- */
@@ -658,7 +658,7 @@
     });
     Gx.onMode(() => { if (current === 'powiesc') { const p = $('panel-powiesc'); if (p) { built.delete('powiesc'); p.remove(); tab('powiesc'); } } });
     w.append(start);
-    return [section('Powieść', 'Pełny tekst w dwóch przekładach. Wybierz przekład albo zacznij od jednej ze scen.', w), section('Najważniejsze sceny', 'Numer strony według wybranego przekładu.', toc)];
+    return [section('Powieść', 'Pełny tekst w dwóch przekładach. Wybierz przekład albo zacznij od jednej ze scen.', w), section('Najważniejsze sceny', 'Numery stron zależą od wybranego przekładu.', toc)];
   };
   M.zrodla = () => {
     const ul = el('ul', 'biblio');

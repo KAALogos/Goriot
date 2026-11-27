@@ -631,12 +631,12 @@
    },
    {
     "date": "grudzień",
-    "text": "Rastignac otrzymuje listy od matki i siostry z pieniędzmi, o które prosił.",
+    "text": "Rastignac otrzymuje listy od matki i siostry wraz z pieniędzmi, o które prosił.",
     "ref": "P19"
    },
    {
     "date": "luty następnego roku",
-    "text": "Mija termin wyprowadzki z pensjonatu; w kolejnych dniach Goriot umiera i zostaje pochowany na Père-Lachaise.",
+    "text": "Mija termin wyprowadzki z pensjonatu. W kolejnych dniach Goriot umiera i zostaje pochowany na cmentarzu Père-Lachaise.",
     "ref": "P16"
    }
   ],
@@ -840,11 +840,11 @@
     "char": "goriot",
     "steps": [
      {
-      "text": "1813: mieszkanie na 1. piętrze, 1200 franków",
+      "text": "1813: mieszkanie na 1. piętrze, 1200 franków rocznie",
       "ref": "P24"
      },
      {
-      "text": "koniec 2. roku: 2. piętro, 900 franków",
+      "text": "koniec 2. roku: 2. piętro, 900 franków rocznie",
       "ref": "G18"
      },
      {
@@ -973,7 +973,7 @@
   "rooms": {
    "suszarnia": {
     "floor": "Poddasze",
-    "synth": "Strych do suszenia bielizny nad trzecim piętrem: przestrzeń gospodarcza, nie mieszkalna.",
+    "synth": "Strych nad trzecim piętrem służy do suszenia bielizny, nikt tu nie mieszka.",
     "char": null,
     "desc": "P42",
     "plan": {
@@ -1022,7 +1022,7 @@
    },
    "krzysztof": {
     "floor": "Poddasze",
-    "synth": "Klitka posługacza na poddaszu: w hierarchii domu najniżej, a po schodach najwyżej.",
+    "synth": "Klitka posługacza na poddaszu. Krzysztof mieszka najwyżej, choć zajmuje najniższe miejsce w hierarchii domu.",
     "char": "P42",
     "desc": null,
     "nodesc": "Powieść wymienia tylko „klitkę” (u Bortnowskiej: „poddasze”); wnętrza nie opisuje.",
@@ -1066,7 +1066,7 @@
    },
    "sylwia": {
     "floor": "Poddasze",
-    "synth": "Klitka kucharki, która razem z gospodynią podgląda gości lokatorów i donosi jej, co widziała.",
+    "synth": "Klitka kucharki, która razem z gospodynią podgląda gości lokatorów, a potem zdaje jej sprawę z tego, co widziała.",
     "char": "P45",
     "desc": null,
     "nodesc": "Powieść wymienia tylko „klitkę” (u Bortnowskiej: „poddasze”); wnętrza nie opisuje.",
@@ -1145,7 +1145,7 @@
    },
    "goriot": {
     "floor": "3. piętro",
-    "synth": "Najnędzniejszy pokój domu zajmuje człowiek, który oddał córkom cały majątek. To jedyne mieszkanie lokatora opisane w powieści przedmiot po przedmiocie.",
+    "synth": "Najnędzniejszy pokój w domu zajmuje człowiek, który oddał córkom cały majątek. To jedyne mieszkanie lokatora, którego wyposażenie narrator opisuje tak szczegółowo.",
     "char": "P35",
     "desc": "P36",
     "plan": {
@@ -1458,7 +1458,7 @@
    },
    "vautrin": {
     "floor": "2. piętro",
-    "synth": "Najsilniejsza postać domu mieszka na drugim piętrze za 72 franki miesięcznie. Powieść nie opisuje jego pokoju, za to bardzo dokładnie jego wygląd.",
+    "synth": "Najsilniejszy z mieszkańców domu zajmuje pokój na drugim piętrze za 72 franki miesięcznie. Narrator nie opisuje tego pokoju, za to bardzo dokładnie przedstawia wygląd Vautrina.",
     "char": "P32",
     "desc": null,
     "nodesc": "Powieść nie opisuje wnętrza tego mieszkania.",
@@ -2070,7 +2070,7 @@
   {
    "id": "goriot",
    "name": "Ojciec Goriot",
-   "role": "Dawny fabrykant makaronu i handlarz mąki, od 1813 roku lokator pani Vauquer; oddał córkom majątek.",
+   "role": "Dawny fabrykant makaronu i handlarz mąką, od 1813 roku lokator pani Vauquer. Oddał córkom majątek.",
    "refs": [
     "P15",
     "G17",
@@ -2336,7 +2336,7 @@
    "from": "beauseant",
    "to": "rastignac",
    "type": "mentoring",
-   "label": "wprowadza do świata i uczy jego reguł",
+   "label": "wprowadza go do towarzystwa i uczy jego reguł",
    "refs": [
     "G04",
     "G05"
@@ -2370,7 +2370,7 @@
    "from": "rastignac",
    "to": "delfina",
    "type": "erotyka",
-   "label": "kochanek; przez nią wchodzi do świata",
+   "label": "kochanek; dzięki niej wchodzi do wyższych sfer",
    "refs": [
     "G32"
    ]
@@ -2435,7 +2435,7 @@
    "from": "vauquer",
    "to": "goriot",
    "type": "ekonomia",
-   "label": "traktuje go według wysokości opłat",
+   "label": "traktuje go zależnie od tego, ile płaci",
    "refs": [
     "G18",
     "G35"
@@ -2457,7 +2457,7 @@
   {
    "id": "posag",
    "name": "Posag",
-   "def": "Majątek wnoszony przez kobietę decyduje o jej wartości na rynku małżeńskim i przechodzi pod kontrolę męża.",
+   "def": "Majątek, który kobieta wnosi do małżeństwa, decyduje o jej atrakcyjności jako kandydatki na żonę i przechodzi pod kontrolę męża.",
    "areas": [
     5,
     12
@@ -2472,7 +2472,7 @@
   {
    "id": "dlug",
    "name": "Dług",
-   "def": "Weksel i pożyczka podtrzymują pozór zamożności, a ich koszt przerzucany jest na bliskich.",
+   "def": "Weksle i pożyczki pozwalają uchodzić za zamożnego człowieka, lecz długi często muszą spłacać bliscy.",
    "areas": [
     12,
     13,
@@ -2486,7 +2486,7 @@
   {
    "id": "dziedziczenie",
    "name": "Dziedziczenie",
-   "def": "Spadek zmienia pozycję osoby z dnia na dzień i staje się celem intrygi.",
+   "def": "Spadek może z dnia na dzień zmienić pozycję społeczną człowieka. Dlatego bohaterowie uciekają się do intryg, by go zdobyć.",
    "areas": [
     7,
     12
@@ -2500,7 +2500,7 @@
   {
    "id": "reputacja",
    "name": "Reputacja",
-   "def": "Dobre imię jest kapitałem, który trzeba chronić przed skandalem, nawet za cenę długów.",
+   "def": "Bohaterowie bronią dobrego imienia przed skandalem, nawet jeśli muszą się z tego powodu zadłużyć.",
    "areas": [
     16,
     6
@@ -2513,7 +2513,7 @@
   {
    "id": "salon",
    "name": "Salon",
-   "def": "Salon jest miejscem wymiany: tam zapadają decyzje o tym, kto należy do towarzystwa.",
+   "def": "W salonach rozstrzyga się, kto zostanie przyjęty do towarzystwa.",
    "areas": [
     1,
     2,
@@ -2541,7 +2541,7 @@
   {
    "id": "wykluczenie",
    "name": "Wykluczenie",
-   "def": "Kto traci pieniądze lub pochodzenie zdradza się nazwiskiem, ten zostaje odsunięty.",
+   "def": "Kto traci majątek lub zdradza nazwiskiem pochodzenie uznawane przez elity za niewłaściwe, zostaje wykluczony z towarzystwa.",
    "areas": [
     15,
     1,
@@ -2557,7 +2557,7 @@
   {
    "id": "koszt-kariery",
    "name": "Koszt kariery",
-   "def": "Wejście do świata wymaga wydatków, które ponosi rodzina, kochanka albo cudza krzywda.",
+   "def": "Za wejście do wyższych sfer płaci często nie sam kandydat: wydatki pokrywa jego rodzina lub kochanka, a awans może też odbywać się czyimś kosztem.",
    "areas": [
     12,
     14,
@@ -2593,7 +2593,7 @@
     },
     {
      "ref": "G34",
-     "text": "Pensjonariusze drwią z niego jako z otępiałego starca."
+     "text": "Pensjonariusze biorą go za otępiałego starca i drwią z niego."
     },
     {
      "ref": "G08",
@@ -2627,7 +2627,7 @@
     },
     {
      "ref": "G26",
-     "text": "Prosi rodzinę o pieniądze na wejście do świata."
+     "text": "Prosi rodzinę o pieniądze, by móc bywać w wyższych sferach."
     },
     {
      "ref": "P05",
@@ -2639,7 +2639,7 @@
     },
     {
      "ref": "G32",
-     "text": "Wchodzi do świata u boku Delfiny."
+     "text": "Wchodzi do wyższych sfer u boku Delfiny."
     },
     {
      "ref": "G40",
@@ -2657,7 +2657,7 @@
     },
     {
      "ref": "G30",
-     "text": "Proponuje układ: milion posagu za dwieście tysięcy prowizji."
+     "text": "Proponuje układ: milion franków posagu za dwieście tysięcy franków prowizji."
     },
     {
      "ref": "G13",
@@ -2683,7 +2683,7 @@
    "steps": [
     {
      "ref": "P05",
-     "text": "Odmawia „zabicia mandaryna”, czyli korzyści kosztem cudzego życia."
+     "text": "Nie zgadza się na „zabicie mandaryna”, czyli zdobycie korzyści kosztem cudzego życia."
     },
     {
      "ref": "G15",
@@ -2790,7 +2790,7 @@
    "id": "T07",
    "mod": "kontekst",
    "typ": "kontekst",
-   "text": "Boy wskazuje cykl otwierany przez „Ojca Goriot” jako najlepszy punkt wejścia w „Komedię ludzką”; dalsze losy pani de Beauséant zawiera „Kobieta porzucona”.",
+   "text": "Boy uważa, że od cyklu otwieranego przez „Ojca Goriot” najlepiej zacząć lekturę „Komedii ludzkiej”. Dalsze losy pani de Beauséant poznajemy w „Kobiecie porzuconej”.",
    "source": {
     "id": "S-BOY-BALZAK",
     "loc": "przypis w rozdz. 8, s. 109 druku"
@@ -2875,7 +2875,7 @@
    "id": "T13",
    "mod": "paryz",
    "typ": "fakt",
-   "text": "Piętro w pensjonacie odpowiada wysokości opłaty: Goriot zubożały przenosi się z pierwszego na drugie, a potem na trzecie piętro.",
+   "text": "Wysokość opłat w pensjonacie zależy od piętra. W miarę jak Goriot ubożeje, przenosi się z pierwszego na drugie, a następnie na trzecie piętro.",
    "refs": [
     "G18",
     "G19"
@@ -2962,7 +2962,7 @@
    "id": "T18",
    "mod": "paryz",
    "typ": "interpretacja",
-   "text": "Finałowy widok z cmentarza Père-Lachaise zamyka przestrzeń powieści: Rastignac patrzy na dzielnicę wielkiego świata między placem Vendôme a Inwalidami, czyli na cel, a nie na pensjonat.",
+   "text": "W ostatniej scenie Rastignac patrzy z cmentarza Père-Lachaise na dzielnicę wielkiego świata, między placem Vendôme a Inwalidami. Patrzy na cel swoich ambicji, nie na pensjonat.",
    "refs": [
     "P11",
     "G40"
@@ -3079,7 +3079,7 @@
    "id": "T25",
    "mod": "bohaterowie",
    "typ": "interpretacja",
-   "text": "Rastignac jest bohaterem „zawieszonym”: oderwał się od swojej klasy, ale nie został jeszcze w pełni przyjęty przez wyższe sfery.",
+   "text": "Rastignac pozostaje „zawieszony” między dwiema warstwami społecznymi: oderwał się od własnej, ale wyższe sfery nie przyjęły go jeszcze w pełni.",
    "source": {
     "id": "S-HZ2018",
     "loc": "s. 110"
@@ -3133,7 +3133,7 @@
    "id": "T28",
    "mod": "mechanizmy",
    "typ": "interpretacja",
-   "text": "Wspomnienie nazwiska Goriota w salonie de Restaud zamyka Rastignacowi drzwi tego domu: pochodzenie z handlu jest w tym świecie piętnem.",
+   "text": "Wzmianka o Goriocie w salonie państwa de Restaud zamyka Rastignacowi drzwi tego domu. W tym środowisku pochodzenie z rodziny kupieckiej jest piętnem.",
    "refs": [
     "G10",
     "G11"
@@ -3157,7 +3157,7 @@
    "id": "T29",
    "mod": "mechanizmy",
    "typ": "interpretacja",
-   "text": "Rastignac nie przyjmuje ofiary z brata Wiktoryny, wybiera bardziej akceptowaną w epoce drogę awansu — związek z żoną bankiera.",
+   "text": "Rastignac odrzuca plan zabicia brata Wiktoryny. Wybiera bardziej akceptowaną w tej epoce drogę awansu — związek z żoną bankiera.",
    "source": {
     "id": "S-HZ2019",
     "loc": "s. 15"
@@ -3217,7 +3217,7 @@
    "id": "T32",
    "mod": "mechanizmy",
    "typ": "interpretacja",
-   "text": "Bianchon stanowi miarę, wobec której widać koszt wyborów Rastignaca: odrzuca korzyść okupioną cudzym życiem i bezinteresownie opiekuje się Goriotem.",
+   "text": "Na tle postawy Bianchona widać moralną cenę wyborów Rastignaca. Bianchon odrzuca korzyść okupioną cudzym życiem i bezinteresownie opiekuje się Goriotem.",
    "refs": [
     "P05",
     "G15",
@@ -3247,7 +3247,7 @@
    "id": "T34",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Realizm Balzaka nie jest kopiowaniem rzeczywistości: postacie powstają syntetycznie, a obserwacja łączy się z intuicją poety.",
+   "text": "Realizm Balzaka nie polega na kopiowaniu rzeczywistości. Pisarz tworzy postacie, łącząc różne obserwacje z intuicją poety.",
    "source": {
     "id": "S-BOY-BALZAK",
     "quote": "Bo to nie jest zwykła obserwacja realisty, — to intuicja poety."
@@ -3286,7 +3286,7 @@
    "id": "T37",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Kilka akapitów o kolejnych latach Goriota w pensjonacie zawiera w zalążku całą jego przemianę; upadek pokazany jest przez zmiany stroju, wyglądu i mieszkania.",
+   "text": "W kilku akapitach o kolejnych latach Goriota w pensjonacie narrator zarysowuje całą jego przemianę. Upadek Goriota widać w zmianach stroju, wyglądu i mieszkania.",
    "refs": [
     "G17",
     "G18",
@@ -3305,7 +3305,7 @@
    "id": "T38",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Wszystkie główne postacie łączą pensjonat Vauquer ze światem zewnętrznym: wielowątkowość ma wspólny punkt w jednym domu.",
+   "text": "Wszystkie główne postacie łączą pensjonat pani Vauquer ze światem poza nim. W tym domu zbiegają się różne wątki powieści.",
    "source": {
     "id": "S-VINC",
     "loc": "s. 3"
@@ -3388,7 +3388,7 @@
    "id": "T43",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Dzieje Goriota i małżeństwa jego córek poznajemy z retrospekcji wstawionej w bieg akcji; przeszłość wyjaśnia teraźniejszą nędzę.",
+   "text": "Retrospekcja przerywa tok akcji, by opowiedzieć o przeszłości Goriota i małżeństwach jego córek. Dzięki niej rozumiemy, dlaczego Goriot żyje teraz w nędzy.",
    "refs": [
     "G03"
    ],
@@ -3604,7 +3604,7 @@
    "work": "Bolesław Prus, „Lalka”",
    "theme": "pieniądz i pozycja",
    "common": "Majątek nie wystarcza, by zostać przyjętym przez arystokrację; liczą się pochodzenie i salon.",
-   "diff": "Goriot oddaje pieniądze, by córki weszły wyżej, a sam zostaje wykluczony; Wokulski zdobywa majątek, by zbliżyć się do Izabeli, i przekonuje się, że arystokratyczny świat go nie przyjmie.",
+   "diff": "Goriot oddaje pieniądze, by córki mogły wejść do wyższych sfer, a sam zostaje wykluczony. Wokulski zdobywa majątek, by zbliżyć się do Izabeli, i przekonuje się, że arystokracja go nie przyjmie.",
    "refs": [
     "G03",
     "G10"
@@ -3616,7 +3616,7 @@
    "work": "William Szekspir, „Król Lear”",
    "theme": "ojcostwo i utrata władzy",
    "common": "Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony.",
-   "diff": "Lear traci królestwo i władzę polityczną; Goriot jest mieszczaninem, a jego upadek przebiega w realiach finansowych i obyczajowych Paryża.",
+   "diff": "Lear traci królestwo i władzę polityczną. Goriot jest mieszczaninem, a o jego upadku decydują pieniądze i obyczaje paryskich wyższych sfer.",
    "refs": [
     "P09",
     "P08",
@@ -3644,7 +3644,7 @@
    "id": "C04",
    "work": "Fiodor Dostojewski, „Zbrodnia i kara”",
    "theme": "moralny koszt korzyści",
-   "common": "Pytanie, czy wolno poświęcić cudze życie dla dobra własnego lub bliskich, pada w rozmowie młodych ludzi: Rastignaca z Bianchonem oraz studenta z oficerem, którą podsłuchuje Raskolnikow.",
+   "common": "Czy wolno poświęcić cudze życie dla dobra własnego lub bliskich? W „Ojcu Goriot” rozmawiają o tym Rastignac i Bianchon, a w „Zbrodni i karze” student i oficer, których rozmowę podsłuchuje Raskolnikow.",
    "diff": "Rastignac nie zabija i odrzuca plan Vautrina, choć z niego korzysta; Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje.",
    "refs": [
     "P05",
@@ -3679,7 +3679,7 @@
  "cards": [
   {
    "id": "goriot",
-   "short": "Dawny handlarz mąki, który oddał córkom cały majątek i umiera w nędzy, opuszczony przez nie.",
+   "short": "Dawny handlarz mąką, który oddał córkom cały majątek i umiera w nędzy, opuszczony przez nie.",
    "text": "P35",
    "room": "goriot",
    "arc": "goriot",
@@ -3691,7 +3691,7 @@
   },
   {
    "id": "rastignac",
-   "short": "Ubogi student z prowincji, który poznając Paryż uczy się, ile kosztuje awans — i postanawia ten koszt ponieść.",
+   "short": "Ubogi student z prowincji. Poznając Paryż, dowiaduje się, jaką cenę trzeba zapłacić za awans społeczny, i postanawia ją zapłacić.",
    "text": "P33",
    "room": "rastignac",
    "arc": "rastignac",

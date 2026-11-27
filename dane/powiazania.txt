@@ -16,7 +16,7 @@ G06 | 21 | Posługiwanie się pseudonimami
 G07 | 7 | Przyjmowanie osieroconych
 G08 G09 | 12 | Sprzedawanie i przetapianie sreber
 G10 G11 G36 | 15
-G12 G14 | 5 | Uzależnianie atrakcyjności
+G12 G14 | 5 | Ocenianie kandydatek na żony
 G13 G14 | 16 | Pojedynkowanie się na broń białą
 G15 | 18 | Stosowanie synapizmów
 G15 | 18 | Wzywanie lekarza do domu
@@ -47,7 +47,7 @@ G23 | 12 | Inwestowanie pieniędzy żony
 G24 | 21
 G25 | 21 | Piętnowanie skazańców
 G26 | 7 | Gromadzenie oszczędności
-G26 G27 | 7 | Składanie ofiar materialnych
+G26 G27 | 7 | Poświęcanie oszczędności
 G26 | 20 | Prowadzenie regularnej korespondencji
 G26 | 7-14
 G28 G29 | 14 | Wieloletnie pokonywanie
