@@ -242,7 +242,8 @@
       }
       row.append(lab, rooms); house.append(row);
     }
-    const drawing = houseDrawing(groups, (r, f, b) => { show(r, f, b); if (innerWidth < 1000) side.scrollIntoView({ block: 'start' }); });
+    const pickRoom = (r, f, b) => { show(r, f, b); if (innerWidth < 1000) side.scrollIntoView({ block: 'start' }); };
+    const drawing = houseIllustrated(groups, pickRoom);
     const moves = el('div', 'moves');
     for (const m of P.moves) {
       const a = el('article', 'move'), ol = el('ol');
@@ -344,6 +345,68 @@
     // podpisy pięter
     for (const [t, y] of [['poddasze', 180], ['3. piętro', 318], ['2. piętro', 458], ['1. piętro', 598], ['parter', 738]]) svg.append(S('text', { x: 862, y, class: 'hcap', 'text-anchor': 'start', transform: `rotate(90 862 ${y})` }, t));
     const fig = document.createElement('figure'); fig.className = 'hfig'; fig.append(svg);
+    return fig;
+  }
+  /* ---------- ilustrowany przekrój domu: warstwy dzień/wieczór, mieszkańcy, dym, płomienie ----------
+     współrzędne w tysięcznych kadru (obraz 1:1, img/dom; tools/buduj_dom.py) */
+  function houseIllustrated(groups, pick) {
+    const D = 'img/dom/';
+    const ROOMS = [
+      ['krzysztof', 261, 111, 399, 236], ['suszarnia', 399, 111, 776, 236], ['sylwia', 776, 111, 926, 236],
+      ['michonneau', 199, 246, 344, 396], ['goriot', 344, 246, 585, 396], ['rastignac', 585, 246, 755, 396], ['wolny', 828, 246, 991, 396],
+      ['poiret', 199, 404, 432, 549], ['vautrin', 432, 404, 755, 549],
+      ['vauquer', 199, 556, 406, 701], ['couture', 406, 556, 755, 701], ['couture', 828, 556, 991, 701],
+      ['salon', 199, 709, 440, 906], ['jadalnia', 440, 709, 701, 906], ['kuchnia', 774, 709, 991, 906]
+    ];
+    // postać: [plik, środek x, linia podłogi, wysokość]
+    const FIG = [
+      ['michonneau', 330, 387, 106], ['goriot', 470, 390, 90], ['rastignac', 680, 389, 80],
+      ['poiret', 300, 544, 106], ['vautrin', 622, 547, 96],
+      ['vauquer', 372, 697, 104], ['wiktoryna', 585, 697, 82], ['couture', 662, 697, 84],
+      ['krzysztof', 737, 893, 106], ['sylwia', 885, 893, 106]
+    ];
+    const FLAME = [[274, 322], [701, 306], [297, 610], [460, 745]];
+    const fig = el('figure', 'hill'), st = el('div', 'hstage');
+    const pct = v => v / 10 + '%';
+    const img = (cls, src, alt) => { const i = el('img', cls); i.src = src; i.alt = alt || ''; i.decoding = 'async'; i.draggable = false; return i; };
+    const day = img('hbase', D + 'dom_dzien-1000.webp', 'Przekrój pensjonatu pani Vauquer: poddasze, trzy piętra i parter z salonem, jadalnią i kuchnią; z lewej ogródek');
+    day.srcset = `${D}dom_dzien-1000.webp 1000w, ${D}dom_dzien-2000.webp 2000w`; day.sizes = '(max-width: 1000px) 100vw, 50vw'; day.width = day.height = 1000;
+    const eve = img('heve', D + 'dom_wieczor-1000.webp'); eve.srcset = `${D}dom_wieczor-1000.webp 1000w, ${D}dom_wieczor-2000.webp 2000w`; eve.sizes = day.sizes; eve.loading = 'lazy'; eve.setAttribute('aria-hidden', 'true');
+    st.append(day, eve);
+    fig.classList.add('loading'); const ready = () => fig.classList.remove('loading');
+    if (day.complete && day.naturalWidth) ready(); else { day.addEventListener('load', ready); day.addEventListener('error', ready); }
+    const fx = el('div', 'hfx'); fx.setAttribute('aria-hidden', 'true');
+    for (const [x, y, d] of [[262, 16, 0], [940, 14, 3.1]]) {
+      const sm = el('div', 'hsmoke' + (x > 500 ? ' flip' : '')); sm.style.left = pct(x); sm.style.top = pct(y); sm.style.animationDelay = `-${d}s`;
+      sm.append(img('', D + 'efekt_dym_1.webp'), img('', D + 'efekt_dym_2.webp')); fx.append(sm);
+    }
+    FLAME.forEach(([x, y], i) => {
+      const f = el('div', 'hflame'); f.style.left = pct(x); f.style.top = pct(y); f.style.animationDelay = `-${i * .37}s`;
+      f.append(el('span', 'hglow'), img('', D + 'efekt_plomien_' + (i % 3 + 1) + '.webp')); fx.append(f);
+    });
+    for (const [n, x, y, h] of FIG) {
+      const p = img('hperson', D + 'postac_' + n + '.webp'); p.style.left = pct(x); p.style.top = pct(y - h); p.style.height = pct(h);
+      p.style.animationDelay = `-${(x * 7 % 50) / 10}s`; p.dataset.room = n === 'wiktoryna' || n === 'couture' ? 'couture' : n; fx.append(p);
+    }
+    const cat = el('div', 'hcat'); cat.append(img('', D + 'postac_kot.webp')); fx.append(cat);
+    st.append(fx);
+    const hot = el('div', 'hhot');
+    for (const [id, x0, y0, x1, y1] of ROOMS) {
+      const info = groups.get(id); if (!info) continue;
+      const b = el('button', 'hroom'); b.type = 'button'; b.dataset.room = id;
+      Object.assign(b.style, { left: pct(x0), top: pct(y0), width: pct(x1 - x0), height: pct(y1 - y0) });
+      b.setAttribute('aria-label', `${info[0].name} — ${info[1].name}`);
+      b.append(el('span', 'hlabel', { michonneau: 'Michonneau', goriot: 'Goriot', rastignac: 'Rastignac', wolny: 'pokój wolny', vauquer: 'pani Vauquer', couture: 'Couture i Wiktoryna' }[id] || info[0].name));
+      b.addEventListener('click', () => pick(...info));
+      hot.append(b);
+    }
+    st.append(hot);
+    const bar = el('div', 'hbar'), tday = btn('htime', 'Dzień'), teve = btn('htime', 'Wieczór');
+    const setTime = night => { fig.classList.toggle('night', night); tday.setAttribute('aria-pressed', String(!night)); teve.setAttribute('aria-pressed', String(night)); };
+    tday.addEventListener('click', () => setTime(false)); teve.addEventListener('click', () => setTime(true));
+    bar.append(tday, teve); setTime(false);
+    const cap = el('figcaption', 'hcredit', 'Ilustracja wygenerowana (ChatGPT) według opisów z powieści; kolejność pokoi na piętrach to rekonstrukcja.');
+    fig.append(st, bar, cap);
     return fig;
   }
   M.paryz = () => [
