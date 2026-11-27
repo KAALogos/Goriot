@@ -68,10 +68,11 @@ for ch, s in SEL['cards'].items():
     var = [v for v in s.get('variants', []) if v in crops or item(v)]
     cards[ch] = {'portrait': por, 'variants': var}
     used.update([por] + var)
+house = {k: v for k, v in SEL.get('house', {}).items() if item(v)}
 gallery = [g for g in SEL.get('gallery', []) if g in MAN]
 if err:
     print('BŁĘDY', *err, sep='\n  '); sys.exit(1)
-(R / 'quint.js').write_text('window.QUINT=' + json.dumps({'credit': SEL['credit'], 'items': items, 'crops': crops, 'cards': cards, 'gallery': gallery}, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8', newline='\n')
+(R / 'quint.js').write_text('window.QUINT=' + json.dumps({'credit': SEL['credit'], 'items': items, 'crops': crops, 'cards': cards, 'house': house, 'gallery': gallery}, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8', newline='\n')
 (OUT / 'LICENCJE.md').write_text('# Ilustracje Jean-Paula Quinta do „Le Père Goriot” (Paryż, Kieffer, 1922)\n\nŹródło: Maison de Balzac, Paris Musées (IIIF). Licencja: CC0 Paris Musées / Maison de Balzac. Wersje do sieci zmniejszone (WebP 700 px, JPG do 2160 px); kadry postaci wycięte z ilustracji grupowych bez retuszu. Oryginały i pełne metadane: zrodla_obrazy/quint/manifest.json (poza repozytorium).\n\n' +
                                '\n'.join(f"- {i['img']['web']['src'].split('/')[-1]} — {i['title']}" + (f" ({i['desc']})" if i['desc'] else '') + f". {i['url']} · {i['rights']}" for i in items.values()) +
                                '\n\n## Kadry\n' + '\n'.join(f"- {c['id']}: z {c['of']} — {c['why']}" for c in crops.values()) + '\n', encoding='utf-8')

@@ -354,6 +354,35 @@
   let focusChar = () => { };
   const QU = window.QUINT || null;
   const qimg = id => QU && (QU.crops[id] ? { ...QU.crops[id], ...QU.items[QU.crops[id].of], img: QU.crops[id].img, crop: true } : QU.items[id]);
+  // karuzela ilustracji Quinta w karcie postaci: strzałki, klawiatura, przesunięcie palcem
+  function carousel(name, list) {
+    if (!list.length) return null;
+    const fig = el('figure', 'pport pcar'); fig.tabIndex = 0; fig.setAttribute('role', 'region'); fig.setAttribute('aria-roledescription', 'karuzela'); fig.setAttribute('aria-label', `Ilustracje: ${name}`);
+    const stage = el('div', 'pcstage'), a = el('a'), im = el('img'); a.target = '_blank'; a.rel = 'noopener'; a.append(im); stage.append(a);
+    const cap = el('figcaption'), ttl = el('span', 'pctitle'), src = el('span', 'pcsrc'), pos = el('span', 'pcpos'); pos.setAttribute('aria-live', 'polite');
+    cap.append(ttl, src); fig.append(stage, cap);
+    let i = 0, swiped = false;
+    const show = n => {
+      i = (n + list.length) % list.length; const it = list[i];
+      im.src = it.img.web.src; im.width = it.img.web.w; im.height = it.img.web.h; im.alt = i === 0 ? `${name} na ilustracji Jean-Paula Quinta (1922)` : it.title;
+      a.href = it.img.full.src; ttl.textContent = i === 0 ? '' : it.title;
+      src.replaceChildren(document.createTextNode('Jean-Paul Quint, 1922 · '), qlink(it)); pos.textContent = `${i + 1} / ${list.length}`;
+      if (list.length > 1) new Image().src = list[(i + 1) % list.length].img.web.src;
+    };
+    if (list.length > 1) {
+      const prev = btn('pcbtn pcprev', '‹', () => show(i - 1)), next = btn('pcbtn pcnext', '›', () => show(i + 1));
+      prev.setAttribute('aria-label', 'Poprzednia ilustracja'); next.setAttribute('aria-label', 'Następna ilustracja');
+      stage.append(prev, next); cap.prepend(pos);
+      fig.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') { show(i - 1); e.preventDefault(); } else if (e.key === 'ArrowRight') { show(i + 1); e.preventDefault(); } });
+      let x0 = null;
+      stage.addEventListener('pointerdown', e => { x0 = e.clientX; swiped = false; });
+      stage.addEventListener('pointerup', e => { if (x0 !== null && Math.abs(e.clientX - x0) > 40) { swiped = true; show(i + (e.clientX < x0 ? 1 : -1)); } x0 = null; });
+      a.addEventListener('click', e => { if (swiped) { e.preventDefault(); swiped = false; } });
+      a.addEventListener('dragstart', e => e.preventDefault());
+    }
+    show(0);
+    return fig;
+  }
   const qlink = (it, txt) => { const a = el('a', '', txt || 'Maison de Balzac, CC0'); a.href = it.url; a.target = '_blank'; a.rel = 'noopener'; return a; };
   M.bohaterowie = () => {
     const grid = el('div', 'pcards'), relWrap = el('div'), filt = el('div', 'filterbar'), list = el('div', 'rels');
@@ -367,10 +396,7 @@
       const med = el('div', 'pmed'); med.append(el('span', '', ini.split(/\s+/).filter(w => /^[A-ZŻŹĆŚŁÓ]/.test(w)).map(w => w[0]).slice(0, 2).join('')));
       const head = el('header', 'phead'); head.append(med, el('h3', '', ch.name));
       const QC = QU && QU.cards[c.id];
-      if (QC && QC.portrait) {
-        const pi = qimg(QC.portrait); if (pi) {
-          const fig = el('figure', 'pport'); const a = el('a'); a.href = pi.img.full.src; a.target = '_blank'; a.rel = 'noopener'; const big = el('img'); big.src = pi.img.web.src; big.width = pi.img.web.w; big.height = pi.img.web.h; big.loading = 'lazy'; big.alt = ch.name + ' na ilustracji Jean-Paula Quinta (1922)'; a.append(big); fig.append(a);
-          const cap = el('figcaption'); cap.append(document.createTextNode('Jean-Paul Quint, 1922 · '), qlink(pi)); fig.append(cap); card.append(fig); } }
+      if (QC && QC.portrait) { const car = carousel(ch.name, [QC.portrait, ...QC.variants].map(qimg).filter(Boolean)); if (car) card.append(car); }
       card.append(head, el('p', 'prole', ch.role), el('p', 'pshort', c.short));
       const q = el('div', 'pquote'); q.append(Gx.quoteBox(c.text)); card.append(q);
       const facts = el('div', 'pfacts');
@@ -380,12 +406,6 @@
       const others = [...new Set(rel.map(r => r.from === c.id ? r.to : r.from))].filter(id => O.cards.some(x => x.id === id));
       if (others.length) { const w = el('div', 'prel'); w.append(el('span', 'plab', 'Powiązania:')); others.forEach(id => w.append(btn('pname', CH.get(id).name.replace(/^(Ojciec|Pani|Panna|Wicehrabina) /, ''), () => { const n = document.getElementById('postac-' + id); n.scrollIntoView({ block: 'center' }); n.classList.add('flash'); setTimeout(() => n.classList.remove('flash'), 1500); }))); facts.append(w); }
       card.append(facts);
-      if (QC && QC.variants.length) {
-        const d = el('details', 'more pvar'); d.append(el('summary', '', `Inne ilustracje (${QC.variants.length})`));
-        const g = el('div', 'pvgrid');
-        for (const v of QC.variants) { const it = qimg(v); if (!it) continue; const f = el('figure'); const a = el('a'); a.href = it.img.full.src; a.target = '_blank'; a.rel = 'noopener'; const im = el('img'); im.src = it.img.web.src; im.loading = 'lazy'; im.alt = it.title; a.append(im); f.append(a); const fc = el('figcaption'); fc.append(qlink(it, it.title)); f.append(fc); g.append(f); }
-        d.append(g); card.append(d);
-      }
       const fr = refList(c.refs); if (fr) { const d = el('details', 'more'); d.append(el('summary', '', 'Fragmenty')); d.append(fr); card.append(d); }
       grid.append(card);
     }
@@ -544,7 +564,10 @@
     }
     // miniatura rysunku domu w kaflu pensjonatu
     const houseTile = tiles.querySelector('[data-house] .tpic');
-    if (houseTile) {
+    const QH = window.QUINT && window.QUINT.house && window.QUINT.items[window.QUINT.house.ulica];
+    if (houseTile && QH) {
+      houseTile.style.backgroundImage = `url("${QH.img.full.src}")`; houseTile.style.backgroundPosition = '50% 55%'; houseTile.classList.add('tquint');
+    } else if (houseTile) {
       const groups = new Map(); O.pension.floors.forEach(f => f.rooms.forEach(r => groups.set(r.id, [r, f, null])));
       const fig = houseDrawing(groups, () => { tab('paryz'); scrollTo(0, 0); });
       fig.querySelectorAll('.hroom').forEach(g => { g.removeAttribute('tabindex'); g.removeAttribute('role'); });
