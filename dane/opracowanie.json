@@ -2169,7 +2169,7 @@
   {
    "id": "wiktoryna",
    "name": "Wiktoryna Taillefer",
-   "role": "Córka bankiera, odsunięta przez ojca od majątku; po śmierci brata jego dziedziczka.",
+   "role": "Córka bankiera, odsunięta przez ojca od majątku; po śmierci brata dziedziczka fortuny ojca.",
    "refs": [
     "P18",
     "G07",
@@ -2265,7 +2265,7 @@
   {
    "id": "taillefer",
    "name": "Taillefer",
-   "role": "Bankier, ojciec Wiktoryny i Michała (Fryderyka); syn ginie w pojedynku.",
+   "role": "Bankier, ojciec Wiktoryny i syna, którego Vautrin nazywa Michałem, a służący – panem Fryderykiem; syn ginie w pojedynku.",
    "refs": [
     "P18",
     "G14"
@@ -2404,7 +2404,7 @@
    "from": "michonneau",
    "to": "vautrin",
    "type": "przymus",
-   "label": "usypia go i ujawnia piętno galernika na zlecenie policji",
+   "label": "wywołuje u niego pozorną apopleksję i odsłania piętno galernika na zlecenie policji",
    "refs": [
     "G24",
     "G25"
@@ -2635,7 +2635,7 @@
     },
     {
      "ref": "G31",
-     "text": "Odrzuca zbrodniczy plan Vautrina."
+     "text": "Kuszony przez Vautrina, postanawia w końcu ostrzec Tailleferów przed zbrodnią."
     },
     {
      "ref": "G32",
@@ -2665,7 +2665,7 @@
     },
     {
      "ref": "G24",
-     "text": "Panna Michonneau podaje mu środek usypiający."
+     "text": "Panna Michonneau podaje mu środek, który wywołuje objawy apopleksji."
     },
     {
      "ref": "G25",
@@ -2742,7 +2742,7 @@
    "id": "T04",
    "mod": "kontekst",
    "typ": "kontekst",
-   "text": "Restauracja oznaczała dla młodego pokolenia zamknięcie dróg awansu, jakie dawało Cesarstwo: liczyły się protekcja i urodzenie.",
+   "text": "Według Boya Restauracja zamknęła młodemu pokoleniu drogi awansu, jakie dawało Cesarstwo: zamiast talentu liczyły się protekcja i urodzenie.",
    "source": {
     "id": "S-BOY-BALZAK",
     "quote": "Kazano młodzieży być cierpliwą, posłuszną, nabożną. Brak wszelkiego upustu dla energji, trudność wybicia się, — protekcja i urodzenie w miejsce talentów."
@@ -2760,7 +2760,7 @@
    "id": "T05",
    "mod": "kontekst",
    "typ": "kontekst",
-   "text": "Wywód Vautrina o protekcji pokrywa się z historycznym rozpoznaniem Restauracji jako epoki zablokowanej kariery młodych.",
+   "text": "Wywód Vautrina o protekcji zgadza się z tym, jak Boy opisuje położenie młodzieży za Restauracji.",
    "refs": [
     "G28",
     "G29",
@@ -2804,7 +2804,7 @@
    "id": "T08",
    "mod": "kontekst",
    "typ": "kontekst",
-   "text": "Ojciec Wiktoryny, Taillefer, pojawia się także w noweli „L’Auberge rouge” (1831), gdzie popełnia morderstwo dla pieniędzy; w „Ojcu Goriot” śmierć jego syna zleca Vautrin z tej samej przyczyny.",
+   "text": "Ojciec Wiktoryny, Taillefer, pojawia się także w noweli „L’Auberge rouge” (1831), gdzie popełnia morderstwo dla pieniędzy. W „Ojcu Goriot” jego syn ginie w pojedynku ukartowanym przez Vautrina – też dla pieniędzy, bo ma to dać Wiktorynie spadek.",
    "source": {
     "id": "S-HZ2019",
     "loc": "s. 16"
@@ -2914,7 +2914,7 @@
    "id": "T15",
    "mod": "paryz",
    "typ": "fakt",
-   "text": "Przestrzeń salonów dzieli się na dzielnice: stara arystokracja na przedmieściu Saint-Germain (pani de Beauséant), nowe pieniądze na Chaussée-d’Antin (hrabina de Restaud).",
+   "text": "Przestrzeń salonów dzieli się na dzielnice: stara arystokracja na przedmieściu Saint-Germain (pani de Beauséant), nowe fortuny na Chaussée-d’Antin, gdzie mieszka hrabina de Restaud, córka wzbogaconego kupca.",
    "refs": [
     "P13"
    ],
@@ -3012,7 +3012,7 @@
    "id": "T21",
    "mod": "bohaterowie",
    "typ": "interpretacja",
-   "text": "Rastignac stoi między dwoma wzorami: Vautrinem, symbolem woli mocy, i Goriotem.",
+   "text": "Rastignac stoi między dwoma wzorami: Vautrinem, który chce zdobyć świat siłą i zbrodnią, i Goriotem, który dla miłości oddaje wszystko.",
    "source": {
     "id": "S-VINC",
     "loc": "s. 3"
@@ -3258,7 +3258,7 @@
    "id": "T35",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Balzac prawie nigdy nie portretował prawdziwych osób; swoje postacie składał z wielu obserwacji.",
+   "text": "Według Boya Balzac prawie nigdy nie portretował prawdziwych osób; swoje postacie składał z wielu obserwacji.",
    "source": {
     "id": "S-BOY-BALZAK",
     "quote": "Mimo że nigdy prawie nie portretował z rzeczywistości, ale zawsze tworzył figury swoje syntetycznie"
@@ -3316,7 +3316,7 @@
    "id": "T39",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Powieść Balzaka prawie zawsze daje przekrój społeczny od szczytów do nizin i pokazuje związki między faktami, których zwykle nie widzimy.",
+   "text": "Według Boya powieść Balzaka prawie zawsze daje przekrój społeczny od szczytów do nizin i pokazuje związki między faktami, których zwykle nie widzimy.",
    "source": {
     "id": "S-BOY-BALZAK",
     "quote": "Prawie zawsze daje on przekrój społeczny od szczytów do nizin"
@@ -3363,7 +3363,7 @@
    "id": "T42",
    "mod": "poetyka",
    "typ": "interpretacja",
-   "text": "Bal pożegnalny pani de Beauséant i agonia Goriota tworzą kontrast: obowiązki towarzyskie córek wygrywają z ostatnią wolą ojca.",
+   "text": "Bal pożegnalny pani de Beauséant przypada na czas ciężkiej choroby Goriota: córki wybierają bal zamiast czuwania przy ojcu, a obowiązki towarzyskie wygrywają z jego potrzebami.",
    "rows": [
     [
      2,
@@ -3615,7 +3615,7 @@
    "id": "C02",
    "work": "William Szekspir, „Król Lear”",
    "theme": "ojcostwo i utrata władzy",
-   "common": "Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony.",
+   "common": "Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony. U Szekspira wierna pozostaje odtrącona Kordelia; Goriot takiej córki nie ma.",
    "diff": "Lear traci królestwo i władzę polityczną. Goriot jest mieszczaninem, a o jego upadku decydują pieniądze i obyczaje paryskich wyższych sfer.",
    "refs": [
     "P09",
@@ -3628,7 +3628,7 @@
    "id": "C03",
    "work": "Stendhal, „Czerwone i czarne”",
    "theme": "awans",
-   "common": "Julien Sorel i Rastignac stanowią podstawy literackiego typu karierowicza, który otrzyma nazwę dopiero w 1893 roku.",
+   "common": "Julien Sorel i Rastignac stanowią podstawy literackiego typu karierowicza; francuskie słowo „arriviste” na jego określenie upowszechnia się dopiero około 1893 roku.",
    "diff": "Sorel wywodzi się z niższej warstwy i nie zostaje przyjęty z powodu pochodzenia; Rastignac pochodzi ze zubożałej szlachty i korzysta z koneksji rodzinnych.",
    "refs": [
     "G04",
@@ -3645,7 +3645,7 @@
    "work": "Fiodor Dostojewski, „Zbrodnia i kara”",
    "theme": "moralny koszt korzyści",
    "common": "Czy wolno poświęcić cudze życie dla dobra własnego lub bliskich? W „Ojcu Goriot” rozmawiają o tym Rastignac i Bianchon, a w „Zbrodni i karze” student i oficer, których rozmowę podsłuchuje Raskolnikow.",
-   "diff": "Rastignac nie zabija i odrzuca plan Vautrina, choć z niego korzysta; Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje.",
+   "diff": "Rastignac nie zabija: plan Vautrina go kusi, ale chce ostrzec Tailleferów, a po śmierci brata Wiktoryny nie sięga po jej rękę. Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje.",
    "refs": [
     "P05",
     "P06",
@@ -3759,7 +3759,7 @@
   },
   {
    "id": "wiktoryna",
-   "short": "Wydziedziczona córka bankiera, która po śmierci brata staje się bogatą dziedziczką.",
+   "short": "Córka bankiera, której ojciec nie chce uznać i odsuwa ją od majątku; po śmierci brata staje się bogatą dziedziczką.",
    "text": "P48",
    "room": "couture",
    "arc": null,

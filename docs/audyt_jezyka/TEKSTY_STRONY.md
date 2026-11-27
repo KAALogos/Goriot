@@ -82,7 +82,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F01.pytanie3 | Co łączy wygląd pani Vauquer z wyglądem jej domu? Wskaż podobieństwa. |
 | F01.pytanie4 | Po co tak długi opis przed pojawieniem się bohaterów? Co dzięki niemu wiemy, zanim zacznie się akcja? |
 | F01.zadanie1 | Jak narrator opisuje zapach jadalni? Wymień trzy jego składniki. |
-| F01.klucz1 | Stęchlizna (pleśń), wilgoć i chłód, zapach resztek potraw; całość przypomina kredens i szpital. |
+| F01.klucz1 | Zaduch, stęchlizna i pleśń oraz zmieszany zapach potraw (u Boya: odór sali, z której sprzątnięto resztki obiadu). Do tego chłód i wilgoć, które przenikają ubranie. Całość przypomina izbę czeladną, kredens i szpital. |
 | F01.zadanie2 | Co według narratora zrobi czytelnik po lekturze historii Goriota? |
 | F01.klucz2 | Zje obiad z apetytem, a własną obojętność usprawiedliwi, zarzucając autorowi przesadę. |
 | F01.zadanie3 | Wyjaśnij porównanie ulicy i domu do zejścia do katakumb. Jak przygotowuje ono czytelnika do historii? |
@@ -99,11 +99,11 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F02.zadanie1 | Ile płacą miesięcznie najubożsi lokatorzy, tacy jak Goriot i panna Michonneau? |
 | F02.klucz1 | Czterdzieści pięć franków miesięcznie za stół i mieszkanie. |
 | F02.zadanie2 | Dlaczego Wiktoryna Taillefer mieszka w pensjonacie? |
-| F02.klucz2 | Ojciec nie uznaje jej za córkę, daje jej tylko 600 franków rocznie i chce przekazać majątek synowi; opiekuje się nią pani Couture. |
+| F02.klucz2 | Ojciec nie chce jej uznać (u Boya: podejrzewa, że nie jest jego córką), wyznacza jej tylko 600 franków rocznie i zabiega o to, by cały majątek przekazać synowi; opiekuje się nią pani Couture. |
 | F02.zadanie3 | Narrator twierdzi, że pensjonat odbija w małej skali całe społeczeństwo. Uzasadnij to na przykładach lokatorów. |
 | F02.klucz3 | Wśród mieszkańców są wdowa, sierota, stara panna, urzędnik, student, zrujnowany kupiec i tajemniczy „rentier”. Piętro i wysokość opłat wyznaczają ich pozycję. Jest też ktoś, z kogo wszyscy drwią. |
 | F02.zadanie4 | Które szczegóły portretu Vautrina sugerują, że ukrywa on przeszłość? |
-| F02.klucz4 | Vautrin gwałtownie atakuje prawo i społeczeństwo (jego wypowiedzi mają „juwenalowy” charakter), zna się na najróżniejszych sprawach i odznacza się siłą. Narrator wprost sugeruje, że bohater starannie strzeże jakiejś tajemnicy. |
+| F02.klucz4 | Vautrin wpada w „zapał godny Juwenala” (u Boya: „wybuch godny Juwenala”), czyli gwałtownie i szyderczo atakuje prawo i społeczeństwo; zna się na najróżniejszych sprawach i odznacza się siłą. Narrator wprost sugeruje, że bohater starannie strzeże jakiejś tajemnicy. |
 | F03.tytul | Jak pan Goriot stał się ojcem Goriot |
 | F03.czesc | Retrospekcja |
 | F03.wprowadzenie | Goriot zamieszkał w pensjonacie w 1813 roku jako zamożny kupiec, który wycofał się z interesów. Zajął najlepsze pokoje, ale w następnych latach przenosił się na coraz wyższe piętra i płacił coraz mniej. Lokatorzy snuli coraz bardziej nieprzychylne domysły na temat odwiedzających go eleganckich pań. |
@@ -121,7 +121,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F03.klucz4 | Goriot przestaje pudrować włosy, które okazują się siwe z brudnozielonym odcieniem. Nosi zniszczoną bieliznę i chudnie. Zmiana wyglądu świadczy o utracie pozycji społecznej i o tym, że poświęcił majątek dla córek. |
 | F04.tytul | Noc po balu |
 | F04.czesc | Wejście w świat |
-| F04.wprowadzenie | Rastignac wraca z pierwszego balu u kuzynki, pani de Beauséant, zauroczony hrabiną de Restaud. Nie może zasnąć. Przez szparę w drzwiach widzi, co ojciec Goriot robi w nocy ze srebrnym serwisem. |
+| F04.wprowadzenie | Rastignac wraca z pierwszego balu u kuzynki, pani de Beauséant, zauroczony hrabiną de Restaud. Nie może zasnąć. Przez dziurkę od klucza widzi, co ojciec Goriot robi w nocy ze srebrnym serwisem. |
 | F04.pytanie1 | Co dokładnie robi Goriot i jak reaguje na to, co zrobił? |
 | F04.pytanie2 | Jakie dwie tajemnice pensjonatu odkrywa Rastignac tej nocy? |
 | F04.pytanie3 | Dlaczego narrator zestawia marzenia Rastignaca o karierze z widokiem starca niszczącego srebro? |
@@ -172,7 +172,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F07.pytanie3 | Dlaczego podczas czytania listu matki Rastignac myśli o ojcu Goriocie? |
 | F07.pytanie4 | Jak listy z prowincji pokazują różnicę między domem rodzinnym a Paryżem? |
 | F07.zadanie1 | Co poświęciły matka i ciotka, żeby przysłać pieniądze? |
-| F07.klucz1 | Matka pozbyła się klejnotów, ciotka sprzedała swoje pamiątki („relikwie”). |
+| F07.klucz1 | Matka poświęciła swoje klejnoty, a ciotka – jak domyśla się Eugeniusz – z płaczem sprzedała swoje pamiątki („relikwie”). |
 | F07.zadanie2 | Skąd pieniądze od sióstr? |
 | F07.klucz2 | Z ich oszczędności: Agata zbierała pieniądze, Laura miała mniej, bo wydała na drobiazgi. |
 | F07.zadanie3 | Dlaczego podczas czytania listu matki Rastignac myśli o ojcu Goriocie? |
@@ -202,7 +202,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F09.pytanie3 | Dlaczego Rastignac prosi przyjaciela: „wylecz mnie”? |
 | F09.pytanie4 | Jak ta krótka rozmowa wiąże się z propozycją Vautrina? |
 | F09.zadanie1 | Na jakiego autora powołuje się Rastignac? |
-| F09.klucz1 | Na Rousseau („Czytałeś Roussa?”). |
+| F09.klucz1 | Rousseau („Czytałeś Roussa?” u Bortnowskiej, „Czytałeś Russa?” u Boya). |
 | F09.zadanie2 | Czym według Bianchona jest szczęście? |
 | F09.klucz2 | Mieści się „między podeszwą a wierzchołkiem głowy”: kosztuje milion albo sto luidorów, a odczucie jest takie samo. |
 | F09.zadanie3 | Dlaczego Rastignac wspomina o siostrach? Jak łączy się to z propozycją Vautrina? |
@@ -211,7 +211,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F09.klucz4 | Bianchon wybiera skromne, uczciwe życie i nie zabiłby „mandaryna”. Vautrin uważa zbrodnię za cenę sukcesu. Bianchon jest wzorem moralnym, Vautrin zaś kusicielem. |
 | F10.tytul | Aresztowanie Vautrina |
 | F10.czesc | Kusiciel |
-| F10.wprowadzenie | Panna Michonneau, której policja obiecała nagrodę, potajemnie upewniła się, że Vautrin ma na ramieniu piętno galernika. Tego samego dnia brat Wiktoryny zginął w pojedynku. Przy obiedzie do jadalni wchodzą policjanci. |
+| F10.wprowadzenie | Panna Michonneau, której policja obiecała nagrodę, rano podała Vautrinowi środek wywołujący pozorną apopleksję i sprawdziła, że ma na ramieniu piętno galernika. Tego samego dnia brat Wiktoryny, ranny w pojedynku, zmarł po południu. Przy obiedzie do jadalni wchodzą policjanci. |
 | F10.pytanie1 | Jak Vautrin zachowuje się w chwili aresztowania? Jak opisuje go narrator? |
 | F10.pytanie2 | Kogo Vautrin oskarża o zdradę i co mówi o społeczeństwie i o galernikach? |
 | F10.pytanie3 | Co mówi Rastignacowi na pożegnanie? |
@@ -236,12 +236,12 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F11.zadanie2 | Ile pieniędzy jeszcze potrzebuje Anastazja? |
 | F11.klucz2 | Dwunastu tysięcy franków. |
 | F11.zadanie3 | Co siostry sobie zarzucają? Jak ich kłótnia odsłania ich stosunek do ojca? |
-| F11.klucz3 | Wypominają sobie kochanków (de Marsay, de Trailles) i pieniądze; ojciec jest dla obu źródłem funduszy, a ich spór dosłownie go zabija. |
+| F11.klucz3 | Wypominają sobie kochanków (de Marsay, de Trailles) i pieniądze; ojciec jest dla obu źródłem funduszy. Kłótnia wyczerpuje go do reszty („Zabiłaś ojca, Naściu!” – mówi Delfina), a wkrótce potem Goriot zapada na śmiertelną chorobę. |
 | F11.zadanie4 | Jak Rastignac rozwiązuje sytuację i jaki ma to sens? |
-| F11.klucz4 | Przerabia weksel przygotowany dla Vautrina, tak by opiewał na 12 000 franków i był wystawiony na Goriota. Ratuje starca kosztem własnego zadłużenia i staje się „synem”, który płaci za ojca. |
+| F11.klucz4 | Bierze rewers, który wcześniej wystawił dla Vautrina, poprawia sumę i wypisuje go na imię Goriota na 12 000 franków. Sam staje się dłużnikiem, a Anastazja może ten dokument spieniężyć. Wybawia ojca z sytuacji bez wyjścia kosztem własnego długu i zachowuje się jak „syn”, który płaci za niego. |
 | F12.tytul | Pożegnalny bal |
 | F12.czesc | Ojciec i córki |
-| F12.wprowadzenie | Ojciec Goriot leży chory, a Delfina jedzie z Rastignakiem na bal u pani de Beauséant. Wicehrabina wie już, że kochanek porzuca ją, by zawrzeć korzystne majątkowo małżeństwo. Przyjmuje cały Paryż, a nad ranem wyjeżdża z miasta na zawsze. |
+| F12.wprowadzenie | Ojciec Goriot leży chory, a Delfina jedzie z Rastignakiem na bal u pani de Beauséant. Wicehrabina wie już, że kochanek porzuca ją, by zawrzeć korzystne majątkowo małżeństwo. Przyjmuje cały Paryż, a o piątej rano wyjeżdża do Courcelles w Normandii, by się tam zagrzebać do końca życia. |
 | F12.pytanie1 | Jak goście zachowują się wobec porzuconej gospodyni? |
 | F12.pytanie2 | O co pani de Beauséant prosi Rastignaca i co mu daje na pamiątkę? |
 | F12.pytanie3 | Co przypominają Rastignacowi brylanty obu sióstr na balu? |
@@ -253,10 +253,10 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | F12.zadanie3 | Co przypominają Rastignacowi brylanty sióstr na balu? Dlaczego to zestawienie jest ważne? |
 | F12.klucz3 | Barłóg umierającego ojca. Blask balu i nędza Goriota to dwa bieguny tej samej historii: przepych córek jest opłacony ruiną ojca. |
 | F12.zadanie4 | Co łączy los pani de Beauséant i ojca Goriota? |
-| F12.klucz4 | Oboje kochają bezinteresownie i zostają porzuceni dla pieniędzy (kochanek wybiera bogate małżeństwo, córki wybierają świat). Wielki świat nie zna wdzięczności. |
+| F12.klucz4 | Oboje kochają bezinteresownie i oboje zostają porzuceni, gdy w grę wchodzą pieniądze i pozycja (kochanek wybiera bogate małżeństwo, córki wybierają świat). Można z tego wyprowadzić wniosek, że wielki świat nie zna wdzięczności. |
 | F13.tytul | Śmierć ojca |
 | F13.czesc | Ojciec i córki |
-| F13.wprowadzenie | Goriot umiera w swoim pokoju na trzecim piętrze. Czuwają przy nim tylko Rastignac i Bianchon. Krzysztof wraca od córek sam, a starzec w gorączce na przemian je przeklina i błogosławi. |
+| F13.wprowadzenie | Goriot umiera w swoim pokoju na trzecim piętrze. Czuwają przy nim Rastignac i Bianchon, pomaga im służąca Sylwia. Krzysztof wraca od córek sam, a starzec w gorączce na przemian je przeklina i błogosławi. |
 | F13.pytanie1 | Z jakimi odpowiedziami córek wraca Krzysztof? |
 | F13.pytanie2 | Co Goriot mówi o pieniądzach i o miłości córek? |
 | F13.pytanie3 | Jak zmieniają się jego uczucia w trakcie monologu? |
@@ -296,7 +296,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | postac.anastazja.rola | Starsza córka Goriota, żona hrabiego de Restaud, kochanka Maksyma de Trailles. |
 | postac.delfina.rola | Młodsza córka Goriota, żona bankiera Nucingena; kochanka Rastignaca. |
 | postac.beauseant.rola | Kuzynka Rastignaca, dama z przedmieścia Saint-Germain; porzucona przez markiza d’Ajuda-Pinto. |
-| postac.wiktoryna.rola | Córka bankiera, odsunięta przez ojca od majątku; po śmierci brata jego dziedziczka. |
+| postac.wiktoryna.rola | Córka bankiera, odsunięta przez ojca od majątku; po śmierci brata dziedziczka fortuny ojca. |
 | postac.couture.rola | Wdowa po komisarzu wojskowym, daleka krewna matki Wiktoryny i jej opiekunka. |
 | postac.vauquer.rola | Właścicielka pensjonatu przy ulicy Neuve-Sainte-Geneviève. |
 | postac.michonneau.rola | Lokatorka pensjonatu; za nagrodę pomaga policji zdemaskować Vautrina. |
@@ -304,7 +304,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | postac.nucingen.rola | Bankier, mąż Delfiny; dysponuje jej posagiem. |
 | postac.restaud.rola | Mąż Anastazji. |
 | postac.maksym.rola | Kochanek Anastazji, gracz i dłużnik. |
-| postac.taillefer.rola | Bankier, ojciec Wiktoryny i Michała (Fryderyka); syn ginie w pojedynku. |
+| postac.taillefer.rola | Bankier, ojciec Wiktoryny i syna, którego Vautrin nazywa Michałem, a służący – panem Fryderykiem; syn ginie w pojedynku. |
 | karta.goriot.opis | Dawny handlarz mąką, który oddał córkom cały majątek i umiera w nędzy, opuszczony przez nie. |
 | karta.rastignac.opis | Ubogi student z prowincji. Poznając Paryż, dowiaduje się, jaką cenę trzeba zapłacić za awans społeczny, i postanawia ją zapłacić. |
 | karta.vautrin.opis | Zbiegły galernik, który najlepiej rozumie, jak działa paryski świat, i podsuwa Rastignacowi zbrodniczą drogę na skróty. |
@@ -312,7 +312,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | karta.anastazja.opis | Starsza córka Goriota, hrabina de Restaud, która dla kochanka sprzedaje rodzinne klejnoty. |
 | karta.delfina.opis | Młodsza córka Goriota, żona bankiera; chce wejść do salonów arystokracji i zostaje kochanką Rastignaca. |
 | karta.beauseant.opis | Kuzynka Rastignaca i dama wielkiego świata; uczy go reguł Paryża, a sama zostaje porzucona przez kochanka. |
-| karta.wiktoryna.opis | Wydziedziczona córka bankiera, która po śmierci brata staje się bogatą dziedziczką. |
+| karta.wiktoryna.opis | Córka bankiera, której ojciec nie chce uznać i odsuwa ją od majątku; po śmierci brata staje się bogatą dziedziczką. |
 | karta.couture.opis | Wdowa, która zastępuje Wiktorynie matkę. |
 | karta.vauquer.opis | Właścicielka pensjonatu, która ocenia lokatorów według tego, ile płacą. |
 | karta.michonneau.opis | Stara panna, która za nagrodę pomaga policji wydać Vautrina. |
@@ -328,7 +328,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | relacja.R09 | kochanek; dzięki niej wchodzi do wyższych sfer |
 | relacja.R10 | przez niego zabiega o zaproszenie do pani de Beauséant |
 | relacja.R12 | kuzyn |
-| relacja.R13 | usypia go i ujawnia piętno galernika na zlecenie policji |
+| relacja.R13 | wywołuje u niego pozorną apopleksję i odsłania piętno galernika na zlecenie policji |
 | relacja.R14 | daleka krewna matki, opiekunka |
 | relacja.R15 | odsuwa córkę od majątku na rzecz syna |
 | relacja.R16 | traktuje go zależnie od tego, ile płaci |
@@ -398,14 +398,14 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | los.rastignac.3 | Pani de Beauséant wykłada mu reguły powodzenia. |
 | los.rastignac.4 | Prosi rodzinę o pieniądze, by móc bywać w wyższych sferach. |
 | los.rastignac.5 | Pyta Bianchona o paradoks mandaryna. |
-| los.rastignac.6 | Odrzuca zbrodniczy plan Vautrina. |
+| los.rastignac.6 | Kuszony przez Vautrina, postanawia w końcu ostrzec Tailleferów przed zbrodnią. |
 | los.rastignac.7 | Wchodzi do wyższych sfer u boku Delfiny. |
 | los.rastignac.8 | Po pogrzebie Goriota rzuca Paryżowi wyzwanie i idzie na obiad do Delfiny. |
 | los.vautrin.tytul | Zdemaskowanie Vautrina |
 | los.vautrin.1 | Wykłada Rastignacowi swoją filozofię. |
 | los.vautrin.2 | Proponuje układ: milion franków posagu za dwieście tysięcy franków prowizji. |
 | los.vautrin.3 | Zapowiada pojedynek, który otworzy Wiktorynie drogę do spadku. |
-| los.vautrin.4 | Panna Michonneau podaje mu środek usypiający. |
+| los.vautrin.4 | Panna Michonneau podaje mu środek, który wywołuje objawy apopleksji. |
 | los.vautrin.5 | Na ramieniu ukazuje się piętno galernika. |
 | los.vautrin.6 | Przyznaje się do prawdziwego nazwiska. |
 | los.bianchon.tytul | Bianchon: uczciwa droga |
@@ -422,24 +422,24 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | teza.T02 | Ostatnie wydarzenia rozgrywają się w lutym następnego roku: pani Vauquer wspomina termin wyprowadzki 15 lutego, a mija już osiemnasty dzień miesiąca. |
 | teza.T02.uwaga | Rok 1820 wynika z rachuby: akcja zaczyna się w 1819, listy z domu przychodzą w grudniu, a luty jest następny. |
 | teza.T03 | Powieść powstawała od końca września 1834 do 26 stycznia 1835 roku; tekst zamyka podpis „Saché, wrzesień 1834”. |
-| teza.T04 | Restauracja oznaczała dla młodego pokolenia zamknięcie dróg awansu, jakie dawało Cesarstwo: liczyły się protekcja i urodzenie. |
-| teza.T05 | Wywód Vautrina o protekcji pokrywa się z historycznym rozpoznaniem Restauracji jako epoki zablokowanej kariery młodych. |
+| teza.T04 | Według Boya Restauracja zamknęła młodemu pokoleniu drogi awansu, jakie dawało Cesarstwo: zamiast talentu liczyły się protekcja i urodzenie. |
+| teza.T05 | Wywód Vautrina o protekcji zgadza się z tym, jak Boy opisuje położenie młodzieży za Restauracji. |
 | teza.T06 | Według noty tłumacza w wydaniu z 1938 roku powieść łączy się treścią m.in. ze „Straconymi złudzeniami”, „Blaskami i nędzami życia kurtyzany”, „Ostatnim wcieleniem Vautrina”, „Kobietą porzuconą”, „Gobseckiem” i „Bankiem Nucingena”. |
 | teza.T07 | Boy uważa, że od cyklu otwieranego przez „Ojca Goriot” najlepiej zacząć lekturę „Komedii ludzkiej”. Dalsze losy pani de Beauséant poznajemy w „Kobiecie porzuconej”. |
-| teza.T08 | Ojciec Wiktoryny, Taillefer, pojawia się także w noweli „L’Auberge rouge” (1831), gdzie popełnia morderstwo dla pieniędzy; w „Ojcu Goriot” śmierć jego syna zleca Vautrin z tej samej przyczyny. |
+| teza.T08 | Ojciec Wiktoryny, Taillefer, pojawia się także w noweli „L’Auberge rouge” (1831), gdzie popełnia morderstwo dla pieniędzy. W „Ojcu Goriot” jego syn ginie w pojedynku ukartowanym przez Vautrina – też dla pieniędzy, bo ma to dać Wiktorynie spadek. |
 | teza.T09 | W innych utworach cyklu Rastignac zostaje ministrem i parem Francji. |
 | teza.T10 | Pieniądz jest dla Balzaka siłą przenikającą wszystkie sfery życia, a nie abstrakcyjnym „złotem” dawnej literatury. |
 | teza.T11 | Narrator nazywa Paryż oceanem, którego głębokości nie da się zbadać. |
 | teza.T12 | Dla bohaterów z prowincji Paryż jest jedynym miejscem, w którym można „zrobić karierę”, ale zarazem siłą, która zwykle niszczy przybyszów. |
 | teza.T13 | Wysokość opłat w pensjonacie zależy od piętra. W miarę jak Goriot ubożeje, przenosi się z pierwszego na drugie, a następnie na trzecie piętro. |
 | teza.T14 | W pensjonacie im wyżej, tym biedniej: przeprowadzka piętro wyżej oznacza spadek w hierarchii. |
-| teza.T15 | Przestrzeń salonów dzieli się na dzielnice: stara arystokracja na przedmieściu Saint-Germain (pani de Beauséant), nowe pieniądze na Chaussée-d’Antin (hrabina de Restaud). |
+| teza.T15 | Przestrzeń salonów dzieli się na dzielnice: stara arystokracja na przedmieściu Saint-Germain (pani de Beauséant), nowe fortuny na Chaussée-d’Antin, gdzie mieszka hrabina de Restaud, córka wzbogaconego kupca. |
 | teza.T16 | Vautrin oblicza, że życie młodego eleganta w Paryżu kosztuje dwadzieścia pięć tysięcy franków rocznie, a majątek rodziny Rastignaców przynosi około trzech tysięcy. |
 | teza.T17 | W ujęciu Vautrina Paryż przyjmuje każdego, kto wraca z łowów na miliony, niezależnie od sposobu ich zdobycia. |
 | teza.T18 | W ostatniej scenie Rastignac patrzy z cmentarza Père-Lachaise na dzielnicę wielkiego świata, między placem Vendôme a Inwalidami. Patrzy na cel swoich ambicji, nie na pensjonat. |
 | teza.T19 | W tym samym miejscu Bortnowska nazywa Goriota „ideałem ojcostwa”, a Boy — „Chrystusem ojcostwa”; obie wersje zachowują porównanie z męką Zbawiciela. Formułę „le Christ de la paternité” przytacza też krytyka francuska. |
 | teza.T20 | Umierający Goriot mówi, że społeczeństwo opiera się na ojcostwie i runie, jeśli dzieci nie będą kochać rodziców. |
-| teza.T21 | Rastignac stoi między dwoma wzorami: Vautrinem, symbolem woli mocy, i Goriotem. |
+| teza.T21 | Rastignac stoi między dwoma wzorami: Vautrinem, który chce zdobyć świat siłą i zbrodnią, i Goriotem, który dla miłości oddaje wszystko. |
 | teza.T22 | Vautrin buntuje się przeciw porządkowi społecznemu; Poiret i panna Michonneau to szkodliwa przeciętność. |
 | teza.T23 | Bianchon to „poważny student”, przedstawiciel arystokracji umysłu; Wiktoryna — łagodność, pobożność i rezygnacja. |
 | teza.T24 | Rastignac przez Delfinę wchodzi w świat wielkiej finansjery, a Anastazja wprowadza powieść w świat lichwiarzy. |
@@ -453,14 +453,14 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | teza.T32 | Na tle postawy Bianchona widać moralną cenę wyborów Rastignaca. Bianchon odrzuca korzyść okupioną cudzym życiem i bezinteresownie opiekuje się Goriotem. |
 | teza.T33 | Narrator zwraca się wprost do czytelnika i zapewnia, że opowiadany „dramat” nie jest zmyśleniem. |
 | teza.T34 | Realizm Balzaka nie polega na kopiowaniu rzeczywistości. Pisarz tworzy postacie, łącząc różne obserwacje z intuicją poety. |
-| teza.T35 | Balzac prawie nigdy nie portretował prawdziwych osób; swoje postacie składał z wielu obserwacji. |
+| teza.T35 | Według Boya Balzac prawie nigdy nie portretował prawdziwych osób; swoje postacie składał z wielu obserwacji. |
 | teza.T36 | Postać upodabnia się do otoczenia, więc opis miejsca jest zarazem portretem jego mieszkańców. |
 | teza.T37 | W kilku akapitach o kolejnych latach Goriota w pensjonacie narrator zarysowuje całą jego przemianę. Upadek Goriota widać w zmianach stroju, wyglądu i mieszkania. |
 | teza.T38 | Wszystkie główne postacie łączą pensjonat pani Vauquer ze światem poza nim. W tym domu zbiegają się różne wątki powieści. |
-| teza.T39 | Powieść Balzaka prawie zawsze daje przekrój społeczny od szczytów do nizin i pokazuje związki między faktami, których zwykle nie widzimy. |
+| teza.T39 | Według Boya powieść Balzaka prawie zawsze daje przekrój społeczny od szczytów do nizin i pokazuje związki między faktami, których zwykle nie widzimy. |
 | teza.T40 | Paradoks mandaryna powraca w powieści jako motyw: Bianchon go odrzuca, a odpowiedź Rastignaca przy drugiej rozmowie przestaje być żartem. |
 | teza.T41 | Przypisanie paradoksu mandaryna Rousseau jest wątpliwe: takiego fragmentu nie znaleziono w jego dziełach, a za prawdopodobne źródło uchodzi „Geniusz chrześcijaństwa” Chateaubrianda. |
-| teza.T42 | Bal pożegnalny pani de Beauséant i agonia Goriota tworzą kontrast: obowiązki towarzyskie córek wygrywają z ostatnią wolą ojca. |
+| teza.T42 | Bal pożegnalny pani de Beauséant przypada na czas ciężkiej choroby Goriota: córki wybierają bal zamiast czuwania przy ojcu, a obowiązki towarzyskie wygrywają z jego potrzebami. |
 | teza.T43 | Retrospekcja przerywa tok akcji, by opowiedzieć o przeszłości Goriota i małżeństwach jego córek. Dzięki niej rozumiemy, dlaczego Goriot żyje teraz w nędzy. |
 
 ## Epoka: chronologia
@@ -480,14 +480,14 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | porownanie.C01.wspolne | Majątek nie wystarcza, by zostać przyjętym przez arystokrację; liczą się pochodzenie i salon. |
 | porownanie.C01.roznica | Goriot oddaje pieniądze, by córki mogły wejść do wyższych sfer, a sam zostaje wykluczony. Wokulski zdobywa majątek, by zbliżyć się do Izabeli, i przekonuje się, że arystokracja go nie przyjmie. |
 | porownanie.C02.temat | ojcostwo i utrata władzy |
-| porownanie.C02.wspolne | Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony. |
+| porownanie.C02.wspolne | Ojciec za życia oddaje majątek córkom, a gdy nie ma już nic do dania, zostaje przez nie opuszczony. U Szekspira wierna pozostaje odtrącona Kordelia; Goriot takiej córki nie ma. |
 | porownanie.C02.roznica | Lear traci królestwo i władzę polityczną. Goriot jest mieszczaninem, a o jego upadku decydują pieniądze i obyczaje paryskich wyższych sfer. |
 | porownanie.C03.temat | awans |
-| porownanie.C03.wspolne | Julien Sorel i Rastignac stanowią podstawy literackiego typu karierowicza, który otrzyma nazwę dopiero w 1893 roku. |
+| porownanie.C03.wspolne | Julien Sorel i Rastignac stanowią podstawy literackiego typu karierowicza; francuskie słowo „arriviste” na jego określenie upowszechnia się dopiero około 1893 roku. |
 | porownanie.C03.roznica | Sorel wywodzi się z niższej warstwy i nie zostaje przyjęty z powodu pochodzenia; Rastignac pochodzi ze zubożałej szlachty i korzysta z koneksji rodzinnych. |
 | porownanie.C04.temat | moralny koszt korzyści |
 | porownanie.C04.wspolne | Czy wolno poświęcić cudze życie dla dobra własnego lub bliskich? W „Ojcu Goriot” rozmawiają o tym Rastignac i Bianchon, a w „Zbrodni i karze” student i oficer, których rozmowę podsłuchuje Raskolnikow. |
-| porownanie.C04.roznica | Rastignac nie zabija i odrzuca plan Vautrina, choć z niego korzysta; Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje. |
+| porownanie.C04.roznica | Rastignac nie zabija: plan Vautrina go kusi, ale chce ostrzec Tailleferów, a po śmierci brata Wiktoryny nie sięga po jej rękę. Raskolnikow sam popełnia zbrodnię i ponosi jej konsekwencje. |
 
 ## Obyczaje: mapa i katalog
 
@@ -578,7 +578,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | obszar.05.2 | Ocenianie kandydatek na żony według wysokości posagu — Sytuacja Wiktoryny Taillefer |
 | obszar.05.3 | Zawieranie małżeństw dla awansu społecznego — Małżeństwo Anastazji z hrabią de Restaud |
 | obszar.05.4 | Zawieranie małżeństw dla majątku — Małżeństwo Delfiny z bankierem Nucingenem |
-| obszar.05.5 | Łączenie kapitału mieszczańskiego z tytułem arystokratycznym — Małżeństwa obu córek Goriota |
+| obszar.05.5 | Łączenie mieszczańskiego majątku z tytułem — Anastazja wychodzi za hrabiego de Restaud, Delfina za barona-bankiera Nucingena |
 | obszar.05.6 | Negocjowanie warunków małżeństwa przez rodziny — Planowane małżeństwo markiza d’Ajuda |
 | obszar.05.7 | Zawieranie kontraktów małżeńskich — Kontrakt markiza d’Ajuda i panny de Rochefide |
 | obszar.05.8 | Podpisywanie przez monarchę kontraktów małżeńskich osób z najwyższych sfer — Kontrakt markiza d’Ajuda |
@@ -592,7 +592,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | obszar.05.16 | Wyznaczanie żonie określonej sumy na wydatki osobiste — Suma wypłacana Delfinie przez męża |
 | obszar.05.17 | Ustanawianie rozdzielności majątkowej — Sytuacja prawna Delfiny |
 | obszar.05.18 | Ograniczanie kontaktów żony z jej rodziną — Zięciowie zabraniają córkom otwartego przyjmowania Goriota |
-| obszar.05.19 | Obdarowywanie małżonka w rocznicę ślubu — Srebrny serwis podarowany Goriotowi przez żonę |
+| obszar.05.19 | Obdarowywanie małżonka w rocznicę ślubu — Srebrna czarka ze spodkiem, pierwszy podarek żony Goriota |
 | obszar.06 | Miłość, romanse i życie intymne |
 | obszar.06.1 | Utrzymywanie kochanków przez zamężne arystokratki — Anastazja, Delfina, pani de Beauséant |
 | obszar.06.2 | Utrzymywanie kochanek przez żonatych mężczyzn — Wicehrabia de Beauséant |
@@ -820,7 +820,7 @@ Wszystkie teksty widoczne na stronie poza cytatami z powieści. Kolumna ID słu�
 | obszar.19.15 | Wynajmowanie karawanu — Przewiezienie ciała Goriota |
 | obszar.19.16 | Korzystanie z usług żałobników — Dwóch żałobników odprowadza trumnę |
 | obszar.19.17 | Organizowanie orszaku pogrzebowego — Droga z kościoła na cmentarz Père-Lachaise |
-| obszar.19.18 | Uczestniczenie duchownych i chłopców z chóru w pogrzebie — Nabożeństwo za Goriota |
+| obszar.19.18 | Uczestniczenie duchownych i chłopca z chóru w pogrzebie — Nabożeństwo za Goriota |
 | obszar.19.19 | Śpiewanie psalmów i modlitw żałobnych — Libera i De profundis |
 | obszar.19.20 | Różnicowanie pogrzebów według klas i ceny — Propozycja pogrzebu trzeciej klasy |
 | obszar.19.21 | Uzależnianie rodzaju nabożeństwa od środków finansowych — Zastąpienie mszy tańszym nabożeństwem nieszpornym |

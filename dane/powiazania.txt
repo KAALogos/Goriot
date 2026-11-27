@@ -4,7 +4,7 @@ G01 | 8 | Mieszkanie w pensjonatach
 G02 | 14 | Odkładanie nauki
 G03 | 5 | Zawieranie małżeństw dla awansu
 G03 | 5 | Zawieranie małżeństw dla majątku
-G03 | 5 | Łączenie kapitału
+G03 | 5 | Łączenie mieszczańskiego majątku
 G03 | 5-15
 G04 | 1 | Wprowadzanie młodych ludzi
 G04 | 1 | Posługiwanie się listami polecającymi

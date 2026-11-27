@@ -24,7 +24,7 @@
     {
      "lvl": "P",
      "q": "Jak narrator opisuje zapach jadalni? Wymień trzy jego składniki.",
-     "key": "Stęchlizna (pleśń), wilgoć i chłód, zapach resztek potraw; całość przypomina kredens i szpital.",
+     "key": "Zaduch, stęchlizna i pleśń oraz zmieszany zapach potraw (u Boya: odór sali, z której sprzątnięto resztki obiadu). Do tego chłód i wilgoć, które przenikają ubranie. Całość przypomina izbę czeladną, kredens i szpital.",
      "cite": {
       "bort": "Czuć w niej zaduch, stęchliznę, pleśń",
       "boy": "Odór ten trąci stęchlizną, butwielą, jełkością"
@@ -91,7 +91,7 @@
     {
      "lvl": "P",
      "q": "Dlaczego Wiktoryna Taillefer mieszka w pensjonacie?",
-     "key": "Ojciec nie uznaje jej za córkę, daje jej tylko 600 franków rocznie i chce przekazać majątek synowi; opiekuje się nią pani Couture.",
+     "key": "Ojciec nie chce jej uznać (u Boya: podejrzewa, że nie jest jego córką), wyznacza jej tylko 600 franków rocznie i zabiega o to, by cały majątek przekazać synowi; opiekuje się nią pani Couture.",
      "cite": {
       "bort": "przeznaczał jej tylko sześćset franków rocznie",
       "boy": "wyznaczył córce jedynie sześćset franków rocznie"
@@ -109,7 +109,7 @@
     {
      "lvl": "R",
      "q": "Które szczegóły portretu Vautrina sugerują, że ukrywa on przeszłość?",
-     "key": "Vautrin gwałtownie atakuje prawo i społeczeństwo (jego wypowiedzi mają „juwenalowy” charakter), zna się na najróżniejszych sprawach i odznacza się siłą. Narrator wprost sugeruje, że bohater starannie strzeże jakiejś tajemnicy.",
+     "key": "Vautrin wpada w „zapał godny Juwenala” (u Boya: „wybuch godny Juwenala”), czyli gwałtownie i szyderczo atakuje prawo i społeczeństwo; zna się na najróżniejszych sprawach i odznacza się siłą. Narrator wprost sugeruje, że bohater starannie strzeże jakiejś tajemnicy.",
      "cite": {
       "bort": "w zapał godny Juwenala",
       "boy": "wybuch godny Juwenala"
@@ -179,7 +179,7 @@
    "id": "F04",
    "title": "Noc po balu",
    "part": "Wejście w świat",
-   "lead": "Rastignac wraca z pierwszego balu u kuzynki, pani de Beauséant, zauroczony hrabiną de Restaud. Nie może zasnąć. Przez szparę w drzwiach widzi, co ojciec Goriot robi w nocy ze srebrnym serwisem.",
+   "lead": "Rastignac wraca z pierwszego balu u kuzynki, pani de Beauséant, zauroczony hrabiną de Restaud. Nie może zasnąć. Przez dziurkę od klucza widzi, co ojciec Goriot robi w nocy ze srebrnym serwisem.",
    "bort": [
     62,
     71
@@ -372,7 +372,7 @@
     {
      "lvl": "P",
      "q": "Co poświęciły matka i ciotka, żeby przysłać pieniądze?",
-     "key": "Matka pozbyła się klejnotów, ciotka sprzedała swoje pamiątki („relikwie”).",
+     "key": "Matka poświęciła swoje klejnoty, a ciotka – jak domyśla się Eugeniusz – z płaczem sprzedała swoje pamiątki („relikwie”).",
      "cite": {
       "bort": "Ciotka twa płakała pewnie sprzedając jedną ze swych relikwii",
       "boy": "Ciotka płakała z pewnością, sprzedając swoje relikwie"
@@ -488,7 +488,7 @@
     {
      "lvl": "P",
      "q": "Na jakiego autora powołuje się Rastignac?",
-     "key": "Na Rousseau („Czytałeś Roussa?”).",
+     "key": "Rousseau („Czytałeś Roussa?” u Bortnowskiej, „Czytałeś Russa?” u Boya).",
      "cite": {
       "bort": "Czytałeś Roussa?",
       "boy": "Czytałeś Russa?"
@@ -527,7 +527,7 @@
    "id": "F10",
    "title": "Aresztowanie Vautrina",
    "part": "Kusiciel",
-   "lead": "Panna Michonneau, której policja obiecała nagrodę, potajemnie upewniła się, że Vautrin ma na ramieniu piętno galernika. Tego samego dnia brat Wiktoryny zginął w pojedynku. Przy obiedzie do jadalni wchodzą policjanci.",
+   "lead": "Panna Michonneau, której policja obiecała nagrodę, rano podała Vautrinowi środek wywołujący pozorną apopleksję i sprawdziła, że ma na ramieniu piętno galernika. Tego samego dnia brat Wiktoryny, ranny w pojedynku, zmarł po południu. Przy obiedzie do jadalni wchodzą policjanci.",
    "bort": [
     1143,
     1180
@@ -622,7 +622,7 @@
     {
      "lvl": "R",
      "q": "Co siostry sobie zarzucają? Jak ich kłótnia odsłania ich stosunek do ojca?",
-     "key": "Wypominają sobie kochanków (de Marsay, de Trailles) i pieniądze; ojciec jest dla obu źródłem funduszy, a ich spór dosłownie go zabija.",
+     "key": "Wypominają sobie kochanków (de Marsay, de Trailles) i pieniądze; ojciec jest dla obu źródłem funduszy. Kłótnia wyczerpuje go do reszty („Zabiłaś ojca, Naściu!” – mówi Delfina), a wkrótce potem Goriot zapada na śmiertelną chorobę.",
      "cite": {
       "bort": "pan de Trailles kosztuje mnie przeszło dwieście tysięcy franków",
       "boy": "pan de Trailles kosztuje mnie przeszło dwieście tysięcy"
@@ -631,7 +631,7 @@
     {
      "lvl": "R",
      "q": "Jak Rastignac rozwiązuje sytuację i jaki ma to sens?",
-     "key": "Przerabia weksel przygotowany dla Vautrina, tak by opiewał na 12 000 franków i był wystawiony na Goriota. Ratuje starca kosztem własnego zadłużenia i staje się „synem”, który płaci za ojca.",
+     "key": "Bierze rewers, który wcześniej wystawił dla Vautrina, poprawia sumę i wypisuje go na imię Goriota na 12 000 franków. Sam staje się dłużnikiem, a Anastazja może ten dokument spieniężyć. Wybawia ojca z sytuacji bez wyjścia kosztem własnego długu i zachowuje się jak „syn”, który płaci za niego.",
      "cite": {
       "bort": "zrobił na imię Goriota rewers regularny na dwanaście tysięcy franków",
       "boy": "sporządził zeń prawidłowy akcept na dwanaście tysięcy"
@@ -643,7 +643,7 @@
    "id": "F12",
    "title": "Pożegnalny bal",
    "part": "Ojciec i córki",
-   "lead": "Ojciec Goriot leży chory, a Delfina jedzie z Rastignakiem na bal u pani de Beauséant. Wicehrabina wie już, że kochanek porzuca ją, by zawrzeć korzystne majątkowo małżeństwo. Przyjmuje cały Paryż, a nad ranem wyjeżdża z miasta na zawsze.",
+   "lead": "Ojciec Goriot leży chory, a Delfina jedzie z Rastignakiem na bal u pani de Beauséant. Wicehrabina wie już, że kochanek porzuca ją, by zawrzeć korzystne majątkowo małżeństwo. Przyjmuje cały Paryż, a o piątej rano wyjeżdża do Courcelles w Normandii, by się tam zagrzebać do końca życia.",
    "bort": [
     1584,
     1626
@@ -689,7 +689,7 @@
     {
      "lvl": "R",
      "q": "Co łączy los pani de Beauséant i ojca Goriota?",
-     "key": "Oboje kochają bezinteresownie i zostają porzuceni dla pieniędzy (kochanek wybiera bogate małżeństwo, córki wybierają świat). Wielki świat nie zna wdzięczności.",
+     "key": "Oboje kochają bezinteresownie i oboje zostają porzuceni, gdy w grę wchodzą pieniądze i pozycja (kochanek wybiera bogate małżeństwo, córki wybierają świat). Można z tego wyprowadzić wniosek, że wielki świat nie zna wdzięczności.",
      "cite": {
       "bort": "pudełko, w którym chowałam rękawiczki",
       "boy": "szkatułka, w której chowałam rękawiczki"
@@ -701,7 +701,7 @@
    "id": "F13",
    "title": "Śmierć ojca",
    "part": "Ojciec i córki",
-   "lead": "Goriot umiera w swoim pokoju na trzecim piętrze. Czuwają przy nim tylko Rastignac i Bianchon. Krzysztof wraca od córek sam, a starzec w gorączce na przemian je przeklina i błogosławi.",
+   "lead": "Goriot umiera w swoim pokoju na trzecim piętrze. Czuwają przy nim Rastignac i Bianchon, pomaga im służąca Sylwia. Krzysztof wraca od córek sam, a starzec w gorączce na przemian je przeklina i błogosławi.",
    "bort": [
     1661,
     1690
