@@ -642,6 +642,45 @@
     "Wybierzemy najlepsze spekulacje",
     "w separacji majątkowej."
    ]
+  },
+  {
+   "id": "P50",
+   "title": "Wychowanie córek",
+   "long": false,
+   "bort_range": [
+    "Bogaty był, gdyż dochód jego wynosił",
+    "na dogodzenie rozmaitym zachciankom córek."
+   ],
+   "boy_range": [
+    "Wychowanie córek było oczywiście niedorzeczne.",
+    "aby zadowalać kaprysy córek."
+   ]
+  },
+  {
+   "id": "P51",
+   "title": "Wyznanie na łożu śmierci",
+   "long": false,
+   "bort_range": [
+    "Jam nędznik sprawiedliwie ukarany.",
+    "Ja jeden zawiniłem, lecz zawiniłem przez miłość."
+   ],
+   "boy_range": [
+    "Jestem nędznik, sprawiedliwie jestem ukarany.",
+    "Ja sam zawiniłem swoją miłością."
+   ]
+  },
+  {
+   "id": "P52",
+   "title": "„Zięciowie zabili mi córki”",
+   "long": false,
+   "bort_range": [
+    "Zięciowie zabili mi córki.",
+    "Zięć — to nikczemnik, który psuje nam córkę."
+   ],
+   "boy_range": [
+    "Zięciowie zabili mi córki.",
+    "Zięć, to zbrodniarz, który wszystko zepsuje w waszym dziecku, wszystko skazi."
+   ]
   }
  ],
  "timeline": {
@@ -3958,6 +3997,47 @@
    "arc": null,
    "refs": [
     "G25"
+   ]
+  }
+ ],
+ "problems": [
+  {
+   "id": "milosc",
+   "question": "Czy miłość Goriota niszczy?",
+   "lead": "Goriot oddał córkom cały majątek i umiera sam. Narrator porównuje go do Zbawiciela, a on sam mówi na łożu śmierci, że zepsuł córki. Odpowiedz na pytanie własnymi słowami i oprzyj odpowiedź na tekście.",
+   "refs": [
+    "P50",
+    "G08",
+    "P07",
+    "P51",
+    "P08",
+    "P09",
+    "P52",
+    "G39"
+   ],
+   "model": [
+    {
+     "text": "Za niszczącą siłą tej miłości przemawia przede wszystkim wychowanie córek. Goriot przy ogromnym dochodzie wydaje na siebie tysiąc dwieście franków, a resztę na ich zachcianki. Na łożu śmierci sam wyciąga z tego wniosek: przyznaje, że je zepsuł i że zawinił właśnie miłością. Ta sama miłość prowadzi go do upokorzeń, takich jak potajemne zgniatanie rodowych sreber, i do gorzkiego odkrycia, że „pieniądz daje wszystko”. Puste karety z herbami zięciów, które jadą za trumną, pokazują skutek: na uczucie wyrażane pieniędzmi córki odpowiadają pustą formą.",
+     "refs": [
+      "P50",
+      "P51",
+      "G08",
+      "P09",
+      "G39"
+     ]
+    },
+    {
+     "text": "Przeciw jednostronnemu odczytaniu stoi narrator. Dla twarzy Goriota szuka wzoru w obrazach męki Zbawiciela; u Bortnowskiej pada określenie „ideał ojcostwa”, u Boya wręcz „Chrystus ojcostwa”. Sam Goriot widzi w ojcostwie fundament świata, a winą obarcza też małżeństwo: „Zięciowie zabili mi córki”. Powieść nie pozwala więc zamknąć sprawy wyrokiem o złym ojcu.",
+     "refs": [
+      "P07",
+      "P08",
+      "P52"
+     ]
+    },
+    {
+     "text": "Najpełniejsza odpowiedź łączy obie strony. Miłość Goriota jest wartością, którą powieść traktuje z powagą niemal religijną, a jednocześnie siłą niszczącą, bo w świecie, gdzie wszystko ma cenę, wyraża się głównie w pieniądzach. Tragizm polega na tym, że to, co w Goriocie najlepsze, staje się przyczyną jego upadku i zepsucia córek.",
+     "refs": []
+    }
    ]
   }
  ]

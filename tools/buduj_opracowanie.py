@@ -273,7 +273,7 @@ if errors:
     print('BŁĘDY:', *errors, sep='\n  ')
     sys.exit(1)
 
-out = {k: O[k] for k in ('sources', 'timeline', 'pension', 'cards', 'characters', 'relations', 'mechanisms', 'axes', 'theses', 'scenes', 'contexts', 'czz')}
+out = {k: O[k] for k in ('sources', 'timeline', 'pension', 'cards', 'characters', 'relations', 'mechanisms', 'axes', 'theses', 'scenes', 'contexts', 'czz', 'problems')}
 out['passages'] = passages
 out['variants'] = variants
 

@@ -652,6 +652,7 @@
       ['powiesc', 'Powieść', 'Pełny tekst w przekładach Bortnowskiej i Boya-Żeleńskiego.', '05_wismar_03', '42% 88%', null, ''],
       ['atlas', 'Obyczaje', 'Salon, posag, pojedynek, pogrzeb: obyczaje Paryża 1819 roku z przykładami z tekstu.', '03_wismar_01', '40% 82%', null, ''],
       ['mechanizmy', 'Pieniądz i awans', 'Posag, dług i protekcja: reguły, według których działa świat powieści.', '04_wismar_02', '62% 88%', null, ''],
+      ['spor', 'Spór o Goriota', 'Czy miłość ojca niszczy? Własna odpowiedź, oparta na tekście, i interpretacja do porównania.', '02_cooper_hewitt_1996-108-1', '50% 62%', null, ''],
       ['kontekst', 'Epoka', 'Restauracja Burbonów i „Komedia ludzka”.', null, null, null, 'small'],
       ['poetyka', 'Sztuka powieści', 'Narrator, kompozycja, portret, opis.', null, null, null, 'small'],
       ['konteksty', 'Porównania', '„Król Lear”, „Lalka” i inne utwory, które można porównać z „Ojcem Goriot”.', null, null, null, 'small'],
@@ -789,6 +790,68 @@
     w.append(start);
     return [section('Powieść', 'Pełny tekst w dwóch przekładach. Wybierz przekład albo zacznij od jednej ze scen.', w), section('Najważniejsze sceny', 'Numery stron zależą od wybranego przekładu.', toc)];
   };
+  /* spór interpretacyjny: teza ucznia, fragmenty za i przeciw, wniosek; zapis w przeglądarce, druk notatki */
+  M.spor = () => {
+    const pr = (O.problems || [])[0]; if (!pr) return [];
+    const KEY = 'goriot-spor-' + pr.id;
+    let st = { thesis: '', picks: {}, concl: '' };
+    try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); if (v && typeof v === 'object') st = Object.assign(st, v); } catch (e) { }
+    const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) { } };
+    const area = (cls, ph, val, on, label) => { const t = el('textarea', cls); t.placeholder = ph; t.value = val || ''; t.rows = 3; if (label) t.setAttribute('aria-label', label); t.addEventListener('input', () => { on(t.value); save(); }); return t; };
+    const w = el('div', 'spor');
+    w.append(el('p', 'splead', pr.lead));
+    const h1 = el('h3', 'sph', 'Twoja odpowiedź');
+    const thesis = area('sparea big', 'Na przykład: miłość Goriota jest…, ponieważ…', st.thesis, v => st.thesis = v, 'Twoja odpowiedź');
+    w.append(h1, thesis);
+    w.append(el('h3', 'sph', 'Fragmenty'), el('p', 'spnote', 'Przy każdym fragmencie zdecyduj, czy wspiera twoją odpowiedź, czy jej przeczy, i napisz dlaczego. Na fragment przeciwny odpowiedz.'));
+    const list = el('div', 'spcards');
+    for (const id of pr.refs) {
+      const c = el('article', 'spcard'), it = Gx.item(id);
+      const pick = st.picks[id] || {};
+      const bar = el('div', 'spside'); bar.setAttribute('role', 'group'); bar.setAttribute('aria-label', 'Ten fragment');
+      const bz = btn('spbtn', 'wspiera'), bp = btn('spbtn', 'przeczy');
+      const note = area('sparea', '', pick.text, v => { st.picks[id] = Object.assign(st.picks[id] || {}, { text: v }); }, it.title);
+      const sync = () => {
+        const side = (st.picks[id] || {}).side;
+        bz.setAttribute('aria-pressed', String(side === 'za')); bp.setAttribute('aria-pressed', String(side === 'przeciw'));
+        c.classList.toggle('za', side === 'za'); c.classList.toggle('przeciw', side === 'przeciw');
+        note.hidden = !side;
+        note.placeholder = side === 'przeciw' ? 'Jak odpowiesz na ten fragment?' : 'Czego dowodzi ten fragment?';
+      };
+      const set = side => { const cur = st.picks[id] || {}; st.picks[id] = Object.assign(cur, { side: cur.side === side ? null : side }); sync(); save(); if (!note.hidden) note.focus(); };
+      bz.addEventListener('click', () => set('za')); bp.addEventListener('click', () => set('przeciw'));
+      bar.append(bz, bp);
+      c.append(el('p', 'qtitle', it.title), Gx.quoteBox(id), bar, note);
+      sync(); list.append(c);
+    }
+    w.append(list);
+    w.append(el('h3', 'sph', 'Wniosek'), area('sparea big', 'Twoja odpowiedź po namyśle, z uwzględnieniem fragmentów przeciwnych.', st.concl, v => st.concl = v, 'Wniosek'));
+    const model = el('details', 'spmodel'); model.append(el('summary', '', 'Interpretacja do porównania'));
+    for (const m of pr.model) { const pp = el('div', 'spmp'); pp.append(el('p', '', m.text)); const r = refList(m.refs); r && pp.append(r); model.append(pp); }
+    w.append(model);
+    /* notatka do druku: tylko to, co uczeń napisał, z cytatami w wybranym przekładzie */
+    const sheet = el('div', 'spsheet'); sheet.setAttribute('aria-hidden', 'true');
+    const fill = () => {
+      const ed = Gx.mode() === 'boy' ? 'boy' : 'bort', kids = [el('h2', '', pr.question), el('h3', '', 'Odpowiedź'), el('p', '', st.thesis || '—')];
+      for (const [side, title] of [['za', 'Fragmenty, które ją wspierają'], ['przeciw', 'Fragmenty, które jej przeczą']]) {
+        const ids = pr.refs.filter(i => (st.picks[i] || {}).side === side); if (!ids.length) continue;
+        kids.push(el('h3', '', title));
+        for (const i of ids) { const v = Gx.item(i)[ed] || Gx.item(i).bort; const q = el('blockquote', '', v.text.join(' ') + ` (s. ${v.page})`); kids.push(q, el('p', '', st.picks[i].text || '')); }
+      }
+      kids.push(el('h3', '', 'Wniosek'), el('p', '', st.concl || '—'));
+      sheet.replaceChildren(...kids);
+    };
+    const tools = el('div', 'sptools');
+    tools.append(btn('read', 'Drukuj notatkę', () => { fill(); document.documentElement.classList.add('print-spor'); window.print(); }),
+      btn('read', 'Zacznij od nowa', () => {
+        if (!confirm('Usunąć odpowiedź, komentarze i wniosek?')) return;
+        try { localStorage.removeItem(KEY); } catch (e) { }
+        const p = $('panel-spor'); if (p) { built.delete('spor'); p.remove(); tab('spor'); }
+      }));
+    window.addEventListener('afterprint', () => document.documentElement.classList.remove('print-spor'));
+    w.append(tools, sheet);
+    return [section(pr.question, null, w)];
+  };
   M.zrodla = () => {
     const ul = el('ul', 'biblio');
     for (const src of O.sources.filter(x => !/nieodczytany|niedostępny|tylko opis/.test(x.status))) {
@@ -807,7 +870,7 @@
     history.replaceState(Object.assign({}, history.state, { y: window.scrollY }), '');
     history.pushState({ nav: 1, y: 0 }, '', hash || location.pathname + location.search);
   }
-  const NAMES = { start: 'Start', fragmenty: 'Sceny do omawiania', powiesc: 'Powieść', paryz: 'Pensjonat i Paryż', bohaterowie: 'Bohaterowie', atlas: 'Obyczaje', mechanizmy: 'Pieniądz i awans', kontekst: 'Epoka', poetyka: 'Sztuka powieści', konteksty: 'Porównania', zrodla: 'Źródła' };
+  const NAMES = { start: 'Start', fragmenty: 'Sceny do omawiania', powiesc: 'Powieść', paryz: 'Pensjonat i Paryż', bohaterowie: 'Bohaterowie', atlas: 'Obyczaje', mechanizmy: 'Pieniądz i awans', spor: 'Spór o Goriota', kontekst: 'Epoka', poetyka: 'Sztuka powieści', konteksty: 'Porównania', zrodla: 'Źródła' };
   const bar = $('tabs'), panels = $('panels'), built = new Set(['atlas']);
   const tabs = Object.entries(NAMES).map(([k, v]) => {
     const b = el('button', 'tab', v); b.type = 'button'; b.id = 'tab-' + k; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'panel-' + k); b.dataset.k = k;
