@@ -122,6 +122,20 @@
    "kind": "do pozyskania",
    "title": "Michal Peled Ginsburg (red.), Approaches to Teaching Balzac’s Old Goriot (2000)",
    "status": "nieodczytany"
+  },
+  {
+   "id": "S-EBALZAC",
+   "kind": "naukowe",
+   "title": "eBalzac — Le Père Goriot, wydania (Revue de Paris, Werdet, Charpentier, Furne)",
+   "url": "https://ebalzac.proj.lip6.fr/edition/22-pere-goriot",
+   "status": "odczytano: lista wydań (28.11.2026)"
+  },
+  {
+   "id": "S-CC1804",
+   "kind": "tekst",
+   "title": "Code civil des Français (1804), księga III, tytuł V: Du contrat de mariage et des droits respectifs des époux",
+   "url": "https://fr.wikisource.org/wiki/Code_civil_des_Fran%C3%A7ais_1804/Livre_III,_Titre_V",
+   "status": "odczytano: art. 1421, 1428, 1443, 1449, 1540, 1549, 1554 (28.11.2026); tekst Wikiźródeł oznaczony jako niesprawdzony"
   }
  ],
  "passages": [
@@ -614,6 +628,19 @@
    ],
    "boy": [
     "twarz jej nie była stara, ruchy i głos były świeże. To młode nieszczęście podobne było roślinie o pożółkłych liściach, świeżo zasadzonej w nieżyczliwym gruncie."
+   ]
+  },
+  {
+   "id": "P49",
+   "title": "Separacja majątkowa Delfiny",
+   "long": false,
+   "bort_range": [
+    "Wtedy wybierzemy najkorzystniejsze spekulacje",
+    "jest na szczęście człowiekiem uczciwym."
+   ],
+   "boy_range": [
+    "Wybierzemy najlepsze spekulacje",
+    "w separacji majątkowej."
    ]
   }
  ],
@@ -2513,7 +2540,7 @@
   {
    "id": "posag",
    "name": "Posag",
-   "def": "Majątek, który kobieta wnosi do małżeństwa, decyduje o jej atrakcyjności jako kandydatki na żonę i przechodzi pod kontrolę męża.",
+   "def": "Majątek, który kobieta wnosi do małżeństwa; decyduje o jej atrakcyjności jako kandydatki na żonę. W czasie małżeństwa zarządza nim mąż, a gdy jego interesy zagrażają posagowi, żona może przed sądem żądać rozdzielności majątkowej.",
    "areas": [
     5,
     12
@@ -2522,7 +2549,8 @@
     "G03",
     "G12",
     "G22",
-    "G30"
+    "G30",
+    "P49"
    ]
   },
   {
@@ -2793,6 +2821,19 @@
     "loc": "s. 3"
    },
    "status": "źródło-fragment"
+  },
+  {
+   "id": "T44",
+   "mod": "kontekst",
+   "typ": "fakt",
+   "text": "Powieść ukazała się najpierw w czterech odcinkach w „Revue de Paris” (14 i 28 grudnia 1834, 25 stycznia i 11 lutego 1835), w 1835 roku w dwóch tomach u Werdeta, a w 1843 roku weszła do „Komedii ludzkiej” (wydanie Furne’a, t. IX, „Sceny z życia paryskiego”); w egzemplarzu poprawionym przez autora przeniesiono ją do „Scen z życia prywatnego”.",
+   "refs": [],
+   "source": {
+    "id": "S-EBALZAC",
+    "loc": "lista wydań"
+   },
+   "status": "źródło",
+   "rows": []
   },
   {
    "id": "T04",
@@ -3268,6 +3309,29 @@
     "posag"
    ],
    "status": "tekst"
+  },
+  {
+   "id": "T45",
+   "mod": "mechanizmy",
+   "typ": "kontekst",
+   "text": "Kodeks cywilny z 1804 roku oddawał mężowi zarząd posagiem i majątkiem żony; dobrowolny rozdział majątku był nieważny, a żona mogła żądać rozdzielności tylko przed sądem, gdy jej posag był zagrożony. W powieści o separację majątkową Delfiny zabiega Goriot z adwokatem Derville’em.",
+   "refs": [
+    "P49"
+   ],
+   "chars": [
+    "delfina",
+    "goriot",
+    "nucingen"
+   ],
+   "mech": [
+    "posag"
+   ],
+   "source": {
+    "id": "S-CC1804",
+    "loc": "art. 1421, 1428, 1443, 1549"
+   },
+   "status": "źródło",
+   "rows": []
   },
   {
    "id": "T32",

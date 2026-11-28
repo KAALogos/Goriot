@@ -15,7 +15,7 @@
     'autorska': ['interpretacja autorska, bez źródła naukowego', 'own']
   };
   const srcShort = s => {
-    const m = { 'S-BORT': 'Bortnowska 1881', 'S-BOY': 'Boy-Żeleński 1938', 'S-BOY-BALZAK': 'Boy-Żeleński, Balzak (1934), rozdz. 8', 'S-HZ2019': 'Hanotte-Zawiślak 2019', 'S-HZ2018': 'Hanotte-Zawiślak 2018', 'S-VINC': 'Vinciguerra 1970', 'S-PAISSE': 'Paisse 1968' };
+    const m = { 'S-BORT': 'Bortnowska 1881', 'S-BOY': 'Boy-Żeleński 1938', 'S-BOY-BALZAK': 'Boy-Żeleński, Balzak (1934), rozdz. 8', 'S-HZ2019': 'Hanotte-Zawiślak 2019', 'S-HZ2018': 'Hanotte-Zawiślak 2018', 'S-VINC': 'Vinciguerra 1970', 'S-PAISSE': 'Paisse 1968', 'S-EBALZAC': 'eBalzac', 'S-CC1804': 'Kodeks cywilny z 1804 r.' };
     return m[s] || (SRC.get(s) || {}).title || s;
   };
 
