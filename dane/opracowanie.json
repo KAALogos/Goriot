@@ -2147,7 +2147,48 @@
      "page": 45
     }
    }
-  }
+  },
+  "journey": [
+   {
+    "id": "s1",
+    "label": "1813",
+    "title": "Pierwsze mieszkanie: 1. piętro",
+    "facts": [
+     "Goriot zajmuje mieszkanie, w którym w 1819 roku mieszka pani Couture z Wiktoryną.",
+     "Płaci 1200 franków rocznie; na jego przyjazd gospodyni odświeża trzy pokoje."
+    ],
+    "refs": [
+     "P24",
+     "P28"
+    ]
+   },
+   {
+    "id": "s2",
+    "label": "pod koniec 2. roku",
+    "title": "Drugie piętro",
+    "facts": [
+     "Przenosi się piętro wyżej i płaci 900 franków rocznie.",
+     "Przez całą zimę nie pali w piecu.",
+     "Pani Vauquer żąda pieniędzy z góry i odtąd mówi o nim „ojciec Goriot”."
+    ],
+    "recon": "Powieść nie mówi, który to był pokój, dlatego zaznaczono całe piętro.",
+    "refs": [
+     "G18"
+    ]
+   },
+   {
+    "id": "s3",
+    "label": "pod koniec 3. roku",
+    "title": "Trzecie piętro",
+    "facts": [
+     "Przenosi się na trzecie piętro i płaci 45 franków miesięcznie.",
+     "Rezygnuje z tabaki, odprawia fryzjera i przestaje się pudrować."
+    ],
+    "refs": [
+     "G19"
+    ]
+   }
+  ]
  },
  "characters": [
   {

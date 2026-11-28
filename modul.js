@@ -243,8 +243,41 @@
       }
       row.append(lab, rooms); house.append(row);
     }
-    const pickRoom = (r, f, b) => { show(r, f, b); if (innerWidth < 1000) side.scrollIntoView({ block: 'start' }); };
+    let stage = () => { };
+    const pickRoom = (r, f, b) => { stage(-1, true); show(r, f, b); if (innerWidth < 1000) side.scrollIntoView({ block: 'start' }); };
     const drawing = houseIllustrated(groups, pickRoom);
+    /* droga Goriota przez dom: etapy z powieści, postać przenosi się z piętra na piętro */
+    const J = P.journey || [];
+    if (J.length && drawing.setStage) {
+      const jb = el('div', 'hjourney'); jb.setAttribute('role', 'group'); jb.setAttribute('aria-label', 'Droga Goriota przez dom');
+      jb.append(el('span', 'hjlab', 'Droga Goriota przez dom'));
+      const steps = el('div', 'hjsteps');
+      const jbtn = J.map((s, i) => { const b = btn('hjstep', s.label, () => stage(i)); steps.append(b); return b; });
+      const all = btn('hjstep', '1819: cały dom', () => { stage(-1); show(...first); });
+      steps.append(all); jb.append(steps);
+      drawing.insertBefore(jb, drawing.querySelector('.hbar'));
+      stage = (i, quiet) => {
+        jbtn.forEach((b, k) => b.setAttribute('aria-pressed', String(k === i))); all.setAttribute('aria-pressed', String(i < 0));
+        drawing.setStage(i < 0 ? null : J[i].id);
+        if (i < 0 || quiet) return;
+        const s = J[i];
+        buttons.forEach(x => x.setAttribute('aria-pressed', 'false'));
+        wrap.querySelectorAll('.hroom').forEach(g => g.classList.remove('on'));
+        const head = el('div', 'mhead'), ul = el('ul', 'jfacts');
+        for (const t of s.facts) ul.append(el('li', '', t));
+        head.append(el('span', 'eyebrow', `Droga Goriota · ${i + 1} z ${J.length}`), el('h3', '', s.title), el('p', 'pnote', s.label), ul);
+        if (s.recon) head.append(el('p', 'jrecon', s.recon));
+        const kids = [head];
+        for (const id of s.refs) { const b = el('section', 'mblock'); b.append(el('h4', '', 'W powieści'), el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id)); kids.push(b); }
+        const nav2 = el('div', 'jnav');
+        if (i > 0) nav2.append(btn('read', '← ' + J[i - 1].label, () => stage(i - 1)));
+        nav2.append(btn('read', i < J.length - 1 ? J[i + 1].label + ' →' : '1819: cały dom →', () => { if (i < J.length - 1) stage(i + 1); else { stage(-1); show(...first); } }));
+        kids.push(nav2);
+        side.replaceChildren(...kids);
+        if (innerWidth < 1000) side.scrollIntoView({ block: 'start' });
+      };
+      stage(-1, true);
+    }
     const moves = el('div', 'moves');
     for (const m of P.moves) {
       const a = el('article', 'move'), ol = el('ol');
@@ -387,8 +420,21 @@
     });
     for (const [n, x, y, h] of FIG) {
       const p = img('hperson', D + 'postac_' + n + '.webp'); p.style.left = pct(x); p.style.top = pct(y - h); p.style.height = pct(h);
-      p.style.animationDelay = `-${(x * 7 % 50) / 10}s`; p.dataset.room = n === 'wiktoryna' || n === 'couture' ? 'couture' : n; fx.append(p);
+      p.style.animationDelay = `-${(x * 7 % 50) / 10}s`; p.dataset.room = n === 'wiktoryna' || n === 'couture' ? 'couture' : n; p.dataset.who = n; fx.append(p);
     }
+    // etapy drogi Goriota: obszar [x0, y0, x1, y1] i miejsce postaci [środek x, podłoga]; s2 — całe piętro, bo pokój nieznany
+    const STAGE = { s1: [[406, 556, 755, 701], [560, 697]], s2: [[199, 404, 755, 549], [560, 547], true], s3: [[344, 246, 585, 396], [470, 390]] };
+    const zone = el('div', 'hzone'); zone.setAttribute('aria-hidden', 'true'); fx.append(zone);
+    const gor = fx.querySelector('[data-who=goriot]'), home = [gor.style.left, gor.style.top];
+    fig.setStage = id => {
+      const sdef = STAGE[id];
+      fig.classList.toggle('stage', !!sdef);
+      if (!sdef) { gor.style.left = home[0]; gor.style.top = home[1]; return; }
+      const [[x0, y0, x1, y1], [cx, fy], recon] = sdef;
+      Object.assign(zone.style, { left: pct(x0), top: pct(y0), width: pct(x1 - x0), height: pct(y1 - y0) });
+      zone.classList.toggle('recon', !!recon);
+      gor.style.left = pct(cx); gor.style.top = pct(fy - 90);
+    };
     const cat = el('div', 'hcat'); cat.append(img('', D + 'postac_kot.webp')); fx.append(cat);
     st.append(fx);
     const hot = el('div', 'hhot');
