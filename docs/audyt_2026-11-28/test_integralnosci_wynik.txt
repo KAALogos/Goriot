@@ -1,9 +1,11 @@
 PASS  40/40  cytaty atlasu (Bortnowska)
 PASS  40/40  cytaty atlasu (Boy, warianty)
-PASS  50/50  fragmenty opracowania (Bortnowska)
-PASS  50/50  fragmenty opracowania (Boy)
-PASS  100/100  strony fragmentów zgodne z tekstem
+PASS  53/53  fragmenty opracowania (Bortnowska)
+PASS  53/53  fragmenty opracowania (Boy)
+PASS  106/106  strony fragmentów zgodne z tekstem
 PASS  28/28  zakresy scen (obie edycje)
 PASS  14/14  cytaty przy pokojach: dosłowne i z właściwą stroną
 PASS  112/112  cytaty w kluczach zadań w zakresie sceny
-PASS  258/258  odsyłacze G/P/T w danych
+PASS  314/314  odsyłacze G/P/T w danych
+PASS  144/144  problemy: fragmenty w obu przekładach
+PASS  9/9  problemy: po 8 fragmentów, pytanie, wprowadzenie, interpretacja

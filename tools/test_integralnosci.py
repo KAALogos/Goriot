@@ -77,6 +77,11 @@ def walk(x, path):
         for i, v in enumerate(x): walk(v, f'{path}[{i}]')
 walk(O, 'OPRAC'); walk(S, 'SCENY')
 count('odsyłacze G/P/T w danych', refs)
+pr = O.get('problems', [])
+pa = [(f"{q['id']}/{r}/{ed}", bool((Ci := (lambda i: next((x for x in C['quotes'] if x['id'] == i), None))(r)) and (Ci['seg'] if ed == 'bort' else O['variants'].get(r)) or (lambda x: x and x.get(ed))(next((x for x in O['passages'] if x['id'] == r), None))))
+      for q in pr for r in q['refs'] for ed in ('bort', 'boy')]
+count('problemy: fragmenty w obu przekładach', pa)
+count('problemy: po 8 fragmentów, pytanie, wprowadzenie, interpretacja', [(q['id'], len(q['refs']) == 8 and len(set(q['refs'])) == 8 and bool(q['question'] and q['lead'] and q['model'])) for q in pr])
 
 chars = {c['id'] for c in O['characters']}
 rel = [(f"{r.get('a')}-{r.get('b')}", r.get('a') in chars and r.get('b') in chars) for r in O['relations'] if 'a' in r]

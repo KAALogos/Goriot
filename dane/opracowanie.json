@@ -648,8 +648,8 @@
    "title": "Wychowanie córek",
    "long": false,
    "bort_range": [
-    "Bogaty był, gdyż dochód jego wynosił",
-    "na dogodzenie rozmaitym zachciankom córek."
+    "Rozumie się, że Goriot wychowywał",
+    "dogodzenie rozmaitym zachciankom córek."
    ],
    "boy_range": [
     "Wychowanie córek było oczywiście niedorzeczne.",
@@ -659,14 +659,14 @@
   {
    "id": "P51",
    "title": "Wyznanie na łożu śmierci",
-   "long": false,
+   "long": true,
    "bort_range": [
-    "Jam nędznik sprawiedliwie ukarany.",
-    "Ja jeden zawiniłem, lecz zawiniłem przez miłość."
+    "Jam nędznik sprawiedliwie ukarany. Sam",
+    "One do mnie należą!"
    ],
    "boy_range": [
     "Jestem nędznik, sprawiedliwie jestem ukarany.",
-    "Ja sam zawiniłem swoją miłością."
+    "ja dałem im życie, moje są,"
    ]
   },
   {
@@ -680,6 +680,45 @@
    "boy_range": [
     "Zięciowie zabili mi córki.",
     "Zięć, to zbrodniarz, który wszystko zepsuje w waszym dziecku, wszystko skazi."
+   ]
+  },
+  {
+   "id": "P53",
+   "title": "Gdzież moje pieniądze?",
+   "long": false,
+   "bort_range": [
+    "Tak, mógłbym mieć to wszystko,",
+    "że szczerze go kochają."
+   ],
+   "boy_range": [
+    "Miał bym to wszystko. Ale",
+    "że ktoś naprawdę go kocha."
+   ]
+  },
+  {
+   "id": "P54",
+   "title": "Anastazja przy umierającym ojcu",
+   "long": true,
+   "bort_range": [
+    "Niczego nie brak do mego",
+    "Mój ojciec umarł! — krzyknęła hrabina."
+   ],
+   "boy_range": [
+    "Nieszczęście moje ziściło się w",
+    "Ojciec umarł! krzyknęła hrabina."
+   ]
+  },
+  {
+   "id": "P55",
+   "title": "Ostatnia łza młodzieńcza",
+   "long": false,
+   "bort_range": [
+    "Eugeniusz zwrócił oczy na grób świeży",
+    "wytryskują z niej aż ku niebiosom."
+   ],
+   "boy_range": [
+    "Eugeniusz spojrzał na grób i pogrzebał",
+    "ziemię, tryskają promieniami aż w niebiosa."
    ]
   }
  ],
@@ -4002,41 +4041,251 @@
  ],
  "problems": [
   {
-   "id": "milosc",
-   "question": "Czy miłość Goriota do córek była zgubna?",
-   "lead": "Goriot oddał córkom cały majątek i umiera sam. Narrator porównuje go do Zbawiciela, a on sam mówi na łożu śmierci, że zepsuł córki. Odpowiedz na pytanie własnymi słowami i oprzyj odpowiedź na tekście.",
+   "id": "R002",
+   "question": "Jak ocenić miłość Goriota do córek?",
+   "lead": "Goriot podporządkowuje swoje życie córkom. Narrator przedstawia zarówno skutki ich wychowania, jak i ogrom cierpienia ojca; sam bohater u kresu życia rozmaicie tłumaczy swoje nieszczęście. Jak rozumiesz jego miłość i jej konsekwencje? Uzasadnij odpowiedź, odwołując się do wybranych fragmentów. Rozważ również taki sposób odczytania, który podważa twoje pierwsze wnioski.",
    "refs": [
     "P50",
-    "G08",
     "P07",
-    "P51",
+    "P53",
     "P08",
-    "P09",
+    "P51",
     "P52",
+    "P54",
     "G39"
    ],
    "model": [
     {
-     "text": "Za niszczącą siłą tej miłości przemawia przede wszystkim wychowanie córek. Goriot przy ogromnym dochodzie wydaje na siebie tysiąc dwieście franków, a resztę na ich zachcianki. Na łożu śmierci sam wyciąga z tego wniosek: przyznaje, że je zepsuł i że zawinił właśnie miłością. Ta sama miłość prowadzi go do upokorzeń, takich jak potajemne zgniatanie rodowych sreber, i do gorzkiego odkrycia, że „pieniądz daje wszystko”. Puste karety z herbami zięciów, które jadą za trumną, pokazują skutek: na uczucie wyrażane pieniędzmi córki odpowiadają pustą formą.",
-     "refs": [
-      "P50",
-      "P51",
-      "G08",
-      "P09",
-      "G39"
-     ]
+     "text": "Miłość Goriota można odczytać jako bezgraniczne poświęcenie, ale także jako uczucie, które nie pozostawia miejsca na odpowiedzialność córek. Już w opisie ich wychowania narrator ocenia postępowanie ojca jako nierozsądne: Goriot ogranicza własne wydatki, by zaspokajać ich zachcianki. Na łożu śmierci sam dostrzega związek między dawną pobłażliwością a ich obecnym zachowaniem. Jego samooskarżeniu towarzyszy jednak pragnienie odzyskania władzy nad córkami: gotów jest zwabić je obietnicą majątku, a nawet zaakceptować ich nieszczerość, byle je zobaczyć. Nie umie zrezygnować z bliskości, której nie może wymusić."
     },
     {
-     "text": "Przeciw jednostronnemu odczytaniu stoi narrator. Dla twarzy Goriota szuka wzoru w obrazach męki Zbawiciela; u Bortnowskiej pada określenie „ideał ojcostwa”, u Boya wręcz „Chrystus ojcostwa”. Sam Goriot widzi w ojcostwie fundament świata, a winą obarcza też małżeństwo: „Zięciowie zabili mi córki”. Powieść nie pozwala więc zamknąć sprawy wyrokiem o złym ojcu.",
-     "refs": [
-      "P07",
-      "P08",
-      "P52"
-     ]
+     "text": "Inną perspektywę otwiera sposób, w jaki narrator przedstawia cierpienie Goriota. Porównanie jego twarzy do malarskich przedstawień męki Zbawiciela nadaje ojcowskiej miłości wymiar ofiary. Nie musi jednak oznaczać aprobaty dla wszystkich jego decyzji. W zestawieniu z krytyczną oceną wychowania córek ujawnia napięcie między wielkością uczucia a błędami człowieka, który całkowicie się temu uczuciu podporządkował."
     },
     {
-     "text": "Najpełniejsza odpowiedź łączy obie strony. Miłość Goriota jest wartością, którą powieść traktuje z powagą niemal religijną, a jednocześnie siłą niszczącą, bo w świecie, gdzie wszystko ma cenę, wyraża się głównie w pieniądzach. Tragizm polega na tym, że to, co w Goriocie najlepsze, staje się przyczyną jego upadku i zepsucia córek.",
-     "refs": []
+     "text": "Nie można też wyjaśnić tragedii wyłącznie winą ojca. Goriot raz uznaje siebie za sprawcę zepsucia córek, innym razem obarcza odpowiedzialnością zięciów. W jego przedśmiertnych wypowiedziach przekonanie, że pieniądz zapewniłby mu obecność rodziny, ściera się z pragnieniem miłości bezinteresownej. Słowa o ojcostwie jako podstawie społeczeństwa rozszerzają osobisty dramat na pytanie o więzi między ludźmi. Są to jednak wypowiedzi cierpiącego bohatera, nie jednoznaczny wyrok narratora. Anastazja dociera do ojca, kiedy nie może już świadomie odpowiedzieć na jej słowa; wyznaje własną winę i pozostaje przy nim do śmierci. Jej spóźniony żal komplikuje obraz córki całkowicie pozbawionej uczuć, choć nie unieważnia wcześniejszych krzywd."
+    },
+    {
+     "text": "Puste powozy w orszaku pogrzebowym zamykają historię wymownym kontrastem: herby świadczą o pozycji społecznej rodzin córek, lecz nie zastępują ich osobistej obecności. Można więc uznać, że zgubna okazała się nie sama miłość, lecz sposób jej przeżywania i wyrażania w świecie, w którym znaczenie człowieka zależy od majątku i pozycji. Można również mocniej zaakcentować odpowiedzialność córek i ich otoczenia. O wartości każdej z tych interpretacji decyduje to, czy potrafi wyjaśnić zarówno krytyczne sądy narratora, jak i jego współczucie dla Goriota."
+    }
+   ]
+  },
+  {
+   "id": "R003",
+   "question": "Jak zmienia się system wartości Rastignaca?",
+   "lead": "Rastignac przybywa do Paryża jako student prawa. Poznaje zasady życia salonowego, otrzymuje propozycję Vautrina i staje się świadkiem dramatu Goriota. Jak te doświadczenia zmieniają jego sposób myślenia i postępowania? Zestaw decyzje bohatera z jego deklaracjami; rozważ, co w jego postawie pozostaje niezmienne.",
+   "refs": [
+    "G02",
+    "G05",
+    "G26",
+    "G27",
+    "P05",
+    "G31",
+    "G16",
+    "G40"
+   ],
+   "model": [
+    {
+     "text": "Początkowo Eugeniusz postrzega naukę jako drogę do kariery. Kontakt z salonami sprawia jednak, że coraz więcej czasu i uwagi poświęca zdobywaniu majątku i wpływów. Rada pani de Beauséant uświadamia mu, że opinia ludzi z towarzystwa może znaczyć więcej niż rzeczywiste zdolności. Zaczyna traktować związki z innymi jako środek do osiągnięcia celu."
+    },
+    {
+     "text": "Zmiana nie dokonuje się bez oporu. Prosząc siostry i matkę o pieniądze, korzysta z ich przywiązania, by sfinansować własne aspiracje. Zarazem potrafi rozpoznać podobieństwo między swoim zachowaniem a postępowaniem Anastazji wobec Goriota. Rozmowa o mandarynie wystawia na próbę jego wyobrażenie o uczciwości: korzyść materialna wymagałaby zaakceptowania cudzej śmierci. Po pojedynku brata Wiktoryny narrator przedstawia bohatera jako człowieka, którego uczciwość przetrwała próbę. Nie znaczy to, że wcześniejsze wahania i instrumentalne traktowanie bliskich tracą znaczenie."
+    },
+    {
+     "text": "W opiece nad Goriotem ujawnia się zdolność Rastignaca do bezinteresownego działania. Zakończenie utworu nie jest więc prostą historią przemiany uczciwego młodzieńca w cynika. Wyzwanie rzucone Paryżowi i obiad u Delfiny mogą oznaczać, że bohater zamierza odtąd skuteczniej posługiwać się regułami świata, którego okrucieństwo poznał. Mogą również wyrażać bunt przeciw temu światu. Powieść nie rozstrzyga jeszcze, jak daleko posunie się w walce o własną przyszłość. Istotne jest napięcie między jego ambicją a wrażliwością, nie zaś przypisanie mu jednej niezmiennej cechy."
+    }
+   ]
+  },
+  {
+   "id": "R004",
+   "question": "Na czym polega prawda i fałsz diagnozy społecznej Vautrina?",
+   "lead": "Vautrin przedstawia Rastignacowi własną wizję społeczeństwa i sposób osiągnięcia w nim powodzenia. Które elementy tej diagnozy potwierdzają losy bohaterów, a które podważają? Oddziel trafność obserwacji od zasadności wniosków i środków działania proponowanych przez Vautrina.",
+   "refs": [
+    "P03",
+    "P04",
+    "G28",
+    "G29",
+    "G30",
+    "G13",
+    "G14",
+    "G16"
+   ],
+   "model": [
+    {
+     "text": "Vautrin dostrzega rozdźwięk między oficjalnie głoszonymi zasadami a rzeczywistymi mechanizmami awansu. Jego uwagi o znaczeniu protekcji oraz o szacunku, jakim cieszą się bogaci mimo nieuczciwego pochodzenia ich majątku, pozwalają zrozumieć pokusę, przed którą staje Rastignac. Kariera jawi się jako rywalizacja, w której dostęp do wpływowych ludzi może być ważniejszy niż talent czy praca."
+    },
+    {
+     "text": "Rozpoznanie hipokryzji nie jest jednak dowodem, że nie istnieją zasady moralne. Vautrin przekształca opis świata w uzasadnienie własnej strategii. Propozycja małżeństwa z Wiktoryną, uzależniona od śmierci jej brata i połączona z żądaniem wynagrodzenia, obnaża sprzeczność między jego rzekomą pomocą a własnym interesem. Jego język sprowadza cudze życie, uczucie i przyszłość do składników transakcji. Realizacja pojedynku świadczy o skuteczności przestępczego planu, lecz nie o słuszności przedstawianej filozofii."
+    },
+    {
+     "text": "Postępowanie Rastignaca i Bianchona wobec chorego Goriota wskazuje, że ludzie mogą działać wbrew zasadzie zysku, nawet jeśli funkcjonują w tym samym społeczeństwie. Można więc widzieć w Vautrinie przenikliwego demaskatora, który obnaża społeczne pozory, albo manipulatora, który selekcjonuje fakty, aby uzależnić młodego człowieka od siebie. Te odczytania nie muszą się wykluczać. Oceniając jego diagnozę, należy odróżnić to, co Vautrin wie o świecie, od tego, do czego chce tę wiedzę wykorzystać."
+    }
+   ]
+  },
+  {
+   "id": "R005",
+   "question": "W jakim stopniu pieniądz określa wolność bohaterów?",
+   "lead": "Bohaterowie powieści dysponują różnymi majątkami, źródłami utrzymania i możliwościami podejmowania decyzji. Porównaj ich sytuacje. Kiedy pieniądz otwiera drogę do samodzielności, kiedy staje się narzędziem zależności, a kiedy nie rozstrzyga o wyborze człowieka?",
+   "refs": [
+    "G18",
+    "G19",
+    "G22",
+    "G23",
+    "P18",
+    "G30",
+    "P09",
+    "G16"
+   ],
+   "model": [
+    {
+     "text": "Los Goriota pokazuje, że utrata majątku ogranicza nie tylko materialny komfort, ale również pozycję wśród ludzi. Kolejnym przeprowadzkom w pensjonacie towarzyszy zmiana stosunku otoczenia do dawnego kupca. W agonii Goriot wiąże obecność córek z możliwością pozostawienia im pieniędzy. Jego słowa wyrażają doświadczenie zależności uczuć od majątku, lecz nie stanowią obiektywnego prawa obowiązującego wszystkich bohaterów."
+    },
+    {
+     "text": "Przykład Delfiny pozwala odróżnić posiadanie majątku od możliwości swobodnego dysponowania nim. Bankier kontroluje pieniądze żony, a kapitał związany jest z jego przedsięwzięciami. Wiktoryna pozostaje zależna od decyzji ojca, który zamierza przekazać dobra synowi. Z kolei Vautrin przedstawia jej przyszły posag jako środek do zapewnienia Rastignacowi niezależności. Wolność jednego człowieka miałaby w tym przypadku powstać kosztem życia drugiego i instrumentalnego potraktowania trzeciego."
+    },
+    {
+     "text": "Nie każdą decyzję można jednak wyprowadzić z rachunku ekonomicznego. Ubodzy studenci podejmują opiekę nad Goriotem, choć nie mają podstaw, by oczekiwać nagrody. Pieniądze pozostają im potrzebne do udzielenia pomocy, ale nie są jej celem. Można zatem uznać, że w powieści majątek warunkuje zakres dostępnych działań i pozycję społeczną, nie przesądzając o moralnym sposobie użycia tej swobody. Takie rozróżnienie pozwala uniknąć utożsamienia bogactwa z niezależnością, a ubóstwa z całkowitym brakiem sprawczości."
+    }
+   ]
+  },
+  {
+   "id": "R006",
+   "question": "Jaką swobodę wyboru mają kobiety w świecie Balzaka?",
+   "lead": "Delfina de Nucingen, Anastazja de Restaud, Wiktoryna Taillefer i kobiety związane z życiem salonowym znajdują się w odmiennych sytuacjach rodzinnych i majątkowych. Porównaj zakres ich decyzji oraz skutki tych decyzji. Co zależy od nich samych, a co od innych ludzi i reguł świata przedstawionego?",
+   "refs": [
+    "G03",
+    "G05",
+    "G21",
+    "G22",
+    "G23",
+    "P18",
+    "G07",
+    "P47"
+   ],
+   "model": [
+    {
+     "text": "Córki Goriota nie są pozbawione wszelkiej swobody. Wybór małżonków odpowiada ich aspiracjom: Anastazję pociąga pozycja arystokratyczna, Delfinę majątek bankiera. Ich możliwości po ślubie nie są jednak tożsame z oczekiwaniami. Delfina opisuje ograniczenie dostępu do pieniędzy wniesionych do małżeństwa. Anastazja sprzedaje kosztowności, aby zaspokoić potrzeby kochanka. Jej działanie dowodzi pewnej samodzielności, lecz jednocześnie ujawnia zależność od jego uczuć i finansowych żądań."
+    },
+    {
+     "text": "Inny rodzaj zależności reprezentuje Wiktoryna: jej pozycja materialna uzależniona jest od decyzji ojca. Opieka pani Couture pokazuje jednak, że więź między kobietami może stanowić przeciwwagę dla odrzucenia przez rodzinę. W świecie salonów wpływ kobiet może być znaczny. Pani de Beauséant, tłumacząc Rastignacowi reguły powodzenia, wskazuje, jak istotna jest opinia kobiet dla kariery mężczyzny. Zarazem jej spojrzenie na Delfinę ujawnia, że również same kobiety podtrzymują hierarchie towarzyskie i konkurują o uznanie."
+    },
+    {
+     "text": "Powieść pozwala więc widzieć kobiety zarówno jako osoby ograniczane przez układ rodzinny i majątkowy, jak i uczestniczki życia społecznego podejmujące własne decyzje. Uznanie ich ograniczeń nie wymaga pomijania odpowiedzialności za krzywdy wyrządzane innym; podobnie krytyka ich postępowania nie powinna prowadzić do ignorowania zależności, w których funkcjonują. Warto rozróżnić swobodę ekonomiczną, pozycję towarzyską i możliwość kierowania własnym życiem uczuciowym: w przypadku tej samej bohaterki każda z nich może wyglądać inaczej."
+    }
+   ]
+  },
+  {
+   "id": "R007",
+   "question": "Jak przestrzeń Paryża kształtuje losy bohaterów?",
+   "lead": "Pensjonat pani Vauquer, salony arystokracji i panorama Paryża wyznaczają różne miejsca akcji. Porównaj znaczenie tych przestrzeni dla bohaterów. Rozważ, czy miejsca jedynie odzwierciedlają ich pozycję, czy także wpływają na ich możliwości i sposób postrzegania świata.",
+   "refs": [
+    "P01",
+    "G01",
+    "P20",
+    "G18",
+    "G19",
+    "P13",
+    "G11",
+    "P11"
+   ],
+   "model": [
+    {
+     "text": "Paryż zostaje przyrównany do oceanu, którego głębi nie sposób poznać. Metafora ta sugeruje zarówno rozległość miasta, jak i trudność rozpoznania reguł jego życia. Losy bohaterów pozwalają stopniowo odkrywać mechanizmy ukryte za pozorami. Pensjonat stanowi niewielką przestrzeń, w której spotykają się ludzie o różnych biografiach i możliwościach finansowych."
+    },
+    {
+     "text": "Rozmieszczenie lokatorów na poszczególnych piętrach ujawnia związek między wysokością czynszu a warunkami życia. Kolejne przeprowadzki Goriota w górę budynku oznaczają jego degradację materialną, a nie awans. Ten paradoks przestrzenny pozwala dostrzec, że miejsce zamieszkania jest także znakiem pozycji społecznej. Zmiana położenia starego kupca pociąga za sobą zmianę sposobu traktowania go przez otoczenie."
+    },
+    {
+     "text": "W przypadku Rastignaca dostęp do kolejnych domów oznacza możliwość zdobywania wpływów. Narrator łączy w jego wyobrażeniu konkretne części Paryża z określonymi kobietami i szansami towarzyskimi. Jednak przekroczenie progu salonu nie wystarcza, by zostać zaakceptowanym. W domu de Restaud niewłaściwe przywołanie nazwiska Goriota wystarcza, aby zmienić stosunek gospodarzy do studenta. Przestrzeń społeczna ma zatem granice, których nie można sprowadzić do odległości na planie miasta."
+    },
+    {
+     "text": "W finale Rastignac patrzy z cmentarza na dzielnice zamieszkane przez ludzi, do których pragnie dołączyć. Miasto widziane z wysokości staje się przedmiotem jego ambicji. Można czytać tę scenę jako zapowiedź podporządkowania sobie Paryża, ale też jako wyraz świadomości, że młodzieniec musi dopiero znaleźć własne miejsce w jego hierarchii. Przestrzeń jest więc jednocześnie materialnym warunkiem życia bohaterów, językiem opisu ich pozycji i obrazem ich pragnień."
+    }
+   ]
+  },
+  {
+   "id": "R008",
+   "question": "Jak narrator kieruje naszym osądem bohaterów?",
+   "lead": "Narrator powieści zwraca się do czytelnika, komentuje zachowanie postaci i przedstawia zdarzenia z perspektywy różnych obserwatorów. Zbadaj, jak te zabiegi wpływają na twój osąd bohaterów. Kiedy narrator podsuwa ocenę, a kiedy skłania do samodzielnego rozpoznawania znaczeń?",
+   "refs": [
+    "P02",
+    "P26",
+    "P38",
+    "P44",
+    "G08",
+    "P21",
+    "P07",
+    "G31"
+   ],
+   "model": [
+    {
+     "text": "Już na początku powieści narrator podkreśla prawdziwość przedstawianego dramatu i zwraca się bezpośrednio do odbiorcy. Zaprasza go do rozpoznania w sobie doświadczeń podobnych do tych, które będą udziałem bohaterów. Tym samym lektura staje się nie tylko obserwacją cudzych losów, lecz także próbą oceny własnych reakcji."
+    },
+    {
+     "text": "Opisy przestrzeni zawierają wyraźne wartościowanie. Pensjonat i jego właścicielka mają wzajemnie się objaśniać, a porównanie domu z więzieniem oraz nagromadzenie szczegółów świadczących o zaniedbaniu wnętrza wpływają na wyobrażenie o jego mieszkańcach. Nie jest to neutralny wykaz przedmiotów: dobór detali oraz metafory budują atmosferę i sugerują określony obraz środowiska."
+    },
+    {
+     "text": "Inny sposób prowadzenia narracji ujawnia scena zgniatania sreber. Czytelnik obserwuje Goriota razem z ukrytym Rastignakiem, nie znając jeszcze w pełni motywów starca. Zachowanie, które może wydać się podejrzane, nabiera innego znaczenia wraz z poznawaniem jego historii. Podobnie opinie pensjonariuszy o podupadłym Goriocie są przedstawiane w kontekście ich skłonności do plotek. Narrator przytacza cudze oceny, nie czyniąc ich automatycznie własnymi."
+    },
+    {
+     "text": "Sakralizujące porównanie Goriota do Zbawiciela wyraźnie kieruje współczucie czytelnika ku cierpiącemu ojcu. Z kolei po moralnych wahaniach Rastignaca narrator przedstawia jego uczciwość jako wypróbowaną. Tego rodzaju komentarze można traktować jako wskazówki interpretacyjne, lecz należy je zestawiać z dalszym przebiegiem fabuły. Powieść zarazem kieruje naszym osądem i uczy podejrzliwości wobec pochopnych sądów. Istotne jest zatem rozróżnienie słów narratora, wypowiedzi postaci oraz znaczeń wynikających z kompozycji zdarzeń."
+    }
+   ]
+  },
+  {
+   "id": "R009",
+   "question": "Jaką wymowę ma zakończenie powieści?",
+   "lead": "Ostatnie sceny powieści łączą pogrzeb Goriota, reakcję Rastignaca i jego decyzję dotyczącą dalszego życia. Jak rozumiesz zestawienie tych zdarzeń? Rozważ, co finał zamyka, a jakie pytania pozostawia otwarte.",
+   "refs": [
+    "G31",
+    "G16",
+    "G37",
+    "G38",
+    "G39",
+    "P55",
+    "P11",
+    "G40"
+   ],
+   "model": [
+    {
+     "text": "Śmierć i pogrzeb Goriota stanowią zakończenie historii ojca, który podporządkował swoje życie córkom. Skromność pochówku, obojętność stołowników i brak osobistej obecności córek w orszaku pogrzebowym kontrastują z wysoką pozycją ich rodzin. Puste powozy opatrzone herbami są szczególnie wymownym obrazem różnicy między oznakami prestiżu a rzeczywistą więzią z człowiekiem."
+    },
+    {
+     "text": "Dla Rastignaca pogrzeb oznacza zarazem koniec pewnego etapu doświadczeń. Narrator przedstawia jego łzę nad grobem jako ostatnią łzę młodzieńczą. Metafora pogrzebania łzy sugeruje utratę niewinności albo porzucenie wcześniejszych wyobrażeń o świecie. Nie dowodzi jednak, że wszelka wrażliwość bohatera od tej chwili zanika: wcześniej Eugeniusz czuwał przy Goriocie, a teraz uczestniczy w jego pochówku. Jego współczucie ujawnia się właśnie w chwili, gdy poznaje konsekwencje społecznej obojętności."
+    },
+    {
+     "text": "Następująca bezpośrednio po tym panorama Paryża przenosi uwagę ze zmarłego na przyszłość młodego człowieka. Obraz miasta jako brzęczącego ula, z którego bohater pragnie wydobyć miód, łączy fascynację z pożądaniem korzyści. Wyzwanie rzucone społeczeństwu może być odczytane jako zapowiedź buntu, lecz obiad u Delfiny pokazuje, że Rastignac nie wycofuje się ze świata salonów. Zamierza działać w jego obrębie."
+    },
+    {
+     "text": "Finał dopuszcza więc zarówno interpretację akcentującą moralne niebezpieczeństwo ambicji, jak i odczytanie dostrzegające w decyzji bohatera próbę zachowania samodzielności. Wcześniejsza odmowa podporządkowania się planowi Vautrina nie gwarantuje, że Eugeniusz uniknie kolejnych kompromisów; nie pozwala też uznać go za człowieka całkowicie pozbawionego zasad. Zakończenie zamyka los Goriota, ale otwiera dalszą historię Rastignaca. Jego wymowa zależy od tego, jak odczytamy napięcie między ostatnią łzą a pierwszym gestem nowego etapu życia."
+    }
+   ]
+  },
+  {
+   "id": "R010",
+   "question": "Czy świat przedstawiony przez Balzaka pozostawia miejsce na bezinteresowność?",
+   "lead": "W świecie powieści bohaterowie zabiegają o majątek, pozycję i wpływy, lecz podejmują również działania na rzecz innych ludzi. Porównaj ich motywacje. Jakie kryteria pozwalają rozpoznać bezinteresowność i odróżnić ją od poświęcenia podejmowanego w oczekiwaniu na wzajemność?",
+   "refs": [
+    "P04",
+    "G30",
+    "G07",
+    "G27",
+    "G16",
+    "G37",
+    "P09",
+    "G39"
+   ],
+   "model": [
+    {
+     "text": "Vautrin opisuje społeczeństwo jako świat, w którym powodzenie i bogactwo mogą zastąpić moralną uczciwość. Jego propozycja dotycząca Wiktoryny pokazuje, jak łatwo cudze uczucia i przyszłość podporządkować rachunkowi korzyści. Podobny konflikt ujawniają puste powozy na pogrzebie Goriota: zewnętrzna oznaka więzi rodzinnej nie jest równoznaczna z osobistym zaangażowaniem."
+    },
+    {
+     "text": "Istnieją jednak relacje, których nie sposób sprowadzić do zysku. Pani Couture otacza opieką odrzuconą Wiktorynę. Rodzina Rastignaca zdobywa pieniądze dla studenta kosztem własnych wyrzeczeń. Bianchon i Eugeniusz czuwają przy chorym Goriocie i organizują pochówek człowieka, który nie może już ich wynagrodzić. Powieść przedstawia te czyny w tym samym świecie, w którym działa Vautrin, a więc stanowią one argument przeciw uznaniu jego diagnozy za uniwersalną."
+    },
+    {
+     "text": "Najbardziej złożony pozostaje przypadek samego Goriota. Oddaje córkom majątek i rezygnuje z własnych wygód, nie oczekując materialnej zapłaty. Potrzebuje jednak ich obecności i miłości. W agonii rozważa możliwość odzyskania ich zainteresowania za pomocą pieniędzy, a zarazem dostrzega różnicę między zainteresowaniem majątkiem a prawdziwą więzią. Pragnienie wzajemności nie przekreśla automatycznie wartości jego ofiary, ale rodzi pytanie o granicę między miłością a uzależnieniem własnego szczęścia od innych."
+    },
+    {
+     "text": "Bezinteresowność można rozumieć wąsko, jako brak oczekiwania na korzyść materialną, albo szerzej, jako zdolność do działania dla dobra drugiej osoby bez podporządkowywania jej własnym potrzebom. W zależności od przyjętego kryterium ocena Goriota, jego rodziny i studentów może być różna. Powieść nie usuwa z obrazu społeczeństwa możliwości bezinteresownej pomocy; pokazuje natomiast, jak trudno ją zachować i rozpoznać wśród sprzecznych pragnień, obowiązków i interesów."
     }
    ]
   }
