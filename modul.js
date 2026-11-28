@@ -652,7 +652,7 @@
       ['powiesc', 'Powieść', 'Pełny tekst w przekładach Bortnowskiej i Boya-Żeleńskiego.', '05_wismar_03', '42% 88%', null, ''],
       ['atlas', 'Obyczaje', 'Salon, posag, pojedynek, pogrzeb: obyczaje Paryża 1819 roku z przykładami z tekstu.', '03_wismar_01', '40% 82%', null, ''],
       ['mechanizmy', 'Pieniądz i awans', 'Posag, dług i protekcja: reguły, według których działa świat powieści.', '04_wismar_02', '62% 88%', null, ''],
-      ['spor', 'Spór o Goriota', 'Czy miłość ojca niszczy? Własna odpowiedź, oparta na tekście, i interpretacja do porównania.', '02_cooper_hewitt_1996-108-1', '50% 62%', null, ''],
+      ['spor', 'Spór o Goriota', 'Czy miłość Goriota do córek była zgubna? Odpowiedź oparta na tekście i interpretacja do porównania.', '02_cooper_hewitt_1996-108-1', '50% 62%', null, ''],
       ['kontekst', 'Epoka', 'Restauracja Burbonów i „Komedia ludzka”.', null, null, null, 'small'],
       ['poetyka', 'Sztuka powieści', 'Narrator, kompozycja, portret, opis.', null, null, null, 'small'],
       ['konteksty', 'Porównania', '„Król Lear”, „Lalka” i inne utwory, które można porównać z „Ojcem Goriot”.', null, null, null, 'small'],
