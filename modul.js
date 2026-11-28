@@ -622,7 +622,7 @@
       else if (k !== 'paryz') pic.classList.add('tplain');
       const tx = el('div', 'tlabel'); tx.append(el('strong', '', title), el('span', '', desc));
       b.append(pic, tx);
-      b.addEventListener('click', act || (() => { tab(k); history.replaceState(history.state, '', '#modul-' + k); scrollTo(0, 0); }));
+      b.addEventListener('click', act || (() => { nav('#modul-' + k); tab(k); scrollTo(0, 0); }));
       (cls === 'small' ? mini : tiles).append(b);
       if (k === 'paryz') b.dataset.house = '1';
     }
@@ -667,7 +667,7 @@
     const i = SC.findIndex(x => x.id === id); if (i < 0) return;
     const sc = SC[i]; sceneCur = id;
     const v = sceneView; v.replaceChildren(); v.hidden = false; sceneList.hidden = true;
-    const back = btn('scback', '← Wszystkie sceny', () => { v.hidden = true; sceneList.hidden = false; sceneCur = null; history.replaceState(history.state, '', '#modul-fragmenty'); });
+    const back = btn('scback', '← Wszystkie sceny', () => { v.hidden = true; sceneList.hidden = false; sceneCur = null; nav('#modul-fragmenty'); scrollTo(0, 0); });
     const head = el('header', 'schead');
     head.append(el('p', 'scpart', `Scena ${i + 1} z ${SC.length} · ${sc.part}`), el('h2', '', sc.title));
     const ed = Gx.mode() === 'boy' ? 'boy' : 'bort';
@@ -705,9 +705,9 @@
     } catch (e) { body.replaceChildren(el('p', 'scload', 'Nie udało się wczytać tekstu. Odśwież stronę.')); }
   }
   function openScene(id) {
+    nav('#scena-' + id);
     tab('fragmenty');
     renderScene(id);
-    history.replaceState(history.state, '', '#scena-' + id);
     scrollTo(0, 0);
   }
   M.fragmenty = () => {
@@ -759,11 +759,17 @@
   };
 
   /* ---------- zakładki ---------- */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function nav(hash) {  // nowy wpis w historii; bieżąca pozycja przewinięcia zostaje w poprzednim wpisie
+    if ((location.hash || '') === hash) return;
+    history.replaceState(Object.assign({}, history.state, { y: window.scrollY }), '');
+    history.pushState({ nav: 1, y: 0 }, '', hash || location.pathname + location.search);
+  }
   const NAMES = { start: 'Start', fragmenty: 'Sceny do omawiania', powiesc: 'Powieść', paryz: 'Pensjonat i Paryż', bohaterowie: 'Bohaterowie', atlas: 'Obyczaje', mechanizmy: 'Pieniądz i awans', kontekst: 'Epoka', poetyka: 'Sztuka powieści', konteksty: 'Porównania', zrodla: 'Źródła' };
   const bar = $('tabs'), panels = $('panels'), built = new Set(['atlas']);
   const tabs = Object.entries(NAMES).map(([k, v]) => {
     const b = el('button', 'tab', v); b.type = 'button'; b.id = 'tab-' + k; b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'panel-' + k); b.dataset.k = k;
-    b.onclick = () => { tab(k); history.replaceState(history.state, '', k === 'start' ? location.pathname + location.search : '#modul-' + k); };
+    b.onclick = () => { nav(k === 'start' ? '' : '#modul-' + k); tab(k); };
     bar.append(b); return b;
   });
   bar.addEventListener('keydown', e => {
@@ -773,7 +779,7 @@
   });
   let current = null;
   const crumb = el('div', 'crumb'), crumbTitle = el('strong', 'crumbtitle');
-  const home = btn('crumbback', '← Wszystkie działy', () => { tab('start'); history.replaceState(history.state, '', location.pathname + location.search); scrollTo(0, 0); });
+  const home = btn('crumbback', '← Wszystkie działy', () => { nav(''); tab('start'); scrollTo(0, 0); });
   crumb.append(home, crumbTitle);
   bar.parentElement.insertBefore(crumb, bar);
   function tab(k) {
@@ -790,10 +796,18 @@
     tabs.find(b => b.dataset.k === k).scrollIntoView({ block: 'nearest', inline: 'nearest' });
   }
   window.GORIOT_TAB = tab;
+  /* adres = stan: dział albo scena; Wstecz/Dalej wraca do poprzedniego widoku i miejsca na stronie */
   const fromHash = () => {
-    const sc = /^#scena-(F\d+)$/.exec(location.hash); if (sc) { openScene(sc[1]); return; }
-    const m = /^#modul-(\w+)$/.exec(location.hash); if (m && m[1] !== current) { tab(m[1]); window.scrollTo(0, 0); }
+    const h = location.hash;
+    const sc = /^#scena-(F\d+)$/.exec(h); if (sc) { if (sceneCur !== sc[1] || current !== 'fragmenty') openScene(sc[1]); return; }
+    if (/^#(boy-)?(cytat|fragment|strona)-/.test(h)) return;  // czytnik obsługuje atlas.js
+    const m = /^#modul-(\w+)$/.exec(h), k = m ? m[1] : (h ? null : 'start');
+    if (k && (k !== current || (k === 'fragmenty' && sceneCur))) { tab(k); window.scrollTo(0, 0); }
   };
   window.addEventListener('hashchange', fromHash);
+  window.addEventListener('popstate', e => {
+    fromHash();
+    if (e.state && typeof e.state.y === 'number') { const y = e.state.y; setTimeout(() => window.scrollTo({ top: y, behavior: 'instant' }), 0); }
+  });
   tab(/^#(boy-)?(cytat|fragment|strona)-/.test(location.hash) ? 'atlas' : 'start'); fromHash();
 })();

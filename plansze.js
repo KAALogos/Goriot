@@ -22,7 +22,7 @@
 
   /* ---------- 1. plansza otwierająca ---------- */
   const op = K.opening && IMG.get(K.opening.img);
-  const deepLink = /^#(boy-)?(cytat|fragment|strona)-/.test(location.hash);
+  const deepLink = /^#((boy-)?(cytat|fragment|strona)-|modul-|scena-)/.test(location.hash);
   if (op && !reduce && !deepLink) {
     const ov = mk('div', 'intro');
     const url = `url("${op.img.bg.src}")`;
@@ -104,6 +104,7 @@
       if (p.hidden) seen.delete(p);
     }
   };
+  if (deepLink) for (const p of panels.children) if (!p.hidden) seen.add(p);  // wejście z linku: bez planszy działu
   new MutationObserver(scan).observe(panels, { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden'] });
   scan();
 
