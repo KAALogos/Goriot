@@ -99,7 +99,7 @@
       const m = P.rooms[r.id];
       const head = el('div', 'mhead');
       head.append(el('span', 'eyebrow', f.name), el('h3', '', r.name)); if (f.note) head.append(el('p', 'pnote', f.note)); head.append(el('p', 'msynth', m.synth));
-      if (m.cyt) { const t = m.cyt.text, q = el('figure', 'mcyt'), bq = el('blockquote', '', (/^[a-ząćęłńóśźż]/.test(t) ? '[…] ' : '') + t.replace(/[.,;]$/, m => m === '.' ? '.' : '') + (/[.!?]$/.test(t) ? '' : ' […]')); q.append(el('span', 'mcytlab', 'Z powieści'), bq, el('figcaption', '', `przekł. A. Bortnowskiej, s. ${m.cyt.page}`)); head.append(q); }
+      if (m.cyt) { const t = m.cyt.text, q = el('figure', 'mcyt'), bq = el('blockquote', '', (/^[a-ząćęłńóśźż]/.test(t) ? '[…] ' : '') + t.replace(/[.,;]$/, m => m === '.' ? '.' : '') + (/[.!?]$/.test(t) ? '' : ' […]')); q.append(bq, el('figcaption', '', `przekł. A. Bortnowskiej, s. ${m.cyt.page}`)); head.append(q); }
       const kids = [head, plan(m.plan, r.name)];
       const block = (title, id) => { const s = el('section', 'mblock'); s.append(el('h4', '', title)); if (id) s.append(el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id)); return s; };
       if (m.char) kids.push(block(r.id === 'couture' ? 'Postać w tekście: Wiktoryna i pani Couture' : 'Postać w tekście', m.char));
@@ -250,10 +250,9 @@
     const J = P.journey || [];
     if (J.length && drawing.setStage) {
       const jb = el('div', 'hjourney'); jb.setAttribute('role', 'group'); jb.setAttribute('aria-label', 'Droga Goriota przez dom');
-      jb.append(el('span', 'hjlab', 'Droga Goriota przez dom'));
       const steps = el('div', 'hjsteps');
       const jbtn = J.map((s, i) => { const b = btn('hjstep', s.label, () => stage(i)); steps.append(b); return b; });
-      const all = btn('hjstep', '1819: cały dom', () => { stage(-1); show(...first); });
+      const all = btn('hjstep', 'Cały dom', () => { stage(-1); show(...first); });
       steps.append(all); jb.append(steps);
       drawing.insertBefore(jb, drawing.querySelector('.hbar'));
       stage = (i, quiet) => {
@@ -263,15 +262,13 @@
         const s = J[i];
         buttons.forEach(x => x.setAttribute('aria-pressed', 'false'));
         wrap.querySelectorAll('.hroom').forEach(g => g.classList.remove('on'));
-        const head = el('div', 'mhead'), ul = el('ul', 'jfacts');
-        for (const t of s.facts) ul.append(el('li', '', t));
-        head.append(el('span', 'eyebrow', `Droga Goriota · ${i + 1} z ${J.length}`), el('h3', '', s.title), el('p', 'pnote', s.label), ul);
-        if (s.recon) head.append(el('p', 'jrecon', s.recon));
+        const head = el('div', 'mhead');
+        head.append(el('span', 'eyebrow', s.when), el('h3', '', s.label), el('p', 'jtext', s.text));
         const kids = [head];
-        for (const id of s.refs) { const b = el('section', 'mblock'); b.append(el('h4', '', 'W powieści'), el('p', 'qtitle', Gx.item(id).title), Gx.quoteBox(id)); kids.push(b); }
+        for (const id of s.refs) kids.push(Gx.quoteBox(id));
         const nav2 = el('div', 'jnav');
         if (i > 0) nav2.append(btn('read', '← ' + J[i - 1].label, () => stage(i - 1)));
-        nav2.append(btn('read', i < J.length - 1 ? J[i + 1].label + ' →' : '1819: cały dom →', () => { if (i < J.length - 1) stage(i + 1); else { stage(-1); show(...first); } }));
+        nav2.append(btn('read', i < J.length - 1 ? J[i + 1].label + ' →' : 'Cały dom →', () => { if (i < J.length - 1) stage(i + 1); else { stage(-1); show(...first); } }));
         kids.push(nav2);
         side.replaceChildren(...kids);
         if (innerWidth < 1000) side.scrollIntoView({ block: 'start' });
@@ -452,8 +449,7 @@
     const setTime = night => { fig.classList.toggle('night', night); tday.setAttribute('aria-pressed', String(!night)); teve.setAttribute('aria-pressed', String(night)); };
     tday.addEventListener('click', () => setTime(false)); teve.addEventListener('click', () => setTime(true));
     bar.append(tday, teve); setTime(false);
-    const cap = el('figcaption', 'hcredit', 'Ilustracja wygenerowana (ChatGPT) według opisów z powieści; kolejność pokoi na piętrach to rekonstrukcja.');
-    fig.append(st, bar, cap);
+    fig.append(st, bar);
     return fig;
   }
   M.paryz = () => [
